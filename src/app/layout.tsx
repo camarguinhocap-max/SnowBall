@@ -18,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543510171277537" crossOrigin="anonymous"></script>
+      </head>
       <body className={`${inter.variable} ${outfit.variable}`}>
         <header className="header">
           <div className="container header-content">
