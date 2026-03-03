@@ -492,6 +492,8 @@ Para quem quer investir em ações sem escolher empresa por empresa, é uma óti
 
 ### 5. Ações (para quem quer longo prazo)
 
+![Análise de Ações - Home Broker](/posts/acoes1.png)
+
 Investir em ações significa se tornar sócio de empresas.
 
 Pode gerar:
@@ -500,13 +502,17 @@ Pode gerar:
 * Valorização
 * Crescimento no longo prazo
 
+![Comparativo de Crescimento e Investimento em Ações](/posts/acoes2.png)
+
 Mas exige:
 
 * Estudo
 * Paciência
 * Visão de longo prazo
 
-Não é cassino. É construção de patrimônio.
+Não é cassino. É construção de patrimônio. Você deve acompanhar bons relatórios, estudar os dividend yields e as projeções do mercado para selecionar empresas sólidas que pagarão dividendos todos os meses.
+
+![Tabela de Ações com Melhor Retorno de Dividendos](/posts/acoes3.png)
 
 ### Quanto investir no começo?
 
