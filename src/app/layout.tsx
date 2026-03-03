@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
-  title: "Snowball | Finanças sem complicações",
+  title: "Blog DividAI | Finanças sem complicações",
   description: "Aprenda a organizar sua vida financeira, sair das dívidas e começar a investir. O melhor blog de finanças pessoais focado na realidade brasileira.",
 };
 
@@ -24,8 +24,9 @@ export default function RootLayout({
       <body className={`${inter.variable} ${outfit.variable}`}>
         <header className="header">
           <div className="container header-content">
-            <Link href="/" className="logo">
-              snowball.com.br
+            <Link href="/" className="logo" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+              <img src="/logo.png" alt="DividAI Logo" style={{ height: "30px", width: "auto" }} />
+              <span style={{ fontSize: "1.2rem", fontWeight: 800 }}>Blog.DividAI</span>
             </Link>
             <nav className="nav-links">
               <Link href="/">Início</Link>
@@ -46,7 +47,7 @@ export default function RootLayout({
               <Link href="/politica-de-privacidade">Política de Privacidade</Link>
               <Link href="/">Contato</Link>
             </div>
-            <p>&copy; {new Date().getFullYear()} snowball.com.br. Todos os direitos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} blog.dividai.com. Todos os direitos reservados.</p>
             <p style={{ marginTop: '0.5rem', fontSize: '0.8rem' }}>Conteúdo focado em educação financeira.</p>
           </div>
         </footer>

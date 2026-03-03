@@ -6,7 +6,7 @@ export default function PoliticaPrivacidade() {
             </header>
 
             <div className="article-content" style={{ lineHeight: "1.8" }}>
-                <p>A sua privacidade é importante para nós. É política do <strong>snowball.com.br</strong> respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site.</p>
+                <p>A sua privacidade é importante para nós. É política do <strong>blog.dividai.com</strong> respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site.</p>
 
                 <h3>1. Coleta de Informações</h3>
                 <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento.</p>
