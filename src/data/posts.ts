@@ -434,6 +434,8 @@ Por quê?
 
 ### 2. CDB que rende 100% do CDI (ou mais)
 
+![Aplicativo mostrando rendimento CDB](/posts/cdb1.png)
+
 CDB significa Certificado de Depósito Bancário. Você empresta dinheiro para o banco e recebe juros em troca.
 
 Procure:
@@ -442,7 +444,12 @@ Procure:
 * Liquidez diária (principalmente no começo)
 * Cobertura do FGC (até R$250 mil por instituição)
 
-É simples, seguro e rende mais que a poupança.
+![Tabela de Potencial Geração de Renda](/posts/cdb2.png)
+
+É simples, seguro e rende mais que a poupança. E o melhor de tudo é que você pode acompanhar a rentabilidade e o dinheiro se multiplicando no dia a dia, ou realizar os aportes pelo próprio celular de onde estiver.
+
+![Pagamentos com celular](/posts/cdb3.png)
+![Homem analisando investimentos pelo celular](/posts/cdb4.png)
 
 ### 3. Fundos Imobiliários (FIIs)
 
