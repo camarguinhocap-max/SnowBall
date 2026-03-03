@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { posts } from "@/data/posts";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export default function Home() {
   // Sort posts showing the newest/last one first
@@ -80,10 +81,7 @@ export default function Home() {
             <p className="widget-text">
               Receba dicas de ouro de graça diretamente no seu e-mail toda semana.
             </p>
-            <div className="newsletter-form">
-              <input type="email" placeholder="Seu melhor e-mail" className="newsletter-input" />
-              <button className="newsletter-btn">Quero Receber Dicas</button>
-            </div>
+            <NewsletterForm />
             <p style={{ fontSize: "0.75rem", color: "var(--muted)", marginTop: "0.75rem", textAlign: "center", marginBottom: 0 }}>
               Nunca enviamos spam. Respeitamos a sua privacidade.
             </p>
