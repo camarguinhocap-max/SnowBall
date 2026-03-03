@@ -14,7 +14,7 @@ export const posts: Post[] = [
         title: 'Como organizar sua vida financeira mesmo ganhando pouco',
         excerpt: 'Organizar a vida financeira quando o salário mal cobre as contas parece impossível. Mas a verdade é simples: organização não depende de quanto você ganha — depende de método.',
         category: 'Finanças Pessoais',
-        date: '2 Mar 2026',
+        date: '27 Fev 2026',
         readTime: '5 min de leitura',
         content: `
 Organizar a vida financeira quando o salário mal cobre as contas parece impossível. Mas a verdade é simples: organização não depende de quanto você ganha — depende de método.
@@ -140,7 +140,7 @@ Organização financeira não é sobre restrição eterna. É sobre controle hoj
         title: 'Como sair do zero e fazer seus primeiros R$1.000 em 30 dias (mesmo começando do absoluto zero)',
         excerpt: 'A boa notícia é: R$1.000 em 30 dias é totalmente possível, mesmo começando do zero. Você não precisa de sorte. Precisa de estratégia + execução diária.',
         category: 'Renda Extra',
-        date: '2 Mar 2026',
+        date: '28 Fev 2026',
         readTime: '6 min de leitura',
         content: `
 Está com a conta zerada? Sem investimento? Só com internet e disposição?
@@ -276,7 +276,7 @@ Depois disso, você não volta mais para o zero.
         title: 'Corte gastos que não trazem retorno real',
         excerpt: 'Cortar gastos não significa viver mal. Significa parar de financiar o que não agrega valor à sua vida. Aprenda a identificar o que drena seu dinheiro.',
         category: 'Finanças Pessoais',
-        date: '2 Mar 2026',
+        date: '01 Mar 2026',
         readTime: '4 min de leitura',
         content: `
 Se você sente que trabalha o mês inteiro e o dinheiro simplesmente desaparece, provavelmente o problema não está na sua renda — está nos gastos que não geram retorno real.
@@ -392,7 +392,7 @@ Se você fizer um pente fino hoje, pode começar o próximo mês mais leve, mais
         title: 'Investimentos para iniciantes: onde investir com pouco dinheiro',
         excerpt: 'Se você tem R$50, R$100 ou R$500 para começar, já é suficiente. O mais importante não é o valor — é o hábito. Entenda onde investir de forma simples e segura.',
         category: 'Investimentos',
-        date: '2 Mar 2026',
+        date: '02 Mar 2026',
         readTime: '5 min de leitura',
         content: `
 Muita gente acredita que investir é só para quem já tem muito dinheiro. Mas a verdade é o contrário: investir é justamente o caminho para sair do pouco e construir mais.
