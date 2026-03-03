@@ -461,7 +461,16 @@ Vantagens:
 * Acesso ao mercado imobiliário
 * Possibilidade de valorização
 
-Mas atenção: diferente do Tesouro e do CDB, aqui existe oscilação de preço.
+![Ranking de Fundos Imobiliários](/posts/fii1.png)
+![Tabela de Dividendos de FIIs](/posts/fii2.png)
+
+Investir em FIIs é fácil e pode ser feito através da corretora de sua preferência (ex: pelo Home Broker). O pagamento de aluguéis cai direto na sua conta bancária sem a burocracia de imóveis físicos e com vantagens tributárias. Além de acompanhar os resultados, é super seguro.
+
+![Acesso ao Home Broker](/posts/fii3.png)
+
+Mas atenção: diferente do Tesouro e do CDB, aqui existe oscilação de preço. É fundamental escolher bons fundos e sempre olhar o histórico!
+
+![Histórico Mensal de Cotas FIIs](/posts/fii4.png)
 
 ### 4. ETFs (Fundos de índice)
 
