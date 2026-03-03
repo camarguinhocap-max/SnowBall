@@ -413,10 +413,10 @@ Sem isso, investir vira ansiedade.
 
 ### 1. Tesouro Direto (especialmente Tesouro Selic)
 
+![Segurança Soberana - Tesouro Nacional](/posts/tesouro1.png) ![Rentabilidade do Tesouro Direto ao longo do tempo](/posts/tesouro2.png) ![Acompanhamento no Aplicativo](/posts/tesouro3.png) ![Simuladores e Posição Total](/posts/tesouro4.png)
+
 O Tesouro Direto permite investir a partir de valores baixos (cerca de R$30).
 Para iniciantes, o mais indicado é o **Tesouro Selic**.
-
-![Segurança Soberana - Tesouro Nacional](/posts/tesouro1.png)
 
 Por quê?
 
@@ -425,16 +425,11 @@ Por quê?
 * Liquidez diária
 * Acompanha a taxa básica de juros
 
-![Rentabilidade do Tesouro Direto ao longo do tempo](/posts/tesouro2.png)
-
 É uma das portas de entrada mais seguras para quem está começando. Acompanhar os rendimentos pelo aplicativo (simuladores e painéis) torna tudo mais fácil e visual, como você pode ver nos exemplos práticos:
-
-![Acompanhamento no Aplicativo](/posts/tesouro3.png)
-![Simuladores e Posição Total](/posts/tesouro4.png)
 
 ### 2. CDB que rende 100% do CDI (ou mais)
 
-![Aplicativo mostrando rendimento CDB](/posts/cdb1.png)
+![Aplicativo mostrando rendimento CDB](/posts/cdb1.png) ![Tabela de Potencial Geração de Renda](/posts/cdb2.png) ![Pagamentos com celular](/posts/cdb3.png) ![Homem analisando investimentos pelo celular](/posts/cdb4.png)
 
 CDB significa Certificado de Depósito Bancário. Você empresta dinheiro para o banco e recebe juros em troca.
 
@@ -444,14 +439,11 @@ Procure:
 * Liquidez diária (principalmente no começo)
 * Cobertura do FGC (até R$250 mil por instituição)
 
-![Tabela de Potencial Geração de Renda](/posts/cdb2.png)
-
 É simples, seguro e rende mais que a poupança. E o melhor de tudo é que você pode acompanhar a rentabilidade e o dinheiro se multiplicando no dia a dia, ou realizar os aportes pelo próprio celular de onde estiver.
 
-![Pagamentos com celular](/posts/cdb3.png)
-![Homem analisando investimentos pelo celular](/posts/cdb4.png)
-
 ### 3. Fundos Imobiliários (FIIs)
+
+![Ranking de Fundos Imobiliários](/posts/fii1.png) ![Tabela de Dividendos de FIIs](/posts/fii2.png) ![Acesso ao Home Broker](/posts/fii3.png) ![Histórico Mensal de Cotas FIIs](/posts/fii4.png)
 
 Os Fundos Imobiliários permitem investir em imóveis sem comprar um imóvel inteiro. Com cerca de R$100 você já consegue comprar uma cota.
 
@@ -461,22 +453,15 @@ Vantagens:
 * Acesso ao mercado imobiliário
 * Possibilidade de valorização
 
-![Ranking de Fundos Imobiliários](/posts/fii1.png)
-![Tabela de Dividendos de FIIs](/posts/fii2.png)
-
 Investir em FIIs é fácil e pode ser feito através da corretora de sua preferência (ex: pelo Home Broker). O pagamento de aluguéis cai direto na sua conta bancária sem a burocracia de imóveis físicos e com vantagens tributárias. Além de acompanhar os resultados, é super seguro.
-
-![Acesso ao Home Broker](/posts/fii3.png)
 
 Mas atenção: diferente do Tesouro e do CDB, aqui existe oscilação de preço. É fundamental escolher bons fundos e sempre olhar o histórico!
 
-![Histórico Mensal de Cotas FIIs](/posts/fii4.png)
-
 ### 4. ETFs (Fundos de índice)
 
-ETFs replicam índices, como o Ibovespa. Comprar um ETF é como comprar “um pedaço” das principais empresas do país de uma vez só.
+![Gráfico BOVA11 - ETF do Ibovespa](/posts/etf1.png) ![Projeções do Ibovespa](/posts/etf2.png) ![Exemplo de Aplicativo de Investimento em Ações e ETFs](/posts/etf3.png)
 
-![Gráfico BOVA11 - ETF do Ibovespa](/posts/etf1.png)
+ETFs replicam índices, como o Ibovespa. Comprar um ETF é como comprar “um pedaço” das principais empresas do país de uma vez só.
 
 Vantagens:
 
@@ -484,15 +469,11 @@ Vantagens:
 * Custo menor
 * Simplicidade
 
-![Projeções do Ibovespa](/posts/etf2.png)
-
 Para quem quer investir em ações sem escolher empresa por empresa, é uma ótima alternativa. Diversas corretoras oferecem aplicativos super modernos pra você fazer isso com dois cliques:
-
-![Exemplo de Aplicativo de Investimento em Ações e ETFs](/posts/etf3.png)
 
 ### 5. Ações (para quem quer longo prazo)
 
-![Análise de Ações - Home Broker](/posts/acoes1.png)
+![Análise de Ações - Home Broker](/posts/acoes1.png) ![Comparativo de Crescimento e Investimento em Ações](/posts/acoes2.png) ![Tabela de Ações com Melhor Retorno de Dividendos](/posts/acoes3.png)
 
 Investir em ações significa se tornar sócio de empresas.
 
@@ -502,8 +483,6 @@ Pode gerar:
 * Valorização
 * Crescimento no longo prazo
 
-![Comparativo de Crescimento e Investimento em Ações](/posts/acoes2.png)
-
 Mas exige:
 
 * Estudo
@@ -511,8 +490,6 @@ Mas exige:
 * Visão de longo prazo
 
 Não é cassino. É construção de patrimônio. Você deve acompanhar bons relatórios, estudar os dividend yields e as projeções do mercado para selecionar empresas sólidas que pagarão dividendos todos os meses.
-
-![Tabela de Ações com Melhor Retorno de Dividendos](/posts/acoes3.png)
 
 ### Quanto investir no começo?
 

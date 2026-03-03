@@ -411,3 +411,38 @@ strong {
 .newsletter-btn:hover {
   background: var(--primary-hover);
 }
+
+/* Image Galleries */
+.article-content p:has(img) {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  margin-bottom: 2rem;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+/* Custom scrollbar for horizontal galleries */
+.article-content p:has(img)::-webkit-scrollbar {
+  height: 6px;
+}
+
+.article-content p:has(img)::-webkit-scrollbar-track {
+  background: var(--background);
+  border-radius: 4px;
+}
+
+.article-content p:has(img)::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+.article-content p>img {
+  width: 240px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: var(--card-bg);
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
