@@ -386,5 +386,126 @@ Dinheiro é energia. Direcione essa energia para o que constrói sua vida — n�
 
 Se você fizer um pente fino hoje, pode começar o próximo mês mais leve, mais organizado e com dinheiro sobrando.
         `
+    },
+    {
+        slug: 'investimentos-para-iniciantes-onde-investir-com-pouco-dinheiro',
+        title: 'Investimentos para iniciantes: onde investir com pouco dinheiro',
+        excerpt: 'Se você tem R$50, R$100 ou R$500 para começar, já é suficiente. O mais importante não é o valor — é o hábito. Entenda onde investir de forma simples e segura.',
+        category: 'Investimentos',
+        date: '2 Mar 2026',
+        readTime: '5 min de leitura',
+        content: `
+Muita gente acredita que investir é só para quem já tem muito dinheiro. Mas a verdade é o contrário: investir é justamente o caminho para sair do pouco e construir mais.
+
+Se você tem R$50, R$100 ou R$500 para começar, já é suficiente. O mais importante não é o valor — é o hábito.
+
+Neste guia, você vai entender onde investir com pouco dinheiro de forma simples, segura e prática.
+
+### Antes de investir: a base obrigatória
+
+Antes de pensar em rentabilidade, você precisa de:
+
+✔ Reserva de emergência (pelo menos o começo dela)  
+✔ Dívidas sob controle  
+✔ Organização financeira mínima  
+
+Sem isso, investir vira ansiedade.
+
+### 1. Tesouro Direto (especialmente Tesouro Selic)
+
+O Tesouro Direto permite investir a partir de valores baixos (cerca de R$30).
+Para iniciantes, o mais indicado é o **Tesouro Selic**.
+
+Por quê?
+
+* Baixo risco
+* Ideal para reserva de emergência
+* Liquidez diária
+* Acompanha a taxa básica de juros
+
+É uma das portas de entrada mais seguras para quem está começando.
+
+### 2. CDB que rende 100% do CDI (ou mais)
+
+CDB significa Certificado de Depósito Bancário. Você empresta dinheiro para o banco e recebe juros em troca.
+
+Procure:
+
+* 100% do CDI ou mais
+* Liquidez diária (principalmente no começo)
+* Cobertura do FGC (até R$250 mil por instituição)
+
+É simples, seguro e rende mais que a poupança.
+
+### 3. Fundos Imobiliários (FIIs)
+
+Os Fundos Imobiliários permitem investir em imóveis sem comprar um imóvel inteiro. Com cerca de R$100 você já consegue comprar uma cota.
+
+Vantagens:
+
+* Pagamento mensal de rendimentos
+* Acesso ao mercado imobiliário
+* Possibilidade de valorização
+
+Mas atenção: diferente do Tesouro e do CDB, aqui existe oscilação de preço.
+
+### 4. ETFs (Fundos de índice)
+
+ETFs replicam índices, como o Ibovespa. Comprar um ETF é como comprar “um pedaço” das principais empresas do país de uma vez só.
+
+Vantagens:
+
+* Diversificação automática
+* Custo menor
+* Simplicidade
+
+Para quem quer investir em ações sem escolher empresa por empresa, é uma ótima alternativa.
+
+### 5. Ações (para quem quer longo prazo)
+
+Investir em ações significa se tornar sócio de empresas.
+
+Pode gerar:
+
+* Dividendos
+* Valorização
+* Crescimento no longo prazo
+
+Mas exige:
+
+* Estudo
+* Paciência
+* Visão de longo prazo
+
+Não é cassino. É construção de patrimônio.
+
+### Quanto investir no começo?
+
+Se você tem pouco dinheiro, um exemplo simples:
+
+👉 **70% em renda fixa** (Tesouro Selic ou CDB)  
+👉 **30% em renda variável** (FIIs ou ETF)  
+
+Com o tempo, você ajusta. O importante é começar.
+
+### Erros comuns de iniciantes
+
+❌ Esperar “ter muito dinheiro”  
+❌ Buscar rendimento milagroso  
+❌ Investir sem reserva  
+❌ Mudar de estratégia toda semana  
+
+Consistência vence ansiedade.
+
+### Conclusão
+
+Você não precisa de R$10.000 para começar. Precisa de decisão.
+
+Investir com pouco dinheiro é possível, acessível e cada vez mais simples.
+
+Comece pequeno. Aprenda no processo. Aumente aos poucos.
+
+O primeiro aporte é mais importante que o maior aporte.
+        `
     }
 ];
