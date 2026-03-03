@@ -519,5 +519,191 @@ Comece pequeno. Aprenda no processo. Aumente aos poucos.
 
 O primeiro aporte é mais importante que o maior aporte.
         `
+    },
+    {
+        slug: "mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente",
+        title: "Mentalidade milionária: o que as pessoas ricas fazem diferente",
+        excerpt: "Quando falamos em riqueza, muita gente pensa apenas em dinheiro. Mas antes do patrimônio, vem a mentalidade. Descubra os hábitos que constroem riqueza no longo prazo.",
+        category: "Mentalidade",
+        date: "03 Mar 2026",
+        readTime: "7 min de leitura",
+        content: `
+Quando falamos em riqueza, muita gente pensa apenas em dinheiro.
+Mas antes do patrimônio, vem a mentalidade.
+
+A verdade é simples: pessoas ricas não pensam como a maioria.
+Elas tomam decisões diferentes — e repetem essas decisões por anos.
+
+Neste artigo, você vai entender quais são os principais comportamentos que constroem riqueza no longo prazo.
+
+### 1. Pensam no longo prazo (enquanto a maioria pensa no mês)
+
+A maioria das pessoas vive no ciclo:
+
+Salário → Contas → Restante → Recomeça
+
+Pessoas com mentalidade milionária vivem no ciclo:
+
+Renda → Investimento → Crescimento → Expansão
+
+Elas perguntam:
+
+“Isso me aproxima da liberdade financeira?”
+
+“Onde estarei em 5 ou 10 anos?”
+
+Riqueza é consequência de visão longa.
+
+### 2. Fazem o dinheiro trabalhar antes de gastar
+
+Quem tem mentalidade comum:
+
+“Se sobrar, eu invisto.”
+
+Quem tem mentalidade milionária:
+
+“Eu invisto primeiro, depois organizo o restante.”
+
+Elas priorizam:
+
+* Investimentos
+* Ativos
+* Fontes de renda recorrente
+
+Elas entendem que consumo não gera patrimônio. Ativos geram.
+
+### 3. Buscam ativos, não status
+
+Muitas pessoas querem parecer ricas.
+Poucas querem se tornar ricas.
+
+Diferença prática:
+
+* Comprar carro financiado para impressionar
+* Ou investir esse valor para gerar renda futura
+
+Ricos priorizam:
+
+* Negócios
+* Investimentos
+* Participações
+* Conhecimento
+
+Status é consequência. Não prioridade.
+
+### 4. Investem em conhecimento constantemente
+
+Mentalidade milionária entende que:
+
+* Conhecimento gera habilidade.
+* Habilidade gera renda.
+* Renda gera investimento.
+* Investimento gera liberdade.
+
+Livros, cursos, networking, mentoria — tudo isso é visto como investimento, não gasto.
+
+### 5. Assumem responsabilidade total
+
+Não culpam:
+
+* Governo
+* Economia
+* Família
+* Mercado
+
+Elas perguntam:
+
+“O que eu posso fazer com o cenário atual?”
+
+Responsabilidade gera poder de ação.
+
+### 6. Têm múltiplas fontes de renda
+
+Pessoas ricas raramente dependem de uma única fonte.
+
+Elas constroem:
+
+* Investimentos
+* Negócios
+* Dividendos
+* Participações
+* Projetos paralelos
+
+Dependência única gera vulnerabilidade.
+
+### 7. Pensam em crescimento, não apenas economia
+
+Economizar é importante.
+Mas mentalidade milionária entende que existe limite para cortar gastos.
+
+Já aumentar renda não tem limite.
+
+Por isso elas focam em:
+
+* Escalar habilidades
+* Criar oportunidades
+* Resolver problemas maiores
+
+### 8. Toleram desconforto temporário
+
+Construir riqueza exige:
+
+* Disciplina
+* Rejeição
+* Paciência
+* Decisões difíceis
+
+Quem pensa pequeno evita desconforto.
+Quem pensa grande aceita o processo.
+
+### 9. Tomam decisões baseadas em números, não emoção
+
+Elas analisam:
+
+* Retorno
+* Risco
+* Probabilidade
+* Impacto
+
+Em vez de:
+
+* Impulso
+* Pressão social
+* Medo momentâneo
+
+Riqueza é construída com racionalidade.
+
+### 10. Pensam em liberdade, não apenas dinheiro
+
+No final, o objetivo não é acumular números na conta.
+
+É ter:
+
+* Tempo
+* Opções
+* Segurança
+* Escolhas
+
+Dinheiro é ferramenta.
+Liberdade é objetivo.
+
+### Conclusão
+
+Mentalidade milionária não nasce com alguém.
+Ela é construída por escolhas repetidas.
+
+Você não precisa ser milionário para pensar como um.
+Mas precisa pensar como um para um dia se tornar.
+
+Comece pequeno:
+
+* Invista regularmente
+* Aprenda continuamente
+* Pense no longo prazo
+* Priorize ativos
+* Assuma responsabilidade
+
+A mudança começa na mente — antes de aparecer na conta bancária.
+        `
     }
 ];
