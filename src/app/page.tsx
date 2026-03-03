@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <section style={{ textAlign: "center", padding: "4rem 0", borderBottom: "1px solid var(--border)" }}>
-        <h1 style={{ fontSize: "3rem", marginBottom: "1rem", background: "linear-gradient(90deg, #4ade80, #0ea5e9)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
+        <h1 style={{ fontSize: "3rem", marginBottom: "1rem", background: "linear-gradient(90deg, #818cf8, #0ea5e9)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
           Sua Nova Relação com o Dinheiro
         </h1>
         <p style={{ fontSize: "1.2rem", color: "var(--muted)", maxWidth: "600px", margin: "0 auto" }}>
