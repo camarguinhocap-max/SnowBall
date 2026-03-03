@@ -25,7 +25,7 @@ export default function RootLayout({
         <header className="header">
           <div className="container header-content">
             <Link href="/" className="logo" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-              <img src="/favicon-transparent.svg" alt="DividAI Logo" style={{ height: "40px", width: "auto" }} />
+              <img src="/favicon-transparent.png" alt="DividAI Logo" style={{ height: "40px", width: "auto" }} />
               <span style={{ fontSize: "1.8rem", fontWeight: 800 }}>Blog.DividAI</span>
             </Link>
             <nav className="nav-links">

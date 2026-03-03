@@ -7,7 +7,7 @@ export async function GET() {
         description: 'Aprenda a organizar sua vida financeira, sair das dívidas e começar a investir. O melhor blog de finanças pessoais focado na realidade brasileira.',
         feed_url: 'https://blog.dividai.com/api/feed',
         site_url: 'https://blog.dividai.com',
-        image_url: 'https://blog.dividai.com/favicon-transparent.svg',
+        image_url: 'https://blog.dividai.com/favicon-transparent.png',
         language: 'pt-BR',
         pubDate: new Date().toUTCString(),
     });
