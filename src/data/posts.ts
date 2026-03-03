@@ -476,13 +476,19 @@ Mas atenção: diferente do Tesouro e do CDB, aqui existe oscilação de preço.
 
 ETFs replicam índices, como o Ibovespa. Comprar um ETF é como comprar “um pedaço” das principais empresas do país de uma vez só.
 
+![Gráfico BOVA11 - ETF do Ibovespa](/posts/etf1.png)
+
 Vantagens:
 
 * Diversificação automática
 * Custo menor
 * Simplicidade
 
-Para quem quer investir em ações sem escolher empresa por empresa, é uma ótima alternativa.
+![Projeções do Ibovespa](/posts/etf2.png)
+
+Para quem quer investir em ações sem escolher empresa por empresa, é uma ótima alternativa. Diversas corretoras oferecem aplicativos super modernos pra você fazer isso com dois cliques:
+
+![Exemplo de Aplicativo de Investimento em Ações e ETFs](/posts/etf3.png)
 
 ### 5. Ações (para quem quer longo prazo)
 
