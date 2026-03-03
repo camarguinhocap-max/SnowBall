@@ -60,10 +60,18 @@ export default function Home() {
 
         <aside className="sidebar">
           <div className="widget">
-            <h3 className="widget-title">Sobre o Blog</h3>
-            <p className="widget-text">
-              Criado através do sistema inteligente da <strong>DividAI</strong>, nossa missão é democratizar a educação financeira no Brasil com transparência e inovação.
-            </p>
+            <h3 className="widget-title">Sobre a DividAI</h3>
+            <div className="widget-text" style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+              <p style={{ marginBottom: 0 }}>
+                Este blog é a central de educação da <strong>DividAI</strong>, o ecossistema inteligente de gestão de investimentos e controle patrimonial mais inovador do Brasil.
+              </p>
+              <p style={{ marginBottom: 0 }}>
+                Nossa missão não para na leitura. Leve a gestão do seu dinheiro para o próximo nível com a nossa inteligência artificial:
+              </p>
+              <Link href="https://dividai.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ textAlign: "center", width: "100%", padding: "0.75rem", fontSize: "0.95rem", marginTop: "0.5rem" }}>
+                Conhecer a Plataforma
+              </Link>
+            </div>
           </div>
 
           <div className="widget">
