@@ -1,8 +1,8 @@
 :root {
   --background: #0d1117;
   --foreground: #c9d1d9;
-  --primary: #2ea043;
-  --primary-hover: #3fb950;
+  --primary: #0ea5e9;
+  --primary-hover: #0284c7;
   --secondary: #1f6feb;
   --accent: #f85149;
   --card-bg: #161b22;
@@ -95,7 +95,7 @@ strong {
   font-size: 1.5rem;
   font-weight: 800;
   font-family: var(--font-outfit), sans-serif;
-  background: linear-gradient(90deg, #4ade80, #0ea5e9);
+  background: linear-gradient(90deg, #818cf8, #0ea5e9);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
