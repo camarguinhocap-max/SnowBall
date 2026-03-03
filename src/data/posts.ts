@@ -416,6 +416,8 @@ Sem isso, investir vira ansiedade.
 O Tesouro Direto permite investir a partir de valores baixos (cerca de R$30).
 Para iniciantes, o mais indicado é o **Tesouro Selic**.
 
+![Segurança Soberana - Tesouro Nacional](/posts/tesouro1.png)
+
 Por quê?
 
 * Baixo risco
@@ -423,7 +425,12 @@ Por quê?
 * Liquidez diária
 * Acompanha a taxa básica de juros
 
-É uma das portas de entrada mais seguras para quem está começando.
+![Rentabilidade do Tesouro Direto ao longo do tempo](/posts/tesouro2.png)
+
+É uma das portas de entrada mais seguras para quem está começando. Acompanhar os rendimentos pelo aplicativo (simuladores e painéis) torna tudo mais fácil e visual, como você pode ver nos exemplos práticos:
+
+![Acompanhamento no Aplicativo](/posts/tesouro3.png)
+![Simuladores e Posição Total](/posts/tesouro4.png)
 
 ### 2. CDB que rende 100% do CDI (ou mais)
 
