@@ -1,6 +1,7 @@
 import { posts } from "@/data/posts";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
+import ImageWithModal from "@/components/ImageWithModal";
 
 export function generateStaticParams() {
     return posts.map((post) => ({
@@ -30,7 +31,15 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
             </header>
 
             <div className="article-content">
-                <ReactMarkdown>{post.content}</ReactMarkdown>
+                <ReactMarkdown
+                    components={{
+                        img: (props) => (
+                            <ImageWithModal src={props.src as string} alt={props.alt} />
+                        ),
+                    }}
+                >
+                    {post.content}
+                </ReactMarkdown>
             </div>
         </article>
     );
