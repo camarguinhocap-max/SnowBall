@@ -36,7 +36,7 @@ export const shopItems: ShopItem[] = [
         description: 'Trabalhe e estude com o conforto que sua coluna merece. Aumente seu foco e produtividade na sua Renda Extra.',
         price: 'R$ 389,90',
         imageUrl: 'https://http2.mlstatic.com/D_NQ_NP_909562-MLU72688941706_112023-O.webp',
-        affiliateUrl: '#',
+        affiliateUrl: 'https://meli.la/1p5MRgL',
         store: 'Mercado Livre',
         articleSlug: 'como-sair-do-zero-e-fazer-seus-primeiros-1000'
     }
