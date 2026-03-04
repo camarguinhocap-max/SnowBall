@@ -16,7 +16,7 @@ export const shopItems: ShopItem[] = [
         description: 'Leia seus livros de educação financeira em qualquer lugar. O melhor investimento para sua mente.',
         price: 'R$ 499,00',
         imageUrl: 'https://m.media-amazon.com/images/I/71B1wawvyjL._AC_SX679_.jpg',
-        affiliateUrl: '#',
+        affiliateUrl: 'https://amzn.to/4aOY48h',
         store: 'Amazon',
         articleSlug: 'educacao-financeira-para-iniciantes-o-guia-simples-que-ninguem-te-ensinou'
     },
