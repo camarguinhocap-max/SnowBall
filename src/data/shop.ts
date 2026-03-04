@@ -213,5 +213,155 @@ export const shopItems: ShopItem[] = [
         affiliateUrl: 'https://amzn.to/4rSiiUJ',
         store: 'Amazon',
         category: 'Eletrônicos'
+    },
+    {
+        id: '21',
+        title: 'A Psicologia Financeira - Morgan Housel',
+        description: 'Lições atemporais sobre riqueza, ganância e felicidade.',
+        price: 'R$ 40,90',
+        imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-mds16ln774cx7e',
+        affiliateUrl: 'https://s.shopee.com.br/4frEJXB7aT',
+        store: 'Shopee',
+        category: 'Livros'
+    },
+    {
+        id: '22',
+        title: 'O investidor em ações de dividendos',
+        description: 'Estratégias práticas para focar em dividendos consistentes no longo prazo.',
+        price: 'R$ 123,75',
+        imageUrl: 'https://down-br.img.susercontent.com/file/sg-11134201-824i2-mdvys1rnpj4419_tn',
+        affiliateUrl: 'https://s.shopee.com.br/5AnUuS9DZa',
+        store: 'Shopee',
+        category: 'Livros'
+    },
+    {
+        id: '23',
+        title: 'A Sua Liberdade Financeira - André Blanchard',
+        description: 'Um passo a passo incrível para organizar as finanças de forma simples.',
+        price: 'R$ 14,90',
+        imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-81z1k-mf18tgxllnnoc4',
+        affiliateUrl: 'https://s.shopee.com.br/50U4i99quZ',
+        store: 'Shopee',
+        category: 'Livros'
+    },
+    {
+        id: '24',
+        title: 'Liberdade Financeira Sem Mimimi - Bruno César',
+        description: 'Direto ao ponto para quem quer parar de perder dinheiro.',
+        price: 'R$ 29,90',
+        imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-m2mlc2v3fo5h65',
+        affiliateUrl: 'https://s.shopee.com.br/4AuxicD1bQ',
+        store: 'Shopee',
+        category: 'Livros'
+    },
+    {
+        id: '25',
+        title: 'Inabalável: Um Guia Prático Para A Liberdade Financeira',
+        description: 'O livro de Tony Robbins que destila a sabedoria dos maiores investidores do mundo.',
+        price: 'R$ 50,72',
+        imageUrl: 'https://down-br.img.susercontent.com/file/1b0382730db18c1249bbad04c352c637',
+        affiliateUrl: 'https://s.shopee.com.br/40bXWJDewP',
+        store: 'Shopee',
+        category: 'Livros'
+    },
+    {
+        id: '26',
+        title: 'O Poder Do Dinheiro',
+        description: 'Passo a passo definitivo para conquistar sua Liberdade Financeira.',
+        price: 'R$ 39,90',
+        imageUrl: 'https://down-br.img.susercontent.com/file/br-11134201-22120-0uruwt2ljkkvb7_tn',
+        affiliateUrl: 'https://s.shopee.com.br/6KzSIgBYX8',
+        store: 'Shopee',
+        category: 'Livros'
+    },
+    {
+        id: '27',
+        title: 'Guia Suno Dividendos - Estratégia Para Investir',
+        description: 'A metodologia Suno compilada para quem quer viver de renda passiva.',
+        price: 'R$ 44,63',
+        imageUrl: 'https://down-br.img.susercontent.com/file/c1a05d112db214760f2ad89bd6eafeaf',
+        affiliateUrl: 'https://s.shopee.com.br/6VIsUzAvCB',
+        store: 'Shopee',
+        category: 'Livros'
+    },
+    {
+        id: '28',
+        title: 'Luminária LED 3D Bitcoin Criptomoeda',
+        description: 'Decoração temática fantástica para o seu setup de investimentos.',
+        price: 'R$ 54,95',
+        imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfo857xu7h1j7c',
+        affiliateUrl: 'https://s.shopee.com.br/6fcIhIAHrE',
+        store: 'Shopee',
+        category: 'Casa'
+    },
+    {
+        id: '29',
+        title: 'Quadro Decorativo Bitcoin Ouro',
+        description: 'Inspiração diária na parede do seu escritório ou escritório em casa.',
+        price: 'R$ 49,60',
+        imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-lrgkr0deh1yz9a',
+        affiliateUrl: 'https://s.shopee.com.br/6pvitb9eWH',
+        store: 'Shopee',
+        category: 'Casa'
+    },
+    {
+        id: '30',
+        title: 'Pingente Bitcoin Redondo Moeda Antiga',
+        description: 'Acessório discreto e elegante com a temática da principal criptomoneda.',
+        price: 'R$ 45,00',
+        imageUrl: 'https://down-br.img.susercontent.com/file/sg-11134201-7rfga-m464567xforfcf',
+        affiliateUrl: 'https://s.shopee.com.br/70F95u91BK',
+        store: 'Shopee',
+        category: 'Acessórios'
+    },
+    {
+        id: '31',
+        title: 'Display Decorativo Bitcoin Acrílico com Base de Madeira',
+        description: 'Um toque executivo para decorar sua mesa de trabalho.',
+        price: 'R$ 69,00',
+        imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-81z1k-me1qugzfklc25a_tn',
+        affiliateUrl: 'https://s.shopee.com.br/3fyh7rxUYD',
+        store: 'Shopee',
+        category: 'Casa'
+    },
+    {
+        id: '32',
+        title: 'Camiseta Bitcoin Satoshi Nakamoto',
+        description: 'Vista a camisa da revolução financeira descentralizada.',
+        price: 'R$ 49,99',
+        imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-81z1k-mexeuhpdftheda',
+        affiliateUrl: 'https://s.shopee.com.br/3VfGvYy7tC',
+        store: 'Shopee',
+        category: 'Roupas'
+    },
+    {
+        id: '33',
+        title: 'Quadro Decorativo Tio Patinhas Bitcoin',
+        description: 'A união do símbolo clássico da riqueza com a nova economia.',
+        price: 'R$ 82,78',
+        imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5w68drc3buac7_tn',
+        affiliateUrl: 'https://s.shopee.com.br/3LLqjFylEB',
+        store: 'Shopee',
+        category: 'Casa'
+    },
+    {
+        id: '34',
+        title: 'Painel Adesivo Decorativo Bitcoin Mercado Financeiro',
+        description: 'Transforme todo o ambiente do seu quarto ou escritório.',
+        price: 'R$ 79,00',
+        imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-7qukw-lk5slly2u2dmcc',
+        affiliateUrl: 'https://s.shopee.com.br/3B2QWwzOZA',
+        store: 'Shopee',
+        category: 'Casa'
+    },
+    {
+        id: '35',
+        title: 'O Rei dos Dividendos - Luiz Barsi Filho',
+        description: 'A autobiografia de ensinamentos do maior investidor brasileiro pessoa física.',
+        price: 'R$ 34,90',
+        imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdmec8pzvlx5ea',
+        affiliateUrl: 'https://s.shopee.com.br/30j0Ke01u9',
+        store: 'Shopee',
+        category: 'Livros'
     }
 ];
