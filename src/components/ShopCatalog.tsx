@@ -129,7 +129,7 @@ export default function ShopCatalog({ items }: ShopCatalogProps) {
                                 </p>
 
                                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1rem" }}>
-                                    <span style={{ fontSize: "1.3rem", fontWeight: "bold", color: "var(--foreground)" }}>{item.price}</span>
+                                    <span style={{ fontSize: "1rem", fontWeight: "bold", color: "var(--primary)" }}>🏷️ Ver Oferta na Loja</span>
                                 </div>
 
                                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>

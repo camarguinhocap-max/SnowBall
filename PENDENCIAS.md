@@ -1,0 +1,8 @@
+# Lista de Pendências - Blog DividAI
+
+## Regras e Lembretes
+- **Links da Amazon**: Todo e qualquer link da Amazon precisa conter, em algum lugar, o código `ofertaspri0ee`. Se não tiver esse código, o link não está afiliado e a comissão não cai na conta. Sempre checar isso antes de publicar links.
+
+## Futuras Integrações
+- [ ] **Automação Redes Sociais (Make.com)**: Conectar o RSS Feed do Blog (`https://blog.dividai.com/api/feed`) ao *Instagram* e ao *X (Twitter)* usando a plataforma Make.com. O objetivo é que, ao lançarmos novos artigos via código, a própria ferramenta Make detecte e publique chamadas ou resumos com o link final automaticamente nas redes oficiais.
+- [ ] **Automação de Preços da Loja (Vercel Cronjob)**: Migrar a base de dados do `shop.ts` para o Supabase e criar um Vercel Cronjob que dispare de madrugada um robô. Esse robô usará as credenciais de API da Shopee (AppID: 18337900933), da Amazon (tag: ofertaspri0ee-20) e do Mercado Livre (tag: ofertasprimeml) para puxar os preços exatos e atualizar os dados no Supabase.
