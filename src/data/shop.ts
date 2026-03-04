@@ -46,7 +46,7 @@ export const shopItems: ShopItem[] = [
         description: 'Mude de uma vez por todas sua mentalidade em relação ao dinheiro.',
         price: 'R$ 32,35',
         imageUrl: 'https://http2.mlstatic.com/D_Q_NP_2X_645553-MLU53737893378_022023-AB.webp',
-        affiliateUrl: 'https://www.mercadolivre.com.br/livro-os-segredos-da-mente-milionaria-edico-01-em-portugus-editora-sextante-2006/p/MLB21744909?pdp_filters=item_id%3AMLB4631785204&matt_tracing_id=05ba8cbc-92fe-4a23-992e-6a4811b4326e&matt_event_ts=1772655367234&matt_d2id=#polycard_client=social-profile-middleend&wid=MLB4631785204&source=lists&type=product&tracking_id=7351e016-201e-4024-a427-f501cfc8d458&sid=storefronts',
+        affiliateUrl: 'https://meli.la/1qiNgpu',
         store: 'Mercado Livre'
     },
     {
