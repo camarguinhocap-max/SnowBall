@@ -26,8 +26,8 @@ export const shopItems: ShopItem[] = [
         description: 'O livro de finanças pessoais número 1 do mundo. Recomendação obrigatória para quem quer prosperar.',
         price: 'R$ 45,90',
         imageUrl: 'https://m.media-amazon.com/images/I/81vqnOG2-vL._AC_SY879_.jpg',
-        affiliateUrl: '#',
-        store: 'Amazon',
+        affiliateUrl: 'https://meli.la/1VcCpVs',
+        store: 'Mercado Livre',
         articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
     },
     {
