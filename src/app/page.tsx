@@ -8,6 +8,12 @@ export default function Home() {
   const featuredPost = reversedPosts[0];
   const otherPosts = reversedPosts.slice(1);
 
+  // Derive categories and counts dynamically
+  const categoryCounts = posts.reduce((acc, post) => {
+    acc[post.category] = (acc[post.category] || 0) + 1;
+    return acc;
+  }, {} as Record<string, number>);
+
   return (
     <>
       <section style={{ textAlign: "center", padding: "4rem 0", borderBottom: "1px solid var(--border)" }}>
@@ -77,10 +83,13 @@ export default function Home() {
           <div className="widget">
             <h3 className="widget-title">Categorias</h3>
             <ul className="category-list">
-              <li><Link href="/" className="category-item"><span>Finanças Pessoais</span> <span>(2)</span></Link></li>
-              <li><Link href="/" className="category-item"><span>Renda Extra</span> <span>(1)</span></Link></li>
-              <li><Link href="/" className="category-item"><span>Investimentos</span> <span>(1)</span></Link></li>
-              <li><Link href="/" className="category-item"><span>Empreendedorismo</span> <span>(0)</span></Link></li>
+              {Object.entries(categoryCounts).map(([cat, count]) => (
+                <li key={cat}>
+                  <Link href="/" className="category-item">
+                    <span>{cat}</span> <span>({count})</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
