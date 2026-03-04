@@ -133,7 +133,7 @@ export default function ShopCatalog({ items }: ShopCatalogProps) {
                                 </div>
 
                                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-                                    <a href={item.affiliateUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0.5rem" }}>
+                                    <a href={item.affiliateUrl} target="_blank" rel="sponsored noopener noreferrer" className="btn btn-primary" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0.5rem" }}>
                                         Ver Oferta <ExternalLink size={16} />
                                     </a>
 
