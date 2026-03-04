@@ -2,6 +2,7 @@ import { posts } from "@/data/posts";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import ImageWithModal from "@/components/ImageWithModal";
+import ShareButtons from "@/components/ShareButtons";
 
 export function generateStaticParams() {
     return posts.map((post) => ({
@@ -41,6 +42,8 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                     {post.content}
                 </ReactMarkdown>
             </div>
+
+            <ShareButtons title={post.title} slug={post.slug} />
         </article>
     );
 }
