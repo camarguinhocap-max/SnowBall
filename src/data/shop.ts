@@ -316,7 +316,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfo857xu7h1j7c',
         affiliateUrl: 'https://s.shopee.com.br/6fcIhIAHrE',
         store: 'Shopee',
-        category: 'Casa'
+        category: 'Casa',
+        articleSlug: 'bitcoin-o-que-e-como-funciona-e-por-que-investir'
     },
     {
         id: '29',
@@ -326,7 +327,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-lrgkr0deh1yz9a',
         affiliateUrl: 'https://s.shopee.com.br/6pvitb9eWH',
         store: 'Shopee',
-        category: 'Casa'
+        category: 'Casa',
+        articleSlug: 'bitcoin-o-que-e-como-funciona-e-por-que-investir'
     },
     {
         id: '30',
@@ -336,7 +338,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/sg-11134201-7rfga-m464567xforfcf',
         affiliateUrl: 'https://s.shopee.com.br/70F95u91BK',
         store: 'Shopee',
-        category: 'Acessórios'
+        category: 'Acessórios',
+        articleSlug: 'bitcoin-o-que-e-como-funciona-e-por-que-investir'
     },
     {
         id: '31',
@@ -346,7 +349,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-81z1k-me1qugzfklc25a_tn',
         affiliateUrl: 'https://s.shopee.com.br/3fyh7rxUYD',
         store: 'Shopee',
-        category: 'Casa'
+        category: 'Casa',
+        articleSlug: 'bitcoin-o-que-e-como-funciona-e-por-que-investir'
     },
     {
         id: '32',
@@ -356,7 +360,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-81z1k-mexeuhpdftheda',
         affiliateUrl: 'https://s.shopee.com.br/3VfGvYy7tC',
         store: 'Shopee',
-        category: 'Roupas'
+        category: 'Roupas',
+        articleSlug: 'bitcoin-o-que-e-como-funciona-e-por-que-investir'
     },
     {
         id: '33',
@@ -366,7 +371,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5w68drc3buac7_tn',
         affiliateUrl: 'https://s.shopee.com.br/3LLqjFylEB',
         store: 'Shopee',
-        category: 'Casa'
+        category: 'Casa',
+        articleSlug: 'bitcoin-o-que-e-como-funciona-e-por-que-investir'
     },
     {
         id: '34',
@@ -376,7 +382,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-7qukw-lk5slly2u2dmcc',
         affiliateUrl: 'https://s.shopee.com.br/3B2QWwzOZA',
         store: 'Shopee',
-        category: 'Casa'
+        category: 'Casa',
+        articleSlug: 'bitcoin-o-que-e-como-funciona-e-por-que-investir'
     },
     {
         id: '35',
