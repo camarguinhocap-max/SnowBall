@@ -20,15 +20,6 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
         };
     }
 
-    // Procura a primeira imagem do artigo (Markdown ![]()) para usar como capa do link
-    const imageMatch = post.content.match(/!\[.*?\]\((.*?)\)/);
-    let ogImage = 'https://blog.dividai.com/logo.png'; // Imagem padrão de fallback
-
-    if (imageMatch) {
-        const url = imageMatch[1];
-        ogImage = url.startsWith('http') ? url : `https://blog.dividai.com${url.startsWith('/') ? '' : '/'}${url}`;
-    }
-
     // Constrói o link absoluto
     const url = `https://blog.dividai.com/post/${post.slug}`;
 
@@ -40,14 +31,6 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
             description: post.excerpt,
             url: url,
             siteName: 'Blog DividAI',
-            images: [
-                {
-                    url: ogImage,
-                    width: 1200,
-                    height: 630,
-                    alt: post.title,
-                },
-            ],
             type: 'article',
             publishedTime: post.date,
         },
@@ -55,7 +38,6 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
             card: 'summary_large_image',
             title: post.title,
             description: post.excerpt,
-            images: [ogImage],
         },
     };
 }
