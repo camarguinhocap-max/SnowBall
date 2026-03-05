@@ -22,7 +22,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
 
     // Procura a primeira imagem do artigo (Markdown ![]()) para usar como capa do link
     const imageMatch = post.content.match(/!\[.*?\]\((.*?)\)/);
-    let ogImage = 'https://blog.dividai.com/logo-squared.jpg'; // Imagem padrão de fallback
+    let ogImage = 'https://blog.dividai.com/logo.png'; // Imagem padrão de fallback
 
     if (imageMatch) {
         const url = imageMatch[1];
