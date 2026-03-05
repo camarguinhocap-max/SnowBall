@@ -19,8 +19,7 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://m.media-amazon.com/images/I/71lORNHYWLL._AC_SY450_.jpg',
         affiliateUrl: 'https://amzn.to/4cZWzp5',
         store: 'Amazon',
-        category: 'Eletrônicos',
-        articleSlug: 'educacao-financeira-para-iniciantes-o-guia-simples-que-ninguem-te-ensinou'
+        category: 'Eletrônicos'
     },
     {
         id: '2',
@@ -30,8 +29,7 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://http2.mlstatic.com/D_Q_NP_2X_631924-MLU74994562986_032024-V.webp',
         affiliateUrl: 'https://meli.la/1VcCpVs',
         store: 'Mercado Livre',
-        category: 'Livros',
-        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
+        category: 'Livros'
     },
     {
         id: '3',
@@ -41,8 +39,7 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://http2.mlstatic.com/D_Q_NP_2X_764756-MLA96570589252_112025-V.webp',
         affiliateUrl: 'https://meli.la/1p5MRgL',
         store: 'Mercado Livre',
-        category: 'Móveis',
-        articleSlug: 'como-sair-do-zero-e-fazer-seus-primeiros-1000'
+        category: 'Móveis'
     },
     {
         id: '4',
