@@ -13,11 +13,11 @@ export interface ShopItem {
 export const shopItems: ShopItem[] = [
     {
         id: '1',
-        title: 'Kindle 11ª Geração',
-        description: 'Leia seus livros de educação financeira em qualquer lugar. O melhor investimento para sua mente.',
-        price: 'R$ 499,00',
-        imageUrl: 'https://m.media-amazon.com/images/I/81Z2YCqqy-L._AC_SY450_.jpg',
-        affiliateUrl: 'https://amzn.to/4aOY48h',
+        title: 'Kindle Colorsoft (16 GB)',
+        description: 'O primeiro Kindle com tela colorida. Alta resolução e bateria de longa duração para suas leituras.',
+        price: 'R$ 2.199,00',
+        imageUrl: 'https://m.media-amazon.com/images/I/71lORNHYWLL._AC_SY450_.jpg',
+        affiliateUrl: 'https://amzn.to/4cZWzp5',
         store: 'Amazon',
         category: 'Eletrônicos',
         articleSlug: 'educacao-financeira-para-iniciantes-o-guia-simples-que-ninguem-te-ensinou'
