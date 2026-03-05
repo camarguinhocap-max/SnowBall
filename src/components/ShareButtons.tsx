@@ -16,7 +16,10 @@ export default function ShareButtons({ title, slug }: ShareButtonsProps) {
     }, [slug]);
 
     const encodedUrl = encodeURIComponent(url);
-    const encodedTitle = encodeURIComponent(title);
+
+    // Hashtags padrão para impulsionar o SEO social
+    const hashtags = "\n\n#RendaExtra #Investimentos #EducacaoFinanceira #DividAI";
+    const encodedTitle = encodeURIComponent(title + hashtags);
 
     // Link de compartilhamento do X (Twitter)
     const shareTwitter = `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`;
