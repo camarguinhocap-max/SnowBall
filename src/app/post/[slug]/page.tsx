@@ -76,6 +76,33 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
             </div>
 
             <ShareButtons title={post.title} slug={post.slug} />
+
+            {/* Schema.org estruturado para artigos (SEO e E-E-A-T) */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Article",
+                        headline: post.title,
+                        description: post.excerpt,
+                        author: {
+                            "@type": "Organization",
+                            name: "Equipe DividAI",
+                            url: "https://blog.dividai.com"
+                        },
+                        publisher: {
+                            "@type": "Organization",
+                            name: "DividAI",
+                            logo: {
+                                "@type": "ImageObject",
+                                url: "https://blog.dividai.com/logo.png"
+                            }
+                        },
+                        datePublished: post.date, // Idealmente ISO format (ex: 2026-03-05T12:00:00Z)
+                    })
+                }}
+            />
         </article>
     );
 }

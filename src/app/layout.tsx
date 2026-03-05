@@ -7,8 +7,19 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://blog.dividai.com'),
   title: "Blog DividAI | Finanças sem complicações",
   description: "Aprenda a organizar sua vida financeira, sair das dívidas e começar a investir. O melhor blog de finanças pessoais focado na realidade brasileira.",
+  openGraph: {
+    type: 'website',
+    locale: 'pt_BR',
+    url: 'https://blog.dividai.com',
+    siteName: 'Blog DividAI',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog DividAI',
+  }
 };
 
 export default function RootLayout({
