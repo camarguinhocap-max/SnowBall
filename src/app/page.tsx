@@ -3,10 +3,15 @@ import { posts } from "@/data/posts";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export default function Home() {
-  // Sort posts showing the newest/last one first
-  const reversedPosts = [...posts].reverse();
-  const featuredPost = reversedPosts[0];
-  const otherPosts = reversedPosts.slice(1);
+  // Ordenar os posts mais lidos (top views) para o destaque
+  const sortedByViews = [...posts].sort((a, b) => (b.views || 0) - (a.views || 0));
+  const featuredPost = sortedByViews[0];
+
+  // Os outros posts organizados por ordem cronológica (mais recentes primeiro)
+  // Mas precisamos excluir o post que já está no destaque para não repetir
+  const otherPosts = [...posts]
+    .filter(p => p.slug !== featuredPost.slug)
+    .reverse();
 
   // Derive categories and counts dynamically
   const categoryCounts = posts.reduce((acc, post) => {

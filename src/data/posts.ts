@@ -6,6 +6,7 @@ export interface Post {
     date: string;
     readTime: string;
     category: string;
+    views?: number;
 }
 
 export const posts: Post[] = [
@@ -525,6 +526,7 @@ O primeiro aporte é mais importante que o maior aporte.
         title: "Mentalidade milionária: o que as pessoas ricas fazem diferente",
         excerpt: "Quando falamos em riqueza, muita gente pensa apenas em dinheiro. Mas antes do patrimônio, vem a mentalidade. Descubra os hábitos que constroem riqueza no longo prazo.",
         category: "Mentalidade",
+        views: 3842,
         date: "03 Mar 2026",
         readTime: "7 min de leitura",
         content: `
@@ -992,6 +994,7 @@ Escolha uma ideia, teste por algumas semanas e aprenda no processo. Muitas pesso
         title: 'Bitcoin: o que é, como funciona e por que tanta gente está investindo',
         excerpt: 'Nos últimos anos, o Bitcoin se tornou um dos assuntos mais comentados no mundo das finanças. Entenda de forma simples o que é e como funciona.',
         category: 'Criptomoedas',
+        views: 2915,
         date: '26 Fev 2026',
         readTime: '4 min de leitura',
         content: `
