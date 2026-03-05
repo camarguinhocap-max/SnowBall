@@ -1003,7 +1003,7 @@ Neste artigo, você vai entender tudo de forma simples.
 
 ### O que é o Bitcoin
 
-4
+![Bitcoin Realidade vs Digital](/images/bitcoin/btc-1.jpg)
 
 O Bitcoin é uma moeda digital criada em 2009 por uma pessoa (ou grupo) usando o pseudônimo Satoshi Nakamoto.
 
@@ -1013,7 +1013,7 @@ Isso significa que qualquer pessoa no mundo pode enviar ou receber Bitcoin sem p
 
 ### Como o Bitcoin funciona
 
-4
+![Tecnologia Blockchain e Bitcoin](/images/bitcoin/btc-2.png)
 
 O funcionamento do Bitcoin é baseado em tecnologia e criptografia.
 
@@ -1046,7 +1046,7 @@ Alguns investidores usam Bitcoin como alternativa a moedas tradicionais.
 
 ### Como comprar Bitcoin
 
-4
+![Mineração e Estrutura](/images/bitcoin/btc-3.jpg)
 
 Hoje é muito mais fácil comprar Bitcoin do que no passado.
 
