@@ -360,5 +360,16 @@ export const shopItems: ShopItem[] = [
         affiliateUrl: 'https://s.shopee.com.br/30j0Ke01u9',
         store: 'Shopee',
         category: 'Livros'
+    },
+    {
+        id: '36',
+        title: 'Tablet Lenovo Idea Tab Octa-Core (Caneta e Capa)',
+        description: 'Tablet de 11" 2.5K de alta resolução, 128GB e 4GB RAM. Acompanha Lenovo Tab Pen e Capa Folio. Perfeito para edição Canva, estudo e renda extra online.',
+        price: 'R$ 1.599,00',
+        imageUrl: 'https://m.media-amazon.com/images/I/61tVQTdW0nL._AC_SL1500_.jpg',
+        affiliateUrl: 'https://amzn.to/4rg2EkO',
+        store: 'Amazon',
+        category: 'Eletrônicos',
+        articleSlug: 'renda-extra-em-2026-15-ideias-reais-que-funcionam-no-brasil'
     }
 ];
