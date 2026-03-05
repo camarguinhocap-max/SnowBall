@@ -10,6 +10,56 @@ export function generateStaticParams() {
     }));
 }
 
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
+    const params = await props.params;
+    const post = posts.find((p) => p.slug === params.slug);
+
+    if (!post) {
+        return {
+            title: 'Artigo não encontrado | DividAI'
+        };
+    }
+
+    // Procura a primeira imagem do artigo (Markdown ![]()) para usar como capa do link
+    const imageMatch = post.content.match(/!\[.*?\]\((.*?)\)/);
+    let ogImage = 'https://blog.dividai.com/logo-squared.jpg'; // Imagem padrão de fallback
+
+    if (imageMatch) {
+        const url = imageMatch[1];
+        ogImage = url.startsWith('http') ? url : `https://blog.dividai.com${url.startsWith('/') ? '' : '/'}${url}`;
+    }
+
+    // Constrói o link absoluto
+    const url = `https://blog.dividai.com/post/${post.slug}`;
+
+    return {
+        title: `${post.title} | Blog DividAI`,
+        description: post.excerpt,
+        openGraph: {
+            title: post.title,
+            description: post.excerpt,
+            url: url,
+            siteName: 'Blog DividAI',
+            images: [
+                {
+                    url: ogImage,
+                    width: 1200,
+                    height: 630,
+                    alt: post.title,
+                },
+            ],
+            type: 'article',
+            publishedTime: post.date,
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: post.title,
+            description: post.excerpt,
+            images: [ogImage],
+        },
+    };
+}
+
 export default async function Post(props: { params: Promise<{ slug: string }> }) {
     const params = await props.params;
     const post = posts.find((p) => p.slug === params.slug);
