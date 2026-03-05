@@ -19,7 +19,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://m.media-amazon.com/images/I/71lORNHYWLL._AC_SY450_.jpg',
         affiliateUrl: 'https://amzn.to/4cZWzp5',
         store: 'Amazon',
-        category: 'Eletrônicos'
+        category: 'Eletrônicos',
+        articleSlug: 'educacao-financeira-para-iniciantes-o-guia-simples-que-ninguem-te-ensinou'
     },
     {
         id: '2',
@@ -29,7 +30,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://http2.mlstatic.com/D_Q_NP_2X_631924-MLU74994562986_032024-V.webp',
         affiliateUrl: 'https://meli.la/1VcCpVs',
         store: 'Mercado Livre',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
     },
     {
         id: '3',
@@ -39,7 +41,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://http2.mlstatic.com/D_Q_NP_2X_764756-MLA96570589252_112025-V.webp',
         affiliateUrl: 'https://meli.la/1p5MRgL',
         store: 'Mercado Livre',
-        category: 'Móveis'
+        category: 'Móveis',
+        articleSlug: 'como-sair-do-zero-e-fazer-seus-primeiros-1000-em-30-dias'
     },
     {
         id: '4',
@@ -49,7 +52,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://http2.mlstatic.com/D_Q_NP_2X_645553-MLU53737893378_022023-AB.webp',
         affiliateUrl: 'https://meli.la/1qiNgpu',
         store: 'Mercado Livre',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
     },
     {
         id: '5',
@@ -59,7 +63,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://http2.mlstatic.com/D_Q_NP_2X_653319-MLB81814566067_012025-AB.webp',
         affiliateUrl: 'https://meli.la/1yjzqhx',
         store: 'Mercado Livre',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'como-organizar-sua-vida-financeira-mesmo-ganhando-pouco'
     },
     {
         id: '6',
@@ -69,7 +74,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://http2.mlstatic.com/D_Q_NP_2X_725072-MLU78040547178_082024-AB.webp',
         affiliateUrl: 'https://meli.la/2NEehny',
         store: 'Mercado Livre',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
     },
     {
         id: '7',
@@ -79,7 +85,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://http2.mlstatic.com/D_Q_NP_2X_619525-MLA93494605423_092025-AB.webp',
         affiliateUrl: 'https://meli.la/2R9w1ca',
         store: 'Mercado Livre',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'como-organizar-sua-vida-financeira-mesmo-ganhando-pouco'
     },
     {
         id: '8',
@@ -89,7 +96,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://http2.mlstatic.com/D_Q_NP_2X_985212-MLA82741575770_032025-AB.webp',
         affiliateUrl: 'https://meli.la/2LjnSXP',
         store: 'Mercado Livre',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
     },
     {
         id: '9',
@@ -99,7 +107,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://http2.mlstatic.com/D_Q_NP_2X_728060-MLA99450310336_112025-AB.webp',
         affiliateUrl: 'https://meli.la/2GEzfJe',
         store: 'Mercado Livre',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
     },
     {
         id: '10',
@@ -109,7 +118,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://http2.mlstatic.com/D_Q_NP_2X_780459-MLB83042767080_032025-AB.webp',
         affiliateUrl: 'https://meli.la/1LUJh3m',
         store: 'Mercado Livre',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'educacao-financeira-para-iniciantes-o-guia-simples-que-ninguem-te-ensinou'
     },
     {
         id: '11',
@@ -119,7 +129,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://m.media-amazon.com/images/I/61K7fAOac9L._AC_SX679_.jpg',
         affiliateUrl: 'https://amzn.to/407Uwb9',
         store: 'Amazon',
-        category: 'Eletrônicos'
+        category: 'Eletrônicos',
+        articleSlug: 'cortar-gastos-que-nao-trazem-retorno-real'
     },
     {
         id: '12',
@@ -129,7 +140,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://m.media-amazon.com/images/I/51xUXDpOifL._AC_SX522_.jpg',
         affiliateUrl: 'https://amzn.to/4sKq6rN',
         store: 'Amazon',
-        category: 'Eletrônicos'
+        category: 'Eletrônicos',
+        articleSlug: 'renda-extra-em-2026-15-ideias-reais-que-funcionam-no-brasil'
     },
     {
         id: '13',
@@ -139,7 +151,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://m.media-amazon.com/images/I/41KOxRsuiiL._AC_SX679_.jpg',
         affiliateUrl: 'https://amzn.to/4bo54Jn',
         store: 'Amazon',
-        category: 'Eletrônicos'
+        category: 'Eletrônicos',
+        articleSlug: 'renda-extra-em-2026-15-ideias-reais-que-funcionam-no-brasil'
     },
     {
         id: '14',
@@ -149,7 +162,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://m.media-amazon.com/images/I/41uS5ZSX9yL._AC_SX679_.jpg',
         affiliateUrl: 'https://amzn.to/4d0sWUz',
         store: 'Amazon',
-        category: 'Eletrônicos'
+        category: 'Eletrônicos',
+        articleSlug: 'renda-extra-em-2026-15-ideias-reais-que-funcionam-no-brasil'
     },
     {
         id: '15',
@@ -159,7 +173,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://m.media-amazon.com/images/I/81-ljI2R4dL._AC_SX522_.jpg',
         affiliateUrl: 'https://amzn.to/40exzmz',
         store: 'Amazon',
-        category: 'Eletrônicos'
+        category: 'Eletrônicos',
+        articleSlug: 'cortar-gastos-que-nao-trazem-retorno-real'
     },
     {
         id: '16',
@@ -169,7 +184,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://m.media-amazon.com/images/I/616l6zgYapL._AC_SX522_.jpg',
         affiliateUrl: 'https://amzn.to/40aUak2',
         store: 'Amazon',
-        category: 'Eletrônicos'
+        category: 'Eletrônicos',
+        articleSlug: 'cortar-gastos-que-nao-trazem-retorno-real'
     },
     {
         id: '17',
@@ -179,7 +195,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://m.media-amazon.com/images/I/31x9m9ylrzL._AC_SX522_.jpg',
         affiliateUrl: 'https://amzn.to/3NfDmFy',
         store: 'Amazon',
-        category: 'Eletrônicos'
+        category: 'Eletrônicos',
+        articleSlug: 'como-organizar-sua-vida-financeira-mesmo-ganhando-pouco'
     },
     {
         id: '18',
@@ -189,7 +206,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://m.media-amazon.com/images/I/81-vCHKJb1L._AC_SY450_.jpg',
         affiliateUrl: 'https://amzn.to/4aQYlHV',
         store: 'Amazon',
-        category: 'Eletrônicos'
+        category: 'Eletrônicos',
+        articleSlug: 'educacao-financeira-para-iniciantes-o-guia-simples-que-ninguem-te-ensinou'
     },
     {
         id: '19',
@@ -199,7 +217,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://m.media-amazon.com/images/I/81R7B3TwIBL._AC_SX679_.jpg',
         affiliateUrl: 'https://amzn.to/3N4kid9',
         store: 'Amazon',
-        category: 'Eletrônicos'
+        category: 'Eletrônicos',
+        articleSlug: 'como-organizar-sua-vida-financeira-mesmo-ganhando-pouco'
     },
     {
         id: '20',
@@ -209,7 +228,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://m.media-amazon.com/images/I/81dbQUG-j3L._AC_SY450_.jpg',
         affiliateUrl: 'https://amzn.to/4rSiiUJ',
         store: 'Amazon',
-        category: 'Eletrônicos'
+        category: 'Eletrônicos',
+        articleSlug: 'educacao-financeira-para-iniciantes-o-guia-simples-que-ninguem-te-ensinou'
     },
     {
         id: '21',
@@ -219,7 +239,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-mds16ln774cx7e',
         affiliateUrl: 'https://s.shopee.com.br/4frEJXB7aT',
         store: 'Shopee',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
     },
     {
         id: '22',
@@ -229,7 +250,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/sg-11134201-824i2-mdvys1rnpj4419_tn',
         affiliateUrl: 'https://s.shopee.com.br/5AnUuS9DZa',
         store: 'Shopee',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'investimentos-para-iniciantes-onde-investir-com-pouco-dinheiro'
     },
     {
         id: '23',
@@ -239,7 +261,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-81z1k-mf18tgxllnnoc4',
         affiliateUrl: 'https://s.shopee.com.br/50U4i99quZ',
         store: 'Shopee',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'educacao-financeira-para-iniciantes-o-guia-simples-que-ninguem-te-ensinou'
     },
     {
         id: '24',
@@ -249,7 +272,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-m2mlc2v3fo5h65',
         affiliateUrl: 'https://s.shopee.com.br/4AuxicD1bQ',
         store: 'Shopee',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'educacao-financeira-para-iniciantes-o-guia-simples-que-ninguem-te-ensinou'
     },
     {
         id: '25',
@@ -259,7 +283,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/1b0382730db18c1249bbad04c352c637',
         affiliateUrl: 'https://s.shopee.com.br/40bXWJDewP',
         store: 'Shopee',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'investimentos-para-iniciantes-onde-investir-com-pouco-dinheiro'
     },
     {
         id: '26',
@@ -269,7 +294,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/br-11134201-22120-0uruwt2ljkkvb7_tn',
         affiliateUrl: 'https://s.shopee.com.br/6KzSIgBYX8',
         store: 'Shopee',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
     },
     {
         id: '27',
@@ -279,7 +305,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/c1a05d112db214760f2ad89bd6eafeaf',
         affiliateUrl: 'https://s.shopee.com.br/6VIsUzAvCB',
         store: 'Shopee',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'investimentos-para-iniciantes-onde-investir-com-pouco-dinheiro'
     },
     {
         id: '28',
@@ -359,7 +386,8 @@ export const shopItems: ShopItem[] = [
         imageUrl: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdmec8pzvlx5ea',
         affiliateUrl: 'https://s.shopee.com.br/30j0Ke01u9',
         store: 'Shopee',
-        category: 'Livros'
+        category: 'Livros',
+        articleSlug: 'investimentos-para-iniciantes-onde-investir-com-pouco-dinheiro'
     },
     {
         id: '36',
