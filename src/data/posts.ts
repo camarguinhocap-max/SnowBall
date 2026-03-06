@@ -1111,5 +1111,136 @@ Mesmo que você não invista, entender como ele funciona é importante para acom
 
 A revolução das criptomoedas já começou — e o Bitcoin foi o primeiro grande passo dessa transformação.
         `
+    },
+    {
+        slug: '100-porcento-cdi-vale-a-pena',
+        title: '100% do CDI vale a pena? Entenda de forma simples',
+        excerpt: 'Descubra o que significa render 100% do CDI, quando é uma boa opção de investimento e como funciona esse tipo de aplicação financeira.',
+        category: 'Investimentos',
+        date: '6 Mar 2026',
+        readTime: '5 min de leitura',
+        content: `
+Se você começou a pesquisar sobre investimentos no Brasil, provavelmente já encontrou ofertas como:
+
+"CDB que rende 100% do CDI"
+
+Mas afinal, o que isso significa? E será que realmente vale a pena investir nesse tipo de aplicação?
+
+Neste artigo, vamos explicar de forma simples o que é CDI, como funciona um investimento que rende 100% do CDI e quando ele pode ser uma boa escolha.
+
+### O que é o CDI
+
+O CDI (Certificado de Depósito Interbancário) é uma taxa usada pelos bancos para emprestar dinheiro entre si diariamente.
+
+Essa taxa acompanha de perto a Taxa Selic, que é definida pelo Banco Central.
+
+Por isso, quando você vê um investimento atrelado ao CDI, significa que o rendimento dele está ligado ao nível de juros da economia brasileira.
+
+### O que significa "render 100% do CDI"
+
+Quando um investimento rende 100% do CDI, significa que ele acompanha exatamente a variação dessa taxa.
+
+Por exemplo (valores ilustrativos):
+
+Se o CDI estiver em 10% ao ano, um investimento que paga 100% do CDI também renderá aproximadamente 10% ao ano antes de impostos.
+
+Alguns investimentos podem oferecer:
+
+* 90% do CDI
+* 100% do CDI
+* 110% do CDI
+* 120% do CDI
+
+Quanto maior o percentual, maior tende a ser o retorno.
+
+### Onde você encontra investimentos que pagam 100% do CDI
+
+Alguns produtos comuns que utilizam o CDI como referência são:
+
+**CDB (Certificado de Depósito Bancário)**
+
+Você empresta dinheiro para o banco e recebe juros em troca.
+
+**Contas digitais remuneradas**
+
+Algumas contas pagam rendimento automático baseado no CDI.
+
+**Fundos de renda fixa**
+
+Alguns fundos acompanham o CDI ou algo próximo disso.
+
+### Vantagens de investir em 100% do CDI
+
+**Segurança relativa**
+
+Muitos investimentos atrelados ao CDI são considerados de baixo risco.
+
+No caso de CDBs, existe a proteção do FGC (Fundo Garantidor de Créditos) até certos limites.
+
+**Rentabilidade melhor que a poupança**
+
+Historicamente, aplicações que rendem 100% do CDI costumam superar a poupança.
+
+**Simplicidade**
+
+É um investimento fácil de entender e acompanhar.
+
+**Boa opção para reserva de emergência**
+
+Quando tem liquidez diária, pode ser usado para guardar dinheiro que precisa estar disponível.
+
+### Mas existe imposto
+
+Investimentos de renda fixa normalmente pagam Imposto de Renda, que segue uma tabela regressiva:
+
+* 22,5% até 180 dias
+* 20% até 360 dias
+* 17,5% até 720 dias
+* 15% acima de 720 dias
+
+Quanto mais tempo você mantém o investimento, menor o imposto.
+
+### Quando 100% do CDI vale a pena
+
+Esse tipo de investimento é muito indicado para:
+
+✔ Iniciantes  
+✔ Reserva de emergência  
+✔ Quem busca segurança  
+✔ Objetivos de curto ou médio prazo  
+
+É uma base sólida dentro de uma carteira de investimentos.
+
+### Quando pode não ser o melhor investimento
+
+Para objetivos de longo prazo, outros investimentos podem oferecer maior potencial de retorno, como:
+
+* ações
+* fundos imobiliários
+* ETFs
+* investimentos internacionais
+
+Mas esses também envolvem mais risco.
+
+### Comparação simples
+
+De forma geral:
+
+**Poupança** → menor rendimento  
+**100% do CDI** → rendimento melhor e ainda conservador  
+**Renda variável** → potencial maior, mas com risco  
+
+Por isso muitos investidores usam aplicações atreladas ao CDI como primeiro passo no mundo dos investimentos.
+
+### Conclusão
+
+Investimentos que rendem 100% do CDI costumam ser uma boa opção para quem está começando ou quer manter parte do dinheiro em aplicações seguras.
+
+Eles oferecem equilíbrio entre segurança, liquidez e rendimento melhor que a poupança.
+
+Mas, com o tempo, pode ser interessante diversificar para outros tipos de investimento.
+
+O mais importante não é encontrar o investimento perfeito — é começar a investir e aprender ao longo do caminho.
+        `
     }
 ];
