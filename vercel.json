@@ -1,0 +1,25 @@
+{
+  "redirects": [
+    {
+      "source": "/shop",
+      "destination": "/",
+      "statusCode": 308
+    },
+    {
+      "source": "/shop/:path*",
+      "destination": "/",
+      "statusCode": 308
+    }
+  ],
+  "headers": [
+    {
+      "source": "/:path*",
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        }
+      ]
+    }
+  ]
+}
