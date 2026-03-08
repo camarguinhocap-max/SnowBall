@@ -7,9 +7,12 @@
 - [x] **Desabilitar aba Shop**: Ocultada do menu para aprovação (link comentado em `src/app/layout.tsx`).
 - [x] **Adicionar mais conteúdo**: +3 novos posts adicionados (orçamento, reserva de emergência, sair de dívidas). Total: 12 posts.
 - [x] **Corrigir vulnerabilidades de segurança**: Atualizado nodemailer para v8.0.1.
-- [x] **Deploy no Vercel**: Site online e em produção.
-- [ ] **Aguardar indexação do Google Search Console**: Monitorar até todas as 12 páginas de posts serem indexadas (prazo: 1-2 semanas).
-- [ ] **Reaplicar no AdSense**: Remover código antigo, inserir novo código do AdSense em página ativa, aguardar revisão (2-7 dias).
+- [x] **Deploy no Vercel**: Site online em produção em `dividai.com`.
+- [x] **Remover redirecionamentos**: Criado `vercel.json` e corrigido `metadataBase` para `https://dividai.com`.
+- [x] **Validar fix no Search Console**: Clicado em "VALIDATE FIX" para reavaliar as 3 páginas com redirect.
+- [ ] **Aguardar reprocessamento**: 24-48 horas para Google remover o status "Page with redirect" das 3 páginas.
+- [ ] **Aguardar indexação completa**: 1-2 semanas para todas as 11 páginas serem indexadas (status: "Discovered - currently not indexed").
+- [ ] **Reaplicar no AdSense**: Uma vez indexadas as 12 páginas, remover código antigo, inserir novo código do AdSense, e aguardar revisão (2-7 dias).
 - [ ] **Verificações finais**: PageSpeed, mobile-friendly, sem links quebrados.
 - [ ] **Reativar aba Shop**: Após aprovação do AdSense, descomente o link em `src/app/layout.tsx`.
 
