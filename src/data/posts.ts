@@ -1232,15 +1232,248 @@ De forma geral:
 
 Por isso muitos investidores usam aplicações atreladas ao CDI como primeiro passo no mundo dos investimentos.
 
+        `
+    },
+    {
+        slug: 'como-criar-um-orcamento-mensal-simples-e-eficaz',
+        title: 'Como criar um orçamento mensal simples e eficaz',
+        excerpt: 'Um orçamento mensal é a base de qualquer planejamento financeiro. Aprenda a criar um que funcione na prática, sem complicações, e transforme sua relação com o dinheiro.',
+        category: 'Finanças Pessoais',
+        date: '10 Mar 2026',
+        readTime: '6 min de leitura',
+        content: `
+Um orçamento mensal é a base de qualquer planejamento financeiro. Aprenda a criar um que funcione na prática, sem complicações, e transforme sua relação com o dinheiro.
+
+Muitos brasileiros evitam fazer orçamento porque acham que é chato ou difícil. Mas a verdade é que, com o método certo, é simples e poderoso. Neste guia, vou te mostrar passo a passo como criar um orçamento mensal que realmente funciona.
+
+### Por que um orçamento mensal é essencial?
+
+Sem um orçamento, você vive no "piloto automático" financeiro. O dinheiro entra e sai sem controle, e no fim do mês sobra frustração.
+
+Com um orçamento:
+
+* Você sabe exatamente para onde vai seu dinheiro
+* Reduz dívidas e gastos desnecessários
+* Atinge metas como comprar uma casa ou viajar
+* Dorme tranquilo sabendo que está no controle
+
+### Passo 1: Calcule sua renda total
+
+Antes de gastar, saiba quanto entra.
+
+Some:
+
+* Salário fixo
+* Rendas extras (freelance, aluguel, etc.)
+* Benefícios (auxílio, etc.)
+
+💡 **Dica:** Use o valor líquido (após impostos) para ser realista.
+
+### Passo 2: Liste todas as despesas fixas
+
+Essas são obrigatórias e não mudam muito:
+
+* Aluguel ou financiamento
+* Luz, água, internet
+* Alimentação básica
+* Transporte (ônibus, gasolina)
+* Saúde (plano, remédios)
+
+Categorize em "essenciais" e "não essenciais".
+
+### Passo 3: Adicione despesas variáveis
+
+Gastos que variam mês a mês:
+
+* Supermercado
+* Delivery e restaurantes
+* Entretenimento
+* Roupas e compras pessoais
+
+Anote por 1-2 meses para ver a média.
+
+### Passo 4: Aplique a regra 50/30/20
+
+* 50% para necessidades (moradia, comida, transporte)
+* 30% para desejos (cinema, hobbies, viagens)
+* 20% para futuro (poupança, investimentos)
+
+Ajuste conforme sua realidade — se ganha pouco, foque em 60/20/20.
+
+### Passo 5: Use ferramentas simples
+
+* Planilha Excel/Google Sheets gratuita
+* Apps como Mobills ou Organizze
+* Caderninho e caneta (para quem prefere analógico)
+
+### Passo 6: Revise e ajuste mensalmente
+
+No fim do mês, compare o planejado com o real. Pergunte:
+
+* Onde gastei mais?
+* Posso cortar algo?
+* Como melhorar?
+
+Ajuste para o próximo mês.
+
+### Erros comuns a evitar
+
+* Ser muito rígido (orçamento deve ser flexível)
+* Esquecer gastos pequenos (eles somam)
+* Não incluir emergência (tenha reserva)
+
 ### Conclusão
 
-Investimentos que rendem 100% do CDI costumam ser uma boa opção para quem está começando ou quer manter parte do dinheiro em aplicações seguras.
+Criar um orçamento mensal é como mapear uma viagem: você sabe de onde vem, para onde vai e como chegar. Comece hoje, mesmo que simples. Aos poucos, você verá seu dinheiro trabalhar para você.
 
-Eles oferecem equilíbrio entre segurança, liquidez e rendimento melhor que a poupança.
+        `
+    },
+    {
+        slug: 'reserva-de-emergencia-por-que-ter-e-como-criar-a-sua',
+        title: 'Reserva de emergência: por que ter e como criar a sua',
+        excerpt: 'Uma reserva de emergência é seu colchão financeiro. Saiba por que ela é crucial e como construir uma sem sacrificar seu estilo de vida atual.',
+        category: 'Finanças Pessoais',
+        date: '12 Mar 2026',
+        readTime: '5 min de leitura',
+        content: `
+Uma reserva de emergência é seu colchão financeiro. Saiba por que ela é crucial e como construir uma sem sacrificar seu estilo de vida atual.
 
-Mas, com o tempo, pode ser interessante diversificar para outros tipos de investimento.
+Imprevistos acontecem: perda de emprego, doença, conserto de carro. Sem reserva, você recorre a dívidas caras. Neste artigo, explico por que ter uma reserva é essencial e como criá-la passo a passo.
 
-O mais importante não é encontrar o investimento perfeito — é começar a investir e aprender ao longo do caminho.
+### Por que uma reserva de emergência é importante?
+
+* **Protege contra imprevistos:** Evita dívidas em momentos ruins.
+* **Dá paz de espírito:** Você dorme tranquilo sabendo que está seguro.
+* **Permite decisões melhores:** Pode trocar de emprego ou investir sem medo.
+* **É diferente de poupança:** Reserva é para emergências; poupança para metas.
+
+### Quanto guardar?
+
+Recomendação geral: 3-6 meses de despesas essenciais.
+
+* Para solteiros: 3 meses
+* Com família: 6 meses ou mais
+* Empreendedores: 6-12 meses (renda instável)
+
+Calcule: Some aluguel, comida, transporte, contas básicas. Multiplique por 3-6.
+
+### Onde guardar?
+
+* Conta poupança ou CDB de liquidez alta
+* Tesouro Selic (seguro e rentável)
+* Evite investimentos voláteis (ações) — precisa de acesso rápido
+
+### Como criar sua reserva
+
+#### Passo 1: Defina o valor alvo
+Calcule suas despesas mensais essenciais e multiplique.
+
+#### Passo 2: Corte gastos supérfluos
+* Café diário: economize R$ 50/semana
+* Streaming duplicado: cancele um
+* Compras por impulso: use "regra 24h"
+
+#### Passo 3: Automatize
+Configure débito automático para poupança todo mês (ex: 10-20% da renda).
+
+#### Passo 4: Comece pequeno
+Não precisa de R$ 10 mil de uma vez. Guarde R$ 100/mês — em 2 anos, tem reserva básica.
+
+#### Passo 5: Monitore e ajuste
+Revise anualmente. Se mudar de vida (casar, filhos), aumente a reserva.
+
+### Dicas extras
+
+* **Emergências reais:** Quebra de aparelho, médico, não férias.
+* **Não toque na reserva:** Só para emergências verdadeiras.
+* **Invista o excedente:** Após a reserva, invista o resto.
+* **Para quem ganha pouco:** Foque em 1 mês primeiro, depois aumente.
+
+### Conclusão
+
+Uma reserva de emergência não é luxo — é necessidade básica. Comece hoje, mesmo com pouco. É o primeiro passo para liberdade financeira.
+
+        `
+    },
+    {
+        slug: 'como-sair-das-dividas-de-uma-vez-por-todas',
+        title: 'Como sair das dívidas de uma vez por todas',
+        excerpt: 'Dívidas sufocam sua liberdade financeira. Aprenda estratégias comprovadas para quitá-las rapidamente e reconstruir seu patrimônio.',
+        category: 'Finanças Pessoais',
+        date: '14 Mar 2026',
+        readTime: '7 min de leitura',
+        content: `
+Dívidas sufocam sua liberdade financeira. Aprenda estratégias comprovadas para quitá-las rapidamente e reconstruir seu patrimônio.
+
+Segundo dados do Serasa, milhões de brasileiros estão endividados. Cartão de crédito, empréstimos, cheque especial — as dívidas crescem como bola de neve. Mas é possível sair delas. Neste guia, mostro como.
+
+### Por que as dívidas são perigosas?
+
+* **Juros altos:** Cartão cobra 10-15% ao mês; empréstimo pessoal, 5-8%.
+* **Ciclo vicioso:** Paga mínimo, dívida cresce.
+* **Estresse:** Afeta saúde mental e relacionamentos.
+* **Limita oportunidades:** Dificulta comprar casa ou investir.
+
+### Passo 1: Faça um diagnóstico completo
+
+Liste todas as dívidas:
+
+* Valor total
+* Juros mensais
+* Prazo restante
+
+Use planilha ou app. Some tudo — esse é o "inimigo" a derrotar.
+
+### Passo 2: Pare de criar novas dívidas
+
+* Corte o cartão de crédito (guarde no congelador se necessário)
+* Evite compras parceladas
+* Use dinheiro vivo para compras pequenas
+
+### Passo 3: Organize as dívidas por prioridade
+
+Use método "bola de neve" ou "avalanche":
+
+* **Bola de neve:** Quite primeiro as menores (motivação rápida)
+* **Avalanche:** Quite as de juros mais altos primeiro (economia maior)
+
+Exemplo: Dívida A (R$ 1.000, 5% juros) vs. Dívida B (R$ 5.000, 10% juros) — quite B primeiro.
+
+### Passo 4: Negocie com credores
+
+* Ligue para bancos/cartões
+* Peça redução de juros ou pausa
+* Mostre boa-fé (pagamentos em dia)
+
+### Passo 5: Aumente sua renda
+
+* Trabalhe extra (freelance, Uber)
+* Venda itens não usados
+* Corte gastos para liberar dinheiro
+
+### Passo 6: Crie um plano de pagamento
+
+* Pague mínimo em todas
+* Sobrando, jogue na dívida prioritária
+* Automatize pagamentos
+
+### Estratégias avançadas
+
+* **Consolidação:** Junte dívidas em empréstimo único com juros menores.
+* **Empréstimo pessoal:** Para quitar cartão (cuidado com juros).
+* **Programa de renegociação:** Serasa/Creditas ajudam.
+
+### Evite armadilhas
+
+* Empréstimos "fáceis" (juros escondidos)
+* Parcelar tudo (aumenta dívida)
+* Desanimar no meio do caminho
+
+### Conclusão
+
+Sair das dívidas exige disciplina, mas é possível. Comece pequeno: liste tudo hoje, corte gastos amanhã. Em 6-12 meses, você verá progresso.
+
+Lembre-se: liberdade financeira começa com zero dívidas. Você consegue!
         `
     }
 ];
