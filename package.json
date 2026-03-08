@@ -11,15 +11,16 @@
     "jimp": "^1.6.0",
     "lucide-react": "^0.577.0",
     "next": "16.1.6",
+    "nodemailer": "^8.0.1",
     "pg": "^8.19.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-markdown": "^10.1.0",
-    "rss": "^1.2.2",
-    "nodemailer": "^6.9.4"
+    "rss": "^1.2.2"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/nodemailer": "^7.0.11",
     "@types/pg": "^8.18.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
