@@ -1473,7 +1473,407 @@ Exemplo: Dívida A (R$ 1.000, 5% juros) vs. Dívida B (R$ 5.000, 10% juros) — 
 
 Sair das dívidas exige disciplina, mas é possível. Comece pequeno: liste tudo hoje, corte gastos amanhã. Em 6-12 meses, você verá progresso.
 
-Lembre-se: liberdade financeira começa com zero dívidas. Você consegue!
+        `
+    },
+    {
+        slug: 'imposto-de-renda-guia-simples-para-brasileiros',
+        title: 'Imposto de Renda: guia simples para brasileiros',
+        excerpt: 'Imposto de Renda assusta muita gente. Mas é simples: aprenda o básico, saiba o que declarar, e evite multas e problemas com a Receita Federal.',
+        category: 'Impostos e Legislação',
+        date: '7 Mar 2026',
+        readTime: '8 min de leitura',
+        content: `
+Imposto de Renda assusta muita gente. Mas é simples: aprenda o básico, saiba o que declarar, e evite multas e problemas com a Receita Federal.
+
+Todo ano, milhões de brasileiros tremble na época do IRPF. Mas a verdade é que, com método, fica fácil. Neste guia, explico tudo de forma clara.
+
+### Quem é obrigado a declarar?
+
+Você DEVE declarar se:
+
+* Ganhou acima de R$ 28.559,70 em 2025 (renda anual)
+* Tem bens (carro, imóvel, ações) acima de R$ 300 mil
+* Fez operações na bolsa
+* Trabalha como autônomo ou PJ
+* Teve rendimentos de aluguel
+
+Resumo: Na dúvida, declare. Melhor pecar por excesso que por falta.
+
+### O que você precisa reunir
+
+Antes de declarar, organize:
+
+* Recibos (RPA, contracheques)
+* Comprovante de gastos médicos/educação
+* Recibos de doação
+* Extratos bancários (se tiver saldo alto)
+* Documentos de bens (nota fiscal, IPVA, etc.)
+
+### Deduções que você pode fazer
+
+Isso reduz o valor de impostos:
+
+* **Educação:** Até R$ 5 mil por dependente em escola/faculdade
+* **Saúde:** Despesas médicas, odontológicas, psicológicas (sem limite)
+* **Previdência Privada:** Até 12% da renda (modalidade PGBL)
+* **Contribuição à Previdência Social:** Se é autônomo ou PJ
+
+### Diferença entre Imposto Retido e Imposto a Pagar
+
+* **Retido:** O patrão já descontou na folha todo mês
+* **A pagar:** Você deve pagar quando declara (se ganhou extras ou tem outras rendas)
+
+Se declarar e tiver retido mais que deve = **RESTITUIÇÃO** (dinheiro volta para você!)
+
+### Passo a passo para declarar
+
+1. **Baixe o programa:** Acesse o site da Receita Federal e baixe o programa da DIRPF (gratuito)
+2. **Comece a preencher:** Dados pessoais, rendimentos, deduções
+3. **Valide:** O programa checa erros automaticamente
+4. **Envie:** Transmita antes da data limite
+5. **Guarde comprovante:** Você recebe um número de recepção
+
+### Erros comuns a evitar
+
+* Esquecer de declarar renda extra
+* Não guardar comprovantes (pode ser pedido)
+* Declarar contas conjuntas com outra pessoa
+* Pensar que "ninguém descobre" (a Receita cruza dados)
+* Deixar para última hora (sistema fica lento)
+
+### O que acontece se não declarar?
+
+* Multa de 50% a 150% do imposto devido
+* Bloqueio no banco
+* Impossibilidade de obter empréstimo
+* Atrasos para viagens ou processos legais
+
+**Não vale a pena!**
+
+### Dica de ouro
+
+Se você é empregado CLT e só tem renda de salário, muitas vezes nem vai pagar IR (apenas terá restituição). Mesmo assim, declare — é seu direito!
+
+Para cálculos mais complexos (investimentos, aluguel), considere contratar um contador (entre R$ 200-500, sai barato).
+
+### Conclusão
+
+Imposto de Renda é obrigação, mas também é direito seu. Declare corretamente, aproveite as deduções e, se tiver diferença para receber, use para investir ou guardar.
+
+Lembre-se: A Receita Federal não quer te prejudicar — quer que você declare direto!
+        `
+    },
+    {
+        slug: 'como-negociar-seu-salario-e-conseguir-um-aumento',
+        title: 'Como negociar seu salário e conseguir um aumento',
+        excerpt: 'Negociar salário é uma habilidade. Aprenda a se valorizar, apresentar uma proposta sólida e conquistar o aumento que você merece.',
+        category: 'Carreira',
+        date: '8 Mar 2026',
+        readTime: '7 min de leitura',
+        content: `
+Negociar salário é uma habilidade. Aprenda a se valorizar, apresentar uma proposta sólida e conquistar o aumento que você merece.
+
+Muitas pessoas acham que salário é "toma ou deixa". Errado! Tudo é negociável. Neste guia, você vai aprender como conversar com seu chefe e sair ganhando.
+
+### Por que as pessoas NÃO negociam salário?
+
+* Medo de ser demitido
+* Acham que não merecem
+* Não sabem como pedir
+* Acham que é indelicado
+
+Tudo mito! Empresas ESPERAM que você negocie. É assim que funciona o mercado.
+
+### Antes de negociar: Prepare-se
+
+#### 1. Pesquise o mercado
+
+* Quanto ganham profissionais com seu cargo em sua região?
+* Use sites: Glassdoor, LinkedIn Salary, Vagas.com.br
+* Considere: experiência, competências, localização
+
+#### 2. Documente suas conquistas
+
+Nos últimos 6-12 meses, o que você fez?
+
+* Projetos entregues no prazo
+* Metas atingidas ou superadas
+* Novas habilidades adquiridas
+* Economia para a empresa
+* Liderança de times ou processos
+
+**Tenha números!** Exemplo: "Aumentei produtividade em 20%" é melhor que "trabalhei bastante".
+
+#### 3. Calcule seu valor
+
+Considere:
+* Seu salário atual
+* Pesquisa de mercado
+* Sua performance
+* Benefícios adicionais que pede
+
+**Número realista:** 10-20% acima do salário atual (é o padrão).
+
+### O Momento Certo
+
+**MELHOR época para pedir aumento:**
+
+* Após atingir uma meta importante
+* Na revisão anual de salários
+* Após 6-12 meses sem reajuste
+* Quando você consegue uma oportunidade em outro lugar (leverage)
+
+**EVITE:**
+
+* Logo após a empresa ter prejuízos
+* Logo depois de você ter cometido erro
+* Segunda-feira de manhã (ninguém está de bom humor)
+* Por email (conversa presencial é melhor)
+
+### Como fazer a conversa
+
+#### Passo 1: Agende uma reunião
+
+"Gerente, podemos marcar uma conversa particular sobre meu desenvolvimento/salário? Tenho coisas importantes para discutir."
+
+#### Passo 2: Abra com reconhecimento
+
+"Gosto de trabalhar aqui e agradeço as oportunidades que recebi."
+
+#### Passo 3: Apresente seus resultados
+
+"Nos últimos 12 meses, fiz X, Y, Z. Também adquiri novas habilidades em..."
+
+#### Passo 4: Faça o pedido
+
+"Com base no meu desempenho e na pesquisa de mercado, gostaria de um aumento para R$ XXXX (ou aumento de XX%)."
+
+#### Passo 5: Espere a resposta
+
+Não fale mais! Deixe o gerente responder. Silêncio é ouro na negociação.
+
+### Respostas prováveis
+
+**"Não posso agora"**
+→ Pergunte: "Quando podemos rever isso?" e peça por escrito que você merece aumento.
+
+**"A empresa está com dificuldades"**
+→ Responda: "Entendo. Que tal a gente rever em 3 meses?" Sempre deixe a porta aberta.
+
+**"Seu trabalho é bom, mas..."**
+→ Identifique o "mas" e trabalhe. Às vezes, falta algo (liderança, técnica, etc.).
+
+**"Sim!"**
+→ Maravilha! Peça por escrito (novo contrato com novo salário).
+
+### Alternativas se disserem "não"
+
+Se a empresa não der aumento, peça:
+
+* Home office mais dias
+* Trabalho flexível
+* Cursos pagos pela empresa
+* Bônus no final do ano
+* Mais férias
+
+Tudo soma!
+
+### Se continuar recusando...
+
+Considere:
+
+* Procurar outro emprego
+* Trabalhar como autônomo/freelancer
+* Tentar startup/empresa que pague melhor
+
+Sua carreira é seu negócio. Se não é rentável, mude.
+
+### Dicas de ouro
+
+* **Confiance:** Fale com firmeza, sem agressividade
+* **Dados:** Sempre com números e provas
+* **Timing:** Escolha bem o momento
+* **Alternativas:** Se não é dinheiro, peça algo equivalente
+* **Documentação:** Tudo por escrito depois (email confirmando)
+
+### Conclusão
+
+Você merece ser pago pelo seu valor! Negociar não é pedir esmola — é reconhecer o que você traz para a empresa.
+
+Comece pequeno se tiver medo. Pratique a conversa com alguém. E lembre-se: pior que ouvir "não" é nunca perguntar.
+
+Boa sorte! 💪
+        `
+    },
+    {
+        slug: 'gastos-invisíveis-como-identificar-e-cortar',
+        title: 'Gastos invisíveis: como identificar e cortar',
+        excerpt: 'Aquele café, a assinatura esquecida, o delivery "só dessa vez". Os gastos invisíveis são o maior ladrão de dinheiro. Saiba identificá-los e cortá-los.',
+        category: 'Finanças Pessoais',
+        date: '9 Mar 2026',
+        readTime: '6 min de leitura',
+        content: `
+Aquele café, a assinatura esquecida, o delivery "só dessa vez". Os gastos invisíveis são o maior ladrão de dinheiro. Saiba identificá-los e cortá-los.
+
+Você já parou para pensar por que o dinheiro "some" no final do mês? Aposto que não foram os grandes gastos (aluguel, carro, etc.). Foram os pequenos gastos que não vemos. Neste artigo, revelo como identificá-los e cortar.
+
+### O que são gastos invisíveis?
+
+São gastos que você faz, mas não percebe porque:
+
+* São pequenos (R$ 5 a R$ 50)
+* Deixam pouca memória
+* Viram hábitos automáticos
+* Somam ao longo do mês
+
+**Exemplo:** R$ 10/dia em café = R$ 300/mês = R$ 3.600/ano
+
+**Que é isso?!**
+
+### Os TOP 10 gastos invisíveis
+
+#### 1. Café/lanches fora de casa (R$ 200-400/mês)
+* Café da manhã no caminho
+* Lanche na tarde
+* Água/refrigerante na rua
+
+**Solução:** Leve café e lanche de casa. Économiza R$ 2.4 mil/ano.
+
+#### 2. Assinaturas esquecidas (R$ 50-150/mês)
+* Netflix, Spotify, Disney+, Prime Video
+* App de academia que não usa
+* Cursos online que começou e parou
+
+**Solução:** Revise suas assinaturas mensalmente. Cancele o que não usa.
+
+#### 3. Delivery de comida (R$ 100-300/mês)
+* "Não quero cozinhar hoje"
+* Pedir no trabalho
+* Fim de semana "relaxar"
+
+**Solução:** Cozinhe marmitas nos domingos. Saia de casa com comida. Économiza R$ 2-3 mil/ano.
+
+#### 4. Impulso online (R$ 50-200/mês)
+* Compra "sem pensar" na App
+* "Super desconto" que viu no Instagram
+* Promoção do Shopee/Amazon
+
+**Solução:** Regra 24h — se quer comprar, espere um dia. 90% das vezes você muda de ideia.
+
+#### 5. Transporte extra (R$ 30-100/mês)
+* Uber em vez de ônibus
+* Carro compartilhado quando poderia caminhar
+* 2-3 Ubers por semana no fim de semana
+
+**Solução:** Use transporte público ou vagas de ônibus. Resguarde Uber para emergências.
+
+#### 6. Cigarro (R$ 200-400/mês)
+* Maior gasto invisível para fumantes
+* R$ 30/maço × 3 cigarros/semana = R$ 360/mês
+
+**Solução:** Parar de fumar economiza + melhora saúde. Win-win.
+
+#### 7. Streaming de músicas (R$ 15-40/mês)
+* Spotify, Apple Music, etc.
+
+**Solução:** Use versão gratuita ou assine apenas uma plataforma (compartilhe com amigos).
+
+#### 8. Jogo/Play (R$ 20-100/mês)
+* Compras dentro de jogos (skins, passes)
+* Subscriptions de jogar online
+
+**Solução:** Reduza para um jogo por mês ou gratuitamente.
+
+#### 9. Revistas/ebooks (R$ 20-50/mês)
+* Kindle Unlimited
+* Medium
+* Revistas digitais
+
+**Solução:** Use biblioteca pública (empréstimos gratuitos).
+
+#### 10. Transações bancárias (R$ 10-30/mês)
+* "Taxinha" de conta
+* Transferência DOC/TED
+* Crédito de boleto
+
+**Solução:** Mude para banco digital (sem taxas).
+
+### Como identificar seus gastos invisíveis
+
+#### 1. Audite 30 dias
+
+Você tem um aplicativo de finanças? Olhe CADA transação dos últimos 30 dias. Procure por:
+
+* Transações menores que R$ 50
+* Transações recorrentes
+* Empresas que você esqueceu
+
+#### 2. Papel
+
+Se não usa app, pegue extratos dos últimos 3 meses. Analise:
+
+* Qual é o padrão?
+* Qual foi o mês com mais gastos "pequenos"?
+
+#### 3. Confesse
+
+Pergunte a si mesmo:
+
+* "Comprei algo que não lembro?"
+* "Tem assinatura que não estou usando?"
+* "Há hábito que não deveria?"
+
+### Estratégia para cortar
+
+#### Passo 1: Priorizaçãoe
+
+Não corte tudo de uma vez (você enlouquece). Foque nos **Top 3** maiores gastos invisíveis para VOCÊ.
+
+Exemplo:
+* Delivery: corta pela metade
+* Assinaturas: cancela 2 de 3
+* Uber: reduz para 1x por semana
+
+#### Passo 2: Automatize
+
+Crie "freios" automáticos:
+
+* Deixe cartão de débito em casa (use dinheiro só)
+* Delete aplicativos de compra do celular
+* Pague assinaturas com boleto (causa mais "fricção")
+
+#### Passo 3: Substitua
+
+Em vez de cortar frio, substitua:
+
+* Café fora → Café em casa (quality time)
+* Delivery → Marmita de domingo
+* Uber constantemente → Jogo do carpooling com colegas
+
+#### Passo 4: Monitore
+
+Toda semana, revise pequenos gastos. Pergunte:
+
+* "Isso alinha com meus valores?"
+* "Realmente precisava?"
+
+### Quanto você pode economizar?
+
+Se média de gastos invisíveis é R$ 300/mês, cortando 50%:
+
+* **R$ 150/mês**
+* = **R$ 1.800/ano**
+* = **Possibilidade de investir, viajar, comprar algo maior**
+
+### Conclusão
+
+Os gastos invisíveis não são "vilões" — são sinais de que você precisa de mais consciência.
+
+Não é sobre ser miserável. É sobre escolher consciente. Você pode tomar café fora, mas nem todo dia. Pode fazer pedido, mas nem 3x por semana.
+
+O segredo? **Intencionalidade.** Sempre que gastar, pergunte: "Eu realmente quero isso?"
+
+Essa simples pergunta pode economizar milhares por ano! 💰
         `
     }
 ];
