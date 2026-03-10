@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { posts } from '@/data/posts';
 import { shopItems } from '@/data/shop';
+import { getVisiblePosts } from '@/lib/posts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://blog.dividai.com';
@@ -28,7 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ];
 
     // Dynamic routes for blog posts
-    const postRoutes = posts.map((post) => ({
+    const visible = getVisiblePosts();
+    const postRoutes = visible.map((post) => ({
         url: `${baseUrl}/post/${post.slug}`,
         lastModified: new Date(), // Idealmente viria de post.updatedAt, usaremos a data atual na renderização
         changeFrequency: 'weekly' as const,

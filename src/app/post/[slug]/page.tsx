@@ -1,14 +1,25 @@
 import { posts } from "@/data/posts";
 import { notFound } from "next/navigation";
+import { parsePostDate } from "@/lib/posts";
 import ReactMarkdown from "react-markdown";
 import ImageWithModal from "@/components/ImageWithModal";
 import ShareButtons from "@/components/ShareButtons";
 
-export function generateStaticParams() {
-    return posts.map((post) => ({
-        slug: post.slug,
-    }));
-}
+// Não geramos params estáticos para que o servidor possa
+// lidar com posts futuros dinamicamente. A própria lógica de
+// `isPublished` no componente retornará 404 para datas que
+// ainda não chegaram, mas assim que o dia mudar a página
+// estará disponível sem necessidade de rebuild.
+
+export const dynamic = 'force-dynamic';
+
+// export function generateStaticParams() {
+//     // só gerar rotas para os artigos já publicados
+//     const visible = getVisiblePosts();
+//     return visible.map((post) => ({
+//         slug: post.slug,
+//     }));
+// }
 
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
     const params = await props.params;
@@ -42,11 +53,21 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     };
 }
 
+// Regenera cada 24h para que posts com data atingida possam ser disponibilizados sem redeploy.
+export const revalidate = 86400;
+
 export default async function Post(props: { params: Promise<{ slug: string }> }) {
     const params = await props.params;
     const post = posts.find((p) => p.slug === params.slug);
 
     if (!post) {
+        notFound();
+    }
+
+    // se existe mas ainda não atingiu a data, 404 também
+    const postDate = parsePostDate(post.date);
+    const today = new Date();
+    if (postDate.setHours(0,0,0,0) > today.setHours(0,0,0,0)) {
         notFound();
     }
 

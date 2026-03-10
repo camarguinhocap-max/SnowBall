@@ -1,5 +1,6 @@
 import { posts } from '@/data/posts';
 import RSS from 'rss';
+import { getVisiblePosts, sortByDate } from '@/lib/posts';
 
 export async function GET() {
     const feed = new RSS({
@@ -12,8 +13,8 @@ export async function GET() {
         pubDate: new Date().toUTCString(),
     });
 
-    // Sort posts to ensure chronological order (newest first, if not already sorted that way in data source - currently the page.tsx reverses it)
-    const feedPosts = [...posts].reverse();
+    // Apenas posts publicados
+    const feedPosts = sortByDate(getVisiblePosts());
 
     feedPosts.forEach((post) => {
         feed.item({

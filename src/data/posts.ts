@@ -1875,5 +1875,185 @@ O segredo? **Intencionalidade.** Sempre que gastar, pergunte: "Eu realmente quer
 
 Essa simples pergunta pode economizar milhares por ano! 💰
         `
+    },
+    {
+        slug: '5-habitos-financeiros-que-transformam-sua-vida',
+        title: '5 hábitos financeiros que transformam sua vida',
+        excerpt: 'Pequenas mudanças nos hábitos diários podem parecer insignificantes, mas juntas elas têm poder de mudar completamente sua relação com o dinheiro.',
+        category: 'Finanças Pessoais',
+        date: '11 Mar 2026',
+        readTime: '5 min de leitura',
+        content: `
+Você quer melhorar sua relação com o dinheiro mas não sabe por onde começar? A chave não está em ganhar mais, está em agir diferente todos os dias. Aqui estão cinco hábitos que, quando adotados, criam uma base sólida para qualquer objetivo financeiro.
+
+### 1. Anote tudo o que gasta
+Toda compra, por menor que seja, conta. Durante uma semana, registre no celular ou caderninho cada real que sai. Isso aumenta sua consciência e revela despesas invisíveis.
+
+### 2. Reveja contas mensalmente
+Reserve 30 minutos por mês para abrir extratos de cartão, contas de luz, telefone, streaming e ver se não há cobranças indevidas ou gastos que podem ser cortados.
+
+### 3. Use uma regra de porcentagem
+Separe uma porcentagem fixa da renda para objetivos (ex: 10% para reserva, 20% para investimentos). A disciplina de dividir o bolo antes de gastar evita o “não sobrou nada”.
+
+### 4. Consuma conteúdo educativo todo dia
+Leia um artigo curto, escute um podcast ou assista a um vídeo sobre finanças. Pequenas doses de conhecimento acumulam e mudam sua mentalidade.
+
+### 5. Revise suas metas trimestralmente
+Metas precisam ser vivas. A cada três meses, cheque se o plano ainda faz sentido e ajuste valores ou prazos. Isso mantém você no caminho certo.
+
+### Conclusão
+Hábitos não são glamour; são rotina. Mas são o que separa quem deseja de quem realiza. Comece com um e, quando ele estiver firme, adicione o próximo. Em poucos meses, você vai olhar para trás e perguntar como viveu sem esses cinco princípios.
+        `
+    },
+    {
+        slug: 'guia-rapido-investimentos-iniciantes-2026',
+        title: 'Guia rápido de investimentos para iniciantes em 2026',
+        excerpt: 'Investir não precisa ser complicado. Este guia prático mostra onde colocar seu dinheiro em 2026 sem se perder em siglas e gráficos.',
+        category: 'Investimentos',
+        date: '12 Mar 2026',
+        readTime: '6 min de leitura',
+        content: `
+Se você está começando a investir agora, provavelmente já se assustou com CDB, LCI, Tesouro, ações, criptomoedas... respire. O objetivo deste guia é simplificar e dar passos claros para que até quem nunca ouvira falar em “renda fixa” consiga abrir conta e aplicar com segurança.
+
+### 1. Monte uma reserva de emergência primeiro
+Antes de qualquer aplicação, tenha pelo menos 3 meses de despesas guardados em algo com liquidez, como Tesouro Selic ou CDB com liquidez diária. Isso impede que você resgate no momento errado.
+
+### 2. Entenda seu perfil
+Você tolera oscilações? Tem prazo para o dinheiro (casa, carro, aposentadoria)? Perfil conservador, moderado ou agressivo definirá o mix de ativos.
+
+### 3. Comece pela renda fixa
+* **Tesouro Direto**: fácil de comprar pela internet, boa para prazos maiores.
+* **CDB de bancos médios**: rendem um pouco mais que os grandes em troca de maior risco.
+* **LCI/LCA**: isentas de imposto, ótimas para quem não precisa resgatar em curto prazo.
+
+### 4. Adicione um pouco de variável
+Para quem tem horizonte a partir de 5 anos, uma pequena parcela (10‑20%) em ações ou ETFs pode aumentar ganhos. Prefira fundos ou corretoras que ofereçam boas taxas e educação.
+
+### 5. Evite “modinhas” sem entender
+Cripto? NFTs? Invisível para iniciantes. Foque no que você compreende. No futuro pode estudar outras classes quando já tiver disciplina montada.
+
+### Conclusão
+Investir é um hábito, não um pulo alto. Comece pequeno, faça aportes regulares e revise anualmente. A melhor aplicação do iniciante é a consistência.
+        `
+    },
+    {
+        slug: 'como-negociar-dividas-e-sair-do-vermelho',
+        title: 'Como negociar dívidas e sair do vermelho',
+        excerpt: 'Estar endividado não é vergonha; o pior é fingir que está tudo bem. Este passo a passo mostra como encarar a situação, negociar com credores e retomar o controle.',
+        category: 'Dívidas',
+        date: '13 Mar 2026',
+        readTime: '7 min de leitura',
+        content: `
+Dívida cresce rápido, principalmente com juros do cartão e cheque especial. Negociar dá trabalho, mas é o caminho mais rápido para respirar financeiramente. Veja como fazer sem drama.
+
+### 1. Liste todas as dívidas
+Cartões, empréstimos, carnês, boletos atrasados. Anote saldo devedor, juros e parcelamento. Só assim você sabe o tamanho do problema.
+
+### 2. Pare de usar o crédito
+Tranque o cartão, saque o limite ou descarte-o temporariamente. Não faz sentido combinar negociação com gasto novo.
+
+### 3. Priorize pelos juros mais altos
+Comece pagando aquilo que corrói mais rápido: cartão e cheque especial. Depois sim, busque acordo nos demais.
+
+### 4. Entre em contato com credores
+Não espere chamada; telefone, e‑mail ou chat. Muitos bancos e lojas oferecem descontos de até 70% para pagamento à vista. Se não der à vista, peça uma repactuação em parcelas que caibam no seu orçamento.
+
+### 5. Registre acordos por escrito
+Se for negociar no balcão ou por e‑mail, guarde comprovantes. No futuro, serve como prova em caso de erro.
+
+### 6. Monte um plano de amortização
+Coloque no papel: qual parcela cabe hoje? Quanto você economiza cortando gastos? Use o valor liberado para liquidar outras dívidas ou, melhor, investir.
+
+### Conclusão
+Negociar dívida é como fazer dieta: exige disciplina e sacrifício momentâneo, mas melhora sua saúde financeira. Cada acordo cumprido aumenta sua confiança para, finalmente, virar o jogo de vez.
+        `
+    },
+    {
+        slug: 'planeje-sua-viagem-sem-estourar-orcamento',
+        title: 'Planeje sua viagem sem estourar o orçamento',
+        excerpt: 'Viajar é uma das maiores senções de liberdade — mas não precisa se transformar em aperto financeiro. Aprenda a montar um plano que cabe no bolso.',
+        category: 'Planejamento',
+        date: '14 Mar 2026',
+        readTime: '6 min de leitura',
+        content: `
+Sonho com passagem comprada e malas feitas? Espera aí. A conta pode vir com juros se você não se planejar. Veja como viajar leve e retornar tranquilo.
+
+### 1. Determine seu orçamento total
+Quanto você pode gastar sem comprometer outras metas? Inclua transporte, hospedagem, alimentação, passeios e um extra para imprevistos (10‑15%).
+
+### 2. Escolha o destino com base no bolso
+Nem todo lugar precisa ser caro. Compare custos de alimentação e hospedagem antes de decidir. Às vezes um destino nacional barato sai mais em conta do que um destino internacional com promoção.
+
+### 3. Poupe em partes
+Abra uma conta ou cofrinho para essa viagem. Defina público alvo semanal e acompanhe o progresso. Pode ser 10% do salário ou um valor fixo que não sacrifique demais.
+
+### 4. Use ferramentas a seu favor
+Sites de busca, alertas de passagens, milhas, cashback e apps de comparação ajudam a achar as melhores ofertas. Custo zero para você; basta tempo investido.
+
+### 5. Corte gastos temporariamente
+Reduza delivery e cinema por alguns meses para redirecionar dinheiro para a viagem. Sacrifícios temporários tornam o passeio possível sem endividar.
+
+### Conclusão
+Uma viagem planejada é duas vezes mais gostosa: a expectativa já faz parte da diversão, e você volta com boas lembranças *e* a conta em dia. Planejamento é o grande diferencial entre férias sensatas e pesadelo financeiro.
+        `
+    },
+    {
+        slug: '10-ideias-simples-para-ganhar-dinheiro-no-fim-de-semana',
+        title: '10 ideias simples para ganhar dinheiro no fim de semana',
+        excerpt: 'O fim de semana tem 48 horas, muitas pessoas estão ociosas e você pode transformar esse tempo em dinheiro extra com ações práticas e de baixo investimento.',
+        category: 'Renda Extra',
+        date: '15 Mar 2026',
+        readTime: '5 min de leitura',
+        content: `
+Precisa daquela graninha extra? Não espere pelo mês que vem. Com criatividade e disposição, dá para faturar algo já com o próximo fim de semana. Aqui vão dez sugestões para começar agora mesmo.
+
+1. Fazer artes para redes sociais de pequenos comércios
+2. Preparar marmitas saudáveis por encomenda
+3. Dar aulas ou reforço online (idioma, música, matemática)
+4. Vender coisas usadas no OLX ou Mercado Livre
+5. Cortar grama e cuidar de jardins no bairro
+6. Oferecer passeios de pets ou pet sitter
+7. Montar kits de presentes artesanais (velas, sabonetes)
+8. Prestar serviços de logística/entrega para lojas locais
+9. Trading de afiliados nas suas próprias redes sociais
+10. Cobrar por digitação/transcrição/legenda de vídeos
+
+💡 **Dica extra:** calcule quanto tempo você tem e defina meta diária. 5 horas por dia com ganho médio de R$30/h já resulta em R$300 no fim de semana.
+
+### Conclusão
+Não existe fórmula mágica, mas existe esforço planejado. Escolha uma ou duas ideias, execute com capricho, e reinvista parte do lucro no próximo fim de semana para escalar. O segredo é começar e não esperar “o momento certo”.
+        `
+    },
+    {
+        slug: 'como-construir-uma-reserva-de-emergencia-em-1-ano',
+        title: 'Como construir uma reserva de emergência em 1 ano',
+        excerpt: 'Uma reserva de emergência de 3 a 6 meses de despesas não surge por sorte. Com o método certo, dá para montá‑la em 12 meses a partir de qualquer renda.',
+        category: 'Finanças Pessoais',
+        date: '16 Mar 2026',
+        readTime: '6 min de leitura',
+        content: `
+Ter um colchão financeiro é a principal defesa contra imprevistos. Se você ainda não tem, este plano de 1 ano mostra quanto poupar e como fazer com que o processo seja sustentável.
+
+### 1. Calcule seu custo mensal real
+Some tudo: aluguel, luz, alimentação, transporte, streaming, lazer. O valor encontrado é seu ponto de partida.
+
+### 2. Defina a meta de 3 meses (ou mais)
+Multiplique o custo por 3 (ou por 6 se puder). Essa é sua reserva ideal, mas o plano funciona mesmo com 1 mês — o importante é começar.
+
+### 3. Divida a meta por 12
+Isso dá o valor que você precisa economizar por mês. Veja se cabe no seu orçamento atual. Se não couber, ajuste: alongue o prazo ou corte gastos para liberar margem.
+
+### 4. Automatize o aporte
+Programe transferência automática para conta poupança ou investimento de liquidez diária no dia seguinte ao recebimento do salário. Assim você “paga a si mesmo primeiro”.
+
+### 5. Aumente a velocidade com renda extra
+Se faltar dinheiro, use parte da renda extra para acelerar o processo. Não devolva essa grana ao consumo; mantenha-a na reserva.
+
+### 6. Reavalie e realoque após 1 ano
+Quando bater a meta inicial, decida se vai: aumentar o colchão, começar a investir em objetivos ou destinar para dívidas. A reserva não precisa ficar parada para sempre.
+
+### Conclusão
+Montar uma reserva leva um ano porque é um processo de disciplina, não um sacrifício momentâneo. Com metas claras e automatização, mesmo quem começa do zero consegue dormir mais tranquilo em 365 dias. Agora peça o boleto, abra uma conta e comece hoje mesmo.
+        `
     }
 ];

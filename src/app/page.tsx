@@ -1,20 +1,27 @@
 import Link from "next/link";
-import { posts } from "@/data/posts";
 import NewsletterForm from "@/components/NewsletterForm";
 
+// helpers for post scheduling
+import { getVisiblePosts, sortByViews, sortByDate } from "@/lib/posts";
+
+// Revalida a página principal no máximo uma vez por dia. Isso garante que a lista de posts
+// vá atualizando automaticamente conforme a data muda, sem necessidade de redeploy.
+export const revalidate = 86400;
+
 export default function Home() {
+  // Apenas trabalhar com posts que já estão "publicados" (data <= hoje)
+  const visible = getVisiblePosts();
+
   // Ordenar os posts mais lidos (top views) para o destaque
-  const sortedByViews = [...posts].sort((a, b) => (b.views || 0) - (a.views || 0));
+  const sortedByViews = sortByViews(visible);
   const featuredPost = sortedByViews[0];
 
   // Os outros posts organizados por ordem cronológica (mais recentes primeiro)
   // Mas precisamos excluir o post que já está no destaque para não repetir
-  const otherPosts = [...posts]
-    .filter(p => p.slug !== featuredPost.slug)
-    .reverse();
+  const otherPosts = sortByDate(visible).filter((p) => p.slug !== featuredPost.slug);
 
-  // Derive categories and counts dynamically
-  const categoryCounts = posts.reduce((acc, post) => {
+  // Derive categories and counts dinamicamente a partir dos visíveis
+  const categoryCounts = visible.reduce((acc, post) => {
     acc[post.category] = (acc[post.category] || 0) + 1;
     return acc;
   }, {} as Record<string, number>);
