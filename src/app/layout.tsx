@@ -3,6 +3,7 @@ import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import DarkModeToggle from "@/components/DarkModeToggle";
+import SearchBar from "@/components/SearchBar";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"], variable: "--font-outfit" });
@@ -41,6 +42,7 @@ export default function RootLayout({
               <img src="/favicon-transparent.png" alt="DividAI Logo" style={{ height: "40px", width: "auto" }} />
               <span style={{ fontSize: "1.8rem", fontWeight: 800 }}>Blog.DividAI</span>
             </Link>
+            <SearchBar />
             <nav className="nav-links">
               <Link href="/">Início</Link>
               <Link href="/">Artigos</Link>

@@ -89,6 +89,7 @@ strong {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
 
 .logo {
@@ -100,6 +101,7 @@ strong {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: -0.5px;
+  flex-shrink: 0;
 }
 
 .nav-links {
