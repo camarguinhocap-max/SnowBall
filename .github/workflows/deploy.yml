@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    # Roda diariamente às 08:00 UTC (5 AM BRT) para atualizar posts com novas datas
+    # Roda diariamente às 08:00 UTC
     - cron: '0 8 * * *'
   workflow_dispatch:
 
@@ -13,60 +13,24 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '18'
 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Link Vercel project
-        run: npx vercel@latest link --token=${{ secrets.VERCEL_TOKEN }} --project ${{ secrets.VERCEL_PROJECT_ID }}
+      - run: npm ci
+      
+      - run: npm run build
 
       - name: Deploy to Vercel
-        run: npx vercel@latest deploy --prod
-
-      - name: Check for new posts
         run: |
-          # Get today's date in Portuguese format
-          TODAY=$(date +"%d de %B de %Y" -d "today")
-          echo "Checking for posts dated: $TODAY"
-          
-          # Check if there are new posts to publish
-          node -e "
-          const posts = require('./src/data/posts.ts');
-          const today = new Date().toLocaleDateString('pt-BR', { 
-            day: '2-digit', 
-            month: 'long', 
-            year: 'numeric' 
-          });
-          const newPosts = posts.filter(p => p.date === today);
-          console.log('New posts found:', newPosts.length);
-          if (newPosts.length > 0) {
-            console.log('::set-output name=has_new_posts::true');
-            console.log('::set-output name=post_titles::' + newPosts.map(p => p.title).join(', '));
-            console.log('::set-output name=post_slugs::' + newPosts.map(p => p.slug).join(', '));
-          } else {
-            console.log('::set-output name=has_new_posts::false');
-          }
-          "
-        id: check_posts
+          npm install -g vercel
+          vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
 
       - name: Post to Telegram
-        if: steps.check_posts.outputs.has_new_posts == 'true'
         run: |
-          # Send message to Telegram channel
           curl -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
             -d chat_id="-1003567265869" \
             -d parse_mode="HTML" \
-            -d text="📰 <b>Novo artigo publicado no SnowBall!</b>
-
-📅 <b>Data:</b> $(date +'%d/%m/%Y')
-📝 <b>Título:</b> ${{ steps.check_posts.outputs.post_titles }}
-🔗 <b>Link:</b> https://blog.dividai.com/post/${{ steps.check_posts.outputs.post_slugs }}
-
-#SnowBall #DividAI"
+            -d text="📰 <b>Novo artigo publicado no SnowBall!</b>%0A%0A📅 Nova publicação às $(date +'%d/%m/%Y %H:%M')%0A🔗 https://blog.dividai.com%0A%0A#SnowBall #DividAI"
