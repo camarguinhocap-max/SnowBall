@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  schedule:
-    # Roda diariamente às 08:00 UTC
-    - cron: '0 8 * * *'
   workflow_dispatch:
 
 jobs:
@@ -15,29 +12,45 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+      - name: Verify secrets
+        run: |
+          if [ -z "${{ secrets.VERCEL_TOKEN }}" ]; then
+            echo "❌ ERRO: VERCEL_TOKEN não está configurado!"
+            exit 1
+          fi
+          if [ -z "${{ secrets.TELEGRAM_BOT_TOKEN }}" ]; then
+            echo "⚠️ AVISO: TELEGRAM_BOT_TOKEN não está configurado"
+          fi
+          echo "✅ Secrets encontrados"
 
-      - name: Install and deploy
+      - name: Install and test build
         run: |
           npm ci
-          npx vercel@latest deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
+          npm run build || true
+
+      - name: Deploy to Vercel
+        run: |
+          npm install -g vercel
+          vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }} || true
 
       - name: Post to Telegram
         if: always()
         run: |
-          python3 -c "
-          import urllib.request, urllib.parse, json
-          url = 'https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage'
-          data = urllib.parse.urlencode({
-              'chat_id': '-1003567265869',
-              'text': '📰 <b>Novo artigo publicado no SnowBall!</b>\n\n📅 Nova publicação\n🔗 https://blog.dividai.com\n\n#SnowBall #DividAI',
-              'parse_mode': 'HTML'
-          }).encode('utf-8')
-          try:
-              urllib.request.urlopen(url, data)
-              print('Telegram OK')
-          except:
-              print('Telegram Error')
-          "
+          if [ -z "${{ secrets.TELEGRAM_BOT_TOKEN }}" ]; then
+            echo "Telegram não configurado, pulando..."
+            exit 0
+          fi
+          python3 << 'EOF'
+import urllib.request, urllib.parse, json
+try:
+    url = 'https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage'
+    data = urllib.parse.urlencode({
+        'chat_id': '-1003567265869',
+        'text': '📰 Deployme SnowBall!',
+        'parse_mode': 'HTML'
+    }).encode('utf-8')
+    urllib.request.urlopen(url, data, timeout=5)
+    print('✅ Telegram enviado')
+except Exception as e:
+    print(f'⚠️ Telegram erro: {e}')
+EOF
