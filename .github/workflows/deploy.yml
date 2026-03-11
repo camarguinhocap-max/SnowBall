@@ -12,45 +12,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Verify secrets
-        run: |
-          if [ -z "${{ secrets.VERCEL_TOKEN }}" ]; then
-            echo "❌ ERRO: VERCEL_TOKEN não está configurado!"
-            exit 1
-          fi
-          if [ -z "${{ secrets.TELEGRAM_BOT_TOKEN }}" ]; then
-            echo "⚠️ AVISO: TELEGRAM_BOT_TOKEN não está configurado"
-          fi
-          echo "✅ Secrets encontrados"
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
 
-      - name: Install and test build
-        run: |
-          npm ci
-          npm run build || true
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
 
       - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
           npm install -g vercel
-          vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }} || true
+          vercel --prod --token=$VERCEL_TOKEN --yes
 
-      - name: Post to Telegram
-        if: always()
+      - name: Notify Telegram
+        if: success()
         run: |
-          if [ -z "${{ secrets.TELEGRAM_BOT_TOKEN }}" ]; then
-            echo "Telegram não configurado, pulando..."
-            exit 0
-          fi
-          python3 << 'EOF'
-import urllib.request, urllib.parse, json
-try:
-    url = 'https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage'
-    data = urllib.parse.urlencode({
-        'chat_id': '-1003567265869',
-        'text': '📰 Deployme SnowBall!',
-        'parse_mode': 'HTML'
-    }).encode('utf-8')
-    urllib.request.urlopen(url, data, timeout=5)
-    print('✅ Telegram enviado')
-except Exception as e:
-    print(f'⚠️ Telegram erro: {e}')
-EOF
+          curl -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -d "chat_id=-1003567265869" \
+            -d "text=Deploy%20realizado%20com%20sucesso!" \
+            -d "parse_mode=HTML" || true
