@@ -4,6 +4,7 @@ import { parsePostDate } from "@/lib/posts";
 import ReactMarkdown from "react-markdown";
 import ImageWithModal from "@/components/ImageWithModal";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 // Não geramos params estáticos para que o servidor possa
 // lidar com posts futuros dinamicamente. A própria lógica de
@@ -97,6 +98,8 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
             </div>
 
             <ShareButtons title={post.title} slug={post.slug} />
+
+            <RelatedPosts currentSlug={post.slug} category={post.category} />
 
             {/* Schema.org estruturado para artigos (SEO e E-E-A-T) */}
             <script
