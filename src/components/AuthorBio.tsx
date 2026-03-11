@@ -10,23 +10,19 @@ export default function AuthorBio() {
             alignItems: "center",
             gap: "1.5rem"
         }}>
-            <div style={{
-                width: "80px",
-                height: "80px",
-                minWidth: "80px",
-                borderRadius: "50%",
-                background: "linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "#fff",
-                fontSize: "1.8rem",
-                fontWeight: "800",
-                border: "3px solid var(--primary)",
-                boxShadow: "0 4px 12px rgba(14, 165, 233, 0.3)"
-            }}>
-                DA
-            </div>
+            <img 
+                src="/dividai-logo.png" 
+                alt="DividAI Logo"
+                style={{
+                    width: "80px",
+                    height: "80px",
+                    minWidth: "80px",
+                    borderRadius: "50%",
+                    objectFit: "cover",
+                    border: "3px solid var(--primary)",
+                    boxShadow: "0 4px 12px rgba(14, 165, 233, 0.3)"
+                }}
+            />
             
             <div style={{ flex: 1 }}>
                 <h3 style={{
