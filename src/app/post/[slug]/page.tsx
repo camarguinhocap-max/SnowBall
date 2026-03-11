@@ -36,10 +36,13 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
 
     // Constrói o link absoluto
     const url = `https://blog.dividai.com/post/${post.slug}`;
+    const imageUrl = `${url}/opengraph-image`;
 
     return {
         title: `${post.title} | Blog DividAI`,
         description: post.excerpt,
+        keywords: `${post.category}, DividAI, blog, finanças`, 
+        authors: [{ name: 'DividAI' }],
         openGraph: {
             title: post.title,
             description: post.excerpt,
@@ -47,11 +50,25 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
             siteName: 'Blog DividAI',
             type: 'article',
             publishedTime: post.date,
+            authors: ['DividAI'],
+            images: [
+                {
+                    url: imageUrl,
+                    width: 1200,
+                    height: 630,
+                    alt: post.title,
+                    type: 'image/png',
+                }
+            ],
+            tags: [post.category],
         },
         twitter: {
             card: 'summary_large_image',
             title: post.title,
             description: post.excerpt,
+            images: [imageUrl],
+            creator: '@DividAI',
+            site: '@DividAI',
         },
     };
 }
