@@ -6,7 +6,6 @@ import ImageWithModal from "@/components/ImageWithModal";
 import ShareButtons from "@/components/ShareButtons";
 import RelatedPosts from "@/components/RelatedPosts";
 import AuthorBio from "@/components/AuthorBio";
-import GiscusComments from "@/components/GiscusComments";
 
 // Não geramos params estáticos para que o servidor possa
 // lidar com posts futuros dinamicamente. A própria lógica de
@@ -119,8 +118,6 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
             <ShareButtons title={post.title} slug={post.slug} />
 
             <AuthorBio />
-
-            <GiscusComments />
 
             <RelatedPosts currentSlug={post.slug} category={post.category} />
 
