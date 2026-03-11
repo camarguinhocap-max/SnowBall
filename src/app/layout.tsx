@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import DarkModeToggle from "@/components/DarkModeToggle";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"], variable: "--font-outfit" });
@@ -33,6 +34,7 @@ export default function RootLayout({
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543510171277537" crossOrigin="anonymous"></script>
       </head>
       <body className={`${inter.variable} ${outfit.variable}`}>
+        <DarkModeToggle />
         <header className="header">
           <div className="container header-content">
             <Link href="/" className="logo" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
