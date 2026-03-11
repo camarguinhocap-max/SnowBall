@@ -5,8 +5,8 @@ on:
     branches:
       - main
   schedule:
-    # Roda diariamente às 00:00 UTC (9 PM BRT) para atualizar posts com novas datas
-    - cron: '0 0 * * *'
+    # Roda diariamente às 08:00 UTC (5 AM BRT) para atualizar posts com novas datas
+    - cron: '0 8 * * *'
   workflow_dispatch:
 
 jobs:
@@ -24,7 +24,49 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Link Vercel project
+        run: npx vercel@latest link --token=${{ secrets.VERCEL_TOKEN }} --project ${{ secrets.VERCEL_PROJECT_ID }}
+
       - name: Deploy to Vercel
-        run: npx vercel@latest deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
-        env:
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: npx vercel@latest deploy --prod
+
+      - name: Check for new posts
+        run: |
+          # Get today's date in Portuguese format
+          TODAY=$(date +"%d de %B de %Y" -d "today")
+          echo "Checking for posts dated: $TODAY"
+          
+          # Check if there are new posts to publish
+          node -e "
+          const posts = require('./src/data/posts.ts');
+          const today = new Date().toLocaleDateString('pt-BR', { 
+            day: '2-digit', 
+            month: 'long', 
+            year: 'numeric' 
+          });
+          const newPosts = posts.filter(p => p.date === today);
+          console.log('New posts found:', newPosts.length);
+          if (newPosts.length > 0) {
+            console.log('::set-output name=has_new_posts::true');
+            console.log('::set-output name=post_titles::' + newPosts.map(p => p.title).join(', '));
+            console.log('::set-output name=post_slugs::' + newPosts.map(p => p.slug).join(', '));
+          } else {
+            console.log('::set-output name=has_new_posts::false');
+          }
+          "
+        id: check_posts
+
+      - name: Post to Telegram
+        if: steps.check_posts.outputs.has_new_posts == 'true'
+        run: |
+          # Send message to Telegram channel
+          curl -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -d chat_id="-1003567235869" \
+            -d parse_mode="HTML" \
+            -d text="📰 <b>Novo artigo publicado no SnowBall!</b>
+
+📅 <b>Data:</b> $(date +'%d/%m/%Y')
+📝 <b>Título:</b> ${{ steps.check_posts.outputs.post_titles }}
+🔗 <b>Link:</b> https://snowball-blog.vercel.app/post/${{ steps.check_posts.outputs.post_slugs }}
+
+#SnowBall #DividAI"
