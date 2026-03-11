@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import ImageWithModal from "@/components/ImageWithModal";
 import ShareButtons from "@/components/ShareButtons";
 import RelatedPosts from "@/components/RelatedPosts";
+import AuthorBio from "@/components/AuthorBio";
 
 // Não geramos params estáticos para que o servidor possa
 // lidar com posts futuros dinamicamente. A própria lógica de
@@ -98,6 +99,8 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
             </div>
 
             <ShareButtons title={post.title} slug={post.slug} />
+
+            <AuthorBio />
 
             <RelatedPosts currentSlug={post.slug} category={post.category} />
 
