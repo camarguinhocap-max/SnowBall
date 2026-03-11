@@ -67,6 +67,6 @@ jobs:
 
 📅 <b>Data:</b> $(date +'%d/%m/%Y')
 📝 <b>Título:</b> ${{ steps.check_posts.outputs.post_titles }}
-🔗 <b>Link:</b> https://snowball-blog.vercel.app/post/${{ steps.check_posts.outputs.post_slugs }}
+🔗 <b>Link:</b> https://blog.dividai.com/post/${{ steps.check_posts.outputs.post_slugs }}
 
 #SnowBall #DividAI"
