@@ -10,6 +10,30 @@
   --muted: #8b949e;
 }
 
+html:not([data-theme="dark"]) {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --primary: #0284c7;
+  --primary-hover: #1b5e99;
+  --secondary: #0066cc;
+  --accent: #d1242f;
+  --card-bg: #f6f8fa;
+  --border: #d0d7de;
+  --muted: #656d76;
+}
+
+html[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --primary: #0284c7;
+  --primary-hover: #1b5e99;
+  --secondary: #0066cc;
+  --accent: #d1242f;
+  --card-bg: #f6f8fa;
+  --border: #d0d7de;
+  --muted: #656d76;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -42,7 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #fff;
+  color: var(--foreground);
   font-family: var(--font-outfit), sans-serif;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -64,7 +88,7 @@ li {
 }
 
 strong {
-  color: #fff;
+  color: var(--foreground);
   font-weight: 600;
 }
 
@@ -83,6 +107,24 @@ strong {
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+html:not([data-theme="dark"]) .header {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom-color: #d0d7de;
+}
+
+html[data-theme="dark"] .header {
+  background: rgba(13, 17, 23, 0.8);
+  border-bottom-color: #30363d;
+}
+
+html:not([data-theme="dark"]) .logo img {
+  filter: invert(0) !important;
+}
+
+html[data-theme="dark"] .logo img {
+  filter: invert(1) !important;
 }
 
 .header-content {
@@ -213,7 +255,7 @@ strong {
 .article-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, #fff, #c9d1d9);
+  background: linear-gradient(90deg, var(--foreground), var(--muted));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -229,7 +271,7 @@ strong {
 
 .article-content {
   font-size: 1.1rem;
-  color: #dbdbdb;
+  color: var(--foreground);
 }
 
 .article-content h3 {
@@ -318,13 +360,13 @@ strong {
 .featured-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #fff;
+  color: var(--foreground);
   line-height: 1.2;
 }
 
 .featured-excerpt {
   font-size: 1.15rem;
-  color: #c9d1d9;
+  color: var(--muted);
   max-width: 700px;
   margin-bottom: 2rem;
 }

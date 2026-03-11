@@ -17,18 +17,40 @@ export default function SearchBar() {
   };
 
   return (
-    <form onSubmit={handleSearch} className="relative w-full max-w-sm">
-      <div className="flex items-center bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-300 dark:border-gray-600">
+    <form onSubmit={handleSearch} style={{ flex: 1, maxWidth: '400px' }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        backgroundColor: 'var(--card-bg)',
+        border: '1px solid var(--border)',
+        borderRadius: '8px',
+        padding: '0.5rem 1rem'
+      }}>
         <input
           type="text"
           placeholder="Buscar posts..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="flex-1 px-4 py-2 bg-transparent outline-none text-gray-900 dark:text-white placeholder-gray-600 dark:placeholder-gray-400"
+          style={{
+            flex: 1,
+            backgroundColor: 'transparent',
+            border: 'none',
+            outline: 'none',
+            color: 'var(--foreground)',
+            fontSize: '0.95rem',
+          }}
         />
         <button
           type="submit"
-          className="p-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition"
+          style={{
+            background: 'none',
+            border: 'none',
+            color: 'var(--muted)',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            padding: '0.5rem'
+          }}
         >
           <Search size={20} />
         </button>
