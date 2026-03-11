@@ -29,3 +29,9 @@ jobs:
         run: |
           npm install -g vercel
           vercel --prod --token=$VERCEL_TOKEN --yes
+
+      - name: Notify Telegram with article details
+        if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: python3 notify_telegram_auto.py
