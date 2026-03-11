@@ -29,11 +29,3 @@ jobs:
         run: |
           npm install -g vercel
           vercel --prod --token=$VERCEL_TOKEN --yes
-
-      - name: Notify Telegram
-        if: success()
-        run: |
-          curl -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
-            -d "chat_id=-1003567265869" \
-            -d "text=Deploy%20realizado%20com%20sucesso!" \
-            -d "parse_mode=HTML" || true
