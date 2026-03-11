@@ -11,15 +11,17 @@ export default function AuthorBio() {
             gap: "1.5rem"
         }}>
             <img 
-                src="/logo.png" 
+                src="/favicon.png" 
                 alt="DividAI Logo"
                 style={{
                     width: "80px",
                     height: "80px",
                     minWidth: "80px",
                     borderRadius: "50%",
-                    objectFit: "cover",
-                    border: "2px solid var(--primary)"
+                    objectFit: "contain",
+                    border: "2px solid var(--primary)",
+                    backgroundColor: "var(--primary)",
+                    padding: "4px"
                 }}
             />
             
