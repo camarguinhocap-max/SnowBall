@@ -61,7 +61,7 @@ jobs:
         run: |
           # Send message to Telegram channel
           curl -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
-            -d chat_id="-1003567235869" \
+            -d chat_id="-1003567265869" \
             -d parse_mode="HTML" \
             -d text="📰 <b>Novo artigo publicado no SnowBall!</b>
 
