@@ -5,7 +5,7 @@ com o padrão correto (título, resumo, link, hashtags)
 """
 
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 import urllib.request
 import urllib.parse
 
@@ -13,8 +13,10 @@ import urllib.parse
 with open('src/data/posts.ts', 'r', encoding='utf-8') as f:
     content = f.read()
 
-# Buscar posts com a data de hoje
-today = datetime.now().strftime('%d %b %Y')
+# Buscar posts com a data de hoje (ajustado para São Paulo -3:00)
+# GitHub Actions roda em UTC, então subtraímos 3 horas para BR
+agora = datetime.utcnow() - timedelta(hours=3)
+today = agora.strftime('%d %b %Y')
 print(f"Procurando por posts de: {today}")
 
 # Regex para encontrar posts
@@ -36,13 +38,13 @@ for slug, title, excerpt in matches:
     # Limpar excerpt (remover quebras de linha)
     excerpt = excerpt.strip().replace('\n', ' ')[:150]
     
-    message = f"""📰 <b>Novo artigo publicado no SnowBall!</b>
+    message = f"""📰 <b>Novo artigo no Blog DividAI!</b>
 
 📝 <b>{title}</b>
 💡 {excerpt}...
 🔗 <b>Leia:</b> https://blog.dividai.com/post/{slug}
 
-#SnowBall #DividAI"""
+#DividAI #Blog"""
 
     url = 'https://api.telegram.org/bot' + TELEGRAM_TOKEN + '/sendMessage'
     data = urllib.parse.urlencode({
