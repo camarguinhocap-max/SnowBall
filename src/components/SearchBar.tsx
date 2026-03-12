@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Search } from 'lucide-react';
+import { trackSearch } from '@/lib/analytics';
 
 export default function SearchBar() {
   const [query, setQuery] = useState('');
@@ -11,6 +12,7 @@ export default function SearchBar() {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (query.trim()) {
+      trackSearch(query, 0); // 0 = not yet counted, will be tracked on results page
       router.push(`/search?q=${encodeURIComponent(query)}`);
       setQuery('');
     }

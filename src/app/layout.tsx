@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import DarkModeToggle from "@/components/DarkModeToggle";
 import SearchBar from "@/components/SearchBar";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"], variable: "--font-outfit" });
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543510171277537" crossOrigin="anonymous"></script>
+        <GoogleAnalytics />
       </head>
       <body className={`${inter.variable} ${outfit.variable}`}>
         <DarkModeToggle />

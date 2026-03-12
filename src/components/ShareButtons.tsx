@@ -2,6 +2,7 @@
 
 import { Twitter, AtSign, MessageCircle, Linkedin, Facebook, Link as LinkIcon } from "lucide-react";
 import { useState, useEffect } from "react";
+import { trackShareClick } from "@/lib/analytics";
 
 interface ShareButtonsProps {
     title: string;
@@ -46,6 +47,7 @@ export default function ShareButtons({ title, slug }: ShareButtonsProps) {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="share-btn"
+                    onClick={() => trackShareClick('twitter', title)}
                     style={{
                         display: "flex",
                         alignItems: "center",
@@ -71,6 +73,7 @@ export default function ShareButtons({ title, slug }: ShareButtonsProps) {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="share-btn"
+                    onClick={() => trackShareClick('threads', title)}
                     style={{
                         display: "flex",
                         alignItems: "center",
@@ -96,6 +99,7 @@ export default function ShareButtons({ title, slug }: ShareButtonsProps) {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="share-btn"
+                    onClick={() => trackShareClick('whatsapp', title)}
                     style={{
                         display: "flex",
                         alignItems: "center",
@@ -121,6 +125,7 @@ export default function ShareButtons({ title, slug }: ShareButtonsProps) {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="share-btn"
+                    onClick={() => trackShareClick('linkedin', title)}
                     style={{
                         display: "flex",
                         alignItems: "center",
@@ -146,6 +151,7 @@ export default function ShareButtons({ title, slug }: ShareButtonsProps) {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="share-btn"
+                    onClick={() => trackShareClick('facebook', title)}
                     style={{
                         display: "flex",
                         alignItems: "center",

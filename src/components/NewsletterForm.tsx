@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { subscribeNewsletter } from "@/actions/newsletter";
+import { trackNewsletterSubscribe } from "@/lib/analytics";
 import { Mail, CheckCircle, AlertCircle } from "lucide-react";
 
 export default function NewsletterForm() {
@@ -19,6 +20,7 @@ export default function NewsletterForm() {
         const result = await subscribeNewsletter(email);
 
         if (result.success) {
+            trackNewsletterSubscribe("form");
             setMessage({ type: "success", text: "✓ E-mail confirmado! Bem-vindo à comunidade DividAI" });
             setEmail("");
         } else {
