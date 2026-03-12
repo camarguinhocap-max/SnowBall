@@ -12,19 +12,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${baseUrl}`,
             lastModified: new Date(),
             changeFrequency: 'daily' as const,
-            priority: 1,
+            priority: 1.0,
         },
         {
             url: `${baseUrl}/shop`,
             lastModified: new Date(),
-            changeFrequency: 'daily' as const,
+            changeFrequency: 'weekly' as const,
             priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/contato`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
         },
         {
             url: `${baseUrl}/politica-de-privacidade`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,
-            priority: 0.5,
+            priority: 0.6,
         },
     ];
 
@@ -32,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const visible = getVisiblePosts();
     const postRoutes = visible.map((post) => ({
         url: `${baseUrl}/post/${post.slug}`,
-        lastModified: new Date(), // Idealmente viria de post.updatedAt, usaremos a data atual na renderização
+        lastModified: new Date(),
         changeFrequency: 'weekly' as const,
         priority: 0.8,
     }));
