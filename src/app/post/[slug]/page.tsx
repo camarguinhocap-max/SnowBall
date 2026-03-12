@@ -7,6 +7,8 @@ import ShareButtons from "@/components/ShareButtons";
 import RelatedPosts from "@/components/RelatedPosts";
 import AuthorBio from "@/components/AuthorBio";
 import InvestmentDisclaimer from "@/components/InvestmentDisclaimer";
+import TableOfContents from "@/components/TableOfContents";
+import ReadingTime from "@/components/ReadingTime";
 
 // Não geramos params estáticos para que o servidor possa
 // lidar com posts futuros dinamicamente. A própria lógica de
@@ -100,16 +102,66 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                 <div className="article-meta">
                     <span>{post.date}</span>
                     <span>•</span>
-                    <span>{post.readTime}</span>
+                    <ReadingTime readTime={post.readTime} />
                 </div>
             </header>
 
             <div className="article-content">
+                <TableOfContents content={post.content} />
+                
                 <ReactMarkdown
                     components={{
                         img: (props) => (
                             <ImageWithModal src={props.src as string} alt={props.alt} />
                         ),
+                        h1: ({ children }) => {
+                            const id = String(children)
+                                .toLowerCase()
+                                .replace(/[^\w\s-]/g, '')
+                                .replace(/\s+/g, '-')
+                                .replace(/-+/g, '-');
+                            return <h1 id={id}>{children}</h1>;
+                        },
+                        h2: ({ children }) => {
+                            const id = String(children)
+                                .toLowerCase()
+                                .replace(/[^\w\s-]/g, '')
+                                .replace(/\s+/g, '-')
+                                .replace(/-+/g, '-');
+                            return <h2 id={id}>{children}</h2>;
+                        },
+                        h3: ({ children }) => {
+                            const id = String(children)
+                                .toLowerCase()
+                                .replace(/[^\w\s-]/g, '')
+                                .replace(/\s+/g, '-')
+                                .replace(/-+/g, '-');
+                            return <h3 id={id}>{children}</h3>;
+                        },
+                        h4: ({ children }) => {
+                            const id = String(children)
+                                .toLowerCase()
+                                .replace(/[^\w\s-]/g, '')
+                                .replace(/\s+/g, '-')
+                                .replace(/-+/g, '-');
+                            return <h4 id={id}>{children}</h4>;
+                        },
+                        h5: ({ children }) => {
+                            const id = String(children)
+                                .toLowerCase()
+                                .replace(/[^\w\s-]/g, '')
+                                .replace(/\s+/g, '-')
+                                .replace(/-+/g, '-');
+                            return <h5 id={id}>{children}</h5>;
+                        },
+                        h6: ({ children }) => {
+                            const id = String(children)
+                                .toLowerCase()
+                                .replace(/[^\w\s-]/g, '')
+                                .replace(/\s+/g, '-')
+                                .replace(/-+/g, '-');
+                            return <h6 id={id}>{children}</h6>;
+                        },
                     }}
                 >
                     {post.content}
