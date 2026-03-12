@@ -18,7 +18,7 @@ const monthMap: Record<string, string> = {
 
 /**
  * Converte uma string de data no formato `DD Mmm YYYY` (ex: `12 Mar 2026`)
- * para um objeto `Date` válido.
+ * para um objeto `Date` válido em timezone local.
  */
 export function parsePostDate(dateStr: string): Date {
   const parts = dateStr.trim().split(" ");
@@ -32,7 +32,9 @@ export function parsePostDate(dateStr: string): Date {
     // caso o mês não esteja mapeado, tente criar direto
     return new Date(dateStr);
   }
-  return new Date(`${year}-${month}-${day.padStart(2, "0")}`);
+  // Criar data em timezone local, não em UTC
+  // new Date(year, month-1, day) respeita o timezone do usuário
+  return new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
 }
 
 /**
