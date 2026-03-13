@@ -2,22 +2,36 @@
 """
 Script para enviar notificação automática de novo artigo para Telegram
 com o padrão correto (título, resumo, link, hashtags)
+Roda automaticamente diariamente via GitHub Actions
 """
 
 import re
+import os
 from datetime import datetime, timedelta
 import urllib.request
 import urllib.parse
 
+# Obter credenciais de variáveis de ambiente
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID', '-1003567265869')
+
+if not TELEGRAM_TOKEN:
+    print("❌ Erro: TELEGRAM_BOT_TOKEN não configurada")
+    exit(1)
+
 # Ler o arquivo posts.ts
-with open('src/data/posts.ts', 'r', encoding='utf-8') as f:
-    content = f.read()
+try:
+    with open('src/data/posts.ts', 'r', encoding='utf-8') as f:
+        content = f.read()
+except FileNotFoundError:
+    print("❌ Erro: arquivo src/data/posts.ts não encontrado")
+    exit(1)
 
 # Buscar posts com a data de hoje (ajustado para São Paulo -3:00)
 # GitHub Actions roda em UTC, então subtraímos 3 horas para BR
 agora = datetime.utcnow() - timedelta(hours=3)
 today = agora.strftime('%d %b %Y')
-print(f"Procurando por posts de: {today}")
+print(f"🔍 Procurando por posts de: {today}")
 
 # Regex para encontrar posts
 post_pattern = r'\{\s*slug:\s*[\'"]([^\'"]+)[\'"]\s*,\s*title:\s*[\'"]([^\'"]+)[\'"]\s*,\s*excerpt:\s*[\'"]([^\'"]+)[\'"]\s*,.*?date:\s*[\'"]' + re.escape(today) + r'[\'"]'
@@ -25,14 +39,10 @@ post_pattern = r'\{\s*slug:\s*[\'"]([^\'"]+)[\'"]\s*,\s*title:\s*[\'"]([^\'"]+)[
 matches = re.findall(post_pattern, content, re.DOTALL)
 
 if not matches:
-    print(f"❌ Nenhum post encontrado para {today}")
+    print(f"ℹ️ Nenhum post encontrado para {today}")
     exit(0)
 
 print(f"✅ {len(matches)} post(s) encontrado(s) para {today}")
-
-# Enviar para Telegram
-TELEGRAM_TOKEN = "8748228261:AAH8GUPjj7eoriI0KLy1zJV38EZL3d92Msg"
-TELEGRAM_CHAT_ID = "-1003567265869"
 
 for slug, title, excerpt in matches:
     # Limpar excerpt (remover quebras de linha)
