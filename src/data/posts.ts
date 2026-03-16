@@ -3475,26 +3475,19 @@ Atingiu? Qual o motivo de sucesso/falha?
 
 ### Template de Review
 
-```
 REVIEW 2026:
-
-Carteira inicial: R$ __
-Aportes: R$ __
-Carteira final: R$ __
-Rendimento líquido: R$ __ (%)
-
-Melhor ativo: __ (subiu %)
-Pior ativo: __ (caiu %)
-
-Maior erro: __ (perdi R$ __ por isso)
-Maior acerto: __ (ganhei R$ __ por isso)
-
-Lição aprendida nº1: __
-Lição aprendida nº2: __
-Lição aprendida nº3: __
-
-Meta 2027: R$ __ de aporte, % de retorno
-```
+- Carteira inicial: R$ __
+- Aportes: R$ __
+- Carteira final: R$ __
+- Rendimento líquido: R$ __ (%)
+- Melhor ativo: __ (subiu %)
+- Pior ativo: __ (caiu %)
+- Maior erro: __ (perdi R$ __ por isso)
+- Maior acerto: __ (ganhei R$ __ por isso)
+- Lição aprendida nº1: __
+- Lição aprendida nº2: __
+- Lição aprendida nº3: __
+- Meta 2027: R$ __ de aporte, % de retorno
 
 ### Planejamento 2027
 
