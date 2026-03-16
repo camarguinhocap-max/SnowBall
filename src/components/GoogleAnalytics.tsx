@@ -10,7 +10,7 @@ declare global {
 }
 
 export default function GoogleAnalytics() {
-  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+  const gaId = process.env.NEXT_PUBLIC_GA_ID || 'G-M6027Q5HVV';
 
   useEffect(() => {
     if (!gaId) return;

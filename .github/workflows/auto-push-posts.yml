@@ -1,0 +1,38 @@
+name: Auto Push Posts
+
+on:
+  schedule:
+    # Roda todos os dias às 7h da manhã (São Paulo = 10h UTC)
+    # Isso garante que os posts sejam enviados antes do Telegram notificar às 8h
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+
+jobs:
+  auto-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check for changes in posts.ts
+        id: check_changes
+        run: |
+          git diff --exit-code src/data/posts.ts || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Configure git
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git config --global user.email "github-actions@dividai.com"
+          git config --global user.name "GitHub Actions Bot"
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git add src/data/posts.ts
+          git commit -m "🤖 Auto: Novos posts adicionados - $(date +'%d/%m/%Y')"
+          git push origin main
+
+      - name: Success notification
+        if: steps.check_changes.outputs.changes == 'true'
+        run: echo "✅ Posts enviados para o blog com sucesso!"
