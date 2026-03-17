@@ -18,7 +18,7 @@ const monthMap: Record<string, string> = {
 
 /**
  * Converte uma string de data no formato `DD Mmm YYYY` (ex: `12 Mar 2026`)
- * para um objeto `Date` válido em timezone local.
+ * para um objeto `Date` válido em UTC.
  */
 export function parsePostDate(dateStr: string): Date {
   const parts = dateStr.trim().split(" ");
@@ -32,19 +32,21 @@ export function parsePostDate(dateStr: string): Date {
     // caso o mês não esteja mapeado, tente criar direto
     return new Date(dateStr);
   }
-  // Criar data em timezone local, não em UTC
-  // new Date(year, month-1, day) respeita o timezone do usuário
-  return new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
+  // Criar data em UTC para garantir consistência no servidor Vercel
+  // new Date(Date.UTC(...)) cria uma data em UTC, independente do timezone local
+  return new Date(Date.UTC(parseInt(year), parseInt(month) - 1, parseInt(day)));
 }
 
 /**
- * Retorna `true` se o post já deve estar publicado (data <= hoje).
+ * Retorna `true` se o post já deve estar publicado (data <= hoje em UTC).
  * Um horário intermediário considerado apenas pela comparação de datas.
  */
 export function isPublished(post: Post, today = new Date()): boolean {
   const postDate = parsePostDate(post.date);
-  // comparação apenas pela data (ignora hora)
-  return postDate.setHours(0, 0, 0, 0) <= today.setHours(0, 0, 0, 0);
+  // Criar uma data UTC para hoje (00:00:00 UTC)
+  const todayUTC = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()));
+  // comparação apenas pela data (ignora hora), ambas em UTC
+  return postDate.getTime() <= todayUTC.getTime();
 }
 
 /**
