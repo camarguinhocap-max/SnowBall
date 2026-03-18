@@ -15,28 +15,36 @@ export async function GET(request: Request) {
   // Filtrar posts publicados e que correspondem à busca
   const results = posts
     .filter(post => isPublished(post, today))
-    .filter(post => 
-      post.title.toLowerCase().includes(lowerQuery) ||
-      post.excerpt.toLowerCase().includes(lowerQuery) ||
-      post.content.toLowerCase().includes(lowerQuery) ||
-      post.category.toLowerCase().includes(lowerQuery)
-    )
-    .map(post => ({
-      slug: post.slug,
-      title: post.title,
-      excerpt: post.excerpt,
-      date: post.date,
-      category: post.category,
-      readTime: post.readTime,
-    }))
-    .sort((a, b) => {
-      // Priorizar resultados onde o título contém a query
-      const aHasInTitle = a.title.toLowerCase().includes(lowerQuery);
-      const bHasInTitle = b.title.toLowerCase().includes(lowerQuery);
-      if (aHasInTitle && !bHasInTitle) return -1;
-      if (!aHasInTitle && bHasInTitle) return 1;
-      return 0;
-    });
+    .filter(post => {
+      const matchTitle = post.title.toLowerCase().includes(lowerQuery);
+      const matchExcerpt = post.excerpt.toLowerCase().includes(lowerQuery);
+      const matchContent = post.content.toLowerCase().includes(lowerQuery);
+      const matchCategory = post.category.toLowerCase().includes(lowerQuery);
+      const matchTags = post.tags && post.tags.some(tag => tag.toLowerCase().includes(lowerQuery));
+
+      return matchTitle || matchExcerpt || matchContent || matchCategory || matchTags;
+    })
+    .map(post => {
+      // Calcular relevância simples
+      let score = 0;
+      if (post.title.toLowerCase().includes(lowerQuery)) score += 10;
+      if (post.tags && post.tags.some(tag => tag.toLowerCase().includes(lowerQuery))) score += 8;
+      if (post.category.toLowerCase().includes(lowerQuery)) score += 5;
+      if (post.excerpt.toLowerCase().includes(lowerQuery)) score += 3;
+      if (post.content.toLowerCase().includes(lowerQuery)) score += 1;
+
+      return {
+        slug: post.slug,
+        title: post.title,
+        excerpt: post.excerpt,
+        date: post.date,
+        category: post.category,
+        readTime: post.readTime,
+        tags: post.tags || [],
+        score
+      };
+    })
+    .sort((a, b) => b.score - a.score || new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return Response.json(results);
 }

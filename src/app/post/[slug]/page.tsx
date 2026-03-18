@@ -62,7 +62,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
                     type: 'image/png',
                 }
             ],
-            tags: [post.category],
+            tags: [post.category, ...post.tags],
         },
         twitter: {
             card: 'summary_large_image',
@@ -98,6 +98,11 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
             <header className="article-header">
                 <span className="post-category" style={{ fontSize: "1rem" }}>{post.category}</span>
                 <h1 className="article-title">{post.title}</h1>
+                <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap", marginBottom: "1rem" }}>
+                    {post.tags.map(tag => (
+                        <span key={tag} style={{ fontSize: "0.75rem", background: "var(--accent-glow)", padding: "0.2rem 0.5rem", borderRadius: "4px", color: "var(--primary)" }}>#{tag}</span>
+                    ))}
+                </div>
 
                 <div className="article-meta">
                     <span>{post.date}</span>

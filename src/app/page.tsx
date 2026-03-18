@@ -8,19 +8,31 @@ import { getVisiblePosts, sortByViews, sortByDate } from "@/lib/posts";
 // vá atualizando automaticamente conforme a data muda, sem necessidade de redeploy.
 export const revalidate = 86400;
 
-export default function Home() {
+interface HomeProps {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}
+
+export default async function Home({ searchParams }: HomeProps) {
+  const params = await searchParams;
+  const categoryFilter = params.category as string | undefined;
+
   // Apenas trabalhar com posts que já estão "publicados" (data <= hoje)
   const visible = getVisiblePosts();
 
+  // Filtrar por categoria se necessário
+  const filtered = categoryFilter 
+    ? visible.filter(p => p.category === categoryFilter)
+    : visible;
+
   // Ordenar os posts mais lidos (top views) para o destaque
-  const sortedByViews = sortByViews(visible);
-  const featuredPost = sortedByViews[0];
+  const sortedByViews = sortByViews(filtered);
+  const featuredPost = sortedByViews[0] || visible[0]; // fallback se nenhum post na categoria
 
   // Os outros posts organizados por ordem cronológica (mais recentes primeiro)
   // Mas precisamos excluir o post que já está no destaque para não repetir
-  const otherPosts = sortByDate(visible).filter((p) => p.slug !== featuredPost.slug);
+  const otherPosts = sortByDate(filtered).filter((p) => p.slug !== featuredPost.slug);
 
-  // Derive categories and counts dinamicamente a partir dos visíveis
+  // Derive categories and counts dinamicamente a partir dos visíveis (sempre de todos para a lista)
   const categoryCounts = visible.reduce((acc, post) => {
     acc[post.category] = (acc[post.category] || 0) + 1;
     return acc;
@@ -57,7 +69,16 @@ export default function Home() {
           </section>
 
           <section style={{ paddingTop: "1rem" }}>
-            <h2 style={{ fontSize: "2rem", marginBottom: "1rem" }}>Últimos Artigos</h2>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1rem" }}>
+              <h2 style={{ fontSize: "2rem" }}>
+                {categoryFilter ? `Artigos em ${categoryFilter}` : "Últimos Artigos"}
+              </h2>
+              {categoryFilter && (
+                <Link href="/" className="btn btn-secondary" style={{ padding: "0.25rem 0.75rem", fontSize: "0.85rem" }}>
+                  Remover Filtro
+                </Link>
+              )}
+            </div>
             <div className="post-grid" style={{ marginTop: "1.5rem" }}>
               {otherPosts.map((post) => (
                 <Link href={`/post/${post.slug}`} key={post.slug} className="post-card">
@@ -97,7 +118,7 @@ export default function Home() {
             <ul className="category-list">
               {Object.entries(categoryCounts).map(([cat, count]) => (
                 <li key={cat}>
-                  <Link href="/" className="category-item">
+                  <Link href={`/?category=${encodeURIComponent(cat)}`} className="category-item">
                     <span>{cat}</span> <span>({count})</span>
                   </Link>
                 </li>

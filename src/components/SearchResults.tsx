@@ -12,6 +12,7 @@ interface SearchResult {
   date: string;
   category: string;
   readTime: string;
+  tags: string[];
 }
 
 export default function SearchResults() {
@@ -73,24 +74,34 @@ export default function SearchResults() {
           {results.map((post) => (
             <article
               key={post.slug}
-              className="border-l-4 border-blue-500 pl-6 py-4 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-r transition"
+              className="border-l-4 border-l-indigo-500 pl-6 py-5 hover:bg-white dark:hover:bg-slate-900/50 rounded-r-xl transition-all duration-300 hover:shadow-lg dark:hover:shadow-indigo-500/10 hover:-translate-x-1"
             >
               <Link href={`/post/${post.slug}`}>
-                <h2 className="text-2xl font-bold text-blue-600 dark:text-blue-400 hover:underline mb-2">
+                <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors mb-2">
                   {post.title}
                 </h2>
               </Link>
               
-              <p className="text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">
+              <p className="text-slate-600 dark:text-slate-400 mb-4 line-clamp-2 text-lg">
                 {post.excerpt}
               </p>
-
-              <div className="flex gap-4 text-sm text-gray-500 dark:text-gray-500">
-                <span className="inline-block px-2 py-1 bg-gray-200 dark:bg-gray-800 rounded">
+ 
+              <div className="flex flex-wrap items-center gap-3 text-sm text-slate-500">
+                <span className="px-2.5 py-1 bg-indigo-100 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 rounded-full font-semibold text-xs uppercase tracking-wider">
                   {post.category}
                 </span>
-                <span>{post.date}</span>
-                <span>{post.readTime}</span>
+                <div className="flex gap-2">
+                  {post.tags.map(tag => (
+                    <span key={tag} className="text-slate-400 dark:text-slate-500 text-xs">
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+                <div className="ml-auto flex items-center gap-2 opacity-60">
+                   <span>{post.date}</span>
+                   <span>•</span>
+                   <span>{post.readTime}</span>
+                </div>
               </div>
             </article>
           ))}
