@@ -1,7 +1,7 @@
 "use client";
 
 import { Twitter, AtSign, MessageCircle, Linkedin, Facebook, Link as LinkIcon } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { trackShareClick } from "@/lib/analytics";
 
 interface ShareButtonsProps {
@@ -10,12 +10,8 @@ interface ShareButtonsProps {
 }
 
 export default function ShareButtons({ title, slug }: ShareButtonsProps) {
-    const [url, setUrl] = useState("");
     const [copied, setCopied] = useState(false);
-
-    useEffect(() => {
-        setUrl(`${window.location.origin}/post/${slug}`);
-    }, [slug]);
+    const url = `https://blog.dividai.com/post/${slug}`;
 
     const encodedUrl = encodeURIComponent(url);
 

@@ -1,55 +1,90 @@
-import Link from 'next/link';
-import { posts } from '@/data/posts';
+import { getVisiblePosts, parsePostDate } from "@/lib/posts";
+import PostCardImage from "@/components/PostCardImage";
+import ScrollReveal from "@/components/ScrollReveal";
+import Link from "next/link";
 
 interface RelatedPostsProps {
-  currentSlug: string;
-  category: string;
+    currentSlug: string;
+    category: string;
+    tags: string[];
 }
 
-export default function RelatedPosts({ currentSlug, category }: RelatedPostsProps) {
-  // Buscar posts da mesma categoria, excluindo o atual
-  const relatedPosts = posts
-    .filter((post) => post.category === category && post.slug !== currentSlug)
-    .slice(0, 3); // Apenas os 3 primeiros
+function normalizeTerm(value: string) {
+    return value.trim().toLowerCase();
+}
 
-  if (relatedPosts.length === 0) return null;
+export default function RelatedPosts({ currentSlug, category, tags }: RelatedPostsProps) {
+    const currentTags = new Set(tags.map(normalizeTerm));
 
-  return (
-    <section className="mt-16 pt-12 border-t border-gray-200 dark:border-gray-800">
-      <h2 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
-        Leia também
-      </h2>
-      
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {relatedPosts.map((post) => (
-          <Link
-            key={post.slug}
-            href={`/post/${post.slug}`}
-            className="group block p-5 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-lg dark:hover:shadow-lg dark:hover:shadow-blue-500/20 transition-all duration-300 bg-white dark:bg-gray-900/50"
-          >
-            <div className="mb-3">
-              <span className="text-xs font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wide">
-                {post.category}
-              </span>
+    const relatedPosts = getVisiblePosts()
+        .filter((post) => post.slug !== currentSlug)
+        .map((post) => {
+            const sharedTags = post.tags.filter((tag) => currentTags.has(normalizeTerm(tag))).length;
+            const sameCategory = post.category === category;
+
+            let score = 0;
+
+            if (sameCategory) {
+                score += 4;
+            }
+
+            score += sharedTags * 6;
+            score += Math.min(post.views || 0, 1200) / 400;
+
+            return { post, score, sharedTags };
+        })
+        .filter(({ score }) => score > 0)
+        .sort((a, b) => {
+            if (b.score !== a.score) {
+                return b.score - a.score;
+            }
+
+            return parsePostDate(b.post.date).getTime() - parsePostDate(a.post.date).getTime();
+        })
+        .slice(0, 4);
+
+    if (relatedPosts.length === 0) {
+        return null;
+    }
+
+    return (
+        <section className="related-posts">
+            <div className="related-posts__header">
+                <h2 className="related-posts__title">Voce tambem pode gostar</h2>
+                <p className="related-posts__subtitle">
+                    Sugestoes baseadas em categoria e temas em comum com este artigo.
+                </p>
             </div>
-            
-            <h3 className="font-bold text-lg mb-2 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
-              {post.title}
-            </h3>
-            
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
-              {post.excerpt}
-            </p>
-            
-            <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-              <time dateTime={post.date}>
-                {post.date}
-              </time>
-              <span>{post.readTime}</span>
+
+            <div className="related-posts__grid">
+                {relatedPosts.map(({ post, sharedTags }, index) => (
+                    <ScrollReveal key={post.slug} delay={index * 70} style={{ height: "100%" }}>
+                        <Link href={`/post/${post.slug}`} className="post-card related-post-card">
+                            <PostCardImage slug={post.slug} title={post.title} />
+
+                            <div className="post-card-body">
+                                <div className="related-post-card__meta">
+                                    <span className="post-category">{post.category}</span>
+                                    {sharedTags > 0 && (
+                                        <span className="related-post-card__match">
+                                            {sharedTags} tag{sharedTags > 1 ? "s" : ""} em comum
+                                        </span>
+                                    )}
+                                </div>
+
+                                <h3 className="post-title">{post.title}</h3>
+                                <p className="post-excerpt">{post.excerpt}</p>
+
+                                <div className="post-meta" style={{ marginTop: "auto", marginBottom: 0 }}>
+                                    <span>{post.date}</span>
+                                    <span>&bull;</span>
+                                    <span>{post.readTime}</span>
+                                </div>
+                            </div>
+                        </Link>
+                    </ScrollReveal>
+                ))}
             </div>
-          </Link>
-        ))}
-      </div>
-    </section>
-  );
+        </section>
+    );
 }
