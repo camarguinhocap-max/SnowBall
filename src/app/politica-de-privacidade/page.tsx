@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Politica de Privacidade | Blog DividAI",
+    description:
+        "Leia como o Blog DividAI coleta, usa e protege dados pessoais, cookies e informacoes de navegacao.",
+    alternates: {
+        canonical: "https://blog.dividai.com/politica-de-privacidade",
+    },
+};
+
 export default function PoliticaPrivacidade() {
     return (
         <article style={{ maxWidth: "800px", margin: "4rem auto 4rem auto" }}>

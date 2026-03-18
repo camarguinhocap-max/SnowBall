@@ -6,8 +6,19 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { getVisiblePosts, sortByDate, sortByViews } from "@/lib/posts";
 
 export const metadata: Metadata = {
+    title: "Blog DividAI | Financas sem complicacoes",
+    description:
+        "Aprenda a organizar sua vida financeira, sair das dividas e comecar a investir com foco na realidade brasileira.",
     alternates: {
         canonical: "https://blog.dividai.com",
+    },
+    openGraph: {
+        title: "Blog DividAI",
+        description:
+            "Aprenda a organizar sua vida financeira, sair das dividas e comecar a investir com foco na realidade brasileira.",
+        url: "https://blog.dividai.com",
+        siteName: "Blog DividAI",
+        type: "website",
     },
 };
 
@@ -85,7 +96,7 @@ export default async function Home({ searchParams }: HomeProps) {
                         </ScrollReveal>
                     </section>
 
-                    <section style={{ paddingTop: "1rem" }}>
+                    <section id="artigos" aria-labelledby="ultimos-artigos" style={{ paddingTop: "1rem" }}>
                         <div
                             style={{
                                 display: "flex",
@@ -96,7 +107,7 @@ export default async function Home({ searchParams }: HomeProps) {
                                 flexWrap: "wrap",
                             }}
                         >
-                            <h2 style={{ fontSize: "2rem" }}>
+                            <h2 id="ultimos-artigos" style={{ fontSize: "2rem" }}>
                                 {categoryFilter ? `Artigos em ${categoryFilter}` : "Ultimos Artigos"}
                             </h2>
                             {categoryFilter && (

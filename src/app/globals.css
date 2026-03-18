@@ -287,6 +287,33 @@ html[data-theme="dark"] .logo img {
 }
 
 /* Single Post */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: var(--muted);
+}
+
+.breadcrumb a:hover {
+  color: var(--primary);
+}
+
+.breadcrumb__separator {
+  color: var(--border);
+}
+
+.breadcrumb__current {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
 .article-header {
   text-align: left;
   margin-bottom: 3rem;
@@ -320,6 +347,15 @@ html[data-theme="dark"] .logo img {
   font-size: 1.5rem;
   margin-top: 2.5rem;
   color: var(--primary);
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
+  scroll-margin-top: 7rem;
 }
 
 .article-content code {

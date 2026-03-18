@@ -1,4 +1,5 @@
 import ReactMarkdown from "react-markdown";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { posts } from "@/data/posts";
 import { getVisiblePosts, parsePostDate } from "@/lib/posts";
@@ -77,7 +78,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     return {
         title: `${post.title} | Blog DividAI`,
         description: post.excerpt,
-        keywords: `${post.category}, DividAI, blog, financas`,
+        keywords: [post.category, "DividAI", "blog", "financas", ...post.tags].join(", "),
         authors: [{ name: "DividAI" }],
         alternates: {
             canonical: url,
@@ -135,12 +136,36 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
     const articleUrl = `https://blog.dividai.com/post/${post.slug}`;
     const imageUrl = `${articleUrl}/opengraph-image`;
     const { primaryContent, secondaryContent } = splitPostContent(post.content);
+    const breadcrumbStructuredData = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            {
+                "@type": "ListItem",
+                position: 1,
+                name: "Inicio",
+                item: "https://blog.dividai.com",
+            },
+            {
+                "@type": "ListItem",
+                position: 2,
+                name: post.title,
+                item: articleUrl,
+            },
+        ],
+    };
 
     return (
         <>
             <ReadingProgress />
 
             <article data-reading-root style={{ maxWidth: "800px", margin: "4rem auto 0 auto" }}>
+                <nav className="breadcrumb" aria-label="Breadcrumb">
+                    <Link href="/">Inicio</Link>
+                    <span className="breadcrumb__separator">/</span>
+                    <span className="breadcrumb__current">{post.title}</span>
+                </nav>
+
                 <header className="article-header">
                     <span className="post-category" style={{ fontSize: "1rem" }}>
                         {post.category}
@@ -204,30 +229,39 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
-                        __html: JSON.stringify({
-                            "@context": "https://schema.org",
-                            "@type": "Article",
-                            headline: post.title,
-                            description: post.excerpt,
-                            mainEntityOfPage: articleUrl,
-                            url: articleUrl,
-                            image: [imageUrl],
-                            author: {
-                                "@type": "Organization",
-                                name: "Equipe DividAI",
-                                url: "https://blog.dividai.com",
-                            },
-                            publisher: {
-                                "@type": "Organization",
-                                name: "DividAI",
-                                logo: {
-                                    "@type": "ImageObject",
-                                    url: "https://blog.dividai.com/logo.png",
+                        __html: JSON.stringify([
+                            {
+                                "@context": "https://schema.org",
+                                "@type": "Article",
+                                headline: post.title,
+                                description: post.excerpt,
+                                mainEntityOfPage: {
+                                    "@type": "WebPage",
+                                    "@id": articleUrl,
                                 },
+                                url: articleUrl,
+                                image: [imageUrl],
+                                articleSection: post.category,
+                                keywords: post.tags.join(", "),
+                                inLanguage: "pt-BR",
+                                author: {
+                                    "@type": "Organization",
+                                    name: "Equipe DividAI",
+                                    url: "https://blog.dividai.com",
+                                },
+                                publisher: {
+                                    "@type": "Organization",
+                                    name: "DividAI",
+                                    logo: {
+                                        "@type": "ImageObject",
+                                        url: "https://blog.dividai.com/logo.png",
+                                    },
+                                },
+                                datePublished: publishedTime,
+                                dateModified: publishedTime,
                             },
-                            datePublished: publishedTime,
-                            dateModified: publishedTime,
-                        }),
+                            breadcrumbStructuredData,
+                        ]),
                     }}
                 />
             </article>
