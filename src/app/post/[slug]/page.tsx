@@ -249,6 +249,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                                 },
                                 datePublished: publishedTime,
                                 dateModified: publishedTime,
+                                articleBody: post.content.replace(/[#*\-`]/g, '').substring(0, 5000),
                             },
                             breadcrumbStructuredData,
                         ]),

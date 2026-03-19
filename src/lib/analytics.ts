@@ -71,3 +71,32 @@ export const trackTimeOnPage = (seconds: number) => {
     seconds: seconds,
   });
 };
+
+// Enhanced conversion tracking
+export const trackInternalLink = (linkUrl: string, linkText?: string, context?: string) => {
+  trackEvent('internal_link_click', {
+    link_url: linkUrl,
+    link_text: linkText,
+    context: context, // 'post_content', 'related_posts', 'header', etc
+  });
+};
+
+export const trackFormSubmission = (formName: string, success: boolean) => {
+  trackEvent('form_submission', {
+    form_name: formName,
+    success: success,
+  });
+};
+
+export const trackAdClick = (adUnit: string, adType?: string) => {
+  trackEvent('ad_click', {
+    ad_unit: adUnit,
+    ad_type: adType,
+  });
+};
+
+export const trackScrollMilestone = (milestone: number) => {
+  trackEvent('scroll_milestone', {
+    scroll_percent: milestone, // 25, 50, 75, 100
+  });
+};

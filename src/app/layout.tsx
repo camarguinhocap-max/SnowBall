@@ -4,6 +4,7 @@ import { Inter, Outfit } from "next/font/google";
 import DarkModeToggle from "@/components/DarkModeToggle";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import SearchBar from "@/components/SearchBar";
+import ConversionTracker from "@/components/ConversionTracker";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -18,15 +19,25 @@ export const metadata: Metadata = {
     title: "Blog DividAI | Financas sem complicacoes",
     description:
         "Aprenda a organizar sua vida financeira, sair das dividas e comecar a investir com foco na realidade brasileira.",
+    keywords: "financas pessoais, investimentos, educacao financeira, renda extra, bitcoin, brasil",
+    robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
     openGraph: {
         type: "website",
         locale: "pt_BR",
         url: "https://blog.dividai.com",
         siteName: "Blog DividAI",
+        title: "Blog DividAI | Financas sem complicacoes",
+        description:
+            "Aprenda a organizar sua vida financeira, sair das dividas e comecar a investir com foco na realidade brasileira.",
     },
     twitter: {
         card: "summary_large_image",
         title: "Blog DividAI",
+        description:
+            "Aprenda a organizar sua vida financeira, sair das dividas e comecar a investir com foco na realidade brasileira.",
+    },
+    verification: {
+        google: process.env.GOOGLE_SITE_VERIFICATION || "",
     },
 };
 
@@ -50,18 +61,24 @@ const siteStructuredData = [
         url: "https://blog.dividai.com",
         logo: "https://blog.dividai.com/favicon-transparent.png",
     },
-];
-
-export default function RootLayout({
-    children,
-}: Readonly<{
-    children: React.ReactNode;
-}>) {
-    return (
-        <html lang="pt-BR">
-            <head>
+];meta name="theme-color" content="#0ea5e9" />
+                <meta name="mobile-web-app-capable" content="yes" />
+                <meta name="apple-mobile-web-app-capable" content="yes" />
+                <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+                <link rel="alternate" type="application/rss+xml" href="https://blog.dividai.com/api/feed" />
                 <script
                     async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543510171277537"
+                    crossOrigin="anonymous"
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(siteStructuredData) }}
+                />
+                <GoogleAnalytics />
+            </head>
+            <body className={`${inter.variable} ${outfit.variable}`}>
+                <ConversionTracker /
                     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543510171277537"
                     crossOrigin="anonymous"
                 />

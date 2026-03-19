@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { trackScrollMilestone, trackTimeOnPage, trackInternalLink } from '@/lib/analytics';
 
 declare global {
   interface Window {
@@ -22,13 +23,64 @@ export default function GoogleAnalytics() {
     }
     window.gtag = gtag;
     gtag('js', new Date());
-    gtag('config', gaId);
+    gtag('config', gaId, {
+      'page_path': window.location.pathname,
+      'send_page_view': true,
+    });
 
     // Carregar script do Google Analytics
     const script = document.createElement('script');
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
     document.head.appendChild(script);
+
+    // Track scroll depth milestones
+    const trackedMilestones = new Set<number>();
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const docHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY;
+      const scrollPercent = Math.round(((scrollTop + windowHeight) / docHeight) * 100);
+
+      [25, 50, 75, 100].forEach((milestone) => {
+        if (scrollPercent >= milestone && !trackedMilestones.has(milestone)) {
+          trackedMilestones.add(milestone);
+          trackScrollMilestone(milestone);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    // Track time on page
+    let pageStartTime = Date.now();
+    const handleBeforeUnload = () => {
+      const timeOnPage = Math.round((Date.now() - pageStartTime) / 1000);
+      if (timeOnPage > 3) {
+        trackTimeOnPage(timeOnPage);
+      }
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    // Track internal link clicks
+    const handleLinkClick = (e: Event) => {
+      const target = e.target as HTMLElement;
+      if (target instanceof HTMLAnchorElement && target.href) {
+        const href = target.href;
+        if (href.includes(window.location.origin) && !href.includes('/api/')) {
+          trackInternalLink(href, target.textContent || undefined, 'link_click');
+        }
+      }
+    };
+
+    document.addEventListener('click', handleLinkClick, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+      document.removeEventListener('click', handleLinkClick);
+    };
   }, [gaId]);
 
   return null;

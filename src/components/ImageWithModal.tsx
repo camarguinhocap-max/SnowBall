@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
 export default function ImageWithModal({ src, alt }: { src?: string; alt?: string }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,18 +10,30 @@ export default function ImageWithModal({ src, alt }: { src?: string; alt?: strin
         return null;
     }
 
+    // Generate WebP version if not already an SVG or WebP
+    const isWebP = src.endsWith('.webp');
+    const isSvg = src.endsWith('.svg');
+    const webpSrc = !isWebP && !isSvg ? src.replace(/\.(jpg|jpeg|png)$/i, '.webp') : src;
+
     return (
         <>
-            <div className={`post-image-frame${isLoaded ? " is-loaded" : ""}`}>
-                <img
-                    src={src}
-                    alt={alt || ""}
-                    onClick={() => setIsOpen(true)}
-                    onLoad={() => setIsLoaded(true)}
-                    className="post-image"
-                    loading="lazy"
-                    decoding="async"
-                />
+            <div className={`post-image-frame${isLoaded ? ' is-loaded' : ''}`}>
+                <picture>
+                    {!isSvg && (
+                        <source srcSet={webpSrc} type="image/webp" />
+                    )}
+                    <img
+                        src={src}
+                        alt={alt || ''}
+                        onClick={() => setIsOpen(true)}
+                        onLoad={() => setIsLoaded(true)}
+                        className="post-image"
+                        loading="lazy"
+                        decoding="async"
+                        width={800}
+                        height={600}
+                    />
+                </picture>
             </div>
 
             {isOpen && (
@@ -30,7 +42,12 @@ export default function ImageWithModal({ src, alt }: { src?: string; alt?: strin
                         <button className="modal-close" onClick={() => setIsOpen(false)}>
                             &times;
                         </button>
-                        <img src={src} alt={alt || ""} className="modal-img" />
+                        <picture>
+                            {!isSvg && (
+                                <source srcSet={webpSrc} type="image/webp" />
+                            )}
+                            <img src={src} alt={alt || ''} className="modal-img" />
+                        </picture>
                     </div>
                 </div>
             )}
