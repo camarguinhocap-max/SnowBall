@@ -5,6 +5,10 @@ import ShopCatalog from "@/components/ShopCatalog";
 export const metadata = {
   title: 'Catálogo de Recomendações | Blog DividAI',
   description: 'Nossas sugestões de livros, equipamentos e ferramentas para alavancar sua educação financeira e produtividade.',
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function Shop() {

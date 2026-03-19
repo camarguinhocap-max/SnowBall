@@ -10,6 +10,7 @@
 - [x] **Deploy no Vercel**: Site online em produção em `dividai.com`.
 - [x] **Remover redirecionamentos**: Criado `vercel.json` e corrigido `metadataBase` para `https://dividai.com`.
 - [x] **Validar fix no Search Console**: Clicado em "VALIDATE FIX" para reavaliar as 3 páginas com redirect.
+- [x] **Aplicar noindex nas páginas auxiliares**: `/search` e `/shop` estão com `noindex,follow`, e `/shop` saiu do sitemap.
 - [ ] **Aguardar reprocessamento**: 24-48 horas para Google remover o status "Page with redirect" das 3 páginas.
 - [ ] **Aguardar indexação completa**: 1-2 semanas para todas as 11 páginas serem indexadas (status: "Discovered - currently not indexed").
 - [ ] **Reaplicar no AdSense**: Uma vez indexadas as 12 páginas, remover código antigo, inserir novo código do AdSense, e aguardar revisão (2-7 dias).

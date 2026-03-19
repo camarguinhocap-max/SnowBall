@@ -194,28 +194,18 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
 
                     <ReactMarkdown components={markdownComponents}>{primaryContent}</ReactMarkdown>
 
-                    {secondaryContent ? (
-                        <>
-                            <ScrollReveal className="article-inline-newsletter" delay={60}>
-                                <NewsletterForm
-                                    compact
-                                    source={`post_inline:${post.slug}`}
-                                    title="Entre para a lista do blog"
-                                    description="Receba alertas de novos artigos, ideias praticas e guias que ajudam voce a investir melhor."
-                                />
-                            </ScrollReveal>
-                            <ReactMarkdown components={markdownComponents}>{secondaryContent}</ReactMarkdown>
-                        </>
-                    ) : (
-                        <ScrollReveal className="article-inline-newsletter" delay={60}>
-                            <NewsletterForm
-                                compact
-                                source={`post_end:${post.slug}`}
-                                title="Gostou do conteudo?"
-                                description="Assine para receber novos artigos e resumos praticos direto no seu e-mail."
-                            />
-                        </ScrollReveal>
+                    {secondaryContent && (
+                        <ReactMarkdown components={markdownComponents}>{secondaryContent}</ReactMarkdown>
                     )}
+
+                    <ScrollReveal className="article-inline-newsletter" delay={60}>
+                        <NewsletterForm
+                            compact
+                            source={`post_end:${post.slug}`}
+                            title="Gostou do conteudo?"
+                            description="Assine para receber novos artigos e resumos praticos direto no seu e-mail."
+                        />
+                    </ScrollReveal>
                 </div>
 
                 {post.category === "Investimentos" && <InvestmentDisclaimer />}
