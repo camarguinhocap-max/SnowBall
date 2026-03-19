@@ -848,20 +848,53 @@ Mesmo que seja pouco no começo.
 ### 6. Educação financeira é comportamento, não matemática
 
 Não é sobre ser bom com números.
-É sobre hábitos.
+É sobre fazer as escolhas certas repetidamente.
 
-* Gastar menos do que ganha.
-* Investir regularmente.
-* Evitar dívidas caras.
-* Pensar no longo prazo.
+**Comportamentos certos:**
+* Gastar menos do que ganha
+* Investir regularmente
+* Evitar dívidas caras
+* Pensar no longo prazo
+* Aprender constantemente
+* Ser paciente com o processo
 
-Simples não significa fácil.
-Mas funciona.
+**Comportamentos errados:**
+* Comprar por emoção
+* Parcelar tudo
+* Achar que uma compra \"barata\" é \"lucro\"
+* Pensar que vai ficar rico rápido
+* Desprezar quantias pequenas
 
-### Conclusão
+### 7. Comece HOJE com 3 ações concretas
 
-Educação financeira não é sobre ficar rico rápido.
-É sobre construir estabilidade e liberdade ao longo do tempo.
+**1. Rastreie seu gasto de 30 dias**
+Não mude nada. Só anote. Depois você enxerga a verdade. Liste cada real gasto.
+
+**2. Escolha UM app ou planilha de controle**
+E use todo dia. Opções: Organizze, Nubank, Google Sheets, Excel simples.
+
+**3. Separe R$10-50 para sua \"reserva emocional\"**
+Mesmo que seja pouco. Isso cria hábito. O hábito é o que muda tudo.
+
+### 8. Os 3 pilares da educação financeira
+
+**Pilar 1 - Conhecimento:**
+Aprenda sobre: juros, inflação, impostos, investimentos básicos, risco, diversificação.
+
+**Pilar 2 - Comportamento:**
+Não gastar por emoção, ser consistente, ser paciente, evitar comparações.
+
+**Pilar 3 - Prática:**
+Não estude só. Aplique desde o dia 1. Mesmo que pequeno. Ação bate teoria.
+
+### Conclusão: Você não vira milionário do dia para a noite
+
+Mas vira estabilizado. E depois, lentamente, prospera.
+
+Educação financeira não é sobre privilégio ou sorte.
+É sobre conhecimento + conversão + paciência.
+
+Com o tempo, o dinheiro trabalha para você.
 
 Você não precisa ganhar muito para começar.
 Precisa começar para, um dia, ganhar mais e ter tranquilidade.
@@ -1256,15 +1289,55 @@ Para objetivos de longo prazo, outros investimentos podem oferecer maior potenci
 
 Mas esses também envolvem mais risco.
 
-### Comparação simples
+### Desvantagens de 100% do CDI
+
+**Existe Imposto de Renda**
+Investimentos de renda fixa normalmente pagam IR, conforme tabela acima. Se sacar em 180 dias, perde 22,5% do ganho.
+
+**Rendimento abaixo da inflação em períodos ruins**
+Em 2020: CDI ~2% vs. Inflação ~5% (perdeu poder de compra real).
+
+**Baixo retorno para horizonte muito longo**
+Se quer ficar milionário, 100% do CDI sozinho não faz isso rapidamente.
+
+### Quando 100% do CDI DEFINITIVAMENTE vale a pena
+
+✅ **Você é iniciante** — Melhor começar seguro  
+✅ **Precisa de reserva de emergência** — Segurança + liquidez  
+✅ **Quer criar fundo para meta curto prazo** (1-2 anos) — Seguro e melhor que poupança  
+✅ **Está com medo do mercado** — Comece aqui, depois migre  
+✅ **Tem pouco dinheiro** — Acumula sem risco enquanto aprende  
+
+### Estratégia: Combinar 100% CDI com outros investimentos
+
+Otimal seria:
+- 50% em 100% CDI (segurança + testes)
+- 30% em ações (crescimento)
+- 15% em fundos imobiliários
+- 5% reserva líquida
+
+Essa diversificação reduz risco e melhora retorno total.
+
+### Comparação realista
 
 De forma geral:
 
-**Poupança** → menor rendimento  
-**100% do CDI** → rendimento melhor e ainda conservador  
-**Renda variável** → potencial maior, mas com risco  
+**Poupança** → ~8-9% ao ano  
+**100% do CDI** → ~10-11% ao ano (melhor e conservador)  
+**Renda variável** → potencial maior (15-20%+), mas com risco  
+**Tesouro Selic** → similar ao CDI, ainda mais seguro  
 
-Por isso muitos investidores usam aplicações atreladas ao CDI como primeiro passo no mundo dos investimentos.
+### Conclusão: Vale a pena?
+
+**Para começar: SIM**
+Melhor que poupança, seguro, simples, líquido.
+
+**Para riqueza de longo prazo: NÃO é suficiente**
+Mas é excelente como PARTE de uma estratégia.
+
+100% do CDI vale a pena como INÍCIO. Comece lá, aprenda, acumule, e depois expanda para investimentos de maior potencial.
+
+Não é tudo ou nada. É uma jornada.
 
         `
     },
