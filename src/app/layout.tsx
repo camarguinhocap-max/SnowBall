@@ -61,7 +61,13 @@ const siteStructuredData = [
         url: "https://blog.dividai.com",
         logo: "https://blog.dividai.com/favicon-transparent.png",
     },
-];meta name="theme-color" content="#0ea5e9" />
+];
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+    return (
+        <html lang="pt-BR">
+            <head>
+                <meta name="theme-color" content="#0ea5e9" />
                 <meta name="mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -78,17 +84,7 @@ const siteStructuredData = [
                 <GoogleAnalytics />
             </head>
             <body className={`${inter.variable} ${outfit.variable}`}>
-                <ConversionTracker /
-                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543510171277537"
-                    crossOrigin="anonymous"
-                />
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(siteStructuredData) }}
-                />
-                <GoogleAnalytics />
-            </head>
-            <body className={`${inter.variable} ${outfit.variable}`}>
+                <ConversionTracker />
                 <DarkModeToggle />
                 <header className="header">
                     <div className="container header-content">
