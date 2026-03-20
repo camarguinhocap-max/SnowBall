@@ -1,0 +1,15 @@
+# Ignore markdown guides
+GOOGLE_SEARCH_CONSOLE_SETUP.md
+GA4_SETUP_GUIDE.md
+CORE_WEB_VITALS_GUIDE.md
+SETUP_DEPLOY.md
+PENDENCIAS.md
+README.md
+
+# Standard ignores
+node_modules
+.next
+.git
+.env.local
+dist
+build
