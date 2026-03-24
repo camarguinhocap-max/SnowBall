@@ -26,6 +26,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.6,
         },
+        {
+            url: `${baseUrl}/termos-de-uso`,
+            changeFrequency: 'monthly' as const,
+            priority: 0.6,
+        },
+        {
+            url: `${baseUrl}/sobre`,
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
+        },
     ];
 
     // Dynamic routes for blog posts

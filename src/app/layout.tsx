@@ -108,6 +108,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         <nav className="nav-links" aria-label="Navegacao principal">
                             <Link href="/">Inicio</Link>
                             <Link href="/#artigos">Artigos</Link>
+                            <Link href="/sobre">Sobre</Link>
                             <Link href="/contato">Contato</Link>
                         </nav>
                     </div>
@@ -129,6 +130,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         >
                             <Link href="/">Inicio</Link>
                             <Link href="/#artigos">Artigos</Link>
+                            <Link href="/sobre">Sobre</Link>
+                            <Link href="/termos-de-uso">Termos de Uso</Link>
                             <Link href="/politica-de-privacidade">Politica de Privacidade</Link>
                             <Link href="/contato">Contato</Link>
                         </div>
