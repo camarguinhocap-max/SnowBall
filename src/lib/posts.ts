@@ -54,7 +54,7 @@ export function isPublished(post: Post, today = new Date()): boolean {
  */
 export function getVisiblePosts(): Post[] {
   const now = new Date();
-  return posts.filter((p) => isPublished(p, now));
+  return posts.filter((p) => !p.draft && isPublished(p, now));
 }
 
 /**

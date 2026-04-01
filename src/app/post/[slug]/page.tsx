@@ -123,6 +123,9 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
     if (!post) {
         notFound();
     }
+    if (post.draft) {
+        notFound();
+    }
 
     const publishedDate = parsePostDate(post.date);
     const publishGateDate = new Date(publishedDate);

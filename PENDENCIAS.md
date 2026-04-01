@@ -1,23 +1,45 @@
-# Lista de Pendências - Blog DividAI
+# Lista de Pendencias - Blog DividAI
 
 ## Regras e Lembretes
-- **Links da Amazon**: Todo e qualquer link da Amazon precisa conter, em algum lugar, o código `ofertaspri0ee`. Se não tiver esse código, o link não está afiliado e a comissão não cai na conta. Sempre checar isso antes de publicar links.
+- **Links da Amazon**: Todo link da Amazon precisa conter o codigo `ofertaspri0ee`. Se nao tiver, nao gera comissao. Conferir antes de publicar.
 
-## Aprovação do Google AdSense (Em Progresso)
-- [x] **Desabilitar aba Shop**: Ocultada do menu para aprovação (link comentado em `src/app/layout.tsx`).
-- [x] **Adicionar mais conteúdo**: +3 novos posts adicionados (orçamento, reserva de emergência, sair de dívidas). Total: 12 posts.
-- [x] **Corrigir vulnerabilidades de segurança**: Atualizado nodemailer para v8.0.1.
-- [x] **Deploy no Vercel**: Site online em produção em `dividai.com`.
+## Aprovacao do Google AdSense (Em Progresso)
+- [x] **Desabilitar aba Shop**: Ocultada do menu para aprovacao (link comentado em `src/app/layout.tsx`).
+- [x] **Adicionar mais conteudo**: +3 novos posts (orcamento, reserva de emergencia, sair de dividas). Total: 12 posts.
+- [x] **Corrigir vulnerabilidades de seguranca**: Atualizado nodemailer para v8.0.1.
+- [x] **Deploy no Vercel**: Site online em producao em `dividai.com`.
 - [x] **Remover redirecionamentos**: Criado `vercel.json` e corrigido `metadataBase` para `https://dividai.com`.
-- [x] **Validar fix no Search Console**: Clicado em "VALIDATE FIX" para reavaliar as 3 páginas com redirect.
-- [x] **Aplicar noindex nas páginas auxiliares**: `/search` e `/shop` estão com `noindex,follow`, e `/shop` saiu do sitemap.
-- [ ] **Aguardar reprocessamento**: 24-48 horas para Google remover o status "Page with redirect" das 3 páginas.
-- [ ] **Aguardar indexação completa**: 1-2 semanas para todas as 11 páginas serem indexadas (status: "Discovered - currently not indexed").
-- [ ] **Reaplicar no AdSense**: Uma vez indexadas as 12 páginas, remover código antigo, inserir novo código do AdSense, e aguardar revisão (2-7 dias).
-- [ ] **Verificações finais**: PageSpeed, mobile-friendly, sem links quebrados.
-- [ ] **Reativar aba Shop**: Após aprovação do AdSense, descomente o link em `src/app/layout.tsx`.
+- [x] **Validar fix no Search Console**: Acionado "VALIDATE FIX" nas 3 paginas com redirect.
+- [x] **Aplicar noindex nas paginas auxiliares**: `/search` e `/shop` com `noindex,follow`; `/shop` saiu do sitemap.
+- [ ] **Aguardar reprocessamento**: 24-48h para o Google remover o status "Page with redirect" das 3 paginas.
+- [ ] **Aguardar indexacao completa**: 1-2 semanas para as 11+ paginas ficarem indexadas (status: "Discovered - currently not indexed").
+- [ ] **Reaplicar no AdSense**: Quando as 12 paginas estiverem indexadas, remover codigo antigo, inserir novo snippet do AdSense e aguardar revisao (2-7 dias).
+- [ ] **Verificacoes finais**: PageSpeed, mobile-friendly, sem links quebrados.
+- [ ] **Reativar aba Shop**: Apos aprovacao do AdSense, descomentar o link em `src/app/layout.tsx`.
 
-## Futuras Integrações
-- [ ] **Automação Redes Sociais (Make.com)**: Conectar o RSS Feed do Blog (`https://blog.dividai.com/api/feed`) ao *Instagram* e ao *X (Twitter)* usando a plataforma Make.com. O objetivo é que, ao lançarmos novos artigos via código, a própria ferramenta Make detecte e publique chamadas ou resumos com o link final automaticamente nas redes oficiais.
-- [ ] **Automação de Preços da Loja (Vercel Cronjob)**: Migrar a base de dados do `shop.ts` para o Supabase e criar um Vercel Cronjob que dispare de madrugada um robô. Esse robô usará as credenciais de API da Shopee (AppID: 18337900933), da Amazon (tag: ofertaspri0ee-20) e do Mercado Livre (tag: ofertasprimeml) para puxar os preços exatos e atualizar os dados no Supabase.
-- [ ] **Contador de Views Real (Supabase)**: Migrar a listagem de artigos para receber dados do banco (Supabase). Criar uma tabela simples que armazene os `views` de cada slug, e incrementar via API Route ou Server Action ao carregar o artigo. Substituir a ordenação manual/estática por ordenação real no Dashboard.
+### Agendamento e acoes proximas
+- [ ] **Revisar indexacao no Search Console**: 07/04/2026 — checar se as 12 paginas estao indexadas; se sim, reaplicar AdSense e liberar Shop.
+- [ ] **Snippet AdSense pronto** (trocar `data-ad-slot` pelo ID gerado no painel):
+
+```html
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543510171277537" crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1543510171277537"
+     data-ad-slot="SEU_SLOT"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+```
+
+- [ ] **Checklist PageSpeed/mobile antes de reaplicar**:
+  1) Lighthouse mobile/desktop >= 90 (olhar CLS/LCP).
+  2) Imagens otimizadas (Next/Image ou `width/height` fixos) e fontes locais.
+  3) Scripts nao criticos com `defer` ou carregados `afterInteractive`; sem bloqueio de renderizacao.
+  4) Core Web Vitals no GA4 ok (sem picos de INP/CLS).
+  5) Links internos cobrindo todos os posts + sitemap atualizado.
+
+## Futuras Integracoes
+- [ ] **Automacao Redes Sociais (Make.com)**: Conectar o RSS (`https://blog.dividai.com/api/feed`) ao Instagram e X para publicar novos artigos automaticamente.
+- [ ] **Automacao de Precos da Loja (Vercel Cronjob)**: Migrar `shop.ts` para Supabase e criar cronjob que atualiza precos via APIs Shopee (AppID 18337900933), Amazon (tag ofertaspri0ee-20) e Mercado Livre (tag ofertasprimeml).
+- [ ] **Contador de Views Real (Supabase)**: Armazenar `views` por slug e usar para ordenar artigos em dashboard em vez de lista estatica.

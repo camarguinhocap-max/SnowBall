@@ -1,70 +1,78 @@
 #!/usr/bin/env python3
 """
-Script para enviar notificação automática de novo artigo para Telegram
-com o padrão correto (título, resumo, link, hashtags)
-Roda automaticamente diariamente via GitHub Actions
+Envia notificacao de novos artigos para o Telegram.
+Executado diariamente via GitHub Actions.
 """
 
-import re
 import os
-from datetime import datetime, timedelta
-import urllib.request
+import re
 import urllib.parse
+import urllib.request
+from datetime import datetime, timedelta
 
-# Obter credenciais de variáveis de ambiente
-TELEGRAM_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
-TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID', '-1003567265869')
+# Credenciais vindas de variaveis de ambiente (definidas nos secrets do repo)
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "-1003567265869")
 
 if not TELEGRAM_TOKEN:
-    print("❌ Erro: TELEGRAM_BOT_TOKEN não configurada")
-    exit(1)
+    print("❌ Erro: TELEGRAM_BOT_TOKEN nao configurada")
+    raise SystemExit(1)
 
-# Ler o arquivo posts.ts
+# Ler posts
 try:
-    with open('src/data/posts.ts', 'r', encoding='utf-8') as f:
+    with open("src/data/posts.ts", "r", encoding="utf-8") as f:
         content = f.read()
 except FileNotFoundError:
-    print("❌ Erro: arquivo src/data/posts.ts não encontrado")
-    exit(1)
+    print("❌ Erro: arquivo src/data/posts.ts nao encontrado")
+    raise SystemExit(1)
 
-# Buscar posts com a data de hoje (ajustado para São Paulo -3:00)
-# GitHub Actions roda em UTC, então subtraímos 3 horas para BR
+# Data de hoje no fuso de Sao Paulo (UTC-3) com abreviacao PT-BR
 agora = datetime.utcnow() - timedelta(hours=3)
-today = agora.strftime('%d %b %Y')
+month_pt = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
+today = f"{agora.day:02d} {month_pt[agora.month - 1]} {agora.year}"
 print(f"🔍 Procurando por posts de: {today}")
 
-# Regex para encontrar posts
-post_pattern = r'\{\s*slug:\s*[\'"]([^\'"]+)[\'"]\s*,\s*title:\s*[\'"]([^\'"]+)[\'"]\s*,\s*excerpt:\s*[\'"]([^\'"]+)[\'"]\s*,.*?date:\s*[\'"]' + re.escape(today) + r'[\'"]'
+# Busca blocos que contenham a data de hoje
+post_pattern = (
+    r"\{\s*slug:\s*['\"]([^'\"]+)['\"]\s*,\s*title:\s*['\"]([^'\"]+)['\"]\s*,\s*"
+    r"excerpt:\s*['\"]([^'\"]+)['\"]\s*,.*?date:\s*['\"]" + re.escape(today) + r"['\"]"
+)
 
-matches = re.findall(post_pattern, content, re.DOTALL)
+matches = []
+for m in re.finditer(post_pattern, content, re.DOTALL):
+    start = m.start()
+    end = content.find("},", start)
+    if end == -1:
+        end = m.end()
+    snippet = content[start:end]
+    if "draft: true" in snippet:
+        continue
+    matches.append(m.groups())
 
 if not matches:
     print(f"ℹ️ Nenhum post encontrado para {today}")
-    exit(0)
+    raise SystemExit(0)
 
 print(f"✅ {len(matches)} post(s) encontrado(s) para {today}")
 
 for slug, title, excerpt in matches:
-    # Limpar excerpt (remover quebras de linha)
-    excerpt = excerpt.strip().replace('\n', ' ')[:150]
-    
-    message = f"""📰 <b>Novo artigo no Blog DividAI!</b>
+    excerpt = excerpt.strip().replace("\n", " ")[:150]
 
-📝 <b>{title}</b>
-💡 {excerpt}...
-🔗 <b>Leia:</b> https://blog.dividai.com/post/{slug}
+    message = (
+        "📰 <b>Novo artigo no Blog DividAI!</b>\n\n"
+        f"📝 <b>{title}</b>\n"
+        f"💡 {excerpt}...\n"
+        f"📎 <b>Leia:</b> https://blog.dividai.com/post/{slug}\n\n"
+        "#DividAI #Blog"
+    )
 
-#DividAI #Blog"""
-
-    url = 'https://api.telegram.org/bot' + TELEGRAM_TOKEN + '/sendMessage'
-    data = urllib.parse.urlencode({
-        'chat_id': TELEGRAM_CHAT_ID,
-        'text': message,
-        'parse_mode': 'HTML'
-    }).encode('utf-8')
+    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+    data = urllib.parse.urlencode(
+        {"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "HTML"}
+    ).encode("utf-8")
 
     try:
-        response = urllib.request.urlopen(url, data, timeout=5)
+        urllib.request.urlopen(url, data, timeout=5)
         print(f"✅ Artigo '{title}' notificado no Telegram")
-    except Exception as e:
-        print(f"❌ Erro ao notificar: {e}")
+    except Exception as exc:  # noqa: BLE001
+        print(f"❌ Erro ao notificar: {exc}")

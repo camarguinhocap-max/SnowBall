@@ -8,6 +8,7 @@ export interface Post {
     category: string;
     tags: string[];
     views?: number;
+    draft?: boolean;
 }
 
 export const posts: Post[] = [
@@ -206,6 +207,1990 @@ Você não precisa ganhar muito para começar. Você precisa COMEÇAR para, no f
 Organização financeira não é sobre restrição eterna. É sobre controle hoje para ter liberdade amanhã.
 
 A mudança que você quer não vem do conhecimento perfeito. Vem da primeira ação imperfaita. Comece hoje.
+        `
+    },
+    {
+        slug: 'guia-completo-para-sair-das-dividas-em-90-dias',
+        title: 'Guia completo para sair das dívidas em 90 dias (sem fórmulas mágicas)',
+        excerpt: 'Um plano de 12 semanas, passo a passo, para organizar o caos financeiro, negociar com credores, eliminar juros e voltar a investir com segurança.',
+        tags: ['dividas', 'planejamento', 'negociacao', 'orçamento', 'saude-financeira'],
+        category: 'Finanças Pessoais',
+        date: '01 Abr 2026',
+        readTime: '14 min de leitura',
+        content: `
+Sair das dívidas em 90 dias não é sobre um truque milagroso. É sobre método, disciplina e conversas difíceis conduzidas do jeito certo. Neste guia, você recebe um plano detalhado semana a semana, pensado para a realidade brasileira: inflação, cartão rotativo, crediário, consignado, cheque especial e juros que não perdoam.
+
+![Pessoa revisando contas com caneta e calculadora](https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=70)
+
+## Como usar este guia
+- Leia tudo de uma vez para ter a visão geral.
+- Volte ao início e execute semana a semana.
+- Pare de buscar atalhos: consistência vence genialidade financeira.
+
+## Linha do tempo dos 90 dias
+1. **Semana 1: Raio-X brutal das finanças.**
+2. **Semana 2: Congelar vazamentos e criar folga.**
+3. **Semanas 3-4: Negociar juros, trocar dívidas caras por baratas.**
+4. **Semanas 5-6: Plano de renda extra e corte inteligente.**
+5. **Semanas 7-8: Blindagem contra recaída e criação de reserva inicial.**
+6. **Semanas 9-12: Automatizar, acompanhar e consolidar hábitos.**
+
+![Quadro Kanban de finanças pessoais](https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=70)
+
+## Semana 1: Raio-X brutal (sem maquiagem)
+- Levante os **últimos 90 dias** de extratos (banco, cartão, Pix).
+- Classifique cada gasto em: Essencial / Importante / Dispensável.
+- Some tudo que é juros e multas: esse é o inimigo número um.
+- Liste **todas** as dívidas com: valor total, parcela, taxa de juros ao mês, vencimento, credor, garantia.
+- Calcule a sua **capacidade real de pagamento**: renda líquida - essenciais - mínimo de transporte/alimentação. Isso define o teto de negociação.
+
+Checklist rápido:
+- [ ] Extratos organizados em um só lugar.
+- [ ] Total de juros pagos nos últimos 3 meses.
+- [ ] Mapa de dívidas com taxas e garantias.
+
+## Semana 2: Congelar vazamentos e criar folga
+- Cancele ou pause assinaturas não essenciais.
+- Troque pacotes de celular/internet para planos mais baratos.
+- Transporte: combine carona, bilhete único, rota otimizada.
+- Alimentação: cozinhar 3x por semana reduz delivery em até 40%.
+- Defina um **limite semanal em dinheiro** para variáveis (ex.: R$ 150 para lazer e extras).
+
+Meta da semana: abrir espaço de **10% a 20% da renda** para negociar dívidas sem deixar o mês negativo.
+
+![Pessoa preparando marmitas](https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=70)
+
+## Semanas 3-4: Negociação estratégica
+- Ordene as dívidas do **maior juros para o menor** (cartão rotativo e cheque especial quase sempre lideram).
+- Contate credores com roteiro claro:
+  - Explique o contexto e demonstre capacidade de pagamento real.
+  - Peça **redução de juros** ou migração para linha mais barata (ex.: consignado, pessoal com garantia).
+  - Busque **parcelas fixas** que caibam no orçamento de folga criado.
+- Troque dívida cara por dívida barata **só se**: CET final menor, parcelas que cabem e sem colateral arriscado (não comprometa casa ou carro se isso colocar moradia em risco).
+- Documente tudo: protocolos, nomes, propostas.
+
+![Duas pessoas conversando com papéis na mão](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=70)
+
+## Semanas 5-6: Renda extra dirigida para a quitação
+- Escolha 1 frente rápida de renda: freelas simples, aulas, revenda, microtarefas online, edição de vídeos curtos.
+- Reutilize habilidades atuais: apresentação, planilha, texto, organização.
+- Regra de ouro: **100% da renda extra vai para amortizar dívida mais cara**.
+- Estabeleça meta concreta: exemplo, R$ 1.000 de renda extra em 30 dias reduz uma dívida de 12% a.m. em até 4 parcelas.
+
+## Semanas 7-8: Blindagem contra recaída
+- Trave cartão de crédito principal (físico e virtual) até quitar as dívidas caras.
+- Ative alertas de gasto no app do banco.
+- Crie um **fundo de emergência mínimo**: R$ 500 a R$ 1.000 em conta que renda 100% do CDI. Isso evita nova dívida por qualquer imprevisto.
+- Combine uma regra com alguém de confiança: compras acima de R$ 200 só depois de conversar.
+
+![Pessoa colocando dinheiro em pote rotulado Emergência](https://images.unsplash.com/photo-1435765925680-c6f0c6af981f?auto=format&fit=crop&w=1200&q=70)
+
+## Semanas 9-12: Consolidação e automatização
+- Programe pagamento automático das parcelas negociadas (evita multa e juros).
+- A cada quitação, **redirecione** o valor liberado para a próxima dívida (efeito bola de neve).
+- Revise o orçamento semanalmente: o que vazou, o que funcionou.
+- Se todas as dívidas caras sumiram, migre a renda extra para construir reserva de 3 meses de custo fixo.
+- Monte um painel simples (planilha ou app) com: saldo devedor, parcelas restantes, taxa, data-alvo de quitação.
+
+## Script de renegociação (use como base)
+> "Oi, [nome do credor], tive uma piora temporária de renda, mas já organizei um plano. Posso pagar R$ X fixos por mês e preciso reduzir os juros para quitar de forma realista. Tenho histórico de pagamento com vocês e quero manter a relação. Qual proposta vocês podem fazer dentro desse valor?"
+
+## Erros comuns que atrasam 90 dias
+- Trocar dívida cara por barata e **manter o cartão aberto**: em 3 meses você volta ao ponto zero.
+- Aceitar parcela que não cabe: atraso reativa juros antigos.
+- Não registrar acordos por escrito.
+- Usar renda extra para consumo imediato.
+
+## Como medir progresso
+- Dívida total inicial vs. dívida total a cada 2 semanas.
+- Juros mensais pagos antes vs. depois das negociações.
+- Percentual de renda comprometida com dívidas (meta: <20% após 90 dias).
+- Montante já alocado em reserva de emergência.
+
+![Planilha com gráfico caindo de dívida](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=70)
+
+## O que fazer ao final dos 90 dias
+- Mantê-la dívida cara zerada é prioridade absoluta.
+- Renegociar qualquer pendência remanescente com a mesma disciplina.
+- Criar rotina fixa: revisão semanal de orçamento, aporte automático para reserva, metas trimestrais.
+- Reintroduzir cartão de crédito só com limite reduzido e pagamento 100% em débito automático.
+
+### Checklist final de alta frequência
+- [ ] 100% das dívidas caras renegociadas ou quitadas.
+- [ ] Nenhum pagamento em atraso nos últimos 60 dias.
+- [ ] Reserva de emergência mínima criada.
+- [ ] Renda extra ainda ativa para acelerar metas.
+- [ ] Orçamento semanal funcionando sem furo.
+
+Sair das dívidas em 90 dias exige conversas desconfortáveis e decisões firmes, mas é totalmente possível quando você cria folga, negocia com dados e protege-se de recaídas. Depois de atravessar essa fase, o próximo passo é usar a mesma disciplina para investir com consistência — mesmo que comece com valores pequenos.
+        `
+    },
+    {
+        slug: 'carteira-2026-conservador-moderado-arrojado',
+        title: 'Como montar sua carteira 2026: perfis conservador, moderado e arrojado com exemplos práticos',
+        excerpt: 'Três modelos prontos para 2026, com percentuais, produtos sugeridos, lógica por trás de cada decisão e como rebalancear a cada trimestre.',
+        tags: ['carteira', 'alocacao', 'investimentos', 'perfil-de-risco', 'rebalanceamento'],
+        category: 'Investimentos',
+        date: '01 Abr 2026',
+        readTime: '15 min de leitura',
+        content: `
+Construir carteira em 2026 exige considerar juros ainda altos no Brasil, corte de Selic em ritmo gradual, bolsa com volatilidade e dólar sensível a ciclos externos. Este guia entrega três modelos completos — conservador, moderado e arrojado — com percentuais, produtos sugeridos e um ritual simples de rebalanceamento trimestral.
+
+![Investidor acompanhando gráficos no notebook](https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=70)
+
+## Premissas macro para 2026
+- Selic projetada terminando o ano entre 9% e 9,5%.
+- Inflação sob controle, porém com riscos de energia e alimentos.
+- EUA em ciclo de estabilização de juros, dólar sensível a dados de emprego e inflação.
+- Bolsa brasileira com lucros atraentes em setores defensivos e exportadores.
+
+Essas premissas guiam a escolha de produtos em cada perfil.
+
+## Regras de qualquer perfil
+1. **Reserva de emergência** separada (100% do CDI; 3-6 meses de gastos).
+2. Nenhum produto complexo sem entender risco e liquidez.
+3. Aporte automático mensal para não depender de vontade.
+4. Rebalanceamento trimestral: traz percentuais de volta à meta.
+
+## Perfil Conservador (prioridade: preservação + renda)
+**Objetivo:** manter poder de compra e gerar renda previsível.
+
+Alocação sugerida:
+- 55% **Renda fixa pós-fixada** (Tesouro Selic, CDB 100-110% CDI, fundos DI líquidos).
+- 20% **Prefixado curto** (Tesouro Prefixado 2027/2029 com estratégia de escada).
+- 10% **Inflação curta** (Tesouro IPCA+ 2029/2035) para blindar poder de compra.
+- 10% **Fundos imobiliários de tijolo** (logística, shoppings defensivos) para renda mensal.
+- 5% **Dólar defensivo** (ETF Dólar ou conta global de baixo custo).
+
+![Gráfico de pizza com alocação conservadora](https://images.unsplash.com/photo-1508387024700-9fe5c0b36c9d?auto=format&fit=crop&w=1200&q=70)
+
+Por que funciona:
+- Pós-fixado protege liquidez.
+- Prefixado curto captura prêmio de juros ainda altos.
+- IPCA+ garante correção real.
+- FIIs de tijolo dão renda estável e exposição imobiliária sem comprar imóvel físico.
+- Dólar reduz risco Brasil.
+
+## Perfil Moderado (equilíbrio entre renda e crescimento)
+Alocação sugerida:
+- 35% **Pós-fixado** (CDI).
+- 15% **Prefixado médio** (2029-2033).
+- 15% **Inflação média** (IPCA+ 2035-2045).
+- 20% **Ações/ETFs Brasil** (Ibovespa, dividendos, setores defensivos e elétricas).
+- 10% **FIIs híbridos/papel** (CRI high grade, poucos emissores).
+- 5% **Exterior** (ETF S&P 500 ou Nasdaq hedged/unhedged conforme tolerância).
+
+![Gráfico de barras comparando classes de ativos](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=70)
+
+Por que funciona:
+- Diversifica entre renda e crescimento.
+- Mantém proteção inflacionária e cambial.
+- Reduz risco de concentração setorial com ETFs.
+
+## Perfil Arrojado (crescimento com disciplina de risco)
+Alocação sugerida:
+- 20% **Pós-fixado** (colchão de liquidez para oportunidades).
+- 15% **IPCA+ longo** (2045+), atento à marcação a mercado.
+- 40% **Ações/ETFs Brasil** (mix de valor, crescimento e small caps em % menor).
+- 15% **Exterior** (ETFs globais, fator de crescimento, eventualmente emergentes).
+- 10% **FIIs/Crédito estruturado** (CRI high grade, logística, lajes de qualidade).
+
+![Pessoa analisando dados de mercado em telas múltiplas](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+Como controlar risco:
+- Nenhuma posição individual >5% do total (ações) e >10% (FIIs/ETFs).
+- Stop de tese: se fundamento romper, venda sem apego.
+- Caixa para aportes táticos em quedas amplas de índice.
+
+## Checklist de seleção de produtos
+- **Pós-fixado:** CET > 100% do CDI, liquidez compatível.
+- **Prefixado/IPCA+:** compare prêmio real vs. curva, evite prazos incompatíveis com objetivo.
+- **Ações/ETFs:** avalie custo (taxa de adm/IR), liquidez e exposição setorial.
+- **FIIs:** vacância, contratos, concentração de pagadores, gestão.
+- **Exterior:** custo de remessa, spread cambial, tributação.
+
+## Como rebalancear trimestralmente em 30 minutos
+1. Calcule pesos atuais de cada classe.
+2. Compare com meta do perfil.
+3. Use novos aportes para corrigir o que está abaixo da meta.
+4. Se algum peso ultrapassou limite máximo (ex.: 5 p.p. acima), venda o excedente e realoque.
+5. Registre decisão em 3 linhas: motivo, ajuste, próxima revisão.
+
+## Roteiro para 2026 mês a mês (exemplo moderado)
+- **Abr-Jun:** manter peso maior em pós-fixado enquanto Selic cai devagar.
+- **Jul-Set:** aumentar gradualmente ações/ETFs se corte de juros confirmar tendência.
+- **Out-Dez:** reforçar IPCA+ se inflação subir; se dólar disparar, ajustar hedge.
+
+## Erros a evitar em 2026
+- Comprar IPCA+ longo sem saber lidar com marcação a mercado.
+- Ignorar câmbio: zerar dólar pode deixar carteira exposta a risco Brasil.
+- Rebalancear só quando “sobrar tempo” (vira nunca).
+- Concentrar demais em um único setor queridinho do mercado.
+
+![Pessoa fazendo anotações com gráficos impressos](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=70)
+
+## Ação prática agora
+- Escolha o perfil compatível com seu objetivo e horizonte.
+- Abra planilha com percentuais alvo e datas de revisão.
+- Configure aporte automático mensal.
+- Marque na agenda os dias de rebalanceamento (ex.: 05/04, 05/07, 05/10, 05/01).
+
+Montar carteira em 2026 não é adivinhar mercado; é definir proporções coerentes com seu risco, revisar periodicamente e evitar decisões emocionais. Use um dos modelos acima como base, ajuste ao seu contexto e siga o ritual trimestral — consistência costuma vencer timing.
+        `
+    },
+    {
+        slug: 'investimentos-para-autonomos-2026',
+        title: 'Investimentos para autônomos em 2026: como investir com renda irregular e pagar menos imposto',
+        excerpt: 'Guia prático para quem é autônomo ou freelancer: como estabilizar caixa, separar pessoa física da jurídica, escolher produtos certos, montar carteira “barbell” e pagar menos imposto sem cair em armadilhas.',
+        tags: ['autonomos', 'investimentos', 'fluxo-de-caixa', 'mei', 'impostos'],
+        category: 'Investimentos',
+        date: '02 Abr 2026',
+        readTime: '16 min de leitura',
+        content: `
+Investir sendo autônomo é um jogo diferente: a renda oscila, os boletos chegam todo mês e o fisco continua ali. Em 2026, com juros ainda altos e tributos apertando, dá para criar uma estratégia que protege o caixa, reduz imposto e ainda faz o dinheiro render.
+
+![Pessoa trabalhando de casa com notebook e café](https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=1200&q=70)
+
+## 1. Primeiro, estabilize o fluxo de caixa
+Autônomo não tem “13º” nem férias pagas. Por isso, a ordem é diferente de quem é CLT:
+
+1) **Fundo de previsibilidade (3 a 6 meses de gastos fixos).**  
+   - Coloque em pós-fixados diários (Tesouro Selic, CDB 100–110% CDI com liquidez).  
+   - Objetivo: garantir que meses ruins não forcem crédito caro.
+
+2) **Conta separada para impostos.**  
+   - Se for MEI: reserve 5% do faturamento para DAS + ISS eventual.  
+   - Se for autônomo PF/empresário: guarde entre 15% e 27,5% conforme faixa + ISS/INSS.  
+   - Use uma subconta com liquidez diária; automação ajuda a não “comer” o imposto.
+
+3) **Capital de giro pessoal.**  
+   - Some boletos fixos + variáveis essenciais. Mantenha 60 dias disso em conta remunerada.  
+   - Evita pegar cheque especial se o cliente atrasar.
+
+![Quadro branco com calendário e post-its de metas](https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=70)
+
+## 2. Formalização: MEI, autônomo ou PJ simples?
+- **MEI (2026):** teto R$ 81 mil/ano (ou R$ 135 mil se for caminhoneiro). Se faturar perto do limite, planeje transição para ME ou autônomo PF com carnê-leão.  
+- **Autônomo PF (carnê-leão):** precisa emitir RPA/nota, recolher INSS (20% limitado ao teto) e IR mensal pelo carnê. Pode deduzir PGBL até 12% da renda tributável.  
+- **PJ simples (Lucro Presumido/Simples):** pode ser mais eficiente se fatura acima do MEI. Avalie alíquota efetiva vs. custo contábil.
+
+Regra prática: se sua margem é boa e faturamento passa de ~R$ 10–12 mil/mês, uma PJ simples costuma reduzir imposto. Mas não pule formalização — cliente grande pede nota.
+
+## 3. Segregue contas e rotina de pagamento
+- **Conta PJ** para receber, pagar impostos e custos do negócio.  
+- **Pró-labore fixo** (ex.: 30–50% do lucro líquido mensal) cai na sua conta PF no dia 1.  
+- **Distribuição de lucros** (isenta até limites legais) só depois de pagar impostos e reservar capital de giro da PJ.
+
+Automatize: débito automático de DAS/ISS, transferências semanais para “conta impostos” e para o “fundo de previsibilidade”.
+
+![Tela de app financeiro com múltiplas contas](https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=1200&q=70)
+
+## 4. Produtos certos para quem é autônomo
+### Caixa e proteção
+- Tesouro Selic / CDB 100%+ CDI com liquidez D+0/D+1 (para previsibilidade e impostos).  
+- Poupança não: rende menos e não compensa perder juros reais.
+
+### Crescimento conservador
+- IPCA+ médio (2029–2035) para proteger poder de compra de metas de 2–5 anos.  
+- Prefixado curto se a curva de juros estiver pagando prêmio real (compare vs. IPCA implícita).
+
+### Crescimento agressivo (porção menor, mas necessária)
+- ETFs de ações Brasil (BOVA11, SMAL11, DIVD11) para simplificar e evitar stock picking emocional.  
+- ETFs globais (IVVB11/NASD11) para dolarizar parte da carteira.  
+- FIIs high grade/híbridos para renda mensal (cuidado com concentração de CRI).
+
+### Previdência
+- PGBL para quem declara completo e contribui para INSS: deduz até 12% da renda bruta tributável.  
+- VGBL para quem declara simplificado ou já bateu o limite do PGBL.  
+- Prefira planos com taxa de administração ≤ 1% e sem taxa de carregamento.
+
+![Gráfico de barras de alocação barbell](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=70)
+
+## 5. Modelo de carteira “barbell” para renda irregular
+Ideia: extremos fortes e meio enxuto.
+
+- **60% Barra de proteção (caixa + renda fixa curta):** Selic, CDB liquidez, IPCA+ curto.  
+- **25% Núcleo conservador de inflação:** IPCA+ médio para manter poder de compra.  
+- **10% Crescimento local:** ETFs/ações Brasil com foco em dividendos e setores defensivos.  
+- **5% Crescimento global:** ETF S&P 500 / Nasdaq para dolarizar.
+
+Por quê? Porque caixa robusto dá tempo para segurar oscilações de receita. E o pedaço de crescimento mantém o patrimônio vencendo a inflação no longo prazo.
+
+## 6. Como aportar com receita volátil
+- Use **porcentagem do recebido**: ex.: 30% de cada nota emitida vai direto para investimentos (após separar impostos).  
+- Em meses fortes, aumente para 40–50%. Em meses fracos, mantenha o mínimo (10–15%) para não quebrar o hábito.  
+- Faça aportes **semanais** (não mensais) para suavizar volatilidade.
+
+## 7. Impostos: pague o necessário, não pague demais
+- Contribua para o **INSS**: garante contagem para aposentadoria e benefícios (auxílio-doença/maternidade).  
+- Use **PGBL** se tributa pelo completo: pode reduzir IR do carnê-leão.  
+- Se for PJ no Simples, acompanhe **fator R** para ficar em anexos mais baratos.  
+- Em FIIs, reinvista dividendos (isentos hoje) e controle o preço médio de ETFs/ações para IR de 15%/20%.
+
+![Mesa com recibos e calculadora](https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=70)
+
+## 8. Seguro, saúde e riscos que quebram o plano
+- **Saúde**: plano compatível com sua região e renda; criar reserva para coparticipação.  
+- **Seguro de vida/diária de incapacidade**: um mês sem trabalhar pode destruir o caixa.  
+- **Responsabilidade profissional** (se sua atividade exigir) para evitar passivos.
+
+## 9. Checklist mensal do autônomo investidor
+- [ ] Feche faturamento do mês e separe impostos no dia 1.  
+- [ ] Pague-se primeiro: pró-labore cai na conta PF, aporte mínimo em seguida.  
+- [ ] Rebalanceie classes se alguma passar 5 p.p. do alvo.  
+- [ ] Reforce caixa se cair abaixo de 3 meses de gastos.  
+- [ ] Reveja contratos e prazos de recebimento (renegocie para D+15/D+30).
+
+## 10. Erros mais comuns em 2026
+- Viver de recebíveis antecipados e pagar caro em desconto de duplicata.  
+- Não contribuir para INSS e perder benefício por incapacidade.  
+- Deixar imposto para o fim do mês e cair em multa/juros.  
+- Colocar todo excedente em renda fixa longa sem caixa suficiente.  
+- Comprar ação individual por dica e abandonar ETF.
+
+## 11. Roteiro em 30 dias para começar
+**Semana 1:** separar contas (PJ/PF), abrir subconta de impostos, iniciar controle de fluxo.  
+**Semana 2:** montar fundo de previsibilidade (meta: 1 mês de gastos).  
+**Semana 3:** definir alocação barbell, escolher corretora e produtos.  
+**Semana 4:** primeiro rebalanceamento e revisão de contratos/recebíveis.
+
+![Homem escrevendo metas financeiras em caderno](https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=70)
+
+## 12. Ferramentas e automações que ajudam
+- **Emissão de notas**: aplicativos municipais ou serviços como Nibo/ContaAzul para integrar com emissão e recebíveis.  
+- **Cobrança recorrente**: links de pagamento com vencimento e multa automática (PicPay/Asaas/PagSeguro).  
+- **Controle de fluxo**: planilhas com projeção de entrada/saída semanal; aplicativos que categorizam automaticamente.  
+- **Investimentos automáticos**: ordens programadas semanais (boletos ou débito) para Tesouro/ETFs.  
+- **Alerta de impostos**: lembretes no calendário 3 dias antes de DAS/ISS/carnê-leão.
+
+## 13. Caso prático resumido
+Imagine Ana, designer freela que fatura R$ 12 mil em média, mas varia entre R$ 8 mil e R$ 16 mil.
+- Ela define pró-labore de R$ 5.000, contribui para INSS sobre esse valor e reserva 8% do faturamento para impostos.  
+- Mantém **R$ 18 mil** em Tesouro Selic (gastos de 3 meses).  
+- Alocação barbell: 60% Selic/caixa; 25% IPCA+ 2030/2035; 10% ETFs Brasil; 5% ETF S&P.  
+- Em mês bom (R$ 16 mil), aporta 45% do excedente (depois de impostos) nos ETFs e IPCA+.  
+- Em mês ruim (R$ 8 mil), ela reduz aporte para 10% e usa caixa sem recorrer a crédito.  
+Resultado: paga impostos em dia, não toma empréstimo e acumula patrimônio mesmo com renda irregular.
+
+## Conclusão
+Autônomo precisa de duas coisas: **folga de caixa** e **processo simples**. Com um colchão que aguenta meses fracos, separar impostos e uma carteira barbell enxuta, você consegue investir com tranquilidade, pagar menos imposto e não depender do humor dos clientes. Consistência semanal vale mais do que um aporte grande ocasional — e é isso que mantém seu plano vivo em 2026.
+        `
+    },
+    {
+        slug: 'roteiro-aposentadoria-simplificada-2026',
+        title: 'Roteiro de aposentadoria simplificada: combine INSS, previdência privada e renda fixa sem complicar (2026)',
+        excerpt: 'Passo a passo direto para quem quer se aposentar com segurança: quanto guardar, onde investir, como usar INSS a seu favor e quando usar PGBL/VGBL em 2026.',
+        tags: ['aposentadoria', 'previdencia', 'planejamento', 'renda-fixa', 'ipca'],
+        category: 'Planejamento',
+        date: '02 Abr 2026',
+        readTime: '17 min de leitura',
+        content: `
+Planejar aposentadoria não precisa virar um labirinto de siglas. Em 2026, você consegue desenhar um plano eficiente combinando o que já existe (INSS), um pilar privado (PGBL/VGBL) e uma carteira simples de renda fixa + ETFs. Este roteiro entrega contas prontas, produtos-alvo e um calendário de revisão.
+
+![Pessoa segurando ampulheta ao lado de porquinho](https://images.unsplash.com/photo-1508387024700-9fe5c0b36c9d?auto=format&fit=crop&w=1200&q=70)
+
+## 1. Defina o alvo com números, não com “sentir que dá”
+Use a fórmula básica de renda perpétua: **Patrimônio alvo = Renda desejada / taxa real segura**.  
+- Considerando taxa real de 4% a.a. (Selic em queda, IPCA controlado), cada R$ 1.000/mês líquidos pedem ~R$ 300 mil de patrimônio.  
+- Se quiser R$ 5.000/mês líquidos: alvo ~R$ 1,5 milhão.
+
+Inclua INSS na conta: se sua projeção de benefício for R$ 2.500, e você quer R$ 5.000 líquidos, precisa gerar só R$ 2.500/mês via patrimônio — alvo ~R$ 750 mil.
+
+## 2. Use o INSS como seguro de longevidade
+- INSS é **renda vitalícia indexada ao salário mínimo**: isso é um hedge de longevidade e inflação básica.  
+- Contribuir sobre o teto pode ser caro; muitos preferem contribuir sobre um salário intermediário e completar com previdência privada.
+- Autônomos: pagar INSS (código 1163/6120) garante benefício e protege contra invalidez/auxílio. Não abrir mão disso.
+
+![Calendário com datas de contribuição marcadas](https://images.unsplash.com/photo-1494178270175-e96de2971df9?auto=format&fit=crop&w=1200&q=70)
+
+## 3. PGBL ou VGBL em 2026?
+- **PGBL:** deduz até 12% da renda bruta tributável no IR completo. Bom para quem faz a declaração completa e contribui para INSS.  
+- **VGBL:** não deduz, mas tributa só o ganho. Serve para quem declara simplificado ou já bateu o limite do PGBL.
+
+Regime de tributação:
+- **Progressivo**: funciona como salário na saída; bom para quem pretende resgatar pouco por mês dentro das faixas baixas.  
+- **Regressivo**: alíquota cai com o tempo (35% até 10% após 10 anos). Ótimo para acumular longo prazo e receber como renda/saques programados.
+
+Escolha fundos com **taxa de administração ≤ 1%**, sem carregamento. Fundos de índice (PGBL/VGBL atrelados a IMA-B ou S&P) estão mais comuns e custam menos.
+
+## 4. Estrutura de três baldes
+1) **Balde de 0–2 anos (liquidez e emergência)**  
+   - Tesouro Selic / CDB liquidez / fundo DI barato.  
+   - Meta: 6–12 meses de gastos.
+
+2) **Balde de 2–7 anos (proteção real)**  
+   - IPCA+ médio (2029–2035), escada de vencimentos.  
+   - Fundos indexados a IMA-B 5/IMA-B.  
+   - Serve para metas intermediárias e para suavizar saques iniciais na aposentadoria.
+
+3) **Balde de 7+ anos (crescimento)**  
+   - IPCA+ longo (2040+), pequeno percentual de ações/ETFs (Brasil + EUA) e parte em previdência regressiva.  
+   - Objetivo: preservar poder de compra por décadas.
+
+![Gráfico com 3 baldes de tempo](https://images.unsplash.com/photo-1508387024700-9fe5c0b36c9d?auto=format&fit=crop&w=1200&q=70)
+
+## 5. Carteira sugerida por perfil de risco (já considerando aposentadoria)
+### Perfil conservador
+- 60% Balde 0–2 anos (Selic/CDB).  
+- 30% IPCA+ médio.  
+- 10% Previdência regressiva indexada a IMA-B.  
+- Ações/ETFs: opcional até 5% via ETF de dividendos.
+
+### Perfil moderado
+- 35% Balde 0–2 anos.  
+- 35% IPCA+ médio/long.  
+- 20% Previdência regressiva (multimercado ou renda fixa longa).  
+- 10% ETFs (70% Brasil, 30% EUA).
+
+### Perfil arrojado
+- 25% Balde 0–2 anos (liquidez é vida).  
+- 35% IPCA+ longo.  
+- 20% Previdência regressiva com maior parcela em multimercados globais.  
+- 20% ETFs/ações (50% Brasil, 50% EUA).
+
+## 6. Como aportar mês a mês
+1) Contribua **primeiro no PGBL/VGBL** até bater 12% da renda tributável (se fizer sentido).  
+2) Complete a alocação do mês com Tesouro/IPCA+/ETFs conforme a carteira alvo.  
+3) Rebalanceie **duas vezes por ano**; use aportes para corrigir.
+
+## 7. Simples calculadora de quanto investir
+- Determine o **prazo** (anos até aposentadoria) e a **taxa real esperada** (use 3–4% para ser conservador).  
+- Use a fórmula de valor futuro de séries:  
+  FV = aporte mensal × \[((1+r)^n -1)/r]\], onde r = taxa real mensal, n = meses.  
+- Resolva pelo aporte mensal necessário para chegar ao patrimônio alvo calculado na seção 1.
+
+Exemplo rápido:  
+- Renda desejada: R$ 5.000; INSS projetado: R$ 2.500 → falta R$ 2.500.  
+- Taxa real 4% a.a. → patrimônio alvo ~R$ 750 mil.  
+- Prazo: 20 anos (240 meses).  
+- r mensal ≈ 0,327%.  
+- Aporte necessário ≈ R$ 1.800/mês (ajuste conforme rentabilidade real do seu portfólio).
+
+![Pessoa usando calculadora financeira](https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=70)
+
+## 8. Estratégia de saques na aposentadoria
+- Use o **método 4% ajustado**: saque inicial de 4% do patrimônio, corrigido pela inflação a cada ano, desde que a carteira mantenha taxa real semelhante.  
+- Combine com **bucket strategy**: mantenha 2 anos de saques no Balde 0–2 anos; reabasteça esse balde vendendo ativos de longo prazo em anos bons.  
+- Em previdência regressiva, programe **renda por prazo certo** ou saques anuais planejados para ficar na alíquota mais baixa.
+
+## 9. Proteções indispensáveis
+- Seguro de vida/invalidez para cobrir período de acumulação.  
+- Planejamento sucessório simples: nomear beneficiários na previdência (evita inventário sobre esse ativo).  
+- Reserva de saúde (coparticipação, franquias) para não desidratar o plano com despesas médicas.
+
+![Pessoa lendo contrato com caneta](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=70)
+
+## 10. Erros frequentes ao montar aposentadoria
+- Confiar só no INSS ou só na previdência privada.  
+- Ignorar **taxa real**: olhar só o bruto e esquecer inflação come poder de compra.  
+- Escolher previdência com taxa alta ou sem transparência de carteira.  
+- Não rebalancear e deixar ações virarem peso excessivo (ou sumirem).  
+- Resgatar previdência regressiva antes de 10 anos e pagar 35% de IR.
+
+## 11. E se a inflação voltar a subir?
+- Mantenha parte relevante em **IPCA+** e fundos indexados à inflação; aumente vencimentos médios se a curva abrir.  
+- Reforce dolarização (ETFs globais) para proteger contra choque local.  
+- Reavalie saque anual: em anos de inflação alta, considere sacar um pouco menos ou usar o balde de liquidez até a inflação ceder.
+
+## 12. Mini-checklist para quem está a 5 anos da aposentadoria
+- [ ] 24 meses de gastos em ativos de baixíssimo risco (Selic/DI) para amortecer saques iniciais.  
+- [ ] Previdência regressiva com alíquotas já abaixo de 15%.  
+- [ ] IPCA+ com vencimentos distribuídos (escada) para cair em datas de saque.  
+- [ ] Planilha de saques anual revisada com base na inflação corrente.  
+- [ ] Seguro saúde e vida atualizados.
+
+## 11. Checklist anual (abril e outubro)
+- [ ] Recalcular benefício estimado do INSS (use simulador atualizado).  
+- [ ] Conferir taxa real da carteira vs. meta (IPCA + x%).  
+- [ ] Rebalancear pesos e reabastecer Balde 0–2 anos.  
+- [ ] Avaliar se o PGBL ainda faz sentido (faixa de IR, renda tributável).  
+- [ ] Atualizar beneficiários e documentos.
+
+## Conclusão
+Um plano de aposentadoria simples usa o que já existe (INSS), evita produtos caros e organiza aportes automáticos. Com três baldes de tempo, previdência regressiva com custos baixos e revisões semestrais, você mantém poder de compra, paga menos imposto e reduz o risco de viver só de esperança. A aposentadoria não é um evento; é um processo que você controla mês a mês.
+        `
+    },
+    {
+        slug: 'guia-lci-lca-2026',
+        title: 'LCI e LCA em 2026: vale a pena? Comparativo completo com CDB, Tesouro e fundos',
+        excerpt: 'Isenção de IR é suficiente para escolher LCI/LCA em 2026? Veja quando ganham do CDB e do Tesouro, como ler liquidez, garantias do FGC e montar uma escada de vencimentos.',
+        tags: ['lci', 'lca', 'renda-fixa', 'fgc', 'liquidez'],
+        category: 'Investimentos',
+        date: '03 Abr 2026',
+        readTime: '15 min de leitura',
+        content: `
+LCI e LCA voltaram a ficar populares em 2026 porque entregam rendimento bruto alto e seguem isentas de IR para pessoa física. Mas isenção não basta: é preciso comparar CET, liquidez e risco de reinvestimento. Este guia mostra quando LCI/LCA ganham do CDB e do Tesouro Selic, como usar o FGC com responsabilidade e montar uma escada de vencimentos que não te deixa sem caixa.
+
+![Notas e miniatura de casa, simbolizando crédito imobiliário](https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=70)
+
+## 1. O que muda em 2026 para LCI/LCA
+- Selic em queda gradual, mas ainda alta: prêmio sobre CDI diminuiu no começo do ano.  
+- Bancos médios oferecendo 88%–95% do CDI líquido (equivalente a ~110%–120% CDI bruto de um CDB, por causa da isenção).  
+- Oferta maior de prazos curtos (90–360 dias) com liquidez pós-carência.
+
+## 2. Entenda a comparação correta
+Para comparar, leve o rendimento isento à mesma base de um CDB tributado:
+
+Equivalente bruto = Taxa LCI/LCA / (1 - IR)
+IR depende do prazo: 22,5% até 180 dias; 20% até 360; 17,5% até 720; 15% acima de 720.
+
+Exemplo: LCI 93% do CDI, prazo 1 ano.  
+Equivalente bruto ≈ 93% / (1 - 0,20) ≈ 116,25% do CDI. Se o melhor CDB do mesmo prazo paga 112% do CDI, a LCI vence.
+
+![Planilha de comparação de taxas](https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=70)
+
+## 3. Papel do FGC
+- Cobertura: até R$ 250 mil por CPF por instituição (limite global R$ 1 milhão a cada 4 anos).  
+- LCI/LCA têm a mesma proteção de CDB.  
+- Distribua entre emissores diferentes para não estourar o limite; atenção a bancos do mesmo conglomerado.
+
+## 4. Liquidez e carência importam mais que a taxa
+- Carência comum: 90 a 180 dias; alguns títulos permitem liquidez diária após carência.  
+- Use LCI/LCA **apenas** para a parte da reserva que pode ficar parada até o vencimento/carência.  
+- Para emergência imediata, continue no Tesouro Selic ou CDB D+0.
+
+![Calendário com datas destacadas](https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=70)
+
+## 5. Quando LCI/LCA são melhores que CDB e Tesouro
+- Prazo entre 6 e 24 meses, taxa ≥ 90% do CDI (equivalente a 112%+ CDI bruto).  
+- Você não precisa de liquidez diária naquele dinheiro.  
+- Tem espaço de FGC disponível no emissor.
+
+Quando CDB/Selic podem ser melhores:
+- Prazos curtíssimos (até 30 dias) ou caixa de emergência.  
+- Quando LCI/LCA oferecem taxa baixa (<85% do CDI).  
+- Se você já estourou limite do FGC no banco.
+
+## 6. Montando uma escada (ladder) de vencimentos
+Objetivo: não ficar preso em 1 vencimento só e ter dinheiro liberando todo mês.
+
+Exemplo de R$ 60 mil:
+- R$ 15 mil — LCI 6 meses.  
+- R$ 15 mil — LCA 9 meses.  
+- R$ 15 mil — LCI 12 meses.  
+- R$ 15 mil — LCA 18 meses.
+
+A cada vencimento, você decide: reinvestir ou realocar para metas de médio prazo. Assim, cria “quase liquidez” mensal sem abrir mão de taxas melhores.
+
+![Gráfico de barras com vencimentos escalonados](https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=70)
+
+## 7. Como avaliar um emissor
+- Índices de Basileia e retorno sobre patrimônio (ROE).  
+- Tamanho da carteira de crédito imobiliário/agrícola (lastro das LCIs/LCAs).  
+- Histórico de captação e rating (se houver).  
+- Transparência de liquidez pós-carência no app/corretora.
+
+## 8. Impostos e custos
+- Isentas de IR para pessoa física.  
+- IOF: zero a partir do 30º dia (mesma regra de renda fixa).  
+- Sem come-cotas (ao contrário de fundos).  
+- Taxa de custódia: normalmente zero; verifique na corretora.
+
+## 9. Riscos a não ignorar
+- **Risco de liquidez:** precisar do dinheiro antes da carência.  
+- **Risco de reinvestimento:** vencimentos em cenário de CDI menor — taxa nova pode ser mais baixa.  
+- **Concentração:** muito dinheiro em um único emissor ou mesmo conglomerado.
+
+## 10. Checklists práticos
+### Antes de comprar
+- [ ] Taxa LCI/LCA >= 90% CDI (prazo 6–24m).  
+- [ ] Carência compatível com sua necessidade.  
+- [ ] Espaço de FGC no emissor (< R$ 250 mil).  
+- [ ] Comparar equivalente bruto com melhores CDBs do mesmo prazo.
+
+### Para escada
+- [ ] Vencimentos mensais ou trimestrais.  
+- [ ] Misturar prazos 6, 9, 12, 18, 24 meses.  
+- [ ] Revisar taxas a cada vencimento e reinvestir onde estiver melhor.
+
+![Pessoa conferindo app de investimentos](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=70)
+
+## 11. Exemplos de alocação por perfil
+- **Conservador:** 60% Tesouro Selic/CDB D+0, 40% LCI/LCA escalonada (6–18m).  
+- **Moderado:** 40% Selic/D+0, 40% LCI/LCA, 20% IPCA+ curto para blindar inflação.  
+- **Arrojado (renda fixa da carteira):** 30% Selic, 30% LCI/LCA, 40% IPCA+/prefixado médio — o resto em renda variável.
+
+## 12. Perguntas rápidas
+**LCI ou LCA é melhor?** Depende da taxa; escolha a maior taxa líquida.  
+**Posso resgatar antes?** Só se o emissor permitir pós-carência; do contrário, espere o vencimento.  
+**Conta para o FGC se eu comprar via corretora?** Sim, conta a instituição emissora, não a corretora.
+
+![Maquete de fazenda e plantação (simbolizando LCA)](https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=70)
+
+## Conclusão
+LCI e LCA são ótimas para melhorar o rendimento líquido sem aumentar risco quando usadas com disciplina: prazos que você pode carregar, diversificação de emissores, comparação honesta com CDB/Tesouro e uma escada que devolve liquidez ao longo do tempo. Em 2026, com juros ainda atrativos, usar bem o espaço isento pode render mais do que deixar tudo em CDB — desde que você respeite carências e não concentre demais.
+        `
+    },
+    {
+        slug: 'cripto-com-seguranca-2026',
+        title: 'Cripto com segurança em 2026: como expor 1–5% da carteira sem virar refém de hacks e hype',
+        excerpt: 'Checklist completo para investir em cripto com governança: custodiar direito, escolher corretora, evitar altcoins frágeis, calcular posição máxima e planejar saída.',
+        tags: ['bitcoin', 'cripto', 'segurança', 'custodia', 'risco'],
+        category: 'Criptomoedas',
+        date: '03 Abr 2026',
+        readTime: '16 min de leitura',
+        content: `
+Cripto não é tudo ou nada. Em 2026, dá para ter 1–5% da carteira em ativos digitais sem arruinar o sono — desde que você trate segurança e processo como prioridade. Este guia entrega um passo a passo enxuto: quanto alocar, como custodiar, quais ativos evitar, checklist KYC e plano de saída.
+
+![Chave física e notebook simbolizando segurança digital](https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=1200&q=70)
+
+## 1. Defina o tamanho da aposta antes de comprar
+- Perfil conservador: 0%–2% do patrimônio financeiro.  
+- Moderado: 2%–5%.  
+- Arrojado: até 8% se já tiver reserva robusta e tolerância alta a volatilidade.  
+- Regras: nunca coloque dinheiro que fará falta em 3–5 anos; não use crédito.
+
+## 2. Quais ativos fazem sentido em 2026
+- **Núcleo:** Bitcoin (BTCE). Caso queira diversificar pouco mais, inclua Ethereum (ETH) pela dominância de infraestrutura.  
+- **Exposição tokenizada via ETF/ETN** (B3 ou exterior) para quem não quer autocustódia.  
+- **Stablecoins:** use apenas para trânsito (USDC, USDT) e não como “poupança eterna”; risco de contraparte existe.  
+- **Evite**: memecoins, projetos sem receita/claro modelo de segurança, promessas de rendimento fixo em DeFi centralizado.
+
+![Gráfico minimalista com BTC e ETH](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=70)
+
+## 3. Escolha da corretora (on/off ramp)
+Checklist mínimo:
+- Registro e operação no Brasil ou jurisdição clara; política de prova de reservas auditada.  
+- 2FA obrigatório, whitelist de endereços e alertas por e-mail/app.  
+- Limites de saque configuráveis; log de sessões.  
+- Histórico de segurança e transparência de seguros/coberturas.
+
+Tenha conta em **duas** on-ramps para contingência (ex.: uma brasileira + uma global regulada).
+
+## 4. Custódia: as três camadas
+1) **Custódia própria (hardware wallet):** Ledger/Trezor/Keystone; seed offline em 2 cópias separadas geograficamente.  
+2) **Custódia compartilhada (MPC ou multisig)** para quem tem ticket maior e não quer single point of failure.  
+3) **Custódia de terceiros regulada** (ETFs/ETNs ou custodiante qualificado) para quem não quer lidar com seed.
+
+![Mão segurando hardware wallet](https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=1200&q=70)
+
+## 5. Operacional de segurança (playbook)
+- Ative **2FA por app** (não SMS).  
+- Crie e mantenha **lista branca** de endereços de saque.  
+- Use e-mail dedicado para exchanges, com senha única + passphrase.  
+- Não deixe saldo relevante na corretora; saque após executar a ordem.  
+- Backup da seed em aço ou papel guardado em local distinto (e sem foto em nuvem).
+
+## 6. Como comprar em lotes (DCA) e registrar
+- Divida entrada em 4–8 tranches semanais ou quinzenais.  
+- Anote: data, preço, taxa, endereço de recebimento.  
+- Use planilha simples ou app de portfólio; registre também o custo em BRL para IR.
+
+## 7. Tributação no Brasil (2026)
+- Ganho de capital em cripto é tributado como bem móvel: alíquotas de 15% a 22,5% conforme ganho mensal.  
+- Isenção se **ganho** no mês for ≤ R$ 35 mil em vendas.  
+- Declaração anual: informar posição em 31/12, exchanges usadas, e ganhos apurados no ano.  
+- Faça controle mensal; use calculadora de ganho médio ponderado ou FIFO conforme entendimento fiscal.
+
+![Documento fiscal e calculadora](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=70)
+
+## 8. Estratégia de saída e rebalanceamento
+- Defina um **preço-alvo** ou percentual da carteira para reduzir (ex.: acima de 6% do portfólio, vende o excedente).  
+- Venda gradual em fases de euforia; não tente acertar topo.  
+- Rebalanceie pelo menos semestralmente para voltar à faixa alvo de 1–5%.
+
+## 9. Riscos específicos em 2026
+- **Custódia em exchanges regionais pequenas**: risco de falta de liquidez ou falhas de prova de reservas.  
+- **Regulação global**: possíveis exigências de KYC reforçado para stablecoins e DeFi.  
+- **Ataques a pontes (bridges)**: não mantenha valor relevante em redes/bridges menos auditadas.  
+- **Smart contracts**: risco de bug permanece; prefira protocolos auditados e com TVL consistente.
+
+![Cadeado digital sobre circuitos](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## 10. Passo a passo resumido (checklist)
+- [ ] Definir alocação alvo (1–5% do portfólio).  
+- [ ] Escolher 2 corretoras confiáveis e ativar 2FA + whitelist.  
+- [ ] Comprar em 4–8 lotes; registrar custos.  
+- [ ] Transferir para hardware wallet ou custódia escolhida.  
+- [ ] Guardar seed em 2 locais seguros.  
+- [ ] Rebalancear semestralmente; vender excedente acima do alvo.  
+- [ ] Declarar ganhos e posição no IR.
+
+## 11. Caso prático: posição de 3%
+Imagine um portfólio de R$ 200 mil. Meta de cripto: 3% (R$ 6.000).
+- Compra em 6 lotes de R$ 1.000 ao longo de 6 semanas.  
+- Divide 80% em BTC, 20% em ETH.  
+- Guarda em hardware wallet; mantém R$ 500 em corretora para liquidez.  
+- Se valor subir para R$ 10 mil (5% do portfólio), vende R$ 4 mil e volta a 3%.
+
+![Gráfico de pizza mostrando 3% em cripto](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## 12. O que NÃO fazer
+- Deixar seed em foto na nuvem ou em e-mail.  
+- Usar Wi-Fi público para acessar exchange.  
+- Comprar altcoin sem estudar tokenomics e equipe.  
+- Entrar em rendimento “garantido” de 1% ao dia.  
+- Concentrar tudo em um protocolo DeFi.
+
+## Conclusão
+Cripto pode ser um tempero potente, mas não a refeição inteira. Com posição pequena, custódia bem feita e disciplina de rebalanceamento, você captura o potencial de longo prazo sem comprometer a saúde financeira. Segurança não é acessório — é o próprio investimento.
+        `
+    },
+    {
+        slug: 'fundos-imobiliarios-2026-guia-completo',
+        title: 'Fundos imobiliários em 2026: onde ainda há prêmio, quais riscos evitar e como montar carteira balanceada',
+        excerpt: 'Panorama 2026 para FIIs: tijolo, papel e híbridos; como olhar vacância, duration de contratos, indexadores, risco de crédito e montar uma carteira que sobreviva a cortes de juros.',
+        tags: ['fiis', 'renda-passiva', 'imoveis', 'investimentos'],
+        category: 'Fundos Imobiliários',
+        date: '04 Abr 2026',
+        readTime: '17 min de leitura',
+        content: `
+Com Selic em queda gradual e inflação sob controle, os fundos imobiliários (FIIs) voltaram ao radar de quem busca renda mensal. Mas 2026 traz desafios: revisão de aluguéis pós-IGP-M, novas emissões dilutivas, crédito privado pressionado e shopping/logística em pontos diferentes do ciclo. Este guia foca no que importa para escolher FIIs agora, sem se perder em hype.
+
+![Corredor de galpão logístico](https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?auto=format&fit=crop&w=1200&q=70)
+
+## 1. Como está o cenário 2026 para FIIs
+- **Juros em queda**: compressão de cap rates deve favorecer tijolo de qualidade e FIIs de papel indexados ao CDI/IPCA.  
+- **Inflação menor**: contratos atrelados ao IPCA ajustam menos; IGP-M volta para patamar mais baixo.  
+- **E-commerce estabilizado**: galpões seguem demandados, mas com oferta crescente em alguns eixos.  
+- **Lajes corporativas**: vacância ainda alta em algumas regiões; prime bem locado preserva preço.  
+- **Crédito**: spreads de CRI high grade comprimindo; risco de emissões middle-risk maior.
+
+## 2. Tipos de FIIs e o que observar
+### Tijolo – logística, lajes, shoppings, varejo
+- **Vacância e WAULT**: preferir contratos longos e vacância baixa; observar concentração de locatário.  
+- **Indexador**: IPCA/IGP-M; veja histórico de reajustes e cláusulas de desconto temporário.  
+- **Localização**: proximidade a eixos de transporte, renda da região, diversificação geográfica.  
+- **Capex futuro**: necessidades de retrofit e quem paga (fundo ou inquilino).
+
+![Fachada de prédio corporativo moderno](https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=70)
+
+### Papel – CRI
+- **Lastro**: residencial, shoppings, loteamento, multipropriedade; avalie granularidade.  
+- **Garantias**: alienação fiduciária, cessão de recebíveis, fiança.  
+- **Indexador**: IPCA + spread ou CDI + spread; compare duration e risco.  
+- **Covenants**: gatilhos de LTV, DSCR; ver histórico de waivers.  
+- **Diversificação**: nenhum devedor >10% da carteira.
+
+### Híbridos e fundos de fundos (FoFs)
+- Servem para diversificar rápido, mas cobram taxa; cheque **taxa total** e histórico de alocação.  
+- Em FoFs, veja giro, desconto/premium sobre o VP e política de dividendos.
+
+## 3. Métricas que realmente importam
+- **Dividend yield ajustado**: anualize e compare com NTNB curta + spread de risco.  
+- **P/VP**: desconto não é garantia; entenda o VP (marcação a mercado de CRI?).  
+- **Vacância física x financeira**: física vazia, financeira sem receber.  
+- **WAULT**: prazo médio ponderado de contratos; mais longo dá previsibilidade.  
+- **LTV e DSCR** (papel): medem alavancagem e cobertura de serviço da dívida.
+
+![Gráfico de pizza com composição de portfólio FII](https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=70)
+
+## 4. Como montar uma carteira balanceada de FIIs
+Exemplo para investidor moderado buscando renda:
+- 35% Tijolo logística e varejo alimentar (renda resiliente).  
+- 25% Lajes prime bem locadas (renda + potencial ganho de capital).  
+- 25% Papel high grade IPCA/CDI (reduz volatilidade e suaviza dividendos).  
+- 15% FoF ou híbrido para diversificação tática.
+
+Regras práticas:
+- Nenhum fundo >10% da carteira.  
+- Revisar a carteira a cada 6 meses ou ao surgimento de fato relevante.  
+- Reinvestir dividendos em fundos com maior desconto ao VP que cumpram critérios de risco.
+
+## 5. Checklists rápidos
+### Tijolo
+- [ ] Vacância <10% ou tendência de queda comprovada.  
+- [ ] WAULT > 3 anos.  
+- [ ] Inquilinos com rating ou histórico sólido.  
+- [ ] Diversificação de locatário e região.  
+- [ ] Cap rate pós-custo compatível com risco.
+
+### Papel
+- [ ] Nenhum devedor >10% da carteira.  
+- [ ] LTV < 70%; DSCR > 1,4x.  
+- [ ] Spread adequado ao risco (IPCA + 6% ou CDI + 2,5%+ em 2026 como referência).  
+- [ ] Sem concentração excessiva em loteamento/multipropriedade de risco.  
+- [ ] Gestor com histórico em crédito.
+
+![Portfólio de documentos de crédito](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=70)
+
+## 6. Erros comuns em 2026
+- Comprar só pelo DY do último mês (pode ter evento não recorrente).  
+- Ignorar marcação a mercado em fundos de papel com duration longa.  
+- Concentrar em FoF com taxa alta e baixo desconto.  
+- Ignorar risco de IGP-M revisando para baixo em contratos.
+
+## 7. Tributação
+- FIIs listados: dividendos isentos para PF se o fundo tiver 50+ cotistas e não concentrar 10%+ em um só cotista.  
+- Ganho de capital na venda: 20% de IR; compensável com prejuízo em FIIs.  
+- FoFs seguem as mesmas regras.
+
+## 8. Estratégia de entrada e rebalanceamento
+- Aporte mensal usando DY alvo como guia (ex.: buscar carteira com DY projetado acima de IPCA + 3% real).  
+- Rebalanceie quando um fundo passar 3 p.p. do peso-alvo ou quando tese mudar.  
+- Mantenha 5–10% em caixa para oportunidades pós-fatos relevantes.
+
+![Shopping center movimentado](https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&w=1200&q=70)
+
+## 9. Caso prático: carteira de R$ 50 mil para renda
+- R$ 17,5k em logística (2-3 fundos, contratos longos, mix built-to-suit).  
+- R$ 12,5k em lajes prime (São Paulo eixo Faria Lima/JK ou Brasília AAA).  
+- R$ 12,5k em papel high grade IPCA/CDI.  
+- R$ 7,5k em FoF/híbrido com desconto ao VP.  
+DY projetado ~0,8% a.m. isento → R$ 400/mês, sujeito a variação de distribuição.
+
+## 10. Checklist de riscos antes de clicar em “comprar”
+- [ ] Entendeu tese e riscos específicos do ativo?  
+- [ ] Não está comprando só pelo yield?  
+- [ ] Leu últimos fatos relevantes e relatórios gerenciais?  
+- [ ] Peso do fundo na carteira <10%?  
+- [ ] Tem caixa para oportunidades se o mercado realizar?
+
+## Conclusão
+FIIs seguem interessantes em 2026 para renda isenta e exposição imobiliária sem comprar imóvel físico. A chave é combinar tijolo resiliente com papel high grade, evitar concentração e olhar além do yield do mês. Gestor, qualidade do contrato e governança pesam tanto quanto a taxa. Disciplina de rebalanceamento mantém o risco sob controle e a renda mais previsível.
+        `
+    },
+    {
+        slug: 'como-declarar-investimentos-ir-2026',
+        title: 'Como declarar investimentos no IR 2026 sem dor de cabeça (passo a passo com checklist)',
+        excerpt: 'Guia direto para pessoa física: onde lançar renda fixa, FIIs, ações, ETFs, cripto e previdência; como importar informes, compensar prejuízo e evitar malha fina.',
+        tags: ['imposto-de-renda', 'declaracao', 'investimentos', 'fiis', 'cripto', 'acoes'],
+        category: 'Impostos',
+        date: '04 Abr 2026',
+        readTime: '16 min de leitura',
+        content: `
+Declarar investimentos no IR 2026 não precisa ser um pesadelo. Com os informes corretos e um roteiro claro, dá para preencher em menos de uma hora. Este passo a passo foca no investidor pessoa física: renda fixa, FIIs, ações/ETFs, cripto e previdência.
+
+![Notebook aberto com formulário de impostos](https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=70)
+
+## 1. O que você precisa antes de começar
+- **Informe de rendimentos** do banco/corretora (renda fixa, fundos, FIIs, previdência).  
+- **Extrato consolidado** de ações/ETFs (posição em 31/12 e IRRF retido).  
+- **Relatório de ganhos/prejuízos** mensal (para compensação).  
+- **Histórico de cripto** (corretoras/planilha própria) com custos e vendas.  
+- Dados pessoais atualizados e recibo da declaração anterior.
+
+## 2. Onde lançar cada coisa (mapa rápido)
+- **Renda fixa, CDB, LCI/LCA, Tesouro**: guia de “Rendimentos Sujeitos à Tributação Exclusiva”.  
+- **Fundos de renda fixa e multimercados**: mesma aba, pois já vêm com IR na fonte (come-cotas).  
+- **FIIs**:  
+  - Dividendos: “Rendimentos Isentos e Não Tributáveis”.  
+  - Ganho de capital na venda: “Renda Variável > Operações em Fundos Imobiliários”.  
+- **Ações/ETFs/BDRs**: “Renda Variável > Operações Comuns/Day Trade”.  
+- **Cripto**: “Bens e Direitos” (saldo em 31/12) + “Ganhos de Capital” quando vendas > R$ 35 mil no mês (ou lucro tributável).  
+- **Previdência**:  
+  - PGBL: “Pagamentos Efetuados” (código 36) para dedução até 12% da renda.  
+  - VGBL: somente em “Bens e Direitos” (não é dedutível).
+
+![Tela de formulário com abas destacadas](https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=70)
+
+## 3. Rendimentos isentos (FIIs, LCI/LCA)
+- Informe na ficha “Rendimentos Isentos e Não Tributáveis” o total anual de dividendos de FIIs e rendimentos de LCI/LCA.  
+- Use o CNPJ do fundo/emissor (vem no informe).  
+- Campo “Descrição”: nome do ativo; “Valor”: total recebido no ano.
+
+## 4. Renda fixa e fundos tributados
+- Vá em “Rendimentos Sujeitos à Tributação Exclusiva/Definitiva”.  
+- Selecione “06 - Rendimentos de aplicações financeiras”.  
+- Informe CNPJ da fonte pagadora e o valor total bruto; IR na fonte já recolhido consta no informe (não precisa calcular).
+
+## 5. Ações, ETFs e BDRs
+- Aba “Renda Variável > Operações Comuns/Day Trade”: preencha mês a mês lucro/prejuízo líquido, IRRF do mês e saldo de prejuízo a compensar.  
+- Lucro líquido de ações com vendas mensais até R$ 20 mil é isento, mas **precisa ser informado** na linha de isentos.  
+- Recolha DARF (cód. 6015) até o último dia útil do mês seguinte ao lucro; informe valores pagos na coluna correspondente.
+
+![Planilha de controles de operações](https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=70)
+
+## 6. FIIs: lucro na venda
+- Venda de cotas de FII **sempre** tributa 20% sobre o ganho.  
+- Preencha na aba “Renda Variável > Fundos de Investimento Imobiliário” o resultado mensal.  
+- Pague DARF 6015 até o mês seguinte.  
+- Dividendos seguem isentos (desde que o fundo atenda às regras de isenção).
+
+## 7. Cripto
+- Informe o saldo em 31/12 em “Bens e Direitos” (grupo 08, código 03 para cripto).  
+- Para vendas acima de R$ 35 mil no mês, apure ganho na aba “Ganhos de Capital”, código específico para cripto; aplique alíquotas 15–22,5%.  
+- Guarde documentos de compra (exchange ou P2P) e converta valores para BRL na data da operação.
+
+![Representação digital de moedas](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## 8. Previdência (PGBL/VGBL)
+- **PGBL**: lançar contribuições em “Pagamentos Efetuados”, código 36, com CNPJ da entidade e valor pago. Limite de dedução: 12% da renda bruta tributável.  
+- **VGBL**: apenas em “Bens e Direitos” (grupo 99, código 06). Resgates tributam só o ganho.
+
+## 9. Bens e Direitos: posições em 31/12
+- Liste ações, ETFs, FIIs, CDBs, Tesouro, cripto e previdência na ficha “Bens e Direitos”.  
+- Informe **custo de aquisição** (não marque a valor de mercado).  
+- Atualize situação em 31/12/2024 e 31/12/2025.
+
+## 10. Compensar prejuízos
+- Ações: compensar prejuízo de meses anteriores com lucros futuros (comum com comum, day trade com day trade).  
+- FIIs: prejuízos em FIIs compensam apenas ganhos em FIIs.  
+- Registre corretamente na aba de Renda Variável para carregar o saldo.
+
+![Documento de DARF preenchido](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=70)
+
+## 11. Passo a passo resumido (checklist)
+- [ ] Baixar todos os informes (banco + corretoras).  
+- [ ] Conferir se DARFs de 2025 foram pagas; se não, gerar com multa/juros.  
+- [ ] Preencher rendimentos isentos (FIIs, LCI/LCA).  
+- [ ] Preencher rendimentos exclusivos (renda fixa e fundos).  
+- [ ] Preencher Renda Variável (ações/ETFs/FIIs) mês a mês.  
+- [ ] Lançar PGBL (dedução) ou VGBL em Bens e Direitos.  
+- [ ] Declarar saldo de cripto e ganhos de capital se aplicável.  
+- [ ] Revisar dados pessoais e dependentes; enviar e guardar recibo.
+
+## 12. Erros que colocam na malha fina
+- Digitar CNPJ errado da fonte pagadora.  
+- Não declarar lucro isento de ações até R$ 20 mil/mês.  
+- Esquecer DARFs pagas ou não pagas (mismatch com IRRF retido).  
+- Declarar FIIs em código de ação (ou vice-versa).  
+- Atualizar bens a valor de mercado em vez de custo.
+
+![Pessoa conferindo dados no notebook](https://images.unsplash.com/photo-1454165205744-3fdfc0f0eeeb?auto=format&fit=crop&w=1200&q=70)
+
+## 13. Dicas finais para 2026
+- Use o **pré-preenchido** da Receita, mas confirme contra informes.  
+- Guarde comprovantes por 5 anos.  
+- Se tem muitas operações, use calculadora/planilha para manter saldo de prejuízo atualizado.  
+- Envie cedo para evitar congestionamento e ter restituição mais cedo (se houver).
+
+## Conclusão
+Declarar investimentos no IR 2026 fica simples com o mapa certo: cada ativo na ficha correta, informes na mão e disciplina para registrar lucro/prejuízo mensal. Isso evita multas, malha fina e faz você pagar só o necessário. Roteiro seguido, declaração enviada, descanso garantido até o próximo ano.
+        `
+    },
+    {
+        slug: 'renda-extra-ia-2026',
+        title: '15 ideias de renda extra com IA em 2026 (passo a passo, ferramentas e preços)',
+        excerpt: 'Use IA para criar renda paralela em 30 dias: serviços rápidos, produtos digitais, automações e licenças que você pode vender. Modelos de preço, roteiro de entrega e checklist de ética.',
+        tags: ['renda-extra', 'ia', 'freela', 'automacao', 'produtos-digitais'],
+        category: 'Renda Extra',
+        date: '05 Abr 2026',
+        readTime: '17 min de leitura',
+        content: `
+IA não é só buzzword; é uma caixa de ferramentas que encurta processos. Em 2026, dá para transformar modelos generativos em renda adicional com baixo capital inicial. Aqui vão 15 ideias com roteiro, ferramentas, preço de entrada e como entregar sem parecer “mais do mesmo”.
+
+![Pessoa trabalhando com laptop e tablet](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=70)
+
+## Como usar este guia
+1) Escolha **1 ou 2 ideias** e valide em 7 dias.  
+2) Monte um kit mínimo (prompt + modelo de entrega + precificação).  
+3) Escalone o que vender primeiro; descarte o resto.
+
+![Quadro branco com post-its de ideias](https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=70)
+
+## Ferramentas base (baratas ou grátis)
+- **Modelos de texto**: ChatGPT, Claude, Llama via API.  
+- **Imagens**: Midjourney, DALL·E, Stable Diffusion web.  
+- **Áudio/vídeo**: Descript, CapCut, ElevenLabs (voz), Runway.  
+- **Automação**: Make/Zapier, n8n, Airtable.  
+- **Hospedagem e entrega**: Gumroad, Hotmart, Notion, Google Drive.
+
+![Ícones de apps conectados](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## 15 ideias com roteiro de execução
+### 1) Pacote de posts para negócios locais
+- Entrega: 12 posts/mês (legenda + imagem).  
+- Ferramentas: ChatGPT para copy, Canva para arte, DALL·E para variações.  
+- Preço de entrada: R$ 350–600.  
+- Operação: template de briefing, produzir em lote, agendar no Meta Business Suite.
+
+### 2) Scripts de Reels/TikTok + legendas
+- Entrega: 8 roteiros curtos + legenda chamativa.  
+- Ferramentas: ChatGPT + CapCut (legenda automática).  
+- Preço: R$ 300–500.  
+- Extra: oferecer pacote com thumbnails geradas por IA.
+
+### 3) Otimização de anúncios locais (Google/Meta)
+- Entrega: 3 variações de anúncio + palavras-chave + extensões.  
+- Ferramentas: ChatGPT para copy, Keyword Planner.  
+- Preço: R$ 250–400 por ciclo.  
+- Valor: reduzir CAC de pequenos negócios.
+
+![Pessoa revisando anúncios no notebook](https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=70)
+
+### 4) Guias personalizados em PDF
+- Nichos: concursos, alimentação restritiva, treino em casa, roteiro de viagem.  
+- Ferramentas: ChatGPT para conteúdo, Canva para diagramação.  
+- Preço: R$ 70–150 por guia.  
+- Estratégia: vender em marketplaces (Gumroad/Hotmart) + tráfego pago leve.
+
+### 5) Newsletters para empresas B2B
+- Entrega: 4 edições mensais com curadoria e comentários.  
+- Ferramentas: ChatGPT para resumos, Feedly para curadoria.  
+- Preço: R$ 700–1.500/mês.  
+- Diferencial: ângulo opinativo, não só links.
+
+### 6) SEO rápido para blogs pequenos
+- Entrega: 5 pautas + 5 outlines + 5 metas descriptions.  
+- Ferramentas: ChatGPT + Surfer/NeuronWriter (opcional).  
+- Preço: R$ 400–800.  
+- Evite prometer ranking; foque em on-page e intenção de busca.
+
+![Lupa sobre tela de código](https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&w=1200&q=70)
+
+### 7) Templates de e-mail e respostas automáticas
+- Entrega: 20 respostas prontas (SAC, cobrança, onboarding).  
+- Ferramentas: ChatGPT; automatizar via Gmail templates ou HelpScout.  
+- Preço: R$ 300–600.  
+- Upgrade: criar automações no Zapier/Make.
+
+### 8) Kit de onboarding para infoprodutor
+- Entrega: sequência de boas-vindas + roadmap + FAQ + 3 e-mails de reativação.  
+- Ferramentas: ChatGPT + Notion.  
+- Preço: R$ 500–900.  
+- Métrica: reduzir reembolso e aumentar engajamento inicial.
+
+### 9) Micro-sites one-page para eventos/ofertas
+- Entrega: copy + layout simples (Framer/Typedream).  
+- Ferramentas: ChatGPT para copy, IA de imagem para hero.  
+- Preço: R$ 700–1.500.  
+- Adicional: configurar pixel e formulário.
+
+### 10) Pacote de prompts prontos (nichados)
+- Nichos: imobiliárias, clínicas, e-commerce de moda, restaurantes.  
+- Ferramentas: ChatGPT + testes reais.  
+- Preço: R$ 80–200.  
+- Valor: economizar tempo do cliente; entregar cheat sheet + vídeo curto de uso.
+
+![Pessoa escrevendo prompts em caderno](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=70)
+
+### 11) Legendas acessíveis e multilíngues para vídeo
+- Entrega: transcrição, revisão, tradução e legendas SRT.  
+- Ferramentas: Whisper/Descript + ChatGPT para ajuste de idioma.  
+- Preço: R$ 30–60 por minuto final.  
+- Público: criadores que querem expandir audiência.
+
+### 12) Auditoria de atendimento com IA
+- Entrega: análise de 30 tickets/chats + matriz de respostas sugeridas.  
+- Ferramentas: exportar conversas, rodar em LLM com prompt de classificação.  
+- Preço: R$ 800–1.500.  
+- Resultado: redução de tempo médio de resposta e aumento de CSAT.
+
+### 13) Catálogo de produtos com descrição e foto gerada
+- Entrega: 50 descrições + 50 imagens coerentes com branding.  
+- Ferramentas: ChatGPT para copy, Midjourney/DALL·E para imagens, Photoshop Beta para ajustes.  
+- Preço: R$ 900–1.800 dependendo do volume.  
+- Cuidados: alinhar direitos de uso e estilo antes.
+
+![Catálogo digital em tablet](https://images.unsplash.com/photo-1433838552652-f9a46b332c40?auto=format&fit=crop&w=1200&q=70)
+
+### 14) Landing page de lead magnet + e-mail de nutrição
+- Entrega: LP + 3 e-mails.  
+- Ferramentas: Framer/Webflow/Notion + ChatGPT.  
+- Preço: R$ 600–1.200.  
+- Métrica: CPL e taxa de abertura da sequência.
+
+### 15) Manual de voz e tom para marcas pequenas
+- Entrega: guia de 5–8 páginas com voz, exemplos de “faça/não faça”.  
+- Ferramentas: ChatGPT + exemplos reais da marca.  
+- Preço: R$ 500–1.000.  
+- Benefício: consistência em posts, e-mails e SAC.
+
+![Mulher apresentando guia de marca](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=70)
+
+## Como precificar de forma justa
+- Calcule horas reais (produção + reunião + ajustes).  
+- Defina preço de entrada e preço “com entrega expressa”.  
+- Ofereça pacote mensal (retainer) para garantir recorrência.
+
+## Entrega sem parecer IA genérica
+- Use exemplos reais do cliente nos prompts.  
+- Reescreva primeira versão com sua voz.  
+- Inclua 1–2 revisões humanas rápidas.  
+- Cheque plágio e consistência de dados.
+
+## Ética e transparência
+- Avise se utilizar IA; deixe claro onde há revisão humana.  
+- Não gere imagens de pessoas reais sem consentimento.  
+- Proteja dados enviados pelo cliente (GDPR/LGPD).
+
+## Roteiro de 7 dias para validar uma ideia
+Dia 1: escolher nicho e montar oferta de 3 linhas.  
+Dia 2: criar 1 exemplo público.  
+Dia 3: divulgar em 5 grupos/LinkedIn/DMs.  
+Dia 4: coletar feedback e ajustar preço.  
+Dia 5: fechar 1 cliente piloto com desconto em troca de depoimento.  
+Dia 6: entregar piloto.  
+Dia 7: publicar depoimento e subir preço base.
+
+![Calendário semanal](https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=70)
+
+## Checklist final
+- [ ] Escolhi 1 ideia e um nicho.  
+- [ ] Montei exemplo real e preço.  
+- [ ] Defini ferramentas e tempo de entrega.  
+- [ ] Criei contrato simples e termos de uso de IA.  
+- [ ] Tenho plano de upsell/retainer.
+
+## Conclusão
+Renda extra com IA em 2026 é sobre entregar valor rápido, não sobre prometer automação mágica. Escolha um problema específico, resolva com kit de ferramentas enxuto, cobre um valor justo e entregue com revisão humana. Consistência e clareza valem mais que o modelo mais avançado.
+        `
+    },
+    {
+        slug: 'planilha-automatica-2026',
+        title: 'Planilha automática 2026: metas, alertas e consolidação diária sem ser expert em Excel',
+        excerpt: 'Tutorial completo para montar (ou duplicar) uma planilha que puxa dados do banco, consolida gastos, mostra metas e envia alertas. Inclui estrutura de abas, fórmulas e automações com Make/Sheets.',
+        tags: ['planilha', 'automacao', 'financas-pessoais', 'google-sheets', 'metas'],
+        category: 'Finanças Pessoais',
+        date: '05 Abr 2026',
+        readTime: '16 min de leitura',
+        content: `
+Se você já tentou controlar gastos e desistiu porque “planilha dá trabalho”, este guia resolve: vamos montar uma planilha automática em 2026 que importa transações, categoriza, mostra metas mensais e manda alerta se você estourar o orçamento — tudo usando Google Sheets + Make (ou Zapier) sem escrever código.
+
+![Pessoa preenchendo planilha no notebook](https://images.unsplash.com/photo-1454165205744-3fdfc0f0eeeb?auto=format&fit=crop&w=1200&q=70)
+
+## Visão geral do que você vai ter
+- Aba **Transações**: importação automática do banco/cartão.  
+- Aba **Categorias**: regras de classificação.  
+- Aba **Metas**: limites mensais por categoria.  
+- Dashboard com **gráfico de progresso**, “quanto posso gastar hoje” e alertas.  
+- Webhook para receber novas transações em tempo real.
+
+![Gráfico de barras de despesas](https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=70)
+
+## 1. Pré-requisitos
+- Conta Google para usar Sheets.  
+- Acesso a Make/Zapier (plano free suficiente para começar).  
+- Extrato exportável do seu banco (CSV/OFX) ou integração via API aberta do banco.
+
+## 2. Estrutura de abas
+1) **Transacoes**  
+   - Colunas: Data, Descrição, Categoria, Valor, Tipo (débito/crédito), Conta, Tags, Status (revisado?).  
+2) **Categorias**  
+   - Nome, Tipo (fixo/variável), Palavra-chave, Cor.  
+3) **Metas**  
+   - Categoria, Limite Mensal, Alerta (sim/não).  
+4) **Dashboard**  
+   - Soma por categoria, % consumido, gasto médio diário, projeção fim do mês.
+
+![Layout de abas no Google Sheets](https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=70)
+
+## 3. Fórmulas-chave (Sheets)
+- **SOMA por categoria no mês**  
+  =SUMIFS(Transacoes!D:D, Transacoes!C:C, A2, Transacoes!A:A, \">=\"&DATA(ANO(HOJE()),MES(HOJE()),1), Transacoes!A:A, \"<=\"&EOMÊS(HOJE(),0))
+
+- **Gasto diário médio do mês**  
+  =SOMA(FiltroDoMes)/DIAS_CORRIDOS
+
+- **Projeção até o fim do mês**  
+  =GastoDiarioMedio * DIA(EOMÊS(HOJE();0))
+
+- **Saldo da meta**  
+  =Limite - SomaCategoriaMes
+
+## 4. Regras de categorização automática
+Na aba Categorias, adicione palavras-chave. Use fórmula para sugerir categoria:
+
+=ARRAYFORMULA(SE(Transacoes!C:C=\"\";\"\";IFNA(VLOOKUP(TRUE;REGEXMATCH(LOWER(Transacoes!B:B);LOWER(Categorias!C:C));2;FALSE);\"Revisar\")))
+
+Depois revise linhas com “Revisar”. Isso reduz 80% do trabalho manual.
+
+![Pessoa revisando categorias na planilha](https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=70)
+
+## 5. Importação automática (Make/Zapier)
+Fluxo simples (Make):
+1) Trigger: webhook ou conector do banco (quando disponível).  
+2) Parse do JSON/CSV.  
+3) Buscar categoria sugerida pelo regex (opcional).  
+4) Criar linha na aba Transacoes via Google Sheets.
+
+Se não tiver API do banco, use export semanal CSV e um watch folder do Google Drive para importar automaticamente.
+
+## 6. Alertas no Telegram/e-mail
+- Crie um cenário diário às 21h:  
+  - Consulta no Sheets: categorias com gasto > 90% da meta.  
+  - Envie mensagem via bot do Telegram ou e-mail com lista das categorias críticas.
+
+Mensagem exemplo:  
+“⚠️ Você já gastou 92% da meta em Alimentação. Falta R$ 120 para fechar o mês.”
+
+![Smartphone com notificação](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## 7. Dashboard rápido
+- Use gráficos de barras para “Gasto vs Meta” por categoria.  
+- Gauge para % total do orçamento já usado.  
+- KPI cards: “Quanto pode gastar hoje” = (Meta total - Gasto até agora) / dias restantes.  
+- Filtro por conta (banco/cartão) para ver onde está vazando.
+
+## 8. Segurança e privacidade
+- Restrinja compartilhamento do Sheet.  
+- No Make/Zapier, oculte logs com dados sensíveis.  
+- Não deixe tokens/keys expostos; use variáveis de ambiente da plataforma.
+
+![Cadeado digital](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## 9. Rotina semanal de manutenção (15 min)
+- Revisar linhas marcadas como “Revisar”.  
+- Ajustar categorias novas que surgirem.  
+- Atualizar metas se houver mudança de renda.  
+- Exportar backup em CSV para um drive seguro.
+
+## 10. Expandindo para metas maiores
+- Adicione coluna “Projeto” (ex.: viagem, reforma) e crie subtotais.  
+- Crie aba “Investimentos” puxando dados de corretora via API para ver aporte mensal.  
+- Some alerta de aporte: se você não aportou R$ X no mês, recebe notificação.
+
+![Pessoa consultando dashboard colorido](https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=70)
+
+## 11. Versão offline (se não quiser Make)
+- Baixe extrato semanal em CSV.  
+- Use macro simples ou App Script para importar para a aba Transacoes.  
+- Ative gatilho de e-mail diário via App Script com categorias críticas.
+
+## 12. Checklist de entrega (se for vender este setup)
+- [ ] Sheet duplicável com abas prontas.  
+- [ ] Tutorial de 1 página + vídeo curto de 5 min.  
+- [ ] Dois cenários Make (importação + alerta).  
+- [ ] Template de mensagem do Telegram.  
+- [ ] FAQ de segurança.
+
+## Conclusão
+Planilha automática não é sobre amar Excel; é sobre tirar fricção do controle financeiro. Com regras de categorização, metas claras e alertas, você sabe onde está gastando sem digitar tudo à mão. Em 2026, dá para montar isso em poucas horas e manter em 15 minutos por semana — ou vender o setup pronto para outras pessoas que precisam do mesmo controle.
+        `
+    },
+    {
+        slug: 'educacao-financeira-para-adolescentes',
+        title: 'Educação financeira para adolescentes: guia prático para pais e escolas (2026)',
+        excerpt: 'Conversas difíceis ficam fáceis com roteiro: como falar de dinheiro, mesada inteligente, poupança vs. investimento e limites digitais para evitar armadilhas.',
+        tags: ['educacao-financeira', 'adolescentes', 'pais', 'escola', 'mesada'],
+        category: 'Educação',
+        date: '06 Abr 2026',
+        readTime: '15 min de leitura',
+        content: `
+Educação financeira na adolescência é sobre comportamento e limites, não sobre decorar fórmulas. Este guia entrega um roteiro para pais e escolas em 2026: como falar de dinheiro sem tabu, como usar mesada como laboratório e quando introduzir investimento com segurança.
+
+![Mãe e filha conversando com cofrinho](https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=70)
+
+## 1. Princípios para conversar sobre dinheiro
+- **Transparência proporcional à idade**: compartilhe conceitos, não cifras completas.  
+- **Dinheiro é ferramenta, não prêmio de comportamento**: evite “se tirar 10, ganha X”.  
+- **Erro controlado é aprendizado**: dar espaço para escolhas pequenas (e erros baratos).
+
+## 2. Mesada como laboratório
+- **Fixe valor e data** (ex.: todo dia 5). Regularidade ensina planejamento.  
+- **Divisão em potes**: gastar, poupar, doar/investir. Exemplo: 60/30/10.  
+- **Regra de reposição**: se gastar tudo antes, não antecipe.
+
+![Três potes de vidro rotulados](https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=70)
+
+## 3. Cartão pré-pago ou conta digital?
+- **Cartão pré-pago**: limite fechado, bom para iniciantes.  
+- **Conta jovem**: usar se houver acompanhamento via app; ative alertas.  
+- Ajuste limites de compra online e bloqueio noturno para evitar impulsos.
+
+## 4. O que ensinar em cada faixa etária
+- **12–13 anos**: diferença entre desejo/necessidade, preço x valor, guardar para algo maior.  
+- **14–15 anos**: juros simples vs. compostos com exemplos reais (poupança, Pix parcelado).  
+- **16–17 anos**: orçamento mensal, noções de crédito, primeiros investimentos simples (Tesouro Selic fracionário).
+
+![Quadro branco com conceitos básicos](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=70)
+
+## 5. Investimentos para começar
+- **Tesouro Selic fracionário**: liquidez, risco baixo.  
+- **CDB 100% CDI com liquidez diária**: comparar taxas.  
+- **ETFs amplos**: só depois de entender que preço oscila.  
+- Use valor simbólico (R$ 20–50) para mostrar extrato real.
+
+## 6. Digital e segurança
+- Ensine a **não compartilhar senha/PIN**.  
+- Explique golpes comuns: “suporte falso”, “link de prêmio”, “pix reverso”.  
+- Configure autenticação em dois fatores no app do banco.
+
+![Adolescente usando celular com ícones de segurança](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## 7. Projetos práticos para escola ou família
+- **Feira de trocas**: simular compra/venda, trabalhar preço e negociação.  
+- **Mini orçamento de evento**: dar verba para planejar festa simples.  
+- **Desafio do atraso de gratificação**: juntar para comprar algo maior e acompanhar evolução.
+
+## 8. Internet, anúncios e consumismo
+- Mostre como algoritmos empurram ofertas.  
+- Ensine a comparar preço em 3 lugares antes de comprar.  
+- Fale sobre “compra por tédio” e como evitar (lista de espera de 48h).
+
+## 9. Conversas difíceis
+- Dívidas da família: explique em termos de planejamento, não em tom de culpa.  
+- Prioridades: por que nem tudo pode ser comprado agora.  
+- Relacionamento e dinheiro: redes sociais não são métrica de sucesso.
+
+![Pai conversando com filho adolescente](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=70)
+
+## 10. Checklist rápido para pais
+- [ ] Mesada com data fixa e potes definidos.  
+- [ ] Cartão/conta com limites e alertas.  
+- [ ] Uma meta de curto prazo ativa (ex.: comprar um livro ou jogo).  
+- [ ] Uma conversa por mês sobre orçamento/consumo digital.  
+- [ ] Primeiro investimento simbólico acompanhado.
+
+## 11. Para escolas
+- Inclua projetos mão na massa (feira, orçamento de evento).  
+- Traga profissionais para falar de golpes e segurança digital.  
+- Use matemática da vida real: juros, desconto, parcelas.  
+- Avalie por participação e projeto, não por prova teórica.
+
+## Conclusão
+Educação financeira para adolescentes é construir autonomia e senso crítico. Mesada com propósito, metas pequenas e conversas constantes formam adultos que entendem risco, valor e limites — e isso vale mais do que qualquer fórmula decorada.
+        `
+    },
+    {
+        slug: 'consorcio-vs-financiamento-2026',
+        title: 'Consórcio vs financiamento em 2026: quando cada um faz sentido e como calcular o custo real',
+        excerpt: 'Compare custo efetivo, prazo, risco de não contemplar e impacto no fluxo de caixa. Inclui planilha rápida de decisão e checklist anti-armadilha.',
+        tags: ['consorcio', 'financiamento', 'credito', 'planejamento'],
+        category: 'Planejamento',
+        date: '06 Abr 2026',
+        readTime: '15 min de leitura',
+        content: `
+Escolher entre consórcio e financiamento em 2026 depende menos de “juros zero” e mais de fluxo de caixa, prazo e risco de não contemplar na hora certa. Este guia traz uma comparação clara, fórmula de custo efetivo e uma checklist para escapar das armadilhas comerciais.
+
+![Chaves de carro e miniatura de casa](https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=70)
+
+## 1. O que mudou em 2026
+- Juros ainda altos, mas em queda: financiamento imobiliário tende a ficar mais barato ao longo do ano.  
+- Consórcios continuam com taxa de administração relevante; contemplação depende de sorte ou lance.  
+- Bancos oferecendo combos (seguro + cartão) — cuidado com custo agregado.
+
+## 2. Conceitos rápidos
+- **Financiamento**: você recebe o bem agora, paga juros + seguros (imóvel) + tarifas.  
+- **Consórcio**: você paga parcelas + taxa de adm + fundo de reserva e espera ser contemplado (sorte ou lance).
+
+![Calculadora e mini casa sobre contrato](https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=70)
+
+## 3. Como comparar custo efetivo
+### Financiamento
+- CET = juros + seguros (MIP/DFI) + tarifas.  
+- Simule com prazo e parcela; some entrada e custos cartorários (imóvel).  
+- Considere amortização extra anual (preparo caixa para adiantar principal).
+
+### Consórcio
+- Custo real = (taxa adm + fundo reserva + seguros, se houver) ÷ prazo.  
+- Some lance que você planeja ofertar (é dinheiro à vista).  
+- Desconto a valor presente para comparar com financiamento.
+
+## 4. Quando financiamento faz mais sentido
+- Você **precisa do bem agora** (moradia, carro de trabalho).  
+- Consegue dar entrada e manter parcela < 30% da renda.  
+- Juros em queda tornam amortização antecipada mais eficiente.
+
+## 5. Quando consórcio pode valer a pena
+- Prazo flexível: você pode esperar ser contemplado.  
+- Objetivo não urgente (segundo carro, upgrade futuro).  
+- Taxa de adm baixa e possibilidade de lance com dinheiro parado rendendo CDI.
+
+![Pessoa segurando duas placas de escolha](https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=1200&q=70)
+
+## 6. Riscos e armadilhas
+- **Consórcio**: não ser contemplado, pagar anos sem bem; grupo mal gerido; taxas disfarçadas.  
+- **Financiamento**: não considerar seguros/IOF; parcela pós-fixada em cenário de alta (TR); alongar prazo demais e pagar o dobro do bem.
+
+## 7. Checklist anti-armadilha (consórcio)
+- [ ] Taxa de adm < 15% total do plano.  
+- [ ] Fundo de reserva claro; sem seguros embutidos obscuros.  
+- [ ] Histórico da administradora no Banco Central.  
+- [ ] Projeção realista de contemplação (não contar só com sorte).  
+- [ ] Plano de lance (de onde virá o dinheiro?).
+
+## 8. Checklist anti-armadilha (financiamento)
+- [ ] CET comparado entre bancos.  
+- [ ] Parcela < 30% da renda e simulação de alta de juros (se pós-fixada).  
+- [ ] Valor de entrada preserva reserva de emergência.  
+- [ ] Amortização extra prevista (faça 1 por ano).  
+- [ ] Custos cartorários/ITBI no orçamento.
+
+![Pessoa assinando contrato](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=70)
+
+## 9. Mini planilha de decisão
+- Colunas: Entrada, Prazo, Parcela, CET, Taxa adm, Lance planejado, Probabilidade de contemplação (pessimista/realista).  
+- Calcule custo total a valor presente dos dois cenários; escolha o menor que atende seu prazo.
+
+## 10. Estratégia prática em 2026
+- Se mora de aluguel e precisa do imóvel: simule financiamento agora e prepare amortização anual (13º, bônus).  
+- Se pode esperar 1–3 anos: consórcio com lance programado e dinheiro rendendo no CDI pode sair mais barato.  
+- Carro para trabalho: evite depender de contemplação; financiamento curto pode ser mais seguro.
+
+## Conclusão
+Consórcio não é “juros zero”; financiamento não é vilão sempre. Compare custo presente, risco de tempo e impacto no seu caixa. A escolha certa é a que entrega o bem no prazo que você precisa sem destruir sua reserva — e isso muda de pessoa para pessoa. Calcule, simule, e não assine nada sem ver o CET completo.
+        `
+    },
+    {
+        slug: 'seguro-de-vida-reserva-de-emergencia-2026',
+        title: 'Seguro de vida + reserva de emergência em 2026: como combinar proteção e liquidez sem pagar caro',
+        excerpt: 'Guia direto para montar cobertura de vida/invalidez e reserva de emergência: quanto custa, o que cobre, como evitar venda casada e como recalibrar a apólice todo ano.',
+        tags: ['seguro-de-vida', 'invalidez', 'reserva-de-emergencia', 'proteção'],
+        category: 'Proteção',
+        date: '07 Abr 2026',
+        readTime: '14 min de leitura',
+        content: `
+Seguro de vida não substitui reserva de emergência; reserva de emergência não substitui seguro. Em 2026, com planos digitais mais baratos e CDI ainda alto, dá para combinar os dois e proteger família e patrimônio gastando menos.
+
+![Casal segurando mãos com documento](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=70)
+
+## 1. O que cada peça faz
+- **Reserva de emergência**: cobre imprevistos pequenos e médios; liquidez imediata.  
+- **Seguro de vida + invalidez**: protege dependentes e o próprio fluxo de renda em caso de morte ou incapacidade.
+
+## 2. Quanto de reserva?
+- Meta clássica: 6 meses de gastos fixos.  
+- Autônomos: 9–12 meses.  
+- Onde deixar: Tesouro Selic, CDB 100–110% CDI D+0/D+1; não use produtos com marcação volátil.
+
+![Planilha simples de gastos](https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=70)
+
+## 3. Seguro: coberturas essenciais
+- **Morte** (natural/acidental).  
+- **Invalidez por acidente** (IPA) e, se possível, **invalidez funcional**.  
+- **Doenças graves**: opcional, avaliar custo.  
+- **Assistências** (funeral, telemedicina) podem ser úteis, mas não pague caro por elas.
+
+## 4. Quanto contratar (regra rápida)
+- Multiplicador de renda anual + dívidas + objetivos de curto prazo.  
+- Exemplo: renda R$ 6k, filhos pequenos, dívida de R$ 50k → cobertura alvo ~R$ 6k × 36 + 50k ≈ R$ 266k.
+
+## 5. Custo em 2026 (referências)
+- Apólices digitais para 30–35 anos, cobertura ~R$ 300k: ~R$ 40–70/mês (variável por saúde/hábitos).  
+- Invalidez funcional encarece; compare com e sem para decidir.
+
+![Pessoa comparando propostas no notebook](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## 6. Como não pagar caro à toa
+- Peça **3 cotações** (seguradoras diferentes).  
+- Revise coberturas empurradas (proteção de cartão, club de compras).  
+- Evite venda casada com financiamento/consórcio se a taxa explodir o custo.
+
+## 7. Integração com a reserva
+- Mantenha **dedutível baixo**: seguro cobre eventos grandes; reserva cobre eventos menores.  
+- Em emergência de saúde menor, use reserva; não acione seguro que encarece renovação.  
+- Reponha a reserva sempre que usar.
+
+![Pote escrito Emergência](https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=70)
+
+## 8. Recalibração anual
+- Atualize gastos, renda e dívidas.  
+- Se coberturas ligadas ao salário, ajuste soma segurada.  
+- Refaça exame de saúde se necessário para reduzir prêmio (algumas seguradoras permitem).
+
+## 9. Checklist de contratação
+- [ ] Entendeu exclusões (suicídio, esportes de risco, doenças pré-existentes)?  
+- [ ] Beneficiários corretos e atualizados?  
+- [ ] Coberturas de invalidez compatíveis com sua profissão?  
+- [ ] Assistências fazem sentido ou podem ser removidas?  
+- [ ] Valor cabe no orçamento sem mexer na reserva?
+
+## 10. Quem realmente não deve abrir mão do seguro
+- Pais com dependentes, casais com renda principal concentrada em uma pessoa, autônomos que não têm benefício de empresa.  
+- Pessoas com financiamento longo (casa) que não querem expor a família à dívida.
+
+![Família em casa lendo documentos](https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?auto=format&fit=crop&w=1200&q=70)
+
+## Conclusão
+Seguro e reserva são complementares: o seguro protege contra eventos grandes e raros; a reserva cobre o cotidiano inesperado. Combine os dois com cotações limpas, cobertura adequada e revisão anual — assim você paga só o necessário e mantém liquidez para o que a vida cotidiana exige.
+        `
+    },
+    {
+        slug: 'consignado-vale-a-pena-2026',
+        title: 'Quando o consignado vale a pena em 2026 — e quando vira armadilha',
+        excerpt: 'Taxas, prazos, portabilidade e cuidados para não transformar crédito barato em bola de neve. Inclui roteiro de negociação e checklist antes de assinar.',
+        tags: ['consignado', 'credito', 'portabilidade', 'endividamento'],
+        category: 'Crédito',
+        date: '07 Abr 2026',
+        readTime: '14 min de leitura',
+        content: `
+Consignado segue sendo o crédito mais barato para aposentados, servidores e CLT, mas em 2026 ele pode virar problema se usado para tapar buracos recorrentes. Este guia mostra quando faz sentido, como negociar, portar e evitar armadilhas.
+
+![Pessoa assinando contrato de empréstimo](https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?auto=format&fit=crop&w=1200&q=70)
+
+## 1. Como estão as taxas em 2026
+- Teto para INSS abaixo de 1,8% a.m. (ajuste recente).  
+- Servidor/CLT varia por convênio: médias entre 1,6% e 2,1% a.m.  
+- Cartão consignado: limite separado e rotativo caro — cuidado.
+
+## 2. Quando faz sentido contratar
+- Trocar dívida cara (rotativo/cartão) por parcela menor e previsível.  
+- Quitar atraso único com plano claro de não repetir.  
+- Alinhar prazo à vida útil do que está financiando (ex.: quitar reforma essencial).
+
+![Cálculo de parcelas em planilha](https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=70)
+
+## 3. Quando é armadilha
+- Usar para manter padrão de consumo sem ajuste de orçamento.  
+- Tomar vários contratos em bancos diferentes até travar 30–40% da renda.  
+- Fazer cartão consignado e entrar no rotativo.
+
+## 4. Checklist antes de assinar
+- [ ] Taxa efetiva (CET) comparada em 3 bancos.  
+- [ ] Prazo compatível com o problema (não fazer 84x para dívida que poderia ser paga em 24x).  
+- [ ] Parcela ≤ 30% da renda e cabe junto com essenciais.  
+- [ ] Não há cláusulas de seguro/club embutidas sem utilidade.  
+- [ ] Plano de quitação antecipada (ver item 6).
+
+## 5. Negociação e portabilidade
+- Se já tem consignado antigo, peça portabilidade: nova instituição quita o antigo e aplica taxa menor.  
+- Verifique **saldo devedor** e custo de portabilidade; não aceite “refinanciamento” que alonga prazo com taxa maior.  
+- Em refin, peça para reduzir prazo, não só parcela.
+
+![Pessoa falando ao telefone com documentos](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## 6. Quitação antecipada
+- Direito garantido por lei: peça saldo líquido com desconto de juros futuros.  
+- Pague com 13º, bônus ou renda extra — reduz CET real e libera margem mais cedo.  
+- Exija boleto com desconto discriminado.
+
+## 7. Evite golpes
+- Não compartilhe senha ou código do Meu INSS.  
+- Desconfie de ligações oferecendo “troco” ou margem sem consulta.  
+- Verifique se a empresa está no Banco Central (SCD/SCFI) e se o correspondente é autorizado.
+
+## 8. Alternativas ao consignado
+- Negociação direta com cartão/rotativo antes de contratar outro crédito.  
+- Empréstimo pessoal com garantia (home equity) — pode ser mais barato, mas exige cuidado com imóvel.  
+- Vender ativos não essenciais antes de aumentar endividamento.
+
+![Mãos mostrando carteira vazia](https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=70)
+
+## 9. Se você já está no limite da margem
+- Faça diagnóstico: liste todos os contratos, taxas, prazos e parcelas.  
+- Avalie portabilidade dos mais caros primeiro.  
+- Use qualquer renda extra para quitar um contrato por vez (bola de neve).  
+- Evite novos créditos até reduzir margem ocupada para <20%.
+
+## Conclusão
+Consignado pode ser alívio ou armadilha. Ele é útil para substituir dívidas caríssimas e organizar fluxo, mas só funciona com orçamento ajustado e plano de quitação. Compare CET, evite vendas casadas e tenha uma estratégia clara de saída — assim o crédito barato continua barato.
+        `
+    },
+    {
+        slug: 'viagem-sem-dividas-2026',
+        title: 'Como planejar viagem em 2026 sem voltar endividado: roteiro financeiro do zero ao embarque',
+        excerpt: 'Passo a passo para definir orçamento, reservar em camadas, usar câmbio a favor e evitar armadilhas de parcelamento. Inclui checklist e planilha rápida.',
+        tags: ['viagem', 'planejamento', 'cambio', 'cartao', 'milhas'],
+        category: 'Planejamento',
+        date: '08 Abr 2026',
+        readTime: '15 min de leitura',
+        content: `
+Viajar sem dívida é possível quando você define limites antes de comprar. Em 2026, com dólar e euro voláteis, a estratégia é montar um orçamento por camadas, travar parte do câmbio e não financiar lazer com crédito rotativo. Este guia mostra o caminho.
+
+![Pessoa arrumando mala com lista de itens](https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=70)
+
+## 1. Defina o teto antes do destino
+- Orçamento total = passagens + hospedagem + transporte local + alimentação + ingressos + extra 15% para imprevistos.  
+- Se o orçamento não cabe, ajuste destino/tempo ou adie — não empurre no cartão.
+
+## 2. Pague em camadas (ordem importa)
+1) **Passagem**: compre quando caber no teto; use alertas de preço.  
+2) **Hospedagem**: priorize tarifas com cancelamento grátis; pague antecipado só se for desconto alto e caber no caixa.  
+3) **Transporte local**: simular Uber/metro/bus; reservar carro só se necessário.  
+4) **Ingressos**: comprar os que esgotam rápido.  
+5) **Seguro viagem**: obrigatório; escolha cobertura saúde alta (EUA/Europa).
+
+![Mapa e passaporte sobre a mesa](https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=70)
+
+## 3. Câmbio e cartões
+- Use **cartão internacional com spread baixo** e cashback; evite parcelar em moeda estrangeira (IOF+juros).  
+- Leve **cartão pré-pago** ou conta global para parte do orçamento; trave câmbio em 2–3 aportes antes da viagem.  
+- Dinheiro vivo: suficiente para emergências e lugares sem cartão.
+
+## 4. Milhas: quando vale
+- Se já tem saldo e tarifa em milhas + taxas < 70% do preço em dinheiro, vale emitir.  
+- Não compre milha para forçar emissão cara.  
+- Considere flexibilidade de datas para emitir.
+
+## 5. Hospedagem: corte custos sem perder segurança
+- Compare Airbnb vs. hotel: em 2026, taxas de limpeza podem anular vantagem do Airbnb.  
+- Verifique localização para reduzir transporte.  
+- Cozinha no local economiza alimentação; avalie mercado próximo.
+
+![Vista de quarto de hotel simples](https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?auto=format&fit=crop&w=1200&q=70)
+
+## 6. Alimentação e transporte
+- Defina limite diário: ex. R$ 120 por pessoa em viagem nacional; ajuste para câmbio em internacional.  
+- Café da manhã incluso reduz custo.  
+- Cartão transporte/local pass (metro/bus) costuma ser mais barato que ride-hailing diário.
+
+## 7. Seguro viagem e saúde
+- Cobertura médica mínima recomendada: USD 30k (EUA/Europa: USD 50k+).  
+- Inclua cobertura de esportes se for praticar.  
+- Guarde apólice impressa e digital; contatos de emergência salvos.
+
+![Pessoa lendo apólice de seguro](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=70)
+
+## 8. Checklist financeiro antes de embarcar
+- [ ] Passagem e hospedagem pagas ou provisionadas.  
+- [ ] 15% de colchão para imprevistos.  
+- [ ] Cartão global carregado + cartão backup.  
+- [ ] Seguro viagem emitido.  
+- [ ] Alertas de gastos ativados no app do banco.  
+- [ ] Notificações de viagem configuradas para o cartão.
+
+## 9. Durante a viagem: controle simples
+- Anote gasto diário em 3 categorias: comer, transporte, outros.  
+- Ajuste no dia seguinte se estourar limite.  
+- Evite compras “lembrança” por impulso; espere 24h.
+
+![Pessoa usando celular em metrô](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## 10. Volta sem ressaca financeira
+- Se sobrou saldo, troque de volta ou reserve para próxima viagem.  
+- Não parcele a fatura; se faltar, renegocie antes do vencimento.  
+- Registre custos reais para planejar melhor a próxima.
+
+## Conclusão
+Viajar bem em 2026 exige planejamento financeiro simples: teto claro, pagamentos em camadas, câmbio travado aos poucos e cartão com custo baixo. Faça o dinheiro caber antes de embarcar e você volta com memória boa — não com dívida.
+        `
+    },
+    {
+        slug: 'empreender-com-pouco-2026',
+        title: 'Como começar a empreender com pouco capital em 2026 (modelos leves e checklist de validação)',
+        excerpt: 'Negócios enxutos que cabem no bolso: serviços B2B, produtos digitais, revenda e micro-logística. Passo a passo de validação, preços e primeiros 30 dias.',
+        tags: ['empreendedorismo', 'capital-baixo', 'validacao', 'negocios'],
+        category: 'Empreendedorismo',
+        date: '08 Abr 2026',
+        readTime: '16 min de leitura',
+        content: `
+Empreender com pouco capital é questão de escolher modelos leves e validar rápido. Em 2026, com juros ainda altos, cada real conta. Este guia traz modelos de negócio de baixa exigência de estoque, como validar em 30 dias e montar preços mínimos para não virar filantropia.
+
+![Pessoa escrevendo em caderno de negócios](https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?auto=format&fit=crop&w=1200&q=70)
+
+## Princípios de negócios enxutos
+- **Receita primeiro, logo depois custo**: venda antes de escalar.  
+- **Ticket médio definido**: não viva de micro-tickets sem volume.  
+- **Processo simples**: 1 canal principal de aquisição, 1 oferta, 1 forma de entrega.
+
+## Modelos que cabem no bolso
+### 1) Serviços B2B com IA
+- Social media, roteiros de vídeo, landing pages one-page, guias de onboarding.  
+- Investimento: ferramentas (R$ 100–300/mês).  
+- Ticket: R$ 500–2.000/mês por cliente.
+
+### 2) Produtos digitais
+- E-books, templates de planilha, prompts, mini-cursos.  
+- Investimento: tempo + ferramentas baratas (Notion/Canva).  
+- Ticket: R$ 49–297; precisa de tráfego e lista.
+
+![Mesa com laptop e xícara de café](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=70)
+
+### 3) Revenda local/curadoria
+- Compras no atacado para vender no varejo local ou online (Shopee/ML).  
+- Estoque enxuto e rotativo; teste 10–20 unidades antes de escalar.  
+- Margem alvo: 30–50%.
+
+### 4) Micro-logística para e-commerce
+- Entrega expressa de bairro, montagem de kits, fulfilment leve.  
+- Parcerias com pequenos sellers.
+
+### 5) Serviços presenciais de alta demanda
+- Limpeza pós-obra, montagem de móveis, jardinagem, organização.  
+- Baixo investimento em ferramentas básicas + treinamento.
+
+![Entrega de pacote em porta](https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&w=1200&q=70)
+
+## Como validar em 30 dias (passo a passo)
+**Semana 1:** escolha 1 problema e monte oferta de 3 linhas.  
+**Semana 2:** conseguir 5 conversas de clientes-alvo; ajustar preço e escopo.  
+**Semana 3:** fechar 1–3 pilotos pagos com preço de entrada.  
+**Semana 4:** entregar piloto, coletar depoimento e ajustar processo.
+
+## Precificação mínima
+- Calcule horas de entrega + custo fixo + margem.  
+- Regra rápida de serviço: preço ≥ (horas × R$ 80–120) + 20% de margem inicial.  
+- Produtos digitais: considere CAC (anúncio/lista) + taxas de plataforma.
+
+## Caixa e risco
+- Separe **conta PJ** para entradas/saídas.  
+- Mantenha reserva pessoal intocada; use lucro para reinvestir.  
+- Não faça dívida longa para modelo não validado.
+
+![Pessoa olhando fluxo de caixa em planilha](https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=70)
+
+## Canal de aquisição (um de cada vez)
+- **Orgânico**: Instagram/LinkedIn/TikTok com prova de trabalho.  
+- **Parcerias**: indicação de contadores, agências, condomínios.  
+- **Anúncio**: só depois do piloto dar retorno; comece com verba pequena e acompanhe CAC.
+
+## Checklist de operação
+- [ ] Oferta clara (problema + promessa + prazo).  
+- [ ] Página simples ou PDF com cases.  
+- [ ] Contrato e termos (evita refação infinita).  
+- [ ] Forma de pagamento definida (Pix/cobrança recorrente).  
+- [ ] Processo de entrega em 3 etapas e prazo fechado.
+
+![Pessoa assinando contrato simples](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## Erros comuns
+- Vender para “todo mundo” e não fechar ninguém.  
+- Preço baixo demais para serviço customizado.  
+- Comprar estoque grande sem validar demanda.  
+- Não separar contas PJ/PF e perder o controle do caixa.
+
+## Próximos 90 dias (plano)
+- Mês 1: validar e ajustar preço.  
+- Mês 2: firmar 3–5 clientes recorrentes ou 100 vendas digitais.  
+- Mês 3: documentar processo, contratar ajuda pontual se a margem permitir.
+
+## Conclusão
+Empreender com pouco em 2026 exige disciplina de validação e foco em modelos leves. Comece pequeno, cobre o preço certo, entregue bem e documente. O capital aparece quando o processo funciona — não o contrário.
+        `
+    },
+    {
+        slug: 'planejamento-financeiro-para-casais-2026',
+        title: 'Planejamento financeiro para casais em 2026: dividir contas sem brigar e investir juntos',
+        excerpt: 'Modelo prático de orçamento a dois, três formas de dividir despesas, conta conjunta (quando usar) e como investir com metas compartilhadas.',
+        tags: ['casais', 'orçamento', 'investimentos', 'comunicacao', 'metas'],
+        category: 'Finanças Pessoais',
+        date: '09 Abr 2026',
+        readTime: '15 min de leitura',
+        content: `
+Falar de dinheiro a dois não precisa virar guerra. Em 2026, com custo de vida alto, alinhar orçamento e metas é tão importante quanto dividir tarefas da casa. Este guia traz um passo a passo simples para definir regras, dividir contas e investir juntos sem perder autonomia.
+
+![Casal olhando notebook com planilha](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## 1. Regras de comunicação que evitam briga
+- Reunião curta semanal (20 min) para revisar gastos e decisões.  
+- Nada de discutir dinheiro no meio de crise; marque horário.  
+- Transparência sobre dívidas e renda (sem omitir cartão ou empréstimo).
+
+## 2. Três formas de dividir contas
+1) **Meio a meio**: simples, funciona quando rendas são parecidas.  
+2) **Proporcional à renda**: cada um paga % conforme o que ganha (ex.: quem ganha 60% paga 60%).  
+3) **Por categoria**: um paga moradia, outro mercado; requer equilíbrio periódico.
+
+![Tabela dividindo despesas](https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=70)
+
+## 3. Conta conjunta: quando faz sentido
+- Sim: despesas da casa, aluguel/financiamento, mercado, contas fixas.  
+- Não: compras pessoais e presentes (mantém autonomia).  
+- Regra: ambos acompanham saldo e alertas; contribuições proporcionais ou iguais conforme acordo.
+
+## 4. Fundo de emergência e seguros
+- Meta conjunta de 6 meses dos gastos do casal.  
+- Guardar em Tesouro Selic/CDB liquidez.  
+- Seguro de vida/invalidez para quem sustenta maior parte da renda.
+
+![Pote escrito emergencias com duas mãos](https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=70)
+
+## 5. Dívidas: como tratar
+- Liste todas, priorize juros mais altos.  
+- Se uma pessoa tem dívidas caras, o casal pode ajudar com plano conjunto e contrapartida (reduzir gastos, não repetir).  
+- Evite assumir dívida do outro sem plano; foque em quitar e proteger orçamento.
+
+## 6. Metas e investimentos
+- Metas em 3 horizontes: curto (1 ano), médio (1–5 anos), longo (5+).  
+- Escolha alocação simples: emergência (Selic), objetivos médios (IPCA+/prefixado), longo prazo (ETFs/FIIs).  
+- Aporte automático após salário; se aportes forem diferentes, alinhe % do objetivo atingido por pessoa.
+
+![Post-its de metas colados na parede](https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=70)
+
+## 7. Compras grandes
+- Regra: discutir qualquer compra acima de R$ X (defina valor).  
+- Avaliar impacto no orçamento e no plano de metas.  
+- Se financiamento, simular CET e prazo antes de decidir.
+
+## 8. Gestão digital
+- Use app compartilhado ou planilha no Drive com abas: Despesas, Metas, Investimentos.  
+- Alertas no banco para compras acima de valor definido.  
+- Cartões adicionais só se ambos enxergarem a fatura.
+
+![Smartphone mostrando app de gastos](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=70)
+
+## 9. Checklist rápido do casal
+- [ ] Escolhemos modelo de divisão das contas.  
+- [ ] Temos conta conjunta para despesas da casa.  
+- [ ] Emergência de 6 meses em construção.  
+- [ ] Dívidas mapeadas e plano de quitação.  
+- [ ] Metas com prazos e aporte automático.
+
+## Conclusão
+Dinheiro não precisa ser tabu no relacionamento. Com regras simples, divisão clara e metas em comum, o casal ganha previsibilidade e liberdade ao mesmo tempo. Reuniões rápidas, transparência e automação tiram o peso emocional da conversa e deixam o foco na vida que vocês querem construir.
+        `
+    },
+    {
+        slug: 'metas-financeiras-2027',
+        title: 'Como definir metas financeiras para 2027 sem autoengano: números, prazos e revisões trimestrais',
+        excerpt: 'Modelo prático para sair do “quero investir mais” e criar metas mensuráveis: aporte, reserva, dívida, alocação e renda extra, com check-ins trimestrais.',
+        tags: ['metas', 'planejamento', 'aporte', 'alocacao', 'revisao'],
+        category: 'Planejamento',
+        date: '09 Abr 2026',
+        readTime: '15 min de leitura',
+        content: `
+Metas vagas não viram resultado. Para chegar em 2027 com avanço real, transforme desejos em números: quanto aportar, quando quitar, qual alocação manter. Este guia entrega um modelo de metas financeiras com prazos, métricas e revisões trimestrais.
+
+![Pessoa escrevendo metas em caderno](https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?auto=format&fit=crop&w=1200&q=70)
+
+## 1. Escolha 5 metas no máximo
+- 1 de **aporte** (valor mensal ou % da renda).  
+- 1 de **reserva** (meses de gastos).  
+- 1 de **dívida** (valor a quitar e data).  
+- 1 de **alocação** (faixas de renda fixa/variável).  
+- 1 de **renda extra** (valor mensal novo).
+
+## 2. Transforme em números
+- Aporte: R$ X/mês ou Y% da renda.  
+- Reserva: R$ Z = 6 meses de gastos (ou 9–12 se autônomo).  
+- Dívida: quitar R$ N até mês M; taxa média alvo abaixo de X%.  
+- Alocação: ex. 65% RF, 25% RV Brasil, 10% exterior.  
+- Renda extra: +R$ 1.000/mês até dezembro.
+
+![Tabela com metas e prazos](https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=70)
+
+## 3. Quebre em trimestres
+- Q2/2026: bater 25% da reserva e reduzir dívida cara em 30%.  
+- Q3/2026: aportar 3 meses seguidos sem falhar; iniciar renda extra.  
+- Q4/2026: alocação dentro das faixas; dívida cara zerada.  
+- Q1/2027: reserva completa; aumentar aporte para nova meta.
+
+## 4. Sistemas que fazem a meta andar
+- **Débito automático de aportes** no dia do salário.  
+- **Bloqueio de cartão** se gasto variável passar de X% da renda.  
+- **Alertas** para rebalanceamento (a cada trimestre ou desvio de 5 p.p.).
+
+![Gráfico de evolução mensal](https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=70)
+
+## 5. Revisão trimestral (checklist)
+- [ ] Cumpri aporte alvo? Se não, ajustar gastos ou meta.  
+- [ ] Reserva: meses cobertos?  
+- [ ] Dívida: saldo e taxa caindo?  
+- [ ] Alocação: dentro das bandas?  
+- [ ] Renda extra: qual ticket e volume atual?
+
+## 6. Ferramentas rápidas
+- Planilha simples com abas: Metas, Aporte, Dívidas, Alocação.  
+- App de investimentos para acompanhar percentuais.  
+- Lembretes recorrentes no calendário.
+
+![Pessoa olhando dashboard em tablet](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## 7. Erros que atrapalham
+- Metas demais e difusas.  
+- Depender de sobrar dinheiro para aportar.  
+- Ignorar alocação e deixar ações explodirem a carteira.  
+- Não recalcular após mudanças de renda.
+
+## 8. Exemplo completo
+- Aporte: R$ 1.500/mês.  
+- Reserva: R$ 18 mil até mar/2027.  
+- Dívida: quitar R$ 8 mil de cartão até set/2026, taxa média < 2% a.m.  
+- Alocação: 60% RF, 25% RV BR, 10% RV exterior, 5% caixa.  
+- Renda extra: R$ 1.000/mês até dez/2026 com serviços de IA.
+
+![Checklist final](https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=70)
+
+## Conclusão
+Metas boas cabem numa linha, têm prazo e dono. Com cinco metas claras, aportes automáticos e revisões trimestrais, você entra em 2027 com mais patrimônio, menos dívida e uma alocação sob controle — sem depender de vontade ou sorte.
+        `
+    },
+    {
+        slug: 'protecao-cambial-pessoa-fisica-2026',
+        title: 'Proteção cambial para pessoa física em 2026: quando dolarizar, quanto e por quais produtos',
+        excerpt: 'Guia prático para decidir se e quanto expor ao dólar: ETFs, conta global, fundos cambiais e treasuries; percentuais por perfil e erros a evitar.',
+        tags: ['cambio', 'dolar', 'etf', 'treasuries', 'diversificacao'],
+        category: 'Investimentos',
+        date: '10 Abr 2026',
+        readTime: '15 min de leitura',
+        content: `
+Ter parte da carteira dolarizada em 2026 continua sendo uma forma simples de reduzir risco Brasil e proteger poder de compra. Mas dolarizar não é “tudo ou nada”. Este guia mostra quando faz sentido, quanto expor e quais produtos usar.
+
+![Notas de dólar e carteira](https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=70)
+
+## 1. Quando faz sentido dolarizar
+- Você tem viagens, estudos ou custos em moeda forte nos próximos anos.  
+- Quer reduzir risco fiscal/político doméstico.  
+- Busca diversificação de portfólio, não especulação de curto prazo.
+
+## 2. Quanto dolarizar (faixas por perfil)
+- Conservador: 5–10%.  
+- Moderado: 10–20%.  
+- Arrojado: 20–30% (considerando renda e tolerância a volatilidade).
+
+![Gráfico de pizza com fatia em dólar](https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=70)
+
+## 3. Veículos para PF em 2026
+- **ETFs na B3**: IVVB11 (S&P 500), NASD11 (Nasdaq), EURP11 (Euro). Fácil e com IR de 15% em ganho de capital.  
+- **Fundos cambiais**: expõem ao dólar sem remessa; cobram taxa de adm.  
+- **Conta global**: rende em USD, permite aplicações em treasuries/ETFs lá fora; atenção a custos de remessa e spread.  
+- **ETFs de treasuries**: para quem quer dólar + renda fixa de qualidade.
+
+## 4. Como executar
+- Faça aportes mensais (DCA) para evitar depender do câmbio do dia.  
+- Se usar conta global, compare spreads e IOF; prefira corretoras com custo transparente.  
+- Não use cartão internacional para “investir” (IOF + spread alto).
+
+![Pessoa usando app de investimento global](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## 5. Tributação resumida
+- ETFs/Fundos na B3: ganho de capital 15% (acima de R$ 0).  
+- Conta global/ETFs lá fora: ganho tributável 15%–22,5% conforme faixa; declarar bens e direitos em USD.  
+- Fundos cambiais: come-cotas (alíquota regressiva), ganho já retido.
+
+## 6. Erros comuns
+- Dolarizar 40–50% sem necessidade real e depois vender no prejuízo.  
+- Confundir hedge com aposta direcional de curto prazo.  
+- Deixar tudo em dólar parado com inflação americana corroendo; use treasuries/ETFs.  
+- Ignorar custos de remessa e IOF.
+
+![Tab de custos em planilha](https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=70)
+
+## 7. Passo a passo rápido
+- Defina % alvo e produtos (ex.: 15% em IVVB11 + 5% em fundo cambial).  
+- Programe aportes mensais.  
+- Rebalanceie semestralmente; se a fatia passar 5 p.p. do alvo, ajuste.  
+- Registrar posição e câmbio médio para IR.
+
+## Conclusão
+Proteção cambial eficiente é simples: porcentagem clara, produtos de baixo custo e disciplina de rebalanceamento. Assim o dólar vira amortecedor de risco, não fonte de ansiedade.
+        `
+    },
+    {
+        slug: 'fundo-de-emergencia-duplo-2026',
+        title: 'Fundo de emergência duplo em 2026: real + dólar para quem quer dormir mais tranquilo',
+        excerpt: 'Como montar reserva híbrida para proteger poder de compra e liquidez: percentuais, onde deixar cada parte e quando usar.',
+        tags: ['reserva', 'cambio', 'liquidez', 'emergencia'],
+        category: 'Finanças Pessoais',
+        date: '10 Abr 2026',
+        readTime: '14 min de leitura',
+        content: `
+Uma reserva só em reais protege liquidez, mas pode perder poder de compra em choques de câmbio. Uma reserva só em dólar pode não estar acessível rápido e oscila. Em 2026, você pode ter o melhor dos dois mundos: um fundo de emergência duplo, com parte em BRL e parte em USD.
+
+![Pote com moedas e símbolo de dólar](https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=70)
+
+## 1. Por que dividir
+- BRL dá liquidez imediata para emergências do dia a dia.  
+- USD protege contra desvalorização cambial e choques externos.
+
+## 2. Quanto colocar em cada
+- Conservador: 90% BRL / 10% USD.  
+- Moderado: 80% BRL / 20% USD.  
+- Arrojado: 70% BRL / 30% USD (se renda em BRL e tolerância maior).
+
+![Gráfico de pizza BRL x USD](https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=70)
+
+## 3. Onde deixar a parte em BRL
+- Tesouro Selic ou CDB 100–110% CDI D+0/D+1.  
+- Fundos DI baratos (taxa baixa, sem carência).  
+- Objetivo: liquidez e previsibilidade.
+
+## 4. Onde deixar a parte em USD
+- Conta global remunerada em treasuries curtos ou money market.  
+- ETF de treasuries na B3 (ex.: SHYB11) para quem não quer remessa.  
+- Evite deixar parado em dólar sem rendimento.
+
+![Pessoa usando app de conta global](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=70)
+
+## 5. Como montar em 60 dias
+- Passo 1: calcule 6 meses de gastos (valor alvo total).  
+- Passo 2: direcione novos aportes até formar 100% da parte BRL.  
+- Passo 3: comece a dolarizar 10–30% em aportes semanais até atingir a meta USD.  
+- Passo 4: rebalanceie semestralmente para manter proporção.
+
+## 6. Quando usar cada parte
+- Emergência doméstica e imediata: use BRL.  
+- Choque cambial/viagem urgente/compra em moeda forte: use USD.  
+- Sempre reponha depois de usar qualquer parte.
+
+![Pessoa depositando moeda em cofrinho](https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=70)
+
+## 7. Cuidados
+- Custos de remessa e spread podem corroer a parte USD; escolha plataforma barata.  
+- Tributação: ganho em ETFs/fundos na B3 tributa 15%; conta global segue regra de ganho de capital.  
+- Não exceda a proporção se você não tem gastos em dólar.
+
+## 8. Checklist rápido
+- [ ] Seis meses de gastos calculados.  
+- [ ] Percentual BRL/USD definido.  
+- [ ] Produtos escolhidos (Selic/CDB + conta global ou ETF).  
+- [ ] Aportes automáticos configurados.  
+- [ ] Rebalanceamento semestral na agenda.
+
+## Conclusão
+Reserva dupla dá liquidez e proteção cambial sem complicar. Defina percentuais realistas, use produtos baratos e automatize aportes e rebalanceamento. Você fica preparado para emergências locais e para surpresas cambiais — e continua dormindo bem.
         `
     },
     {
