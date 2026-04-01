@@ -1,107 +1,111 @@
-import { ImageResponse } from 'next/og';
-import { posts } from '@/data/posts';
+import { ImageResponse } from "next/og";
+import { posts } from "@/data/posts";
 
-// O Next.js usará isso como o tamanho oficial das imagens para redes sociais.
-export const size = {
-    width: 1200,
-    height: 630,
-};
+export const runtime = "edge";
+export const alt = "Capa do artigo";
+export const contentType = "image/png";
+export const size = { width: 1200, height: 630 };
+export const revalidate = 60 * 60; // 1h
 
-export const contentType = 'image/png';
+function hashSlug(slug: string): number {
+    let hash = 0;
+    for (let i = 0; i < slug.length; i += 1) {
+        hash = (hash << 5) - hash + slug.charCodeAt(i);
+        hash |= 0;
+    }
+    return Math.abs(hash);
+}
 
-export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
-    const resolvedParams = await params;
-    const post = posts.find((p) => p.slug === resolvedParams.slug);
+const palette = [
+    ["#0ea5e9", "#6366f1"],
+    ["#22c55e", "#16a34a"],
+    ["#f97316", "#ea580c"],
+    ["#ec4899", "#8b5cf6"],
+    ["#14b8a6", "#0ea5e9"],
+    ["#f59e0b", "#ef4444"],
+];
 
-    // Fallback seguro caso algo dê errado ou o post não seja achado
-    const title = post ? post.title : 'Artigos e Dicas Financeiras';
-    const category = post ? post.category : 'Blog DividAI';
+export default async function OgImage({ params }: { params: { slug: string } }) {
+    const post = posts.find((p) => p.slug === params.slug);
+    const title = post?.title ?? "DividAI";
+    const category = post?.category ?? "Financas";
+
+    const hash = hashSlug(params.slug);
+    const colors = palette[hash % palette.length];
 
     return new ImageResponse(
         (
             <div
                 style={{
-                    height: '100%',
-                    width: '100%',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'flex-start',
-                    justifyContent: 'space-between',
-                    backgroundColor: '#0f172a',
-                    backgroundImage: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)',
-                    padding: '80px',
+                    width: "1200px",
+                    height: "630px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                    color: "#0b1021",
+                    padding: "60px 70px",
+                    background: `linear-gradient(135deg, ${colors[0]}, ${colors[1]})`,
+                    fontFamily: "Inter, 'Segoe UI', system-ui, -apple-system, sans-serif",
                 }}
             >
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                    <div
+                <div
+                    style={{
+                        fontSize: 24,
+                        fontWeight: 600,
+                        color: "rgba(255,255,255,0.9)",
+                        letterSpacing: "0.5px",
+                        padding: "8px 16px",
+                        borderRadius: 999,
+                        background: "rgba(255,255,255,0.14)",
+                        alignSelf: "flex-start",
+                    }}
+                >
+                    {category}
+                </div>
+
+                <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+                    <h1
                         style={{
-                            padding: '10px 24px',
-                            backgroundColor: 'rgba(56, 189, 248, 0.1)',
-                            borderRadius: '100px',
-                            border: '2px solid rgba(56, 189, 248, 0.3)',
-                            color: '#38bdf8',
-                            fontSize: 28,
-                            fontWeight: 600,
-                            letterSpacing: '0.05em',
-                            textTransform: 'uppercase',
-                        }}
-                    >
-                        {category}
-                    </div>
-                    <div
-                        style={{
-                            fontSize: 68,
+                            fontSize: 64,
+                            lineHeight: 1.05,
                             fontWeight: 800,
-                            color: 'white',
-                            lineHeight: 1.2,
-                            letterSpacing: '-0.02em',
-                            marginTop: '20px',
-                            maxWidth: '950px'
+                            color: "white",
+                            margin: 0,
+                            textShadow: "0 10px 35px rgba(0,0,0,0.28)",
                         }}
                     >
                         {title}
-                    </div>
+                    </h1>
+                    <p
+                        style={{
+                            fontSize: 28,
+                            color: "rgba(255,255,255,0.9)",
+                            margin: 0,
+                            maxWidth: "950px",
+                            lineHeight: 1.35,
+                            textShadow: "0 6px 18px rgba(0,0,0,0.2)",
+                        }}
+                    >
+                        {post?.excerpt ?? "Educacao financeira clara, pratica e feita para a realidade brasileira."}
+                    </p>
                 </div>
 
-                <div
-                    style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                        width: '100%',
-                        paddingTop: '40px',
-                        borderTop: '2px solid rgba(255, 255, 255, 0.1)',
-                    }}
-                >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                        <div
-                            style={{
-                                width: '60px',
-                                height: '60px',
-                                backgroundColor: '#38bdf8',
-                                borderRadius: '16px',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                color: '#fff',
-                                fontSize: 32,
-                                fontWeight: 900
-                            }}
-                        >
-                            D
-                        </div>
-                        <div style={{ fontSize: 36, color: '#f8fafc', fontWeight: 700 }}>
-                            DividAI
-                        </div>
-                    </div>
-                    <div style={{ fontSize: 32, color: '#94a3b8', fontWeight: 500 }}>
-                        blog.dividai.com
-                    </div>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, color: "rgba(255,255,255,0.9)" }}>
+                    <div
+                        style={{
+                            width: 18,
+                            height: 18,
+                            borderRadius: "50%",
+                            background: "rgba(255,255,255,0.9)",
+                        }}
+                    />
+                    <span style={{ fontSize: 22, fontWeight: 600 }}>blog.dividai.com/post/{params.slug}</span>
                 </div>
             </div>
         ),
-        {
-            ...size,
-        }
+        size
     );
 }
+
+
+
