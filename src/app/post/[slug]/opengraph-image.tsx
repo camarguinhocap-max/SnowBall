@@ -5,7 +5,7 @@ export const runtime = "edge";
 export const alt = "Capa do artigo";
 export const contentType = "image/png";
 export const size = { width: 1200, height: 630 };
-export const revalidate = 60 * 60; // 1h
+export const revalidate = 3600; // 1h
 
 function hashSlug(slug: string): number {
     let hash = 0;
