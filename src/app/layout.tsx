@@ -16,25 +16,25 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://dividai.com"),
-    title: "Blog DividAI | Financas sem complicacoes",
+    title: "Blog DividAI | Finanças sem complicações",
     description:
-        "Aprenda a organizar sua vida financeira, sair das dividas e comecar a investir com foco na realidade brasileira.",
-    keywords: "financas pessoais, investimentos, educacao financeira, renda extra, bitcoin, brasil",
+        "Aprenda a organizar sua vida financeira, sair das dívidas e começar a investir com foco na realidade brasileira.",
+    keywords: "finanças pessoais, investimentos, educação financeira, renda extra, bitcoin, brasil",
     robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
     openGraph: {
         type: "website",
         locale: "pt_BR",
         url: "https://dividai.com",
         siteName: "Blog DividAI",
-        title: "Blog DividAI | Financas sem complicacoes",
+        title: "Blog DividAI | Finanças sem complicações",
         description:
-            "Aprenda a organizar sua vida financeira, sair das dividas e comecar a investir com foco na realidade brasileira.",
+            "Aprenda a organizar sua vida financeira, sair das dívidas e começar a investir com foco na realidade brasileira.",
     },
     twitter: {
         card: "summary_large_image",
         title: "Blog DividAI",
         description:
-            "Aprenda a organizar sua vida financeira, sair das dividas e comecar a investir com foco na realidade brasileira.",
+            "Aprenda a organizar sua vida financeira, sair das dívidas e começar a investir com foco na realidade brasileira.",
     },
     verification: {
         google: process.env.GOOGLE_SITE_VERIFICATION || "",
@@ -105,8 +105,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             <span style={{ fontSize: "1.8rem", fontWeight: 800 }}>Blog.DividAI</span>
                         </Link>
                         <SearchBar />
-                        <nav className="nav-links" aria-label="Navegacao principal">
-                            <Link href="/">Inicio</Link>
+                        <nav className="nav-links" aria-label="Navegação principal">
+                            <Link href="/">Início</Link>
                             <Link href="/#artigos">Artigos</Link>
                             <Link href="/sobre">Sobre</Link>
                             <Link href="/contato">Contato</Link>
@@ -128,16 +128,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                 flexWrap: "wrap",
                             }}
                         >
-                            <Link href="/">Inicio</Link>
+                            <Link href="/">Início</Link>
                             <Link href="/#artigos">Artigos</Link>
                             <Link href="/sobre">Sobre</Link>
                             <Link href="/termos-de-uso">Termos de Uso</Link>
-                            <Link href="/politica-de-privacidade">Politica de Privacidade</Link>
+                            <Link href="/politica-de-privacidade">Política de Privacidade</Link>
                             <Link href="/contato">Contato</Link>
                         </div>
                         <p>&copy; {new Date().getFullYear()} dividai.com. Todos os direitos reservados.</p>
                         <p style={{ marginTop: "0.5rem", fontSize: "0.8rem" }}>
-                            Conteudo focado em educacao financeira.
+                            Conteúdo focado em educação financeira.
                         </p>
                     </div>
                 </footer>

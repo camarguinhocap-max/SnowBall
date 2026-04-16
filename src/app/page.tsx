@@ -6,16 +6,16 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { getVisiblePosts, sortByDate, sortByViews } from "@/lib/posts";
 
 export const metadata: Metadata = {
-    title: "Blog DividAI | Financas sem complicacoes",
+    title: "Blog DividAI | Finanças sem complicações",
     description:
-        "Aprenda a organizar sua vida financeira, sair das dividas e comecar a investir com foco na realidade brasileira.",
+        "Aprenda a organizar sua vida financeira, sair das dívidas e começar a investir com foco na realidade brasileira.",
     alternates: {
         canonical: "https://dividai.com",
     },
     openGraph: {
         title: "Blog DividAI",
         description:
-            "Aprenda a organizar sua vida financeira, sair das dividas e comecar a investir com foco na realidade brasileira.",
+            "Aprenda a organizar sua vida financeira, sair das dívidas e começar a investir com foco na realidade brasileira.",
         url: "https://dividai.com",
         siteName: "Blog DividAI",
         type: "website",
@@ -54,13 +54,13 @@ export default async function Home({ searchParams }: HomeProps) {
             {/* Hero */}
             <section className="hero-section">
                 <div className="hero-badge">
-                    Educacao Financeira Brasileira
+                    Educação Financeira Brasileira
                 </div>
                 <h1 className="hero-title">
-                    Sua Nova Relacao com o Dinheiro
+                    Sua Nova Relação com o Dinheiro
                 </h1>
                 <p className="hero-subtitle">
-                    Descomplique suas financas com dicas praticas, diretas e feitas sob
+                    Descomplique suas finanças com dicas práticas, diretas e feitas sob
                     medida para a realidade do brasileiro.
                 </p>
             </section>
@@ -115,7 +115,7 @@ export default async function Home({ searchParams }: HomeProps) {
                     <section id="artigos" aria-labelledby="ultimos-artigos">
                         <div className="section-header">
                             <h2 id="ultimos-artigos" className="section-title">
-                                {categoryFilter ? `Artigos em ${categoryFilter}` : "Ultimos Artigos"}
+                                {categoryFilter ? `Artigos em ${categoryFilter}` : "Últimos Artigos"}
                             </h2>
                             {categoryFilter && (
                                 <Link
@@ -177,7 +177,7 @@ export default async function Home({ searchParams }: HomeProps) {
                         <div className="widget">
                             <h3 className="widget-title">Newsletter</h3>
                             <p className="widget-text" style={{ marginBottom: "0" }}>
-                                Receba artigos novos, guias rapidos e insights direto no e-mail.
+                                Receba artigos novos, guias rápidos e insights direto no e-mail.
                             </p>
                             <NewsletterForm
                                 source="sidebar_home"

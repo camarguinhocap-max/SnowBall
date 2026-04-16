@@ -45,7 +45,7 @@ export default function ContactPageClient() {
             <header className="article-header">
                 <h1 className="article-title">Entre em Contato</h1>
                 <p style={{ fontSize: "1.1rem", color: "var(--muted)", marginTop: "1rem" }}>
-                    Tem alguma pergunta ou sugestao? Use o formulario abaixo ou fale com a equipe pelos
+                    Tem alguma pergunta ou sugestão? Use o formulário abaixo ou fale com a equipe pelos
                     canais da DividAI.
                 </p>
             </header>
@@ -63,7 +63,7 @@ export default function ContactPageClient() {
                                 fontSize: "0.95rem",
                             }}
                         >
-                            Obrigado. Sua mensagem foi recebida e sera analisada em breve.
+                            Obrigado. Sua mensagem foi recebida e será analisada em breve.
                         </div>
                     )}
 
@@ -226,7 +226,7 @@ export default function ContactPageClient() {
                             </a>
                         </p>
                         <p style={{ margin: "0.25rem 0 0 0", fontSize: "0.9rem", color: "var(--muted)" }}>
-                            Resposta prevista em ate 24 horas uteis
+                            Resposta prevista em até 24 horas úteis
                         </p>
                     </div>
 
@@ -292,12 +292,12 @@ export default function ContactPageClient() {
                             }}
                         >
                             <MapPin size={20} style={{ color: "var(--primary)" }} />
-                            Informacoes
+                            Informações
                         </h3>
                         <p style={{ margin: 0, fontSize: "0.9rem", color: "var(--muted)", lineHeight: "1.6" }}>
                             <strong>DividAI</strong>
                             <br />
-                            Blog de educacao financeira
+                            Blog de educação financeira
                             <br />
                             Brasil
                         </p>
@@ -312,8 +312,8 @@ export default function ContactPageClient() {
                         }}
                     >
                         <p style={{ margin: 0, fontSize: "0.9rem" }}>
-                            <strong>Nota:</strong> Esta pagina de contato recebe mensagens manualmente. Para
-                            sugestoes de artigos, imprensa ou parcerias, use o formulario acima.
+                            <strong>Nota:</strong> Esta página de contato recebe mensagens manualmente. Para
+                            sugestões de artigos, imprensa ou parcerias, use o formulário acima.
                         </p>
                     </div>
                 </div>

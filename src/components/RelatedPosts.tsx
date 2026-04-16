@@ -50,9 +50,9 @@ export default function RelatedPosts({ currentSlug, category, tags }: RelatedPos
     return (
         <section className="related-posts">
             <div className="related-posts__header">
-                <h2 className="related-posts__title">Voce tambem pode gostar</h2>
+                <h2 className="related-posts__title">Você também pode gostar</h2>
                 <p className="related-posts__subtitle">
-                    Sugestoes baseadas em categoria e temas em comum com este artigo.
+                    Sugestões baseadas em categoria e temas em comum com este artigo.
                 </p>
             </div>
 

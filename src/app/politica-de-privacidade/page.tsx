@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Politica de Privacidade | Blog DividAI",
+    title: "Política de Privacidade | Blog DividAI",
     description:
-        "Leia como o Blog DividAI coleta, usa e protege dados pessoais, cookies e informacoes de navegacao.",
+        "Leia como o Blog DividAI coleta, usa e protege dados pessoais, cookies e informações de navegação.",
     alternates: {
         canonical: "https://dividai.com/politica-de-privacidade",
     },

@@ -66,7 +66,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
 
     if (!post) {
         return {
-            title: "Artigo nao encontrado | DividAI",
+            title: "Artigo não encontrado | DividAI",
         };
     }
 
@@ -77,7 +77,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     return {
         title: `${post.title} | Blog DividAI`,
         description: post.excerpt,
-        keywords: [post.category, "DividAI", "blog", "financas", ...post.tags].join(", "),
+        keywords: [post.category, "DividAI", "blog", "finanças", ...post.tags].join(", "),
         authors: [{ name: "DividAI" }],
         alternates: {
             canonical: url,
@@ -145,7 +145,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
             {
                 "@type": "ListItem",
                 position: 1,
-                name: "Inicio",
+                name: "Início",
                 item: "https://dividai.com",
             },
             {
@@ -163,7 +163,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
 
             <article data-reading-root style={{ maxWidth: "800px", margin: "4rem auto 0 auto" }}>
                 <nav className="breadcrumb" aria-label="Breadcrumb">
-                    <Link href="/">Inicio</Link>
+                    <Link href="/">Início</Link>
                     <span className="breadcrumb__separator">/</span>
                     <span className="breadcrumb__current">{post.title}</span>
                 </nav>
@@ -204,8 +204,8 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                         <NewsletterForm
                             compact
                             source={`post_end:${post.slug}`}
-                            title="Gostou do conteudo?"
-                            description="Assine para receber novos artigos e resumos praticos direto no seu e-mail."
+                            title="Gostou do conteúdo?"
+                            description="Assine para receber novos artigos e resumos práticos direto no seu e-mail."
                         />
                     </ScrollReveal>
                 </div>

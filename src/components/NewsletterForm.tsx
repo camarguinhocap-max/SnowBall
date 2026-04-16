@@ -14,7 +14,7 @@ interface NewsletterFormProps {
 
 export default function NewsletterForm({
     source = "form",
-    title = "Quer aprender sobre financas?",
+    title = "Quer aprender sobre finanças?",
     description = "Receba dicas semanais sobre investimentos, economia pessoal e liberdade financeira.",
     compact = false,
 }: NewsletterFormProps) {
@@ -36,7 +36,7 @@ export default function NewsletterForm({
 
         if (result.success) {
             trackNewsletterSubscribe(source);
-            setMessage({ type: "success", text: "E-mail confirmado. Bem-vindo a comunidade DividAI." });
+            setMessage({ type: "success", text: "E-mail confirmado. Bem-vindo à comunidade DividAI." });
             setEmail("");
         } else {
             setMessage({ type: "error", text: result.error || "Ocorreu um erro. Tente novamente." });
@@ -105,7 +105,7 @@ export default function NewsletterForm({
                 }}
             >
                 <li style={{ fontSize: "0.9rem", color: "var(--muted)", display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                    <span style={{ color: "var(--primary)" }}>+</span> Conteudo exclusivo toda semana
+                    <span style={{ color: "var(--primary)" }}>+</span> Conteúdo exclusivo toda semana
                 </li>
                 <li style={{ fontSize: "0.9rem", color: "var(--muted)", display: "flex", alignItems: "center", gap: "0.5rem" }}>
                     <span style={{ color: "var(--primary)" }}>+</span> Planilhas e ferramentas gratuitas
