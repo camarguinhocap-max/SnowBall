@@ -768,11 +768,11 @@ Quando você escolhe com base em objetivo, prazo e liquidez, a renda fixa deixa 
         category: 'Finanças Pessoais',
         date: '16 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200)
 
-`
+
 Comprar carro usado pode ser decisão inteligente ou erro financeiro caro. Tudo depende do contexto. O problema é que muita gente analisa apenas a parcela ou o preço anunciado e ignora o que realmente pesa no orçamento depois da compra.
 
 Carro não custa só na aquisição. Ele consome caixa em combustível, seguro, manutenção, impostos, documentação, pneus, imprevistos e depreciação. Quando esse pacote não entra na conta, o veículo vira um dreno silencioso da renda.
@@ -915,11 +915,11 @@ Quando a decisão considera custo total, diligência técnica e reserva pós-com
         category: 'Investimentos',
         date: '16 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200)
 
-`
+
 Diversificar fora do Brasil deixou de ser tema restrito a investidores com estrutura complexa. Hoje, muita gente começa a acessar empresas globais pelo mercado local. Nesse caminho, os BDRs aparecem como uma alternativa prática para quem quer exposição internacional sem necessariamente abrir conta fora logo de início.
 
 Mas facilidade não significa solução completa. BDR pode ser excelente para alguns objetivos e limitado para outros. O erro está em tratá-lo como atalho universal.
@@ -1052,11 +1052,11 @@ Mas não são solução mágica. Continuam exigindo critério de alocação, no�
         category: 'Finanças',
         date: '17 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1590283603385-17ffb118742b?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1590283603385-17ffb118742b?w=1200)
 
-`
+
 Cashback, milhas, pontos e benefícios de cartão parecem excelentes no material de marketing. E, em muitos casos, realmente podem gerar valor. O problema começa quando a pessoa passa a tomar decisão de consumo com base no benefício e não na utilidade da compra. Nessa hora, o ganho aparente vira custo real.
 
 O princípio mais importante é simples: benefício bom é o que recompensa um gasto que você já faria de qualquer forma. Benefício ruim é o que te empurra para um padrão que não existiria sem a promessa do prêmio.
@@ -1179,11 +1179,11 @@ O jeito maduro de lidar com esses programas é medir valor líquido, rejeitar co
         category: 'Renda Fixa',
         date: '17 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1590283603385-17ffb118742b?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1590283603385-17ffb118742b?w=1200)
 
-`
+
 Quando o investidor descobre produtos atrelados à inflação, a reação inicial costuma ser positiva: “ótimo, agora encontrei uma forma de proteger meu dinheiro do aumento de preços”. A lógica está correta, mas a comparação entre Tesouro IPCA+ e CDB indexado à inflação exige mais cuidado do que parece.
 
 Os dois podem cumprir funções parecidas em alguns casos, mas não são a mesma coisa. O emissor é diferente, a liquidez é diferente, a sensibilidade no caminho é diferente e o encaixe na carteira também muda.
@@ -1301,11 +1301,11 @@ Escolher bem significa olhar além da taxa. Em renda fixa, a pergunta certa não
         category: 'Finanças Pessoais',
         date: '18 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1556740758-90f9b3ec7007?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1556740758-90f9b3ec7007?w=1200)
 
-`
+
 Poucas decisões financeiras carregam tanta emoção quanto moradia. Para muita gente, comprar casa própria representa segurança, status, estabilidade e sensação de conquista. Para outras, alugar representa flexibilidade, mobilidade e uso mais eficiente do capital. O problema é quando essa escolha é feita só com base em frases prontas.
 
 Nem alugar é jogar dinheiro fora. Nem comprar é automaticamente ótimo negócio. A decisão madura depende de fluxo de caixa, horizonte de permanência, mobilidade profissional, entrada disponível, custo total e impacto sobre o restante do patrimônio.
@@ -1435,11 +1435,11 @@ Comprar faz sentido quando há permanência, renda estável, entrada saudável e
         category: 'Planejamento para Aposentadoria',
         date: '18 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1556740758-90f9b3ec7007?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1556740758-90f9b3ec7007?w=1200)
 
-`
+
 “Viver de renda” é uma expressão sedutora porque parece simples. Você imagina um patrimônio gerando fluxo suficiente para sustentar o mês e pronto. Só que, na prática, essa conta é mais delicada. Ela depende do seu padrão de gasto, da composição da carteira, da inflação, da tributação, da regularidade dessa renda e da margem para suportar períodos ruins.
 
 Por isso, a pergunta não deveria ser apenas “quanto eu preciso juntar?”. Deveria ser “quanto eu preciso para sustentar meu padrão com segurança razoável e sem me enganar na conta?”.
@@ -1582,11 +1582,11 @@ Quanto mais honesta for essa conta, menos chance você tem de perseguir uma meta
         category: 'Dívidas',
         date: '19 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200)
 
-`
+
 O parcelamento eterno não costuma nascer de uma grande decisão errada. Ele aparece como soma de muitas pequenas decisões aparentemente suportáveis: uma compra em seis vezes, outra em dez, uma passagem, um celular, um eletrodoméstico, uma roupa, uma compra online “barata”. Quando você percebe, parte relevante da sua renda já está comprometida antes mesmo de o mês começar.
 
 O problema não é só o valor total. É a perda de liberdade. O mês deixa de ser decidido pelo presente e passa a ser dirigido por compras antigas.
@@ -1732,11 +1732,11 @@ Parcelas pequenas podem parecer inofensivas, mas em conjunto travam o mês e rou
         category: 'Análise de Investimentos',
         date: '19 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=1200)
 
-`
+
 Small caps costumam despertar duas reações extremas. De um lado, o investidor empolgado com a possibilidade de multiplicação maior. Do outro, o investidor que evita qualquer empresa menor por medo da volatilidade. As duas visões simplificam demais o tema.
 
 Small caps podem fazer sentido, sim. Mas não porque “sobem mais”. Elas fazem sentido apenas quando entram como parte coerente de uma carteira, com tamanho compatível, análise séria e plena consciência do risco adicional.
@@ -1863,11 +1863,11 @@ Elas deixam de fazer sentido quando entram como promessa de multiplicação fác
         category: 'Carreira',
         date: '20 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200)
 
-`
+
 Trocar de emprego pode acelerar renda, aprendizado e qualidade de vida. Também pode gerar arrependimento caro quando a decisão é tomada apenas pelo salário anunciado ou pelo desgaste do emprego atual. Em transições de carreira, a análise financeira precisa ser tão séria quanto a análise profissional.
 
 Sair cedo demais, aceitar pacote mal avaliado ou subestimar o custo de transição pode consumir reserva, criar ansiedade e reduzir poder de negociação justamente no momento em que você precisa de clareza.
@@ -2007,11 +2007,11 @@ Quando a análise é completa, você escolhe com mais liberdade e menos impulso.
         category: 'Renda Fixa',
         date: '20 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1565514020179-026c04f90126?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1565514020179-026c04f90126?w=1200)
 
-`
+
 Muita gente entra na renda fixa acreditando que todo produto dessa classe se comporta de forma parecida. A surpresa chega quando um título de prazo maior oscila muito mais do que o esperado. Aí surgem duas expressões que parecem técnicas demais: duração e marcação a mercado.
 
 Na prática, elas explicam boa parte do comportamento dos títulos antes do vencimento. Entender isso não é preciosismo. É proteção contra erro básico de encaixe entre produto e objetivo.
@@ -2133,11 +2133,11 @@ Quando você entende essa dinâmica, para de comprar produto pelo nome e passa a
         category: 'Planejamento',
         date: '21 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200)
 
-`
+
 Receber comissão pode ser excelente para aumentar renda, mas também cria um problema clássico: a pessoa passa a viver como se o melhor mês fosse o novo normal. Quando a comissão cai, o orçamento implode. O segredo não está em ganhar menos ou mais. Está em aprender a transformar renda variável em vida estável.
 
 Quem recebe comissão não deveria montar a vida sobre o pico. Deveria montar a vida sobre um piso prudente e tratar o excedente como combustível para segurança, metas e crescimento.
@@ -2260,11 +2260,11 @@ Quando você cria colchão de renda, trava custo fixo em nível prudente e defin
         category: 'Investimentos',
         date: '21 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200)
 
-`
+
 Investir fora do Brasil faz sentido para muita gente, mas isso não significa que todo investidor precise começar montando uma estrutura complexa. Em vários casos, a exposição internacional via ETFs acessados localmente já resolve boa parte do problema com simplicidade suficiente.
 
 O ponto central é entender por que você quer essa exposição. Sem esse “porquê”, ETF internacional vira apenas mais um ticker na carteira.
@@ -2408,11 +2408,11 @@ Mas continuam exigindo clareza. Índice, custo, cambial, liquidez e papel na car
         category: 'Finanças Pessoais',
         date: '22 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200)
 
-`
+
 Reforma é um dos projetos domésticos mais propensos a estourar orçamento. Quase sempre começa com uma conta otimista, uma lista incompleta e a esperança de que “vamos ajustando no caminho”. O resultado costuma ser previsível: custo maior, prazo maior e mais estresse do que o planejado.
 
 Reformar sem dívida não depende de sorte. Depende de escopo claro, reserva específica, cronograma realista e coragem para adiar o que não cabe agora.
@@ -2566,11 +2566,11 @@ O que costuma quebrar o orçamento não é só o preço de material ou mão de o
         category: 'Análise de Investimentos',
         date: '22 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1556740758-90f9b3ec7007?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1556740758-90f9b3ec7007?w=1200)
 
-`
+
 Quase todo investidor já caiu nessa armadilha em algum momento: viu um múltiplo baixo, concluiu que a ação estava barata e depois descobriu que o barato era, na verdade, um reflexo de problema estrutural. O erro oposto também é comum: olhar um múltiplo alto e descartar uma empresa excelente que talvez apenas estivesse cara no papel, mas ainda coerente com sua qualidade e crescimento.
 
 A verdade é simples: ação barata ou cara não se define por um único indicador.
@@ -2714,11 +2714,11 @@ Preço baixo pode esconder problema. Preço alto pode refletir excelência. O in
         category: 'Educação',
         date: '23 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200)
 
-`
+
 Educação financeira para crianças não começa com planilha, investimento ou aula formal. Começa com linguagem simples, exemplos da vida real e um ambiente em que dinheiro não seja tabu absoluto nem assunto tratado só com tensão. O que molda a relação futura da criança com dinheiro são, em grande parte, os hábitos que ela observa e as pequenas escolhas que aprende a fazer cedo.
 
 Ensinar finanças não é transformar a infância em curso de economia. É construir noções de valor, troca, espera, limite e prioridade de forma compatível com a idade.
@@ -2878,11 +2878,11 @@ Dinheiro não deveria ser tabu nem tema pesado demais. Quando a criança aprende
         category: 'Fundos Imobiliários',
         date: '23 Abr 2026',
         readTime: '10 min de leitura',
-        content: 
+        content: `
 
-![Ilustracao sobre financas](https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80)
+![Ilustracao sobre financas](https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200)
 
-`
+
 Muita gente olha fundo imobiliário quase exclusivamente pelo dividendo recente. O problema é que o rendimento do mês, isolado, conta pouco sobre a saúde real do fundo. Para entender se a renda é sustentável, se o portfólio é sólido e se o risco está aumentando ou diminuindo, o relatório gerencial continua sendo uma das peças mais importantes da análise.
 
 Ler relatório gerencial não exige virar especialista em mercado imobiliário. Exige saber onde prestar atenção e quais números contam história de verdade.

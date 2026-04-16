@@ -51,90 +51,95 @@ export default async function Home({ searchParams }: HomeProps) {
 
     return (
         <>
-            <section style={{ textAlign: "center", padding: "4rem 0", borderBottom: "1px solid var(--border)" }}>
-                <h1
-                    style={{
-                        fontSize: "3rem",
-                        marginBottom: "1rem",
-                        background: "linear-gradient(90deg, #818cf8, #0ea5e9)",
-                        WebkitBackgroundClip: "text",
-                        WebkitTextFillColor: "transparent",
-                        backgroundClip: "text",
-                    }}
-                >
+            {/* Hero */}
+            <section className="hero-section">
+                <div className="hero-badge">
+                    Educacao Financeira Brasileira
+                </div>
+                <h1 className="hero-title">
                     Sua Nova Relacao com o Dinheiro
                 </h1>
-                <p style={{ fontSize: "1.2rem", color: "var(--muted)", maxWidth: "600px", margin: "0 auto" }}>
-                    Descomplique suas financas com dicas praticas, diretas e feitas sob medida para a realidade do brasileiro.
+                <p className="hero-subtitle">
+                    Descomplique suas financas com dicas praticas, diretas e feitas sob
+                    medida para a realidade do brasileiro.
                 </p>
             </section>
 
             <div className="main-layout">
                 <main className="content-area">
-                    <section>
-                        <h2 style={{ fontSize: "1.5rem", marginBottom: "1.5rem", color: "var(--muted)" }}>
-                            Destaque
-                        </h2>
+                    {/* Featured Article */}
+                    <section aria-label="Artigo em Destaque" style={{ marginBottom: "2.5rem" }}>
+                        <div className="section-header" style={{ marginBottom: "1.25rem" }}>
+                            <h2 className="section-title">Destaque</h2>
+                        </div>
 
                         <ScrollReveal delay={40}>
-                            <Link href={`/post/${featuredPost.slug}`} className="featured-post">
-                                <span
-                                    className="post-category"
-                                    style={{ fontSize: "0.85rem", marginBottom: "1rem", display: "inline-block" }}
-                                >
-                                    {featuredPost.category}
-                                </span>
-                                <h2 className="featured-title">{featuredPost.title}</h2>
-                                <p className="featured-excerpt">{featuredPost.excerpt}</p>
+                            <Link
+                                href={`/post/${featuredPost.slug}`}
+                                className="featured-post"
+                                aria-label={`Ir para artigo: ${featuredPost.title}`}
+                            >
+                                {/* Image strip */}
+                                <div className="featured-image-strip">
+                                    <img
+                                        src={`/post/${featuredPost.slug}/opengraph-image`}
+                                        alt={`Capa do artigo ${featuredPost.title}`}
+                                        loading="eager"
+                                    />
+                                    <div className="featured-image-overlay" />
+                                </div>
 
-                                <div className="post-meta" style={{ margin: 0, color: "#a1a1aa" }}>
-                                    <span>{featuredPost.date}</span>
-                                    <span>&bull;</span>
-                                    <span>{featuredPost.readTime}</span>
+                                {/* Content */}
+                                <div className="featured-body">
+                                    <span className="featured-label">{featuredPost.category}</span>
+                                    <h2 className="featured-title">{featuredPost.title}</h2>
+                                    <p className="featured-excerpt">{featuredPost.excerpt}</p>
+
+                                    <div className="featured-meta">
+                                        <span className="featured-meta-item">
+                                            📅 {featuredPost.date}
+                                        </span>
+                                        <span className="featured-meta-item">
+                                            ⏱ {featuredPost.readTime}
+                                        </span>
+                                        <span className="featured-cta">
+                                            Ler artigo completo →
+                                        </span>
+                                    </div>
                                 </div>
                             </Link>
                         </ScrollReveal>
                     </section>
 
-                    <section id="artigos" aria-labelledby="ultimos-artigos" style={{ paddingTop: "1rem" }}>
-                        <div
-                            style={{
-                                display: "flex",
-                                justifyContent: "space-between",
-                                alignItems: "center",
-                                marginBottom: "1rem",
-                                gap: "1rem",
-                                flexWrap: "wrap",
-                            }}
-                        >
-                            <h2 id="ultimos-artigos" style={{ fontSize: "2rem" }}>
+                    {/* Articles Grid */}
+                    <section id="artigos" aria-labelledby="ultimos-artigos">
+                        <div className="section-header">
+                            <h2 id="ultimos-artigos" className="section-title">
                                 {categoryFilter ? `Artigos em ${categoryFilter}` : "Ultimos Artigos"}
                             </h2>
                             {categoryFilter && (
                                 <Link
                                     href="/"
                                     className="btn btn-secondary"
-                                    style={{ padding: "0.25rem 0.75rem", fontSize: "0.85rem" }}
+                                    style={{ padding: "0.4rem 1rem", fontSize: "0.82rem" }}
                                 >
-                                    Remover filtro
+                                    ✕ Remover filtro
                                 </Link>
                             )}
                         </div>
 
-                        <div className="post-grid" style={{ marginTop: "1.5rem" }}>
+                        <div className="post-grid">
                             {otherPosts.map((post, index) => (
-                                <ScrollReveal key={post.slug} delay={index * 50} style={{ height: "100%" }}>
+                                <ScrollReveal key={post.slug} delay={index * 55} style={{ height: "100%" }}>
                                     <Link href={`/post/${post.slug}`} className="post-card">
                                         <PostCardImage slug={post.slug} title={post.title} />
-
                                         <div className="post-card-body">
                                             <span className="post-category">{post.category}</span>
                                             <h3 className="post-title">{post.title}</h3>
                                             <p className="post-excerpt">{post.excerpt}</p>
-
                                             <div className="post-meta" style={{ marginTop: "auto", marginBottom: 0 }}>
                                                 <span>{post.date}</span>
-                                                <span>&bull;</span>
+                                                <span>·</span>
                                                 <span>{post.readTime}</span>
                                             </div>
                                         </div>
@@ -145,35 +150,39 @@ export default async function Home({ searchParams }: HomeProps) {
                     </section>
                 </main>
 
-                <aside className="sidebar">
-
-
-                    <ScrollReveal delay={140}>
+                {/* Sidebar */}
+                <aside className="sidebar" aria-label="Barra lateral">
+                    <ScrollReveal delay={100}>
                         <div className="widget">
                             <h3 className="widget-title">Categorias</h3>
                             <ul className="category-list">
-                                {Object.entries(categoryCounts).map(([cat, count]) => (
-                                    <li key={cat}>
-                                        <Link href={`/?category=${encodeURIComponent(cat)}`} className="category-item">
-                                            <span>{cat}</span>
-                                            <span>({count})</span>
-                                        </Link>
-                                    </li>
-                                ))}
+                                {Object.entries(categoryCounts)
+                                    .sort(([, a], [, b]) => b - a)
+                                    .map(([cat, count]) => (
+                                        <li key={cat}>
+                                            <Link
+                                                href={`/?category=${encodeURIComponent(cat)}`}
+                                                className="category-item"
+                                            >
+                                                <span>{cat}</span>
+                                                <span>{count}</span>
+                                            </Link>
+                                        </li>
+                                    ))}
                             </ul>
                         </div>
                     </ScrollReveal>
 
-                    <ScrollReveal delay={200}>
+                    <ScrollReveal delay={160}>
                         <div className="widget">
-                            <h3 className="widget-title">Assine a newsletter</h3>
-                            <p className="widget-text">
-                                Receba alertas de novos artigos, guias rapidos e insights praticos direto no e-mail.
+                            <h3 className="widget-title">Newsletter</h3>
+                            <p className="widget-text" style={{ marginBottom: "0" }}>
+                                Receba artigos novos, guias rapidos e insights direto no e-mail.
                             </p>
                             <NewsletterForm
                                 source="sidebar_home"
-                                title="Fique por dentro do blog"
-                                description="Novos artigos, atalhos praticos e ideias para investir melhor sem perder tempo."
+                                title="Fique por dentro"
+                                description="Novos artigos e ideias para investir melhor."
                                 compact
                             />
                         </div>
