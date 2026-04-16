@@ -81,6 +81,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(siteStructuredData) }}
                 />
+        <script
+                    dangerouslySetInnerHTML={{
+                        __html: `(function(){var t=localStorage.getItem('theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}})();`,
+                    }}
+                />
                 <GoogleAnalytics />
             </head>
             <body className={`${inter.variable} ${outfit.variable}`}>
