@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { posts } from "@/data/posts";
+import { getAllPosts } from "@/lib/posts";
 
 export const runtime = "edge";
 export const alt = "Capa do artigo";
@@ -27,7 +27,7 @@ const palette = [
 
 export default async function OgImage(props: { params: Promise<{ slug: string }> }) {
     const params = await props.params;
-    const post = posts.find((p) => p.slug === params.slug);
+    const post = getAllPosts().find((p) => p.slug === params.slug);
     const title = post?.title ?? "DividAI";
     const category = post?.category ?? "Financas";
 

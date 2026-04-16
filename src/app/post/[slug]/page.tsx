@@ -1,8 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { posts } from "@/data/posts";
-import { getVisiblePosts, parsePostDate } from "@/lib/posts";
+import { getVisiblePosts, parsePostDate, getAllPosts } from "@/lib/posts";
 import AuthorBio from "@/components/AuthorBio";
 import ImageWithModal from "@/components/ImageWithModal";
 import InvestmentDisclaimer from "@/components/InvestmentDisclaimer";
@@ -63,7 +62,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
     const params = await props.params;
-    const post = posts.find((item) => item.slug === params.slug);
+    const post = getAllPosts().find((item) => item.slug === params.slug);
 
     if (!post) {
         return {
@@ -118,7 +117,7 @@ export const revalidate = 3600;
 
 export default async function Post(props: { params: Promise<{ slug: string }> }) {
     const params = await props.params;
-    const post = posts.find((item) => item.slug === params.slug);
+    const post = getAllPosts().find((item) => item.slug === params.slug);
 
     if (!post) {
         notFound();
