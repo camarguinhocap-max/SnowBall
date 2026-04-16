@@ -11,7 +11,7 @@ interface ShareButtonsProps {
 
 export default function ShareButtons({ title, slug }: ShareButtonsProps) {
     const [copied, setCopied] = useState(false);
-    const url = `https://blog.dividai.com/post/${slug}`;
+    const url = `https://dividai.com/post/${slug}`;
 
     const encodedUrl = encodeURIComponent(url);
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     description:
         "Entre em contato com a equipe da DividAI para enviar duvidas, sugestoes de pauta e oportunidades de parceria.",
     alternates: {
-        canonical: "https://blog.dividai.com/contato",
+        canonical: "https://dividai.com/contato",
     },
 };
 

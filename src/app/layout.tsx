@@ -15,7 +15,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://blog.dividai.com"),
+    metadataBase: new URL("https://dividai.com"),
     title: "Blog DividAI | Financas sem complicacoes",
     description:
         "Aprenda a organizar sua vida financeira, sair das dividas e comecar a investir com foco na realidade brasileira.",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "pt_BR",
-        url: "https://blog.dividai.com",
+        url: "https://dividai.com",
         siteName: "Blog DividAI",
         title: "Blog DividAI | Financas sem complicacoes",
         description:
@@ -46,20 +46,20 @@ const siteStructuredData = [
         "@context": "https://schema.org",
         "@type": "WebSite",
         name: "Blog DividAI",
-        url: "https://blog.dividai.com",
+        url: "https://dividai.com",
         inLanguage: "pt-BR",
         publisher: {
             "@type": "Organization",
             name: "DividAI",
-            url: "https://blog.dividai.com",
+            url: "https://dividai.com",
         },
     },
     {
         "@context": "https://schema.org",
         "@type": "Organization",
         name: "DividAI",
-        url: "https://blog.dividai.com",
-        logo: "https://blog.dividai.com/favicon-transparent.png",
+        url: "https://dividai.com",
+        logo: "https://dividai.com/favicon-transparent.png",
     },
 ];
 
@@ -71,7 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <meta name="mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-                <link rel="alternate" type="application/rss+xml" href="https://blog.dividai.com/api/feed" />
+                <link rel="alternate" type="application/rss+xml" href="https://dividai.com/api/feed" />
                 <script
                     async
                     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543510171277537"
@@ -135,7 +135,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             <Link href="/politica-de-privacidade">Politica de Privacidade</Link>
                             <Link href="/contato">Contato</Link>
                         </div>
-                        <p>&copy; {new Date().getFullYear()} blog.dividai.com. Todos os direitos reservados.</p>
+                        <p>&copy; {new Date().getFullYear()} dividai.com. Todos os direitos reservados.</p>
                         <p style={{ marginTop: "0.5rem", fontSize: "0.8rem" }}>
                             Conteudo focado em educacao financeira.
                         </p>

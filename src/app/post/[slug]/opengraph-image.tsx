@@ -100,7 +100,7 @@ export default async function OgImage(props: { params: Promise<{ slug: string }>
                             background: "rgba(255,255,255,0.9)",
                         }}
                     />
-                    <span style={{ fontSize: 22, fontWeight: 600 }}>blog.dividai.com/post/{params.slug}</span>
+                    <span style={{ fontSize: 22, fontWeight: 600 }}>dividai.com/post/{params.slug}</span>
                 </div>
             </div>
         ),

@@ -4,7 +4,7 @@ import { getVisiblePosts, parsePostDate, sortByDate } from '@/lib/posts';
 export const revalidate = 3600;
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://blog.dividai.com';
+    const baseUrl = 'https://dividai.com';
     const visible = sortByDate(getVisiblePosts());
     const latestVisibleDate = visible[0] ? parsePostDate(visible[0].date) : undefined;
 

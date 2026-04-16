@@ -71,7 +71,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
         };
     }
 
-    const url = `https://blog.dividai.com/post/${post.slug}`;
+    const url = `https://dividai.com/post/${post.slug}`;
     const imageUrl = `${url}/opengraph-image`;
     const publishedTime = parsePostDate(post.date).toISOString();
 
@@ -136,7 +136,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
     }
 
     const publishedTime = publishedDate.toISOString();
-    const articleUrl = `https://blog.dividai.com/post/${post.slug}`;
+    const articleUrl = `https://dividai.com/post/${post.slug}`;
     const imageUrl = `${articleUrl}/opengraph-image`;
     const { primaryContent, secondaryContent } = splitPostContent(post.content);
     const breadcrumbStructuredData = {
@@ -147,7 +147,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                 "@type": "ListItem",
                 position: 1,
                 name: "Inicio",
-                item: "https://blog.dividai.com",
+                item: "https://dividai.com",
             },
             {
                 "@type": "ListItem",
@@ -240,14 +240,14 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                                 author: {
                                     "@type": "Organization",
                                     name: "Equipe DividAI",
-                                    url: "https://blog.dividai.com",
+                                    url: "https://dividai.com",
                                 },
                                 publisher: {
                                     "@type": "Organization",
                                     name: "DividAI",
                                     logo: {
                                         "@type": "ImageObject",
-                                        url: "https://blog.dividai.com/logo.png",
+                                        url: "https://dividai.com/logo.png",
                                     },
                                 },
                                 datePublished: publishedTime,

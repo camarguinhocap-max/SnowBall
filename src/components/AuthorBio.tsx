@@ -39,9 +39,9 @@ export default function AuthorBio() {
                     color: "var(--muted)",
                     lineHeight: 1.5
                 }}>
-                    DividAI é uma plataforma de investimentos focada em renda passiva através de dividendos. 
-                    Aqui no Blog DividAI compartilhamos estratégias, análises de ações, educação financeira 
-                    e dicas para maximizar seus retornos com dividendos no mercado brasileiro.
+                    Compartilhamos estratégias, análises de ações, educação financeira 
+                    e dicas prontas para a realidade do brasileiro. Nosso foco é 
+                    ajudar a construir independência e inteligência financeira.
                 </p>
                 <div style={{
                     marginTop: "0.75rem",

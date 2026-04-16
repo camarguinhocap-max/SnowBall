@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/api/',
         },
-        sitemap: 'https://blog.dividai.com/sitemap.xml',
+        sitemap: 'https://dividai.com/sitemap.xml',
     };
 }

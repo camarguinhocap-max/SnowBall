@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description:
         "Leia como o Blog DividAI coleta, usa e protege dados pessoais, cookies e informacoes de navegacao.",
     alternates: {
-        canonical: "https://blog.dividai.com/politica-de-privacidade",
+        canonical: "https://dividai.com/politica-de-privacidade",
     },
 };
 
@@ -19,7 +19,7 @@ export default function PoliticaPrivacidade() {
             <div className="article-content" style={{ lineHeight: "1.8" }}>
                 <p style={{ fontWeight: "500", color: "var(--primary)" }}>Última atualização: Março de 2026</p>
 
-                <p>A sua privacidade é importante para nós. É política do <strong>DividAI (blog.dividai.com)</strong> respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site. Esta Política de Privacidade explica como coletamos, usamos, divulgamos e protegemos as suas informações.</p>
+                <p>A sua privacidade é importante para nós. É política do <strong>DividAI (dividai.com)</strong> respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site. Esta Política de Privacidade explica como coletamos, usamos, divulgamos e protegemos as suas informações.</p>
 
                 <h2 style={{ marginTop: "2rem" }}>1. Informações que Coletamos</h2>
                 <p>Coletamos informações de várias formas, incluindo:</p>

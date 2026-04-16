@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     description:
         "Aprenda a organizar sua vida financeira, sair das dividas e comecar a investir com foco na realidade brasileira.",
     alternates: {
-        canonical: "https://blog.dividai.com",
+        canonical: "https://dividai.com",
     },
     openGraph: {
         title: "Blog DividAI",
         description:
             "Aprenda a organizar sua vida financeira, sair das dividas e comecar a investir com foco na realidade brasileira.",
-        url: "https://blog.dividai.com",
+        url: "https://dividai.com",
         siteName: "Blog DividAI",
         type: "website",
     },
@@ -146,30 +146,7 @@ export default async function Home({ searchParams }: HomeProps) {
                 </main>
 
                 <aside className="sidebar">
-                    <ScrollReveal delay={80}>
-                        <div className="widget">
-                            <h3 className="widget-title">Sobre a DividAI</h3>
-                            <div className="widget-text" style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-                                <p style={{ marginBottom: 0 }}>
-                                    Este blog e a central de educacao da <strong>DividAI</strong>, o ecossistema inteligente
-                                    de gestao de investimentos e controle patrimonial mais inovador do Brasil.
-                                </p>
-                                <p style={{ marginBottom: 0 }}>
-                                    Nossa missao nao para na leitura. Leve a gestao do seu dinheiro para o proximo nivel com
-                                    a nossa inteligencia artificial:
-                                </p>
-                                <Link
-                                    href="https://dividai.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="btn btn-primary"
-                                    style={{ textAlign: "center", width: "100%", padding: "0.75rem", fontSize: "0.95rem", marginTop: "0.5rem" }}
-                                >
-                                    Conhecer a plataforma
-                                </Link>
-                            </div>
-                        </div>
-                    </ScrollReveal>
+
 
                     <ScrollReveal delay={140}>
                         <div className="widget">

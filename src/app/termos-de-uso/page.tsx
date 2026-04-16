@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description:
         "Leia os Termos de Uso do Blog DividAI. Conheça as regras de uso do site, direitos autorais, limitações de responsabilidade e condições gerais.",
     alternates: {
-        canonical: "https://blog.dividai.com/termos-de-uso",
+        canonical: "https://dividai.com/termos-de-uso",
     },
 };
 
@@ -19,7 +19,7 @@ export default function TermosDeUso() {
             <div className="article-content" style={{ lineHeight: "1.8" }}>
                 <p style={{ fontWeight: "500", color: "var(--primary)" }}>Última atualização: Março de 2026</p>
 
-                <p>Bem-vindo ao <strong>Blog DividAI</strong> (blog.dividai.com). Ao acessar e utilizar este site, você concorda com os presentes Termos de Uso. Leia atentamente antes de continuar navegando.</p>
+                <p>Bem-vindo ao <strong>Blog DividAI</strong> (dividai.com). Ao acessar e utilizar este site, você concorda com os presentes Termos de Uso. Leia atentamente antes de continuar navegando.</p>
 
                 <h2 style={{ marginTop: "2rem" }}>1. Sobre o Blog DividAI</h2>
                 <p>O Blog DividAI é uma publicação digital voltada à <strong>educação financeira</strong> e informação sobre investimentos, com foco na realidade do mercado brasileiro. Nosso conteúdo abrange temas como:</p>
@@ -30,7 +30,7 @@ export default function TermosDeUso() {
                     <li>Economia brasileira e cenário macroeconômico</li>
                     <li>Mentalidade financeira e planejamento de longo prazo</li>
                 </ul>
-                <p>O Blog DividAI faz parte do ecossistema <strong>DividAI</strong> (<a href="https://dividai.com" style={{ color: "var(--primary)", textDecoration: "underline" }}>dividai.com</a>), uma plataforma de rastreamento de dividendos e gestão de carteira de investimentos.</p>
+
 
                 <h2 style={{ marginTop: "2rem" }}>2. Natureza do Conteúdo</h2>
                 <p>Todo o conteúdo publicado neste blog tem <strong>caráter exclusivamente educacional e informativo</strong>. É importante ressaltar que:</p>
@@ -106,7 +106,7 @@ export default function TermosDeUso() {
                 </ul>
 
                 <p style={{ marginTop: "3rem", fontSize: "0.9rem", color: "var(--muted)", paddingTop: "2rem", borderTop: "1px solid var(--border)" }}>
-                    Estes Termos de Uso são efetivos a partir de <strong>Março de 2026</strong> e se aplicam a todos os visitantes e usuários do Blog DividAI (blog.dividai.com).
+                    Estes Termos de Uso são efetivos a partir de <strong>Março de 2026</strong> e se aplicam a todos os visitantes e usuários do Blog DividAI (dividai.com).
                 </p>
             </div>
         </article>

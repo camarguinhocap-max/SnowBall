@@ -6,9 +6,9 @@ export async function GET() {
     const feed = new RSS({
         title: 'Blog DividAI',
         description: 'Aprenda a organizar sua vida financeira, sair das dívidas e começar a investir. O melhor blog de finanças pessoais focado na realidade brasileira.',
-        feed_url: 'https://blog.dividai.com/api/feed',
-        site_url: 'https://blog.dividai.com',
-        image_url: 'https://blog.dividai.com/favicon-transparent.png',
+        feed_url: 'https://dividai.com/api/feed',
+        site_url: 'https://dividai.com',
+        image_url: 'https://dividai.com/favicon-transparent.png',
         language: 'pt-BR',
         pubDate: new Date().toUTCString(),
     });
@@ -22,7 +22,7 @@ export async function GET() {
             description: post.excerpt,
             // If categories is available, using it
             categories: [post.category],
-            url: `https://blog.dividai.com/post/${post.slug}`,
+            url: `https://dividai.com/post/${post.slug}`,
             // Approximate the custom string dates to real Date objects or just pass as-is
             date: post.date,
         });

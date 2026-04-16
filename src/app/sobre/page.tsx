@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description:
         "Conheça o Blog DividAI: educação financeira acessível para o investidor brasileiro. Saiba quem somos, nossa missão e por que criamos este blog.",
     alternates: {
-        canonical: "https://blog.dividai.com/sobre",
+        canonical: "https://dividai.com/sobre",
     },
 };
 
@@ -31,7 +31,7 @@ export default function SobrePage() {
                 </div>
 
                 <h2 style={{ marginTop: "2rem" }}>Quem Somos</h2>
-                <p>O <strong>Blog DividAI</strong> é a plataforma de conteúdo do ecossistema <a href="https://dividai.com" style={{ color: "var(--primary)", textDecoration: "underline" }}>DividAI</a> — uma ferramenta de rastreamento de dividendos e gestão de carteira de investimentos para o mercado brasileiro.</p>
+                <p>O <strong>DividAI</strong> é um espaço focado em educação financeira plural e acessível para o mercado brasileiro.</p>
                 <p>Nascemos da mesma frustração que muitos investidores brasileiros compartilham: a dificuldade de encontrar <strong>informação financeira clara, prática e voltada para a realidade do Brasil</strong>. A maioria do conteúdo disponível online é genérica, traduzida de mercados internacionais, ou excessivamente técnica para quem está começando.</p>
                 <p>Decidimos mudar isso.</p>
 
@@ -77,21 +77,14 @@ export default function SobrePage() {
                     <p style={{ margin: 0, fontSize: "0.95rem" }}>O Blog DividAI <strong>não presta consultoria financeira</strong>. Todo conteúdo tem caráter informativo e educacional. Decisões de investimento devem ser tomadas com base em análise própria e, de preferência, com orientação de profissionais qualificados. Leia nossos <a href="/termos-de-uso" style={{ color: "var(--primary)", textDecoration: "underline" }}>Termos de Uso</a> para mais detalhes.</p>
                 </div>
 
-                <h2 style={{ marginTop: "2rem" }}>Sobre a Plataforma DividAI</h2>
-                <p>Além do blog, o <strong>DividAI</strong> (<a href="https://dividai.com" style={{ color: "var(--primary)", textDecoration: "underline" }}>dividai.com</a>) é uma plataforma completa para investidores que oferece:</p>
-                <ul>
-                    <li><strong>Rastreamento de dividendos</strong> — saiba quanto você recebe de proventos automaticamente</li>
-                    <li><strong>Gestão de carteira</strong> — veja a composição e desempenho do seu portfólio</li>
-                    <li><strong>Análises com IA</strong> — receba insights inteligentes sobre seus investimentos</li>
-                    <li><strong>Alertas de proventos</strong> — nunca perca uma data-ex importante</li>
-                </ul>
+
 
                 <h2 style={{ marginTop: "2rem" }}>Fale Conosco</h2>
                 <p>Adoramos ouvir nossos leitores! Se você tem dúvidas, sugestões de pauta, identificou algum erro ou simplesmente quer bater um papo sobre investimentos:</p>
                 <ul>
                     <li><strong>Email:</strong> <a href="mailto:contato@dividai.com" style={{ color: "var(--primary)", textDecoration: "underline" }}>contato@dividai.com</a></li>
                     <li><strong>Telegram:</strong> <a href="https://t.me/dividai_news" target="_blank" rel="noopener noreferrer" style={{ color: "var(--primary)", textDecoration: "underline" }}>@dividai_news</a></li>
-                    <li><strong>Página de Contato:</strong> <a href="/contato" style={{ color: "var(--primary)", textDecoration: "underline" }}>blog.dividai.com/contato</a></li>
+                    <li><strong>Página de Contato:</strong> <a href="/contato" style={{ color: "var(--primary)", textDecoration: "underline" }}>dividai.com/contato</a></li>
                 </ul>
 
                 <p style={{ marginTop: "3rem", fontSize: "0.9rem", color: "var(--muted)", paddingTop: "2rem", borderTop: "1px solid var(--border)" }}>

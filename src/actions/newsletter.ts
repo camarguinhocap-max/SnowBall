@@ -40,7 +40,7 @@ export async function subscribeNewsletter(email: string) {
         await client.query(
             `INSERT INTO "Contact" (id, name, email, subject, message, "formType", status, "createdAt", "updatedAt") 
        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)`,
-            [id, 'Blog Subscriber', email, 'Newsletter Subscription', 'Cadastro pelo blog.dividai.com', 'newsletter', 'new', now, now]
+            [id, 'Blog Subscriber', email, 'Newsletter Subscription', 'Cadastro pelo dividai.com', 'newsletter', 'new', now, now]
         );
 
         // send welcome email asynchronously (non-blocking)
