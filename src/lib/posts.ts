@@ -61,7 +61,7 @@ export function getYesterdayFormatted(): string {
   const monthNum = (date.getMonth() + 1).toString().padStart(2, '0');
   const month = reverseMonthMap[monthNum];
   const year = date.getFullYear();
-  return ${day}  ;
+  return `${day} ${month} ${year}`;
 }
 
 export function getAllPosts(): Post[] {
