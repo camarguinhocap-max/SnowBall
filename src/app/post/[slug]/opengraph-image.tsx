@@ -25,7 +25,8 @@ const palette = [
     ["#f59e0b", "#ef4444"],
 ];
 
-export default async function OgImage({ params }: { params: { slug: string } }) {
+export default async function OgImage(props: { params: Promise<{ slug: string }> }) {
+    const params = await props.params;
     const post = posts.find((p) => p.slug === params.slug);
     const title = post?.title ?? "DividAI";
     const category = post?.category ?? "Financas";
