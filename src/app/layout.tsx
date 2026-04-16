@@ -40,6 +40,15 @@ export const metadata: Metadata = {
     verification: {
         google: process.env.GOOGLE_SITE_VERIFICATION || "",
     },
+    icons: {
+        icon: [
+            { url: "/favicon.ico" },
+            { url: "/favicon.png", type: "image/png" },
+        ],
+        apple: [
+            { url: "/favicon.png" },
+        ],
+    },
 };
 
 const siteStructuredData = [
