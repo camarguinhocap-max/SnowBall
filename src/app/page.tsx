@@ -3,6 +3,7 @@ import Link from "next/link";
 import NewsletterForm from "@/components/NewsletterForm";
 import PostCardImage from "@/components/PostCardImage";
 import ScrollReveal from "@/components/ScrollReveal";
+import AdSlot from "@/components/AdSlot";
 import { getVisiblePosts, sortByDate, sortByViews } from "@/lib/posts";
 
 export const metadata: Metadata = {
@@ -171,6 +172,10 @@ export default async function Home({ searchParams }: HomeProps) {
                                     ))}
                             </ul>
                         </div>
+                    </ScrollReveal>
+
+                    <ScrollReveal delay={130}>
+                        <AdSlot slot="sidebar_home" format="rectangle" />
                     </ScrollReveal>
 
                     <ScrollReveal delay={160}>

@@ -12,6 +12,7 @@ import RelatedPosts from "@/components/RelatedPosts";
 import ScrollReveal from "@/components/ScrollReveal";
 import ShareButtons from "@/components/ShareButtons";
 import TableOfContents from "@/components/TableOfContents";
+import AdSlot from "@/components/AdSlot";
 
 function createHeadingId(children: unknown) {
     return String(children)
@@ -194,11 +195,15 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                 <div className="article-content">
                     <TableOfContents content={post.content} />
 
+                    <AdSlot slot="post_top" format="horizontal" />
+
                     <ReactMarkdown components={markdownComponents}>{primaryContent}</ReactMarkdown>
 
                     {secondaryContent && (
                         <ReactMarkdown components={markdownComponents}>{secondaryContent}</ReactMarkdown>
                     )}
+
+                    <AdSlot slot="post_bottom" format="auto" />
 
                     <ScrollReveal className="article-inline-newsletter" delay={60}>
                         <NewsletterForm

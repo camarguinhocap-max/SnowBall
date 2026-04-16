@@ -5,6 +5,7 @@ import DarkModeToggle from "@/components/DarkModeToggle";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import SearchBar from "@/components/SearchBar";
 import ConversionTracker from "@/components/ConversionTracker";
+import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -65,7 +66,7 @@ const siteStructuredData = [
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="pt-BR">
+        <html lang="pt-BR" data-theme="light">
             <head>
                 <meta name="theme-color" content="#0ea5e9" />
                 <meta name="mobile-web-app-capable" content="yes" />
@@ -146,6 +147,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         </p>
                     </div>
                 </footer>
+                <CookieConsent />
             </body>
         </html>
     );
