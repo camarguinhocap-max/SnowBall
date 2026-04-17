@@ -65,6 +65,37 @@ export default function SobrePage() {
                     <li><strong>Imparciais</strong> — não recebemos pagamento de corretoras ou gestoras para recomendar produtos</li>
                 </ul>
 
+                <h2 style={{ marginTop: "2rem" }}>Equipe Editorial</h2>
+                <div style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "1.5rem",
+                    background: "var(--card-bg, rgba(0,0,0,0.02))",
+                    padding: "1.5rem",
+                    borderRadius: "16px",
+                    border: "1px solid var(--border)",
+                    marginTop: "1.5rem"
+                }}>
+                    <img 
+                        src="/lucas-bianchi.png" 
+                        alt="Lucas Bianchi" 
+                        style={{
+                            width: "90px",
+                            height: "90px",
+                            borderRadius: "50%",
+                            objectFit: "cover",
+                            border: "2px solid var(--primary)"
+                        }}
+                    />
+                    <div>
+                        <h3 style={{ margin: "0 0 0.25rem 0", fontSize: "1.1rem" }}>Lucas Bianchi</h3>
+                        <p style={{ margin: "0 0 0.5rem 0", fontSize: "0.85rem", fontWeight: "600", color: "var(--primary)", textTransform: "uppercase" }}>Editor-chefe</p>
+                        <p style={{ margin: 0, fontSize: "0.9rem", lineHeight: "1.5", color: "var(--muted)" }}>
+                            Analista financeiro e entusiasta de dividendos. Com foco em democratizar o acesso à educação financeira de qualidade, Lucas lidera a curadoria e produção de conteúdo do DividAI.
+                        </p>
+                    </div>
+                </div>
+
                 <div style={{
                     background: "var(--card-bg, rgba(255,255,255,0.05))",
                     border: "1px solid var(--border)",

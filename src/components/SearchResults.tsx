@@ -42,73 +42,152 @@ export default function SearchResults() {
   }, [query]);
 
   return (
-    <div style={{ maxWidth: '800px', margin: '4rem auto 2rem' }}>
-      <h1 className="text-4xl font-bold mb-2">Resultados da Busca</h1>
-      <p className="text-gray-600 dark:text-gray-400 mb-8">
-        {query ? `Buscando por: "${query}"` : 'Digite um termo para buscar'}
-      </p>
+    <div style={{ maxWidth: '900px', margin: '4rem auto 4rem', padding: '0 1.5rem' }}>
+      <header style={{ marginBottom: '3rem', borderBottom: '1px solid var(--border)', paddingBottom: '2rem' }}>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: '800', marginBottom: '0.5rem', color: 'var(--foreground)' }}>
+            Resultados da Busca
+        </h1>
+        <p style={{ fontSize: '1.1rem', color: 'var(--muted)' }}>
+            {query ? (
+                <>Mostrando resultados para: <strong style={{ color: 'var(--primary)' }}>&quot;{query}&quot;</strong></>
+            ) : (
+                'Digite um termo para buscar no blog'
+            )}
+        </p>
+      </header>
 
       {loading && (
-        <div className="text-center py-8">
-          <div className="inline-block animate-spin">
-            <Search size={32} className="text-blue-500" />
+        <div style={{ textAlign: 'center', padding: '4rem 0' }}>
+          <div style={{ display: 'inline-block', animation: 'spin 1s linear infinite' }}>
+            <Search size={40} style={{ color: 'var(--primary)' }} />
           </div>
-          <p className="mt-4 text-gray-600 dark:text-gray-400">Buscando...</p>
+          <p style={{ marginTop: '1.5rem', fontSize: '1.1rem', color: 'var(--muted)' }}>Buscando artigos...</p>
+          <style dangerouslySetInnerHTML={{ __html: `
+            @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+          `}} />
         </div>
       )}
 
       {!loading && results.length === 0 && query && (
-        <div className="text-center py-12 border border-gray-200 dark:border-gray-700 rounded-lg">
-          <Search size={48} className="mx-auto text-gray-300 dark:text-gray-600 mb-4" />
-          <h2 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-2">
-            Nenhum resultado encontrado
+        <div style={{ 
+            textAlign: 'center', 
+            padding: '5rem 2rem', 
+            backgroundColor: 'var(--card-bg)', 
+            borderRadius: '24px',
+            border: '1px solid var(--border)' 
+        }}>
+          <Search size={64} style={{ margin: '0 auto 1.5rem', color: 'var(--muted)', opacity: 0.3 }} />
+          <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '1rem' }}>
+            Nenhum artigo encontrado
           </h2>
-          <p className="text-gray-600 dark:text-gray-400">
-            Tente usar diferentes palavras-chave
+          <p style={{ color: 'var(--muted)', fontSize: '1.1rem', maxWidth: '400px', margin: '0 auto' }}>
+            Tente buscar por termos mais genéricos como &quot;Investimentos&quot;, &quot;Dividendos&quot; ou &quot;Reserva&quot;.
           </p>
+          <Link href="/" style={{ 
+              display: 'inline-block', 
+              marginTop: '2rem', 
+              color: 'var(--primary)', 
+              fontWeight: '600',
+              textDecoration: 'underline' 
+          }}>
+            Voltar para a página inicial
+          </Link>
         </div>
       )}
 
       {!loading && results.length > 0 && (
-        <div className="space-y-6">
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
           {results.map((post) => (
             <article
               key={post.slug}
-              className="border-l-4 border-l-indigo-500 pl-6 py-5 hover:bg-white dark:hover:bg-slate-900/50 rounded-r-xl transition-all duration-300 hover:shadow-lg dark:hover:shadow-indigo-500/10 hover:-translate-x-1"
+              style={{
+                backgroundColor: 'var(--card-bg)',
+                padding: '2rem',
+                borderRadius: '20px',
+                border: '1px solid var(--border)',
+                transition: 'all 0.3s ease',
+                position: 'relative',
+                overflow: 'hidden'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.boxShadow = 'var(--shadow-hover)';
+                e.currentTarget.style.borderColor = 'var(--primary)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.borderColor = 'var(--border)';
+              }}
             >
-              <Link href={`/post/${post.slug}`}>
-                <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors mb-2">
+              <Link href={`/post/${post.slug}`} style={{ textDecoration: 'none' }}>
+                <span style={{ 
+                    fontSize: '0.75rem', 
+                    fontWeight: '700', 
+                    color: 'var(--primary)', 
+                    textTransform: 'uppercase',
+                    letterSpacing: '1px',
+                    display: 'block',
+                    marginBottom: '0.75rem'
+                }}>
+                  {post.category}
+                </span>
+                <h2 style={{ 
+                    fontSize: '1.75rem', 
+                    fontWeight: '800', 
+                    color: 'var(--foreground)', 
+                    marginBottom: '1rem',
+                    lineHeight: '1.2' 
+                }}>
                   {post.title}
                 </h2>
               </Link>
               
-              <p className="text-slate-600 dark:text-slate-400 mb-4 line-clamp-2 text-lg">
+              <p style={{ 
+                  color: 'var(--muted)', 
+                  marginBottom: '1.5rem', 
+                  fontSize: '1.05rem', 
+                  lineHeight: '1.6',
+                  display: '-webkit-box',
+                  WebkitLineClamp: 2,
+                  WebkitBoxOrient: 'vertical',
+                  overflow: 'hidden'
+              }}>
                 {post.excerpt}
               </p>
  
-              <div className="flex flex-wrap items-center gap-3 text-sm text-slate-500">
-                <span className="px-2.5 py-1 bg-indigo-100 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 rounded-full font-semibold text-xs uppercase tracking-wider">
-                  {post.category}
-                </span>
-                <div className="flex gap-2">
-                  {post.tags.map(tag => (
-                    <span key={tag} className="text-slate-400 dark:text-slate-500 text-xs">
-                      #{tag}
-                    </span>
+              <div style={{ 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'space-between',
+                  borderTop: '1px solid var(--border)',
+                  paddingTop: '1.25rem',
+                  fontSize: '0.9rem',
+                  color: 'var(--muted)'
+              }}>
+                <div style={{ display: 'flex', gap: '0.75rem' }}>
+                  {post.tags.slice(0, 3).map(tag => (
+                    <span key={tag} style={{ opacity: 0.7 }}>#{tag}</span>
                   ))}
                 </div>
-                <div className="ml-auto flex items-center gap-2 opacity-60">
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                    <span>{post.date}</span>
-                   <span>•</span>
+                   <span style={{ height: '4px', width: '4px', backgroundColor: 'var(--muted)', borderRadius: '50%', opacity: 0.3 }}></span>
                    <span>{post.readTime}</span>
                 </div>
               </div>
             </article>
           ))}
           
-          <p className="text-center text-gray-600 dark:text-gray-400 mt-8">
-            {results.length} resultado{results.length !== 1 ? 's' : ''} encontrado{results.length !== 1 ? 's' : ''}
-          </p>
+          <div style={{ 
+              textAlign: 'center', 
+              paddingTop: '3rem', 
+              color: 'var(--muted)',
+              borderTop: '1px solid var(--border)',
+              marginTop: '2rem'
+          }}>
+            {results.length} artigo{results.length !== 1 ? 's' : ''} encontrado{results.length !== 1 ? 's' : ''}
+          </div>
         </div>
       )}
     </div>

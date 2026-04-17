@@ -242,9 +242,11 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                                 keywords: post.tags.join(", "),
                                 inLanguage: "pt-BR",
                                 author: {
-                                    "@type": "Organization",
-                                    name: "Equipe DividAI",
-                                    url: "https://dividai.com",
+                                    "@type": "Person",
+                                    name: "Lucas Bianchi",
+                                    url: "https://dividai.com/sobre",
+                                    jobTitle: "Editor-chefe",
+                                    image: "https://dividai.com/lucas-bianchi.png"
                                 },
                                 publisher: {
                                     "@type": "Organization",

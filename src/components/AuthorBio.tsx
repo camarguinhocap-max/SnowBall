@@ -3,59 +3,83 @@ export default function AuthorBio() {
         <div style={{
             backgroundColor: "var(--card-bg)",
             border: "1px solid var(--border)",
-            borderRadius: "8px",
-            padding: "1.5rem",
-            marginTop: "2rem",
+            borderRadius: "16px",
+            padding: "2rem",
+            marginTop: "3rem",
             display: "flex",
             alignItems: "center",
-            gap: "1.5rem"
+            gap: "2rem",
+            boxShadow: "var(--shadow-card)",
+            position: "relative",
+            overflow: "hidden"
         }}>
+            <div style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "4px",
+                height: "100%",
+                backgroundColor: "var(--primary)"
+            }} />
+            
             <img 
-                src="/dividai-logo.png" 
-                alt="DividAI Logo"
+                src="/lucas-bianchi.png" 
+                alt="Lucas Bianchi - Editor Chefe DividAI"
                 style={{
-                    width: "80px",
-                    height: "80px",
-                    minWidth: "80px",
-                    borderRadius: "50%",
+                    width: "100px",
+                    height: "100px",
+                    minWidth: "100px",
+                    borderRadius: "20px",
                     objectFit: "cover",
-                    border: "3px solid var(--primary)",
-                    boxShadow: "0 4px 12px rgba(14, 165, 233, 0.3)"
+                    border: "1px solid var(--border)",
+                    boxShadow: "0 10px 20px rgba(0,0,0,0.1)"
                 }}
             />
             
             <div style={{ flex: 1 }}>
-                <h3 style={{
-                    margin: "0 0 0.5rem 0",
-                    fontSize: "1.1rem",
-                    fontWeight: "600",
-                    color: "var(--foreground)"
-                }}>
-                    Sobre o DividAI
-                </h3>
+                <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.5rem" }}>
+                    <h3 style={{
+                        margin: 0,
+                        fontSize: "1.25rem",
+                        fontWeight: "700",
+                        color: "var(--foreground)"
+                    }}>
+                        Lucas Bianchi
+                    </h3>
+                    <span style={{
+                        fontSize: "0.75rem",
+                        backgroundColor: "rgba(2, 132, 199, 0.1)",
+                        color: "var(--primary)",
+                        padding: "0.2rem 0.6rem",
+                        borderRadius: "20px",
+                        fontWeight: "600",
+                        textTransform: "uppercase",
+                        letterSpacing: "0.5px"
+                    }}>
+                        Editor-chefe
+                    </span>
+                </div>
                 <p style={{
                     margin: 0,
                     fontSize: "0.95rem",
-                    color: "var(--muted)",
-                    lineHeight: 1.5
+                    color: "var(--foreground-2)",
+                    lineHeight: 1.6
                 }}>
-                    Compartilhamos estratégias, análises de ações, educação financeira 
-                    e dicas prontas para a realidade do brasileiro. Nosso foco é 
-                    ajudar a construir independência e inteligência financeira.
+                    Analista financeiro especialista em renda passiva e dividendos. Dedicado a ajudar investidores brasileiros a alcançarem a liberdade financeira com foco em estratégias sólidas de Value Investing e educação prática.
                 </p>
                 <div style={{
-                    marginTop: "0.75rem",
+                    marginTop: "1rem",
                     display: "flex",
-                    gap: "1rem",
+                    gap: "1.25rem",
                     fontSize: "0.9rem"
                 }}>
                     <a href="https://twitter.com/dividai" target="_blank" rel="noopener noreferrer" 
-                        style={{ color: "var(--primary)", textDecoration: "none", fontWeight: 500 }}>
-                        X →
+                        style={{ color: "var(--primary)", textDecoration: "none", fontWeight: 600, display: "flex", alignItems: "center", gap: "0.4rem" }}>
+                        X (Twitter)
                     </a>
                     <a href="https://t.me/DividAI_News" target="_blank" rel="noopener noreferrer" 
-                        style={{ color: "var(--primary)", textDecoration: "none", fontWeight: 500 }}>
-                        Telegram →
+                        style={{ color: "var(--primary)", textDecoration: "none", fontWeight: 600, display: "flex", alignItems: "center", gap: "0.4rem" }}>
+                        Telegram
                     </a>
                 </div>
             </div>
