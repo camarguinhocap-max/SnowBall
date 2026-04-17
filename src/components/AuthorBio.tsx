@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AuthorBio() {
     return (
         <div style={{
@@ -22,13 +24,12 @@ export default function AuthorBio() {
                 backgroundColor: "var(--primary)"
             }} />
             
-            <img 
+            <Image 
                 src="/lucas-bianchi.png" 
                 alt="Lucas Bianchi - Editor Chefe DividAI"
+                width={100}
+                height={100}
                 style={{
-                    width: "100px",
-                    height: "100px",
-                    minWidth: "100px",
                     borderRadius: "20px",
                     objectFit: "cover",
                     border: "1px solid var(--border)",

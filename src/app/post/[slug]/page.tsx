@@ -162,11 +162,24 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
         <>
             <ReadingProgress />
 
-            <article data-reading-root style={{ maxWidth: "800px", margin: "4rem auto 0 auto" }}>
-                <nav className="breadcrumb" aria-label="Breadcrumb">
-                    <Link href="/">Início</Link>
-                    <span className="breadcrumb__separator">/</span>
-                    <span className="breadcrumb__current">{post.title}</span>
+            <article data-reading-root style={{ maxWidth: "800px", margin: "3rem auto 0 auto", padding: "0 1.5rem" }}>
+                <nav className="breadcrumb" aria-label="Breadcrumb" style={{ 
+                    marginBottom: "2rem", 
+                    fontSize: "0.85rem",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.5rem",
+                    color: "var(--muted)",
+                    opacity: 0.8
+                }}>
+                    <Link href="/" style={{ color: "var(--primary)", textDecoration: "none", fontWeight: "600" }}>Início</Link>
+                    <span className="breadcrumb__separator" style={{ opacity: 0.5 }}>/</span>
+                    <span className="breadcrumb__current" style={{ 
+                        whiteSpace: "nowrap", 
+                        overflow: "hidden", 
+                        textOverflow: "ellipsis",
+                        maxWidth: "300px" 
+                    }}>{post.title}</span>
                 </nav>
 
                 <header className="article-header">

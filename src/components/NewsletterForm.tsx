@@ -14,8 +14,8 @@ interface NewsletterFormProps {
 
 export default function NewsletterForm({
     source = "form",
-    title = "Quer aprender sobre finanças?",
-    description = "Receba dicas semanais sobre investimentos, economia pessoal e liberdade financeira.",
+    title = "Baixe seu Kit do Investidor Iniciante",
+    description = "Cadastre-se para receber nosso guia de finanças, planilhas práticas e conteúdo exclusivo toda semana.",
     compact = false,
 }: NewsletterFormProps) {
     const [email, setEmail] = useState("");

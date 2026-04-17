@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import NewsletterForm from "@/components/NewsletterForm";
 import PostCardImage from "@/components/PostCardImage";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -82,10 +83,13 @@ export default async function Home({ searchParams }: HomeProps) {
                             >
                                 {/* Image strip */}
                                 <div className="featured-image-strip">
-                                    <img
+                                    <Image
                                         src={`/post/${featuredPost.slug}/opengraph-image`}
                                         alt={`Capa do artigo ${featuredPost.title}`}
-                                        loading="eager"
+                                        fill
+                                        priority
+                                        className="featured-image-next"
+                                        unoptimized
                                     />
                                     <div className="featured-image-overlay" />
                                 </div>
