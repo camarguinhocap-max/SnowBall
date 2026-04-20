@@ -1,6 +1,6 @@
 "use client";
 
-import { Twitter, AtSign, MessageCircle, Linkedin, Facebook, Link as LinkIcon } from "lucide-react";
+import { Twitter, AtSign, MessageCircle, Linkedin, Facebook, Instagram, Link as LinkIcon } from "lucide-react";
 import { useState } from "react";
 import { trackShareClick } from "@/lib/analytics";
 
@@ -26,6 +26,29 @@ export default function ShareButtons({ title, slug }: ShareButtonsProps) {
     const shareWhatsApp = `https://api.whatsapp.com/send?text=${encodedTitleWA}`;
     const shareLinkedIn = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
     const shareFacebook = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+
+    const handleInstagramShare = async () => {
+        trackShareClick('instagram', title);
+        
+        // Verifica se o navegador suporta a Web Share API (Mobile)
+        if (navigator.share) {
+            try {
+                await navigator.share({
+                    title: title,
+                    text: `${title} - Confira no Blog DividAI`,
+                    url: url
+                });
+            } catch (err) {
+                console.log('Erro ao compartilhar:', err);
+            }
+        } else {
+            // Fallback para Desktop: Copia o link e abre o Instagram
+            navigator.clipboard.writeText(url);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+            window.open("https://www.instagram.com/", "_blank");
+        }
+    };
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(url);
@@ -89,6 +112,30 @@ export default function ShareButtons({ title, slug }: ShareButtonsProps) {
                 >
                     <AtSign size={16} /> Threads
                 </a>
+
+                <button 
+                    onClick={handleInstagramShare}
+                    className="share-btn"
+                    style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: "0.5rem",
+                        padding: "0.75rem 1rem",
+                        borderRadius: "6px",
+                        border: "none",
+                        cursor: "pointer",
+                        background: "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
+                        color: "#fff",
+                        fontSize: "0.9rem",
+                        fontWeight: "500",
+                        transition: "opacity 0.2s",
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.opacity = "0.8"}
+                    onMouseLeave={(e) => e.currentTarget.style.opacity = "1"}
+                >
+                    <Instagram size={16} /> {copied ? "Link Copiado!" : "Instagram"}
+                </button>
 
                 <a 
                     href={shareWhatsApp} 
