@@ -82,6 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <meta name="apple-mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
                 <link rel="alternate" type="application/rss+xml" href="https://dividai.com/api/feed" />
+                <meta name="google-adsense-account" content="ca-pub-1543510171277537" />
                 <script
                     async
                     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543510171277537"
