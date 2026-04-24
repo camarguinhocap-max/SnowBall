@@ -12,6 +12,7 @@ declare global {
 
 export default function GoogleAnalytics() {
   const gaId = process.env.NEXT_PUBLIC_GA_ID || 'G-M6027Q5HVV';
+  const adsId = 'AW-18107418379';
 
   useEffect(() => {
     if (!gaId) return;
@@ -23,12 +24,17 @@ export default function GoogleAnalytics() {
     }
     window.gtag = gtag;
     gtag('js', new Date());
+
+    // Configuração do Google Analytics
     gtag('config', gaId, {
       'page_path': window.location.pathname,
       'send_page_view': true,
     });
 
-    // Carregar script do Google Analytics
+    // Configuração do Google Ads
+    gtag('config', adsId);
+
+    // Carregar script do Google Tag Manager (usando o GA ID como principal)
     const script = document.createElement('script');
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
