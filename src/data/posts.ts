@@ -11233,7 +11233,7 @@ Quando você fecha um período com números, processo e comportamento na mesa, o
         excerpt: 'O seguro deixou de ser apenas uma despesa para se tornar um pilar estratégico da gestão de patrimônio. Veja como construir uma blindagem financeira robusta em 2026.',
         tags: ['seguros', 'protecao', 'planejamento', 'patrimonio', 'vida'],
         category: 'Proteção',
-        date: '24 Abr 2026',
+        date: '27 Abr 2026',
         readTime: '15 min de leitura',
         content: `
 # Guia Definitivo de Seguros em 2026: Protegendo o que realmente importa
@@ -11442,7 +11442,7 @@ A IA não vai substituir o empreendedor, mas o empreendedor que usa IA certament
         excerpt: 'Dinheiro é 80% comportamento e 20% conhecimento técnico. Entenda como sua mente funciona e como criar uma mentalidade de abundância em 2026.',
         tags: ['mentalidade', 'psicologia', 'riqueza', 'habitos', 'liberdade-financeira'],
         category: 'Mentalidade',
-        date: '25 Abr 2026',
+        date: '27 Abr 2026',
         readTime: '15 min de leitura',
         content: `
 # A Psicologia da Riqueza: Como reprogramar seus hábitos para a liberdade financeira
@@ -11511,7 +11511,7 @@ Ter um milhão de reais na conta com uma mente de escassez é apenas ser um pobr
         excerpt: 'O sistema tributário mudou. Entenda as novas alíquotas de dividendos, a tributação de offshores e como otimizar sua carga fiscal legalmente em 2026.',
         tags: ['impostos', 'legislacao', 'reforma-tributaria', 'dividendos', 'investimentos'],
         category: 'Impostos e Legislação',
-        date: '25 Abr 2026',
+        date: '27 Abr 2026',
         readTime: '15 min de leitura',
         content: `
 # Reforma Tributária 2026: Impactos reais no bolso do investidor brasileiro
@@ -12015,7 +12015,7 @@ O seguro sucessório não é sobre morte; é sobre a continuidade da vida e do l
         excerpt: 'A Inteligência Artificial não vai tirar seu emprego, mas quem usa IA vai. Conheça os modelos de negócio mais rentáveis baseados em agentes e automação.',
         tags: ['empreendedorismo', 'ia', 'oportunidades', 'tecnologia', 'futuro'],
         category: 'Empreendedorismo',
-        date: '30 Abr 2026',
+        date: '27 Abr 2026',
         readTime: '15 min de leitura',
         content: `
 # Negócios Lucrativos com IA: Onde estão as maiores oportunidades em 2026
