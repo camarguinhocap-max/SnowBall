@@ -11228,7 +11228,7 @@ Quando você fecha um período com números, processo e comportamento na mesa, o
         `
     },
     {
-        slug: 'guia-definitivo-seguros-2026',
+        slug: 'seguro-de-vida-guia-definitivo-2026',
         title: 'Guia Definitivo de Seguros em 2026: Protegendo o que realmente importa',
         excerpt: 'O seguro deixou de ser apenas uma despesa para se tornar um pilar estratégico da gestão de patrimônio. Veja como construir uma blindagem financeira robusta em 2026.',
         tags: ['seguros', 'protecao', 'planejamento', 'patrimonio', 'vida'],
@@ -11437,7 +11437,7 @@ A IA não vai substituir o empreendedor, mas o empreendedor que usa IA certament
         `
     },
     {
-        slug: 'psicologia-da-riqueza-2026',
+        slug: 'psicologia-riqueza-comportamento-financeiro',
         title: 'A Psicologia da Riqueza: Como reprogramar seus hábitos para a liberdade financeira',
         excerpt: 'Dinheiro é 80% comportamento e 20% conhecimento técnico. Entenda como sua mente funciona e como criar uma mentalidade de abundância em 2026.',
         tags: ['mentalidade', 'psicologia', 'riqueza', 'habitos', 'liberdade-financeira'],
@@ -11506,7 +11506,7 @@ Ter um milhão de reais na conta com uma mente de escassez é apenas ser um pobr
         `
     },
     {
-        slug: 'reforma-tributaria-2026-investidor',
+        slug: 'reforma-tributaria-2026',
         title: 'Reforma Tributária 2026: Impactos reais no bolso do investidor brasileiro',
         excerpt: 'O sistema tributário mudou. Entenda as novas alíquotas de dividendos, a tributação de offshores e como otimizar sua carga fiscal legalmente em 2026.',
         tags: ['impostos', 'legislacao', 'reforma-tributaria', 'dividendos', 'investimentos'],
@@ -12010,7 +12010,7 @@ O seguro sucessório não é sobre morte; é sobre a continuidade da vida e do l
         `
     },
     {
-        slug: 'negocios-lucrativos-ia-2026',
+        slug: 'empreendedorismo-ia-2026-oportunidades',
         title: 'Negócios Lucrativos com IA: Onde estão as maiores oportunidades em 2026',
         excerpt: 'A Inteligência Artificial não vai tirar seu emprego, mas quem usa IA vai. Conheça os modelos de negócio mais rentáveis baseados em agentes e automação.',
         tags: ['empreendedorismo', 'ia', 'oportunidades', 'tecnologia', 'futuro'],
