@@ -132,7 +132,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                     filter: "invert(1)",
                                 }}
                             />
-                            <span style={{ fontSize: "1.8rem", fontWeight: 800 }}>Blog.DividAI</span>
+                            <span style={{ fontSize: "1.8rem", fontWeight: 800 }}>DividAI</span>
                         </Link>
                         <SearchBar />
                         <nav className="nav-links" aria-label="Navegação principal">
@@ -148,27 +148,50 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
                 <footer className="footer">
                     <div className="container">
+                        <div className="footer-grid" style={{ 
+                            display: 'grid', 
+                            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
+                            gap: '2rem', 
+                            textAlign: 'left',
+                            marginBottom: '2rem'
+                        }}>
+                            <div className="footer-col">
+                                <h3 style={{ marginBottom: '1rem', color: 'var(--primary)' }}>Navegação</h3>
+                                <ul style={{ listStyle: 'none', padding: 0 }}>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/">Página Inicial</Link></li>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/sobre">Sobre a DividAI</Link></li>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/contato">Fale Conosco</Link></li>
+                                </ul>
+                            </div>
+                            <div className="footer-col">
+                                <h3 style={{ marginBottom: '1rem', color: 'var(--primary)' }}>Categorias</h3>
+                                <ul style={{ listStyle: 'none', padding: 0 }}>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/?category=Investimentos">Investimentos</Link></li>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/?category=Economia">Economia</Link></li>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/?category=Educação Financeira">Educação Financeira</Link></li>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/?category=Tecnologia">Tecnologia</Link></li>
+                                </ul>
+                            </div>
+                            <div className="footer-col">
+                                <h3 style={{ marginBottom: '1rem', color: 'var(--primary)' }}>Legal</h3>
+                                <ul style={{ listStyle: 'none', padding: 0 }}>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/termos-de-uso">Termos de Uso</Link></li>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/politica-de-privacidade">Política de Privacidade</Link></li>
+                                </ul>
+                            </div>
+                        </div>
                         <div
                             style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                gap: "2rem",
-                                marginBottom: "1.5rem",
+                                borderTop: "1px solid rgba(255,255,255,0.1)",
+                                paddingTop: "1.5rem",
                                 fontWeight: 500,
-                                flexWrap: "wrap",
                             }}
                         >
-                            <Link href="/">Início</Link>
-                            <Link href="/#artigos">Artigos</Link>
-                            <Link href="/sobre">Sobre</Link>
-                            <Link href="/termos-de-uso">Termos de Uso</Link>
-                            <Link href="/politica-de-privacidade">Política de Privacidade</Link>
-                            <Link href="/contato">Contato</Link>
+                            <p>&copy; {new Date().getFullYear()} dividai.com. Todos os direitos reservados.</p>
+                            <p style={{ marginTop: "0.5rem", fontSize: "0.8rem", opacity: 0.7 }}>
+                                Conteúdo focado em educação financeira e prosperidade.
+                            </p>
                         </div>
-                        <p>&copy; {new Date().getFullYear()} dividai.com. Todos os direitos reservados.</p>
-                        <p style={{ marginTop: "0.5rem", fontSize: "0.8rem" }}>
-                            Conteúdo focado em educação financeira.
-                        </p>
                     </div>
                 </footer>
                 <CookieConsent />
