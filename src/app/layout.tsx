@@ -6,6 +6,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import SearchBar from "@/components/SearchBar";
 import ConversionTracker from "@/components/ConversionTracker";
 import CookieConsent from "@/components/CookieConsent";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -98,6 +99,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     }}
                 />
                 <GoogleAnalytics />
+                {/* Google Tag (gtag.js) - Google Ads */}
+                <Script
+                    src="https://www.googletagmanager.com/gtag/js?id=AW-18107418379"
+                    strategy="afterInteractive"
+                />
+                <Script id="google-ads-tag" strategy="afterInteractive">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'AW-18107418379');
+                    `}
+                </Script>
             </head>
             <body className={`${inter.variable} ${outfit.variable}`}>
                 <ConversionTracker />

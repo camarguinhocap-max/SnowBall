@@ -12,7 +12,6 @@ declare global {
 
 export default function GoogleAnalytics() {
   const gaId = process.env.NEXT_PUBLIC_GA_ID || 'G-M6027Q5HVV';
-  const adsId = 'AW-18107418379';
 
   useEffect(() => {
     if (!gaId) return;
@@ -31,10 +30,7 @@ export default function GoogleAnalytics() {
       'send_page_view': true,
     });
 
-    // Configuração do Google Ads
-    gtag('config', adsId);
-
-    // Carregar script do Google Tag Manager (usando o GA ID como principal)
+    // Carregar script do Google Tag Manager
     const script = document.createElement('script');
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
