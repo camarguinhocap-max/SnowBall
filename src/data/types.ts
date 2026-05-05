@@ -8,4 +8,5 @@ export interface Post {
     readTime: string;
     content: string;
     views?: number;
+    draft?: boolean;
 }
