@@ -18,9 +18,9 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://dividai.com"),
-    title: "Blog DividAI | Finanças sem complicações",
+    title: "Blog DividAI | Educação Financeira e Finanças Pessoais",
     description:
-        "Aprenda a organizar sua vida financeira, sair das dívidas e começar a investir com foco na realidade brasileira.",
+        "Descubra como melhorar suas finanças pessoais, sair das dívidas e fazer os melhores investimentos. Educação financeira prática para a realidade brasileira.",
     keywords: "finanças pessoais, investimentos, educação financeira, renda extra, bitcoin, brasil",
     robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
     openGraph: {
@@ -28,15 +28,24 @@ export const metadata: Metadata = {
         locale: "pt_BR",
         url: "https://dividai.com",
         siteName: "Blog DividAI",
-        title: "Blog DividAI | Finanças sem complicações",
+        title: "Blog DividAI | Educação Financeira e Finanças Pessoais",
         description:
-            "Aprenda a organizar sua vida financeira, sair das dívidas e começar a investir com foco na realidade brasileira.",
+            "Descubra como melhorar suas finanças pessoais, sair das dívidas e fazer os melhores investimentos. Educação financeira prática para a realidade brasileira.",
+        images: [
+            {
+                url: "/favicon-transparent.png",
+                width: 512,
+                height: 512,
+                alt: "Logo DividAI",
+            },
+        ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Blog DividAI",
+        title: "Blog DividAI | Educação Financeira e Finanças Pessoais",
         description:
-            "Aprenda a organizar sua vida financeira, sair das dívidas e começar a investir com foco na realidade brasileira.",
+            "Descubra como melhorar suas finanças pessoais, sair das dívidas e fazer os melhores investimentos. Educação financeira prática para a realidade brasileira.",
+        images: ["/favicon-transparent.png"],
     },
     verification: {
         google: process.env.GOOGLE_SITE_VERIFICATION || "",
@@ -139,6 +148,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             <Link href="/">Início</Link>
                             <Link href="/#artigos">Artigos</Link>
                             <Link href="/sobre">Sobre</Link>
+                            <Link href="/portfolio">Portfólio</Link>
                             <Link href="/contato">Contato</Link>
                         </nav>
                     </div>
@@ -160,6 +170,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     <li style={{ marginBottom: '0.5rem' }}><Link href="/">Página Inicial</Link></li>
                                     <li style={{ marginBottom: '0.5rem' }}><Link href="/sobre">Sobre a DividAI</Link></li>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/portfolio">Nosso Portfólio</Link></li>
                                     <li style={{ marginBottom: '0.5rem' }}><Link href="/contato">Fale Conosco</Link></li>
                                 </ul>
                             </div>

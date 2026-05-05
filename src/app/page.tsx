@@ -8,19 +8,27 @@ import AdSlot from "@/components/AdSlot";
 import { getVisiblePosts, sortByDate, sortByViews } from "@/lib/posts";
 
 export const metadata: Metadata = {
-    title: "Blog DividAI | Finanças sem complicações",
+    title: "Blog DividAI | Educação Financeira e Finanças Pessoais",
     description:
-        "Aprenda a organizar sua vida financeira, sair das dívidas e começar a investir com foco na realidade brasileira.",
+        "Descubra como melhorar suas finanças pessoais, sair das dívidas e fazer os melhores investimentos. Educação financeira prática para a realidade brasileira.",
     alternates: {
         canonical: "https://dividai.com",
     },
     openGraph: {
-        title: "Blog DividAI",
+        title: "Blog DividAI | Educação Financeira e Finanças Pessoais",
         description:
-            "Aprenda a organizar sua vida financeira, sair das dívidas e começar a investir com foco na realidade brasileira.",
+            "Descubra como melhorar suas finanças pessoais, sair das dívidas e fazer os melhores investimentos. Educação financeira prática para a realidade brasileira.",
         url: "https://dividai.com",
         siteName: "Blog DividAI",
         type: "website",
+        images: [
+            {
+                url: "/favicon-transparent.png",
+                width: 512,
+                height: 512,
+                alt: "Logo DividAI",
+            },
+        ],
     },
 };
 
@@ -59,11 +67,10 @@ export default async function Home({ searchParams }: HomeProps) {
                     Educação Financeira Brasileira
                 </div>
                 <h1 className="hero-title">
-                    Sua Nova Relação com o Dinheiro
+                    Educação Financeira e Investimentos
                 </h1>
                 <p className="hero-subtitle">
-                    Descomplique suas finanças com dicas práticas, diretas e feitas sob
-                    medida para a realidade do brasileiro.
+                    Aprenda a organizar suas finanças pessoais, sair das dívidas e começar a investir. Dicas práticas feitas sob medida para a realidade do brasileiro.
                 </p>
             </section>
 

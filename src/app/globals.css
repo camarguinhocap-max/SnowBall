@@ -510,6 +510,12 @@ html:not([data-theme="dark"]) .featured-image-overlay {
 }
 .featured-post:hover .featured-cta { gap: 0.75rem; }
 
+/* ————— PORTFOLIO ————— */
+.portfolio-card:hover {
+  transform: translateY(-5px) !important;
+  border-color: var(--primary) !important;
+}
+
 /* ————— SECTION HEADERS ————— */
 .section-header {
   display: flex;
