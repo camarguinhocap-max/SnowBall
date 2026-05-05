@@ -15,30 +15,40 @@ const projects = [
         url: "https://dividai.com",
         description: "Blog focado em educação financeira e investimentos.",
         domain: "dividai.com",
+        imageDesktop: "/portfolio/dividai-desktop.png",
+        imageMobile: "/portfolio/dividai-mobile.png"
     },
     {
-        name: "ClickDreams",
+        name: "ClickDreams (Ofertas Prime)",
         url: "https://clickdreams.netlify.app",
-        description: "Agência de marketing digital e desenvolvimento web.",
+        description: "Landing page de alta conversão para promoções e ofertas exclusivas.",
         domain: "clickdreams.netlify.app",
+        imageDesktop: "/portfolio/clickdreams-desktop.png",
+        imageMobile: "/portfolio/clickdreams-mobile.png"
     },
     {
         name: "PB Oficina de Beleza",
         url: "https://pboficinadebeleza.com.br/",
         description: "Site institucional para salão de beleza e estética.",
         domain: "pboficinadebeleza.com.br",
+        imageDesktop: "",
+        imageMobile: ""
     },
     {
         name: "Toque de Carinho",
         url: "https://toquedecarinhosenior.com.br/",
         description: "Casa de repouso e cuidados para idosos.",
         domain: "toquedecarinhosenior.com.br",
+        imageDesktop: "",
+        imageMobile: ""
     },
     {
         name: "Morit Seguros",
         url: "https://moritseguros.netlify.app/",
         description: "Corretora de seguros focada em proteção familiar e patrimonial.",
         domain: "moritseguros.netlify.app",
+        imageDesktop: "",
+        imageMobile: ""
     },
 ];
 
@@ -82,24 +92,31 @@ export default function PortfolioPage() {
                         <div style={{
                             width: "100%",
                             height: "220px",
-                            backgroundColor: "var(--bg)",
+                            backgroundColor: "var(--background-3)",
                             borderBottom: "1px solid var(--border)",
                             position: "relative",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            color: "var(--text-muted)"
+                            overflow: "hidden"
                         }}>
-                            {/* O vídeo será colocado aqui depois */}
-                            <div style={{ textAlign: "center", padding: "1rem" }}>
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: "0.5rem", opacity: 0.5 }}>
-                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                    <line x1="8" y1="21" x2="16" y2="21"></line>
-                                    <line x1="12" y1="17" x2="12" y2="21"></line>
-                                </svg>
-                                <div style={{ fontSize: "0.9rem" }}>Preview do Site</div>
-                                <div style={{ fontSize: "0.75rem", opacity: 0.7 }}>(Gerando animação...)</div>
-                            </div>
+                            {project.imageDesktop && project.imageMobile ? (
+                                <div className="portfolio-mockup-container">
+                                    <div className="mockup-desktop">
+                                        <img src={project.imageDesktop} alt={`Desktop view of ${project.name}`} />
+                                    </div>
+                                    <div className="mockup-mobile">
+                                        <img src={project.imageMobile} alt={`Mobile view of ${project.name}`} />
+                                    </div>
+                                </div>
+                            ) : (
+                                <div style={{ textAlign: "center", padding: "1rem", color: "var(--text-muted)", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: "0.5rem", opacity: 0.5 }}>
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                    </svg>
+                                    <div style={{ fontSize: "0.9rem" }}>Preview do Site</div>
+                                    <div style={{ fontSize: "0.75rem", opacity: 0.7 }}>(Aguardando imagens...)</div>
+                                </div>
+                            )}
                         </div>
                         <div style={{ padding: "1.5rem", display: "flex", flexDirection: "column", flex: 1 }}>
                             <h2 style={{ fontSize: "1.25rem", fontWeight: 700, marginBottom: "0.5rem" }}>{project.name}</h2>
