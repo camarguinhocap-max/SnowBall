@@ -31,23 +31,23 @@ const projects = [
         url: "https://pboficinadebeleza.com.br/",
         description: "Site institucional para salão de beleza e estética.",
         domain: "pboficinadebeleza.com.br",
-        imageDesktop: "",
-        imageMobile: ""
+        imageDesktop: "/portfolio/pboficina-desktop.png",
+        imageMobile: "/portfolio/pboficina-mobile.png"
     },
     {
         name: "Toque de Carinho",
         url: "https://toquedecarinhosenior.com.br/",
         description: "Casa de repouso e cuidados para idosos.",
         domain: "toquedecarinhosenior.com.br",
-        imageDesktop: "",
-        imageMobile: ""
+        imageDesktop: "/portfolio/toquedecarinho-desktop.png",
+        imageMobile: "/portfolio/toquedecarinho-mobile.png"
     },
     {
         name: "Morit Seguros",
         url: "https://moritseguros.netlify.app/",
         description: "Corretora de seguros focada em proteção familiar e patrimonial.",
         domain: "moritseguros.netlify.app",
-        imageDesktop: "",
+        imageDesktop: "/portfolio/moritseguros-desktop.png",
         imageMobile: ""
     },
 ];
@@ -97,14 +97,16 @@ export default function PortfolioPage() {
                             position: "relative",
                             overflow: "hidden"
                         }}>
-                            {project.imageDesktop && project.imageMobile ? (
+                            {project.imageDesktop ? (
                                 <div className="portfolio-mockup-container">
                                     <div className="mockup-desktop">
                                         <img src={project.imageDesktop} alt={`Desktop view of ${project.name}`} />
                                     </div>
-                                    <div className="mockup-mobile">
-                                        <img src={project.imageMobile} alt={`Mobile view of ${project.name}`} />
-                                    </div>
+                                    {project.imageMobile && (
+                                        <div className="mockup-mobile">
+                                            <img src={project.imageMobile} alt={`Mobile view of ${project.name}`} />
+                                        </div>
+                                    )}
                                 </div>
                             ) : (
                                 <div style={{ textAlign: "center", padding: "1rem", color: "var(--text-muted)", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
