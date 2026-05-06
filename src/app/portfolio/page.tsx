@@ -15,40 +15,40 @@ const projects = [
         url: "https://dividai.com",
         description: "Blog focado em educação financeira e investimentos.",
         domain: "dividai.com",
-        imageDesktop: "/portfolio/dividai-desktop.png",
-        imageMobile: "/portfolio/dividai-mobile.png"
+        imageDesktop: "/portfolio/proj1-d.png",
+        imageMobile: "/portfolio/proj1-m.png"
     },
     {
         name: "ClickDreams (Ofertas Prime)",
         url: "https://clickdreams.netlify.app",
         description: "Landing page de alta conversão para promoções e ofertas exclusivas.",
         domain: "clickdreams.netlify.app",
-        imageDesktop: "/portfolio/clickdreams-desktop.png",
-        imageMobile: "/portfolio/clickdreams-mobile.png"
+        imageDesktop: "/portfolio/proj2-d.png",
+        imageMobile: "/portfolio/proj2-m.png"
     },
     {
         name: "PB Oficina de Beleza",
         url: "https://pboficinadebeleza.com.br/",
         description: "Site institucional para salão de beleza e estética.",
         domain: "pboficinadebeleza.com.br",
-        imageDesktop: "/portfolio/pboficina-desktop.png",
-        imageMobile: "/portfolio/pboficina-mobile.png"
+        imageDesktop: "/portfolio/proj3-d.png",
+        imageMobile: "/portfolio/proj3-m.png"
     },
     {
         name: "Toque de Carinho",
         url: "https://toquedecarinhosenior.com.br/",
         description: "Casa de repouso e cuidados para idosos.",
         domain: "toquedecarinhosenior.com.br",
-        imageDesktop: "/portfolio/toquedecarinho-desktop.png",
-        imageMobile: "/portfolio/toquedecarinho-mobile.png"
+        imageDesktop: "/portfolio/proj4-d.png",
+        imageMobile: "/portfolio/proj4-m.png"
     },
     {
         name: "Morit Seguros",
         url: "https://moritseguros.netlify.app/",
         description: "Corretora de seguros focada em proteção familiar e patrimonial.",
         domain: "moritseguros.netlify.app",
-        imageDesktop: "/portfolio/moritseguros-desktop.png",
-        imageMobile: "/portfolio/moritseguros-mobile.png"
+        imageDesktop: "/portfolio/proj5-d.png",
+        imageMobile: "/portfolio/proj5-m.png"
     },
 ];
 
