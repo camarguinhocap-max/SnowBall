@@ -48,7 +48,7 @@ const projects = [
         description: "Corretora de seguros focada em proteção familiar e patrimonial.",
         domain: "moritseguros.netlify.app",
         imageDesktop: "/portfolio/moritseguros-desktop.png",
-        imageMobile: ""
+        imageMobile: "/portfolio/moritseguros-mobile.png"
     },
 ];
 
