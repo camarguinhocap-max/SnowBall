@@ -97,7 +97,7 @@ export default function PortfolioPage() {
                 </h1>
                 <p className="hero-subtitle" style={{ maxWidth: "700px", margin: "0 auto", fontSize: "1.1rem", lineHeight: 1.6 }}>
                     Criamos sites rápidos, modernos e otimizados para atrair e converter clientes todos os dias. 
-                    Confira nosso trabalho abaixo:
+                    Confira Alguns dos nossos trabalhos.
                 </p>
             </div>
 
@@ -211,7 +211,7 @@ export default function PortfolioPage() {
                 
                 <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
                     <a 
-                        href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20um%20site" 
+                        href="https://wa.me/5541998308282?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20um%20site" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="btn" 
@@ -235,9 +235,9 @@ export default function PortfolioPage() {
                         Orçamento pelo WhatsApp
                     </a>
                     
-                    <Link href="/contato" className="btn btn-outline" style={{ fontSize: "1.05rem", padding: "0.8rem 2rem" }}>
+                    <a href="mailto:comercial@dividai.com" className="btn btn-outline" style={{ fontSize: "1.05rem", padding: "0.8rem 2rem", display: "inline-flex", alignItems: "center" }}>
                         Enviar um E-mail
-                    </Link>
+                    </a>
                 </div>
                 <div style={{ marginTop: "1rem", fontSize: "0.85rem", color: "var(--text-muted)", opacity: 0.7 }}>
                     Sem compromisso. Resposta rápida garantida.
