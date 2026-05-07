@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Portfólio de Criação de Sites | Blog DividAI",
-    description: "Conheça nossos serviços de criação de sites profissionais e landing pages de alta conversão.",
+    description: "Criamos sites rápidos, modernos e otimizados para atrair e converter clientes todos os dias. Confira nossos projetos.",
     alternates: {
         canonical: "https://dividai.com/portfolio",
     },
@@ -16,7 +16,8 @@ const projects = [
         description: "Blog focado em educação financeira e investimentos.",
         domain: "dividai.com",
         imageDesktop: "/portfolio/proj1-d.png",
-        imageMobile: "/portfolio/proj1-m.png"
+        imageMobile: "/portfolio/proj1-m.png",
+        tags: ["Blog / Portal", "Educação Financeira", "SEO Otimizado"]
     },
     {
         name: "ClickDreams (Ofertas Prime)",
@@ -24,7 +25,8 @@ const projects = [
         description: "Landing page de alta conversão para promoções e ofertas exclusivas.",
         domain: "clickdreams.netlify.app",
         imageDesktop: "/portfolio/proj2-d.png",
-        imageMobile: "/portfolio/proj2-m.png"
+        imageMobile: "/portfolio/proj2-m.png",
+        tags: ["Alta Conversão", "Landing Page", "Copywriting"]
     },
     {
         name: "PB Oficina de Beleza",
@@ -32,7 +34,8 @@ const projects = [
         description: "Site institucional para salão de beleza e estética.",
         domain: "pboficinadebeleza.com.br",
         imageDesktop: "/portfolio/proj3-d.png",
-        imageMobile: "/portfolio/proj3-m.png"
+        imageMobile: "/portfolio/proj3-m.png",
+        tags: ["Site Institucional", "Design Premium", "Agendamentos"]
     },
     {
         name: "Toque de Carinho",
@@ -40,7 +43,8 @@ const projects = [
         description: "Casa de repouso e cuidados para idosos.",
         domain: "toquedecarinhosenior.com.br",
         imageDesktop: "/portfolio/proj4-d.png",
-        imageMobile: "/portfolio/proj4-m.png"
+        imageMobile: "/portfolio/proj4-m.png",
+        tags: ["Institucional", "Alta Confiança", "Acessibilidade"]
     },
     {
         name: "Morit Seguros",
@@ -48,26 +52,60 @@ const projects = [
         description: "Corretora de seguros focada em proteção familiar e patrimonial.",
         domain: "moritseguros.netlify.app",
         imageDesktop: "/portfolio/proj5-d.png",
-        imageMobile: "/portfolio/proj5-m.png"
+        imageMobile: "/portfolio/proj5-m.png",
+        tags: ["Corretora", "Geração de Leads", "SEO Otimizado"]
     },
 ];
 
 export default function PortfolioPage() {
     return (
         <div className="portfolio-page" style={{ padding: "4rem 0" }}>
-            <div className="section-header" style={{ textAlign: "center", marginBottom: "3rem" }}>
-                <h1 className="hero-title" style={{ marginBottom: "1rem" }}>Nosso Portfólio</h1>
-                <p className="hero-subtitle" style={{ maxWidth: "800px", margin: "0 auto" }}>
-                    Criamos sites rápidos, modernos e otimizados para atrair mais clientes para o seu negócio. 
-                    Confira alguns dos projetos que já desenvolvemos.
+            <style dangerouslySetInnerHTML={{__html: `
+                @keyframes fadeUpAnim {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                .portfolio-card-animated {
+                    opacity: 0;
+                    animation: fadeUpAnim 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+                }
+                .tag-chip {
+                    display: inline-block;
+                    padding: 0.25rem 0.6rem;
+                    background-color: var(--background-3);
+                    color: var(--text-muted);
+                    border-radius: 999px;
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                    border: 1px solid var(--border);
+                }
+            `}} />
+
+            <div className="section-header" style={{ textAlign: "center", marginBottom: "4rem" }}>
+                <div style={{ display: "inline-block", padding: "0.4rem 1rem", backgroundColor: "var(--primary)", color: "white", borderRadius: "999px", fontSize: "0.85rem", fontWeight: 700, marginBottom: "1.5rem" }}>
+                    Criação de Sites & Landing Pages
+                </div>
+                <h1 className="hero-title" style={{ marginBottom: "1.5rem", fontSize: "clamp(2.5rem, 5vw, 3.5rem)" }}>
+                    Tire o seu negócio da <br className="hidden sm:block" />
+                    <span style={{ color: "var(--primary)" }}>invisibilidade digital.</span>
+                </h1>
+                <p className="hero-subtitle" style={{ maxWidth: "700px", margin: "0 auto", fontSize: "1.1rem", lineHeight: 1.6 }}>
+                    Criamos sites rápidos, modernos e otimizados para atrair e converter clientes todos os dias. 
+                    Confira nosso trabalho abaixo:
                 </p>
             </div>
 
             <div style={{ 
                 display: "grid", 
                 gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", 
-                gap: "2rem",
-                marginBottom: "4rem"
+                gap: "2.5rem",
+                marginBottom: "5rem"
             }}>
                 {projects.map((project, index) => (
                     <a 
@@ -86,8 +124,9 @@ export default function PortfolioPage() {
                             textDecoration: "none",
                             color: "inherit",
                             boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+                            animationDelay: `${index * 0.15}s`
                         }}
-                        className="portfolio-card"
+                        className="portfolio-card portfolio-card-animated"
                     >
                         <div style={{
                             width: "100%",
@@ -122,16 +161,24 @@ export default function PortfolioPage() {
                         </div>
                         <div style={{ padding: "1.5rem", display: "flex", flexDirection: "column", flex: 1 }}>
                             <h2 style={{ fontSize: "1.25rem", fontWeight: 700, marginBottom: "0.5rem" }}>{project.name}</h2>
-                            <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", marginBottom: "1.5rem", flex: 1 }}>
+                            <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", marginBottom: "1rem" }}>
                                 {project.description}
                             </p>
+                            
+                            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", marginBottom: "1.5rem", flex: 1, alignContent: "flex-start" }}>
+                                {project.tags.map((tag, i) => (
+                                    <span key={i} className="tag-chip">{tag}</span>
+                                ))}
+                            </div>
+
                             <div style={{
                                 color: "var(--primary)",
                                 fontSize: "0.9rem",
                                 fontWeight: 600,
                                 display: "flex",
                                 alignItems: "center",
-                                gap: "0.5rem"
+                                gap: "0.5rem",
+                                marginTop: "auto"
                             }}>
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -147,20 +194,54 @@ export default function PortfolioPage() {
 
             <div style={{
                 backgroundColor: "var(--card-bg)",
-                borderRadius: "1rem",
-                padding: "3rem 2rem",
+                borderRadius: "1.5rem",
+                padding: "4rem 2rem",
                 textAlign: "center",
                 border: "1px solid var(--border)",
+                boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                backgroundImage: "linear-gradient(to bottom right, var(--background-2), var(--card-bg))"
             }}>
-                <h2 style={{ fontSize: "1.8rem", fontWeight: 800, marginBottom: "1rem" }}>
-                    Precisa de um site moderno e que traga resultados?
+                <h2 style={{ fontSize: "2rem", fontWeight: 800, marginBottom: "1rem" }}>
+                    Gostou do que viu?
                 </h2>
-                <p style={{ color: "var(--text-muted)", marginBottom: "2rem", maxWidth: "600px", margin: "0 auto 2rem auto", fontSize: "1.05rem" }}>
-                    Nós cuidamos de toda a parte técnica, design e otimização para que você possa focar no que importa: o seu negócio.
+                <p style={{ color: "var(--text-muted)", marginBottom: "2.5rem", maxWidth: "600px", margin: "0 auto 2.5rem auto", fontSize: "1.1rem", lineHeight: 1.6 }}>
+                    Transforme visitantes em clientes com um site profissional, moderno e de alta performance. 
+                    Nós cuidamos de toda a parte técnica, design e otimização SEO para você.
                 </p>
-                <Link href="/contato" className="btn btn-primary" style={{ fontSize: "1.1rem", padding: "0.8rem 2rem" }}>
-                    Solicitar um Orçamento sem Compromisso
-                </Link>
+                
+                <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
+                    <a 
+                        href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20um%20site" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="btn" 
+                        style={{ 
+                            fontSize: "1.05rem", 
+                            padding: "0.8rem 2rem", 
+                            backgroundColor: "#25D366", 
+                            color: "white", 
+                            border: "none",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.5rem",
+                            fontWeight: 600,
+                            borderRadius: "0.5rem",
+                            boxShadow: "0 4px 6px rgba(37, 211, 102, 0.3)"
+                        }}
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                        Orçamento pelo WhatsApp
+                    </a>
+                    
+                    <Link href="/contato" className="btn btn-outline" style={{ fontSize: "1.05rem", padding: "0.8rem 2rem" }}>
+                        Enviar um E-mail
+                    </Link>
+                </div>
+                <div style={{ marginTop: "1rem", fontSize: "0.85rem", color: "var(--text-muted)", opacity: 0.7 }}>
+                    Sem compromisso. Resposta rápida garantida.
+                </div>
             </div>
         </div>
     );
