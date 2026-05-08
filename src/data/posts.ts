@@ -100,6 +100,26 @@ import { post as organizacao_financeira_2026_ia_liberdade } from "./posts/organi
 import { post as aposentadoria_2026_guia_nao_depender_inss } from "./posts/aposentadoria-2026-guia-nao-depender-inss";
 import { post as renda_extra_2026_ia_ganhar_dinheiro } from "./posts/renda-extra-2026-ia-ganhar-dinheiro";
 import { post as investimento_imoveis_2026_fiis_tokenizacao } from "./posts/investimento-imoveis-2026-fiis-tokenizacao";
+import { post as como_usar_13_salario_com_sabedoria_2026 } from "./posts/como-usar-13-salario-com-sabedoria-2026";
+import { post as planejamento_financeiro_segundo_semestre_2026 } from "./posts/planejamento-financeiro-segundo-semestre-2026";
+import { post as investir_na_bolsa_com_pouco_dinheiro_2026 } from "./posts/investir-na-bolsa-com-pouco-dinheiro-2026";
+import { post as como_montar_carteira_dividendos_2026 } from "./posts/como-montar-carteira-dividendos-2026";
+import { post as independencia_financeira_por_onde_comecar_2026 } from "./posts/independencia-financeira-por-onde-comecar-2026";
+import { post as poupanca_versus_investimentos_2026 } from "./posts/poupanca-versus-investimentos-2026";
+import { post as como_usar_cashback_e_milhas_a_seu_favor_2026 } from "./posts/como-usar-cashback-e-milhas-a-seu-favor-2026";
+import { post as como_preparar_aposentadoria_por_idade_2026 } from "./posts/como-preparar-aposentadoria-por-idade-2026";
+import { post as dividas_x_investimentos_o_que_priorizar_2026 } from "./posts/dividas-x-investimentos-o-que-priorizar-2026";
+import { post as renda_variavel_para_iniciantes_primeiros_passos_2026 } from "./posts/renda-variavel-para-iniciantes-primeiros-passos-2026";
+import { post as como_negociar_dividas_e_conseguir_descontos_2026 } from "./posts/como-negociar-dividas-e-conseguir-descontos-2026";
+import { post as economizar_nas_contas_de_casa_sem_abrir_mao_conforto_2026 } from "./posts/economizar-nas-contas-de-casa-sem-abrir-mao-conforto-2026";
+import { post as como_fazer_seu_dinheiro_trabalhar_por_voce_2026 } from "./posts/como-fazer-seu-dinheiro-trabalhar-por-voce-2026";
+import { post as controle_financeiro_apps_e_ferramentas_2026 } from "./posts/controle-financeiro-apps-e-ferramentas-2026";
+import { post as como_sair_do_vermelho_em_6_meses_2026 } from "./posts/como-sair-do-vermelho-em-6-meses-2026";
+import { post as investimentos_seguros_em_tempos_de_juros_altos_2026 } from "./posts/investimentos-seguros-em-tempos-de-juros-altos-2026";
+import { post as renda_passiva_como_construir_em_2026 } from "./posts/renda-passiva-como-construir-em-2026";
+import { post as revisao_financeira_mensal_como_fazer_2026 } from "./posts/revisao-financeira-mensal-como-fazer-2026";
+import { post as como_investir_para_objetivos_especificos_2026 } from "./posts/como-investir-para-objetivos-especificos-2026";
+import { post as habitos_milionarios_que_qualquer_pessoa_pode_adotar_2026 } from "./posts/habitos-milionarios-que-qualquer-pessoa-pode-adotar-2026";
 
 export type { Post } from "./types";
 
@@ -204,5 +224,25 @@ export const posts: Post[] = [
     organizacao_financeira_2026_ia_liberdade,
     aposentadoria_2026_guia_nao_depender_inss,
     renda_extra_2026_ia_ganhar_dinheiro,
-    investimento_imoveis_2026_fiis_tokenizacao
+    investimento_imoveis_2026_fiis_tokenizacao,
+    como_usar_13_salario_com_sabedoria_2026,
+    planejamento_financeiro_segundo_semestre_2026,
+    investir_na_bolsa_com_pouco_dinheiro_2026,
+    como_montar_carteira_dividendos_2026,
+    independencia_financeira_por_onde_comecar_2026,
+    poupanca_versus_investimentos_2026,
+    como_usar_cashback_e_milhas_a_seu_favor_2026,
+    como_preparar_aposentadoria_por_idade_2026,
+    dividas_x_investimentos_o_que_priorizar_2026,
+    renda_variavel_para_iniciantes_primeiros_passos_2026,
+    como_negociar_dividas_e_conseguir_descontos_2026,
+    economizar_nas_contas_de_casa_sem_abrir_mao_conforto_2026,
+    como_fazer_seu_dinheiro_trabalhar_por_voce_2026,
+    controle_financeiro_apps_e_ferramentas_2026,
+    como_sair_do_vermelho_em_6_meses_2026,
+    investimentos_seguros_em_tempos_de_juros_altos_2026,
+    renda_passiva_como_construir_em_2026,
+    revisao_financeira_mensal_como_fazer_2026,
+    como_investir_para_objetivos_especificos_2026,
+    habitos_milionarios_que_qualquer_pessoa_pode_adotar_2026
 ];

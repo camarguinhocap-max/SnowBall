@@ -43,10 +43,15 @@ export function parsePostDate(dateStr: string): Date {
  */
 export function isPublished(post: Post, today = new Date()): boolean {
   const postDate = parsePostDate(post.date);
-  // Criar uma data UTC para hoje (00:00:00 UTC)
-  const todayUTC = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()));
-  // comparação apenas pela data (ignora hora), ambas em UTC
-  return postDate.getTime() <= todayUTC.getTime();
+  // Converter para fuso de Brasilia (UTC-3): publica a partir da meia-noite de Brasilia
+  const utcMs = today.getTime() + today.getTimezoneOffset() * 60000;
+  const brasiliaNow = new Date(utcMs + (-3 * 60) * 60000);
+  const todayBrasilia = new Date(Date.UTC(
+    brasiliaNow.getFullYear(),
+    brasiliaNow.getMonth(),
+    brasiliaNow.getDate()
+  ));
+  return postDate.getTime() <= todayBrasilia.getTime();
 }
 
 /**
