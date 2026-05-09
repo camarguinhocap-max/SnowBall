@@ -70,13 +70,7 @@ export function getYesterdayFormatted(): string {
 }
 
 export function getAllPosts(): Post[] {
-  const mostViewedSlug = [...posts].filter(p => !p.draft).sort((a, b) => (b.views || 0) - (a.views || 0))[0]?.slug;
-  return posts.map(post => {
-    if (post.slug === mostViewedSlug) {
-      return { ...post, date: getYesterdayFormatted() };
-    }
-    return post;
-  });
+  return posts;
 }
 
 export function getVisiblePosts(): Post[] {
