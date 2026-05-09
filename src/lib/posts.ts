@@ -23,19 +23,21 @@ const monthMap: Record<string, string> = {
 export function parsePostDate(dateStr: string): Date {
   if (!dateStr) return new Date();
   
-  // Normalizar espaços (incluindo non-breaking spaces) e converter para minúsculo
-  const normalized = dateStr.trim().replace(/\u00a0/g, ' ').toLowerCase();
+  // Normalizar espaços (incluindo non-breaking spaces), converter para minúsculo e remover pontos
+  const normalized = dateStr.trim().replace(/\u00a0/g, ' ').toLowerCase().replace(/\./g, '');
   const parts = normalized.split(/\s+/);
   
   if (parts.length !== 3) {
-    return new Date(dateStr);
+    const fallback = new Date(dateStr);
+    return isNaN(fallback.getTime()) ? new Date() : fallback;
   }
   
   const [day, monthAbbr, year] = parts;
   const month = monthMap[monthAbbr];
   
   if (!month) {
-    return new Date(dateStr);
+    const fallback = new Date(dateStr);
+    return isNaN(fallback.getTime()) ? new Date() : fallback;
   }
   
   // Criar data ao meio-dia UTC para evitar problemas de virada de dia por causa de poucas horas
@@ -44,7 +46,8 @@ export function parsePostDate(dateStr: string): Date {
   const y = parseInt(year);
   
   if (isNaN(d) || isNaN(m) || isNaN(y)) {
-    return new Date(dateStr);
+    const fallback = new Date(dateStr);
+    return isNaN(fallback.getTime()) ? new Date() : fallback;
   }
 
   return new Date(Date.UTC(y, m, d, 12, 0, 0));
