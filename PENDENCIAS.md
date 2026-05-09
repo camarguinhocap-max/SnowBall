@@ -41,5 +41,6 @@
 
 ## Futuras Integracoes
 - [ ] **Automacao Redes Sociais (Make.com)**: Conectar o RSS (`https://blog.dividai.com/api/feed`) ao Instagram e X para publicar novos artigos automaticamente.
+- [x] **Automacao de Revalidacao de Posts (Vercel Cronjob)**: Criada rota `/api/cron` e configurado `vercel.json` para revalidar a homepage e posts todo dia à meia-noite (03:00 UTC).
 - [ ] **Automacao de Precos da Loja (Vercel Cronjob)**: Migrar `shop.ts` para Supabase e criar cronjob que atualiza precos via APIs Shopee (AppID 18337900933), Amazon (tag ofertaspri0ee-20) e Mercado Livre (tag ofertasprimeml).
 - [ ] **Contador de Views Real (Supabase)**: Armazenar `views` por slug e usar para ordenar artigos em dashboard em vez de lista estatica.
