@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     },
 };
 
-export const revalidate = 3600;
+export const revalidate = 60; // Revalida a cada 60 segundos para garantir publicação de novos posts
 
 interface HomeProps {
     searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
