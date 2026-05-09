@@ -38,13 +38,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     ];
 
-    // Dynamic routes for blog posts
-    const postRoutes = visible.map((post) => ({
-        url: `${baseUrl}/post/${post.slug}`,
-        lastModified: parsePostDate(post.date),
-        changeFrequency: 'weekly' as const,
-        priority: 0.8,
-    }));
-
-    return [...staticRoutes, ...postRoutes];
+    return [...staticRoutes];
 }
