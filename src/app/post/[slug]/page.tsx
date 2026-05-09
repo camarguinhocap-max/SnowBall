@@ -56,7 +56,7 @@ function splitPostContent(content: string) {
 export const dynamicParams = true;
 
 export function generateStaticParams() {
-    return getVisiblePosts().map((post) => ({
+    return getVisiblePosts().slice(0, 20).map((post) => ({
         slug: post.slug,
     }));
 }
