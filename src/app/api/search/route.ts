@@ -14,7 +14,7 @@ export async function GET(request: Request) {
 
   // Filtrar posts publicados e que correspondem à busca
   const results = posts
-    .filter(post => isPublished(post, today))
+    .filter(post => isPublished(post))
     .filter(post => {
       const matchTitle = post.title.toLowerCase().includes(lowerQuery);
       const matchExcerpt = post.excerpt.toLowerCase().includes(lowerQuery);
@@ -46,5 +46,10 @@ export async function GET(request: Request) {
     })
     .sort((a, b) => b.score - a.score || parsePostDate(b.date).getTime() - parsePostDate(a.date).getTime());
 
-  return Response.json(results);
+  return new Response(JSON.stringify(results), {
+    headers: {
+      'Content-Type': 'application/json',
+      'Cache-Control': 's-maxage=60, stale-while-revalidate',
+    },
+  });
 }

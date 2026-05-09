@@ -114,7 +114,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     };
 }
 
-export const revalidate = 3600;
+export const revalidate = 60;
 
 export default async function Post(props: { params: Promise<{ slug: string }> }) {
     const params = await props.params;

@@ -31,7 +31,7 @@ export async function GET() {
     return new Response(feed.xml({ indent: true }), {
         headers: {
             'Content-Type': 'application/xml',
-            'Cache-Control': 's-maxage=86400, stale-while-revalidate',
+            'Cache-Control': 's-maxage=60, stale-while-revalidate',
         },
     });
 }
