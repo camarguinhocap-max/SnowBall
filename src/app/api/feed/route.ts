@@ -1,6 +1,6 @@
 import { posts } from '@/data/posts';
 import RSS from 'rss';
-import { getVisiblePosts, sortByDate } from '@/lib/posts';
+import { getVisiblePosts, sortByDate, parsePostDate } from '@/lib/posts';
 
 export async function GET() {
     const feed = new RSS({
@@ -24,7 +24,7 @@ export async function GET() {
             categories: [post.category],
             url: `https://dividai.com/post/${post.slug}`,
             // Approximate the custom string dates to real Date objects or just pass as-is
-            date: post.date,
+            date: parsePostDate(post.date),
         });
     });
 

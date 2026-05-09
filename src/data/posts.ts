@@ -52,7 +52,7 @@ import { post as reserva_de_emergencia_por_que_ter_e_como_criar_a_sua } from "./
 import { post as como_sair_das_dividas_de_uma_vez_por_todas } from "./posts/como-sair-das-dividas-de-uma-vez-por-todas";
 import { post as imposto_de_renda_guia_simples_para_brasileiros } from "./posts/imposto-de-renda-guia-simples-para-brasileiros";
 import { post as como_negociar_seu_salario_e_conseguir_um_aumento } from "./posts/como-negociar-seu-salario-e-conseguir-um-aumento";
-import { post as gastos_invisíveis_como_identificar_e_cortar } from "./posts/gastos-invisíveis-como-identificar-e-cortar";
+import { post as gastos_invisiveis_como_identificar_e_cortar } from "./posts/gastos-invisiveis-como-identificar-e-cortar";
 import { post as post_5_habitos_financeiros_que_transformam_sua_vida } from "./posts/5-habitos-financeiros-que-transformam-sua-vida";
 import { post as guia_rapido_investimentos_iniciantes_2026 } from "./posts/guia-rapido-investimentos-iniciantes-2026";
 import { post as como_negociar_dividas_e_sair_do_vermelho } from "./posts/como-negociar-dividas-e-sair-do-vermelho";
@@ -177,7 +177,7 @@ export const posts: Post[] = [
     como_sair_das_dividas_de_uma_vez_por_todas,
     imposto_de_renda_guia_simples_para_brasileiros,
     como_negociar_seu_salario_e_conseguir_um_aumento,
-    gastos_invisíveis_como_identificar_e_cortar,
+    gastos_invisiveis_como_identificar_e_cortar,
     post_5_habitos_financeiros_que_transformam_sua_vida,
     guia_rapido_investimentos_iniciantes_2026,
     como_negociar_dividas_e_sair_do_vermelho,

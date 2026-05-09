@@ -1,7 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getVisiblePosts, parsePostDate, getAllPosts } from "@/lib/posts";
+import { getVisiblePosts, parsePostDate, getAllPosts, isPublished } from "@/lib/posts";
 import AuthorBio from "@/components/AuthorBio";
 import ImageWithModal from "@/components/ImageWithModal";
 import InvestmentDisclaimer from "@/components/InvestmentDisclaimer";
@@ -120,22 +120,11 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
     const params = await props.params;
     const post = getAllPosts().find((item) => item.slug === params.slug);
 
-    if (!post) {
-        notFound();
-    }
-    if (post.draft) {
+    if (!post || !isPublished(post)) {
         notFound();
     }
 
-    const publishedDate = parsePostDate(post.date);
-    const publishGateDate = new Date(publishedDate);
-    const today = new Date();
-
-    if (publishGateDate.setHours(0, 0, 0, 0) > today.setHours(0, 0, 0, 0)) {
-        notFound();
-    }
-
-    const publishedTime = publishedDate.toISOString();
+    const publishedTime = parsePostDate(post.date).toISOString();
     const articleUrl = `https://dividai.com/post/${post.slug}`;
     const imageUrl = `${articleUrl}/opengraph-image`;
     const { primaryContent, secondaryContent } = splitPostContent(post.content);

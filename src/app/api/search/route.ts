@@ -1,5 +1,5 @@
 import { posts } from '@/data/posts';
-import { isPublished } from '@/lib/posts';
+import { isPublished, parsePostDate } from '@/lib/posts';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -44,7 +44,7 @@ export async function GET(request: Request) {
         score
       };
     })
-    .sort((a, b) => b.score - a.score || new Date(b.date).getTime() - new Date(a.date).getTime());
+    .sort((a, b) => b.score - a.score || parsePostDate(b.date).getTime() - parsePostDate(a.date).getTime());
 
   return Response.json(results);
 }
