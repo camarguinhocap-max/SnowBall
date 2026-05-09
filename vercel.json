@@ -1,13 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/shop",
-      "destination": "/",
-      "statusCode": 308
-    },
-    {
-      "source": "/shop/:path*",
-      "destination": "/",
+      "source": "/shop-old",
+      "destination": "/shop",
       "statusCode": 308
     }
   ],
@@ -21,4 +16,11 @@
         }
       ]
     }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron",
+      "schedule": "0 3 * * *"
+    }
+  ]
 }

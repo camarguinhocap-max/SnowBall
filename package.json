@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "giscus": "^1.6.0",
-    "jimp": "^1.6.0",
+
     "lucide-react": "^0.577.0",
     "next": "16.1.6",
     "nodemailer": "^8.0.1",
