@@ -7,7 +7,7 @@ export const post: Post = {
         tags: ['bitcoin', 'crypto', 'blockchain', 'futuro'],
         category: 'Criptomoedas',
         views: 2915,
-        date: '26 Fev 2026',
+        date: '08 Mai 2026',
         readTime: '4 min de leitura',
         content: `
 Nos últimos anos, o Bitcoin se tornou um dos assuntos mais comentados no mundo das finanças. Algumas pessoas acreditam que ele é o futuro do dinheiro, enquanto outras ainda têm dúvidas sobre como funciona.

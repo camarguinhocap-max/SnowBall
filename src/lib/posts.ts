@@ -2,18 +2,18 @@ import { Post, posts } from "@/data/posts";
 
 // Map month abbreviations in Portuguese to month numbers
 const monthMap: Record<string, string> = {
-  Jan: "01",
-  Fev: "02",
-  Mar: "03",
-  Abr: "04",
-  Mai: "05",
-  Jun: "06",
-  Jul: "07",
-  Ago: "08",
-  Set: "09",
-  Out: "10",
-  Nov: "11",
-  Dez: "12",
+  jan: "01",
+  fev: "02",
+  mar: "03",
+  abr: "04",
+  mai: "05",
+  jun: "06",
+  jul: "07",
+  ago: "08",
+  set: "09",
+  out: "10",
+  nov: "11",
+  dez: "12",
 };
 
 /**
@@ -21,20 +21,33 @@ const monthMap: Record<string, string> = {
  * para um objeto `Date` válido em UTC.
  */
 export function parsePostDate(dateStr: string): Date {
-  const parts = dateStr.trim().split(" ");
+  if (!dateStr) return new Date();
+  
+  // Normalizar espaços (incluindo non-breaking spaces) e converter para minúsculo
+  const normalized = dateStr.trim().replace(/\u00a0/g, ' ').toLowerCase();
+  const parts = normalized.split(/\s+/);
+  
   if (parts.length !== 3) {
-    // fallback: deixe o construtor fazer o trabalho
     return new Date(dateStr);
   }
+  
   const [day, monthAbbr, year] = parts;
   const month = monthMap[monthAbbr];
+  
   if (!month) {
-    // caso o mês não esteja mapeado, tente criar direto
     return new Date(dateStr);
   }
-  // Criar data em UTC para garantir consistência no servidor Vercel
-  // new Date(Date.UTC(...)) cria uma data em UTC, independente do timezone local
-  return new Date(Date.UTC(parseInt(year), parseInt(month) - 1, parseInt(day)));
+  
+  // Criar data ao meio-dia UTC para evitar problemas de virada de dia por causa de poucas horas
+  const d = parseInt(day);
+  const m = parseInt(month) - 1;
+  const y = parseInt(year);
+  
+  if (isNaN(d) || isNaN(m) || isNaN(y)) {
+    return new Date(dateStr);
+  }
+
+  return new Date(Date.UTC(y, m, d, 12, 0, 0));
 }
 
 /**
@@ -43,15 +56,22 @@ export function parsePostDate(dateStr: string): Date {
  */
 export function isPublished(post: Post, today = new Date()): boolean {
   const postDate = parsePostDate(post.date);
-  // Converter para fuso de Brasilia (UTC-3): publica a partir da meia-noite de Brasilia
-  const utcMs = today.getTime() + today.getTimezoneOffset() * 60000;
-  const brasiliaNow = new Date(utcMs + (-3 * 60) * 60000);
-  const todayBrasilia = new Date(Date.UTC(
-    brasiliaNow.getFullYear(),
-    brasiliaNow.getMonth(),
-    brasiliaNow.getDate()
+  if (isNaN(postDate.getTime())) return false;
+
+  // Obter data atual em Brasília (UTC-3)
+  const brasiliaOffset = -3 * 60 * 60 * 1000;
+  const nowUtc = today.getTime() + (today.getTimezoneOffset() * 60000);
+  const nowBrasilia = new Date(nowUtc + brasiliaOffset);
+  
+  // Criar um objeto de comparação que representa apenas o dia de hoje em Brasília (meio-dia UTC)
+  const todayComparison = new Date(Date.UTC(
+    nowBrasilia.getFullYear(),
+    nowBrasilia.getMonth(),
+    nowBrasilia.getDate(),
+    12, 0, 0
   ));
-  return postDate.getTime() <= todayBrasilia.getTime();
+
+  return postDate.getTime() <= todayComparison.getTime();
 }
 
 /**
@@ -89,5 +109,11 @@ export function sortByViews(input: Post[]): Post[] {
  * Ordena posts cronologicamente (mais recentes primeiro).
  */
 export function sortByDate(input: Post[]): Post[] {
-  return [...input].sort((a, b) => parsePostDate(b.date).getTime() - parsePostDate(a.date).getTime());
+  return [...input].sort((a, b) => {
+    const timeA = parsePostDate(a.date).getTime();
+    const timeB = parsePostDate(b.date).getTime();
+    if (isNaN(timeA)) return 1;
+    if (isNaN(timeB)) return -1;
+    return timeB - timeA;
+  });
 }
