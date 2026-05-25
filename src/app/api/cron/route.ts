@@ -1,30 +1,43 @@
 import { revalidatePath } from "next/cache";
 import { NextResponse } from "next/server";
+import { getVisiblePosts } from "@/lib/posts";
 
-// Cron job chamado pelo Vercel todo dia às 03:00 UTC (meia-noite de Brasília)
-// Configurado em vercel.json
+// Cron job chamado pelo Vercel a cada hora
+// Configurado em vercel.json: "schedule": "0 * * * *"
 export async function GET(request: Request) {
     const authHeader = request.headers.get("authorization");
 
-    // Proteção básica com secret para evitar chamadas não autorizadas
-    if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
+    // Vercel injeta automaticamente o CRON_SECRET no header Authorization
+    // quando o job é disparado pelo scheduler. Permite também chamadas manuais.
+    if (
+        process.env.CRON_SECRET &&
+        authHeader !== `Bearer ${process.env.CRON_SECRET}`
+    ) {
         return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
     try {
-        // Revalida todas as rotas relevantes para que os novos posts apareçam
+        const now = new Date().toISOString();
+
+        // Revalida a homepage e páginas principais
         revalidatePath("/");
-        revalidatePath("/post/[slug]", "page");
         revalidatePath("/sitemap.xml");
         revalidatePath("/api/feed");
+        revalidatePath("/api/search");
 
-        const now = new Date().toISOString();
-        console.log(`[Cron] Revalidação executada em ${now}`);
+        // Revalida cada post visível individualmente para garantir aparição
+        const visiblePosts = getVisiblePosts();
+        for (const post of visiblePosts) {
+            revalidatePath(`/post/${post.slug}`);
+        }
+
+        console.log(`[Cron] Revalidação executada em ${now} — ${visiblePosts.length} posts revalidados`);
 
         return NextResponse.json({
             revalidated: true,
             timestamp: now,
-            message: "Homepage e posts revalidados com sucesso",
+            postsRevalidated: visiblePosts.length,
+            message: "Homepage, posts e feeds revalidados com sucesso",
         });
     } catch (error) {
         console.error("[Cron] Erro na revalidação:", error);

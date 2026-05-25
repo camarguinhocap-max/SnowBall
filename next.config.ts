@@ -4,11 +4,12 @@ const nextConfig: NextConfig = {
   /* config options here */
   headers: async () => [
     {
+      // Páginas dinâmicas: sem cache no CDN para que o ISR funcione corretamente
       source: '/:path*',
       headers: [
         {
           key: 'Cache-Control',
-          value: 'public, max-age=3600, stale-while-revalidate=86400',
+          value: 'public, s-maxage=60, stale-while-revalidate=120',
         },
       ],
     },
