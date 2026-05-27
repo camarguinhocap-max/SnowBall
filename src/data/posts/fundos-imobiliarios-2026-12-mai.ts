@@ -32,5 +32,5 @@ Centros de experiência ao consumidor criam fluxo de visitas e mantêm a rentabi
 
 > **Dica rápida:** Use plataformas de corretoras que oferecem relatórios de FIIs para analisar indicadores como P/VP e vacância.
 
-`;
+`
 };

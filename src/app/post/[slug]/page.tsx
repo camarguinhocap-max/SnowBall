@@ -190,7 +190,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                     <div className="article-meta">
                         <span>{post.date}</span>
                         <span>&bull;</span>
-                        <ReadingTime readTime={post.readTime} />
+                        <ReadingTime readTime={post.readTime ?? '5 min de leitura'} />
                     </div>
                 </header>
 

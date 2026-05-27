@@ -5,6 +5,7 @@ export interface Post {
     tags: string[];
     category: string;
     date: string;
+    readTime?: string;
     image?: string;
     content: string;
     views?: number;
