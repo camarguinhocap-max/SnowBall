@@ -6,7 +6,7 @@ export const post: Post = {
   excerpt: 'Conheça métodos eficazes para complementar o orçamento da sua família neste ano, desde rendas extras até novos negócios.',
   date: '18 Mai 2026',
   readTime: '10 min de leitura',
-  category: 'Renda Extra',
+  category: 'Renda Extra e Negócios',
   tags: ["renda extra","orçamento","família"],
   views: 0,
   content: `

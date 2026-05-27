@@ -5,7 +5,7 @@ export const post: Post = {
         title: 'Aposentadoria 2026: O Guia Definitivo para não depender do INSS',
         excerpt: 'O sistema previdenciário tradicional está em colapso. Aprenda como construir sua própria previdência privada resiliente, global e dolarizada em 2026.',
         tags: ['aposentadoria', 'investimentos', 'previdencia', 'liberdade-financeira', 'longo-prazo'],
-        category: 'Planejamento',
+        category: 'Finanças Pessoais',
         date: '04 Mai 2026',
         readTime: '25 min de leitura',
         content: `

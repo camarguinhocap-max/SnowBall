@@ -1,4 +1,5 @@
 import { Post } from './types';
+import { normalizeCategory } from './categoryMap';
 
 export type { Post } from './types';
 
@@ -290,4 +291,7 @@ export const posts: Post[] = [
     post_troca_de_emprego_checklist_financeiro_2026,
     post_viagem_sem_dividas_2026,
     post_vicios_de_consumo_2026,
-];
+].map((post) => ({
+    ...post,
+    category: normalizeCategory(post.category),
+}));

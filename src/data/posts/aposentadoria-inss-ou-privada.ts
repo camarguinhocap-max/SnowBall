@@ -5,7 +5,7 @@ export const post: Post = {
         title: 'Aposentadoria: INSS ou previdência privada?',
         excerpt: 'O INSS está em xeque. Descubra se vale a pena complementar com previdência privada.',
         tags: [],
-        category: 'Planejamento para Aposentadoria',
+        category: 'Aposentadoria',
         date: '24 Mar 2026',
         readTime: '12 min de leitura',
         content: `

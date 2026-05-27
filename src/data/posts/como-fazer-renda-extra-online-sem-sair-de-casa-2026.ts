@@ -6,7 +6,7 @@ export const post: Post = {
   excerpt: 'Veja as melhores opções para gerar uma renda extra confiável trabalhando pela internet sem sair de casa.',
   date: '21 Mai 2026',
   readTime: '10 min de leitura',
-  category: 'Renda Extra',
+  category: 'Renda Extra e Negócios',
   tags: ["renda extra","internet","trabalho remoto"],
   views: 0,
   content: `

@@ -5,7 +5,7 @@ export const post: Post = {
         title: 'Bitcoin: o que é, como funciona e por que tanta gente está investindo',
         excerpt: 'Nos últimos anos, o Bitcoin se tornou um dos assuntos mais comentados no mundo das finanças. Entenda de forma simples o que é e como funciona.',
         tags: ['bitcoin', 'crypto', 'blockchain', 'futuro'],
-        category: 'Criptomoedas',
+        category: 'Cripto e Alternativos',
         views: 2915,
         date: '08 Mai 2026',
         readTime: '4 min de leitura',

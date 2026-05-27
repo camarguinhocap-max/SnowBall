@@ -5,7 +5,7 @@ export const post: Post = {
         title: 'Blindagem Patrimonial Estratégica: Proteja seu legado contra incertezas',
         excerpt: 'Em um mundo volátil, proteger o que você construiu é tão importante quanto ganhar. Conheça as estruturas de blindagem jurídica e financeira em 2026.',
         tags: ['protecao', 'patrimonio', 'blindagem', 'juridico', 'sucessao'],
-        category: 'Proteção',
+        category: 'Impostos e Legislação',
         date: '27 Abr 2026',
         readTime: '15 min de leitura',
         content: `

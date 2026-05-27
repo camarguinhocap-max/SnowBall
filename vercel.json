@@ -4,6 +4,140 @@
       "source": "/shop-old",
       "destination": "/shop",
       "statusCode": 308
+    },
+    {
+      "source": "/categoria/financas-pessoais",
+      "destination": "/?category=Finan%C3%A7as%20Pessoais",
+      "statusCode": 308
+    },
+    {
+      "source": "/categoria/investimentos",
+      "destination": "/?category=Investimentos",
+      "statusCode": 308
+    },
+    {
+      "source": "/categoria/renda-fixa",
+      "destination": "/?category=Renda%20Fixa",
+      "statusCode": 308
+    },
+    {
+      "source": "/categoria/fundos-imobiliarios",
+      "destination": "/?category=Fundos%20Imobili%C3%A1rios",
+      "statusCode": 308
+    },
+    {
+      "source": "/categoria/cripto-e-alternativos",
+      "destination": "/?category=Cripto%20e%20Alternativos",
+      "statusCode": 308
+    },
+    {
+      "source": "/categoria/aposentadoria",
+      "destination": "/?category=Aposentadoria",
+      "statusCode": 308
+    },
+    {
+      "source": "/categoria/renda-extra-e-negocios",
+      "destination": "/?category=Renda%20Extra%20e%20Neg%C3%B3cios",
+      "statusCode": 308
+    },
+    {
+      "source": "/categoria/comportamento-e-mentalidade",
+      "destination": "/?category=Comportamento%20e%20Mentalidade",
+      "statusCode": 308
+    },
+    {
+      "source": "/categoria/carreira",
+      "destination": "/?category=Carreira",
+      "statusCode": 308
+    },
+    {
+      "source": "/categoria/impostos-e-legislacao",
+      "destination": "/?category=Impostos%20e%20Legisla%C3%A7%C3%A3o",
+      "statusCode": 308
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "category",
+          "value": "(Finanças|Dívidas|Crédito|Planejamento)"
+        }
+      ],
+      "destination": "/?category=Finan%C3%A7as%20Pessoais",
+      "statusCode": 308
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "category",
+          "value": "(Investimento|Estratégia de Investimentos|Análise de Investimentos)"
+        }
+      ],
+      "destination": "/?category=Investimentos",
+      "statusCode": 308
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "category",
+          "value": "(Criptomoedas|Investimentos Alternativos)"
+        }
+      ],
+      "destination": "/?category=Cripto%20e%20Alternativos",
+      "statusCode": 308
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "category",
+          "value": "Planejamento para Aposentadoria"
+        }
+      ],
+      "destination": "/?category=Aposentadoria",
+      "statusCode": 308
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "category",
+          "value": "(Renda Extra|Empreendedorismo|Renda)"
+        }
+      ],
+      "destination": "/?category=Renda%20Extra%20e%20Neg%C3%B3cios",
+      "statusCode": 308
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "category",
+          "value": "(Comportamento Financeiro|Mentalidade|Educação)"
+        }
+      ],
+      "destination": "/?category=Comportamento%20e%20Mentalidade",
+      "statusCode": 308
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "category",
+          "value": "(Impostos|Proteção)"
+        }
+      ],
+      "destination": "/?category=Impostos%20e%20Legisla%C3%A7%C3%A3o",
+      "statusCode": 308
     }
   ],
   "headers": [

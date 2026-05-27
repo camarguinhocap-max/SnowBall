@@ -5,7 +5,7 @@ export const post: Post = {
         title: 'Como negociar dívidas e sair do vermelho',
         excerpt: 'Estar endividado não é vergonha; o pior é fingir que está tudo bem. Este passo a passo mostra como encarar a situação, negociar com credores e retomar o controle.',
         tags: ['dividas', 'renegociacao', 'orcamento', 'juros'],
-        category: 'Dívidas',
+        category: 'Finanças Pessoais',
         date: '13 Mar 2026',
         readTime: '14 min de leitura',
         content: `

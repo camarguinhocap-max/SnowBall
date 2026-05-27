@@ -5,7 +5,7 @@ export const post: Post = {
         title: 'Seguro Sucessório: A ferramenta secreta para proteger seus herdeiros do inventário',
         excerpt: 'Saiba como usar o seguro de vida para garantir liquidez imediata e pagar os impostos de sucessão sem precisar vender bens da família em 2026.',
         tags: ['protecao', 'seguros', 'sucessao', 'itcmd', 'patrimonio'],
-        category: 'Proteção',
+        category: 'Impostos e Legislação',
         date: '30 Abr 2026',
         readTime: '15 min de leitura',
         content: `

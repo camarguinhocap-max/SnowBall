@@ -5,7 +5,7 @@ export const post: Post = {
         title: 'Bitcoin e criptomoedas: vale investir?',
         excerpt: 'A volatilidade é extrema. Mas o potencial de crescimento também. Saiba na quanto pode investir sem dormir mal.',
         tags: [],
-        category: 'Finanças',
+        category: 'Finanças Pessoais',
         date: '19 Mar 2026',
         readTime: '11 min de leitura',
         content: `

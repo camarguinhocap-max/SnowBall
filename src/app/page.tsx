@@ -6,41 +6,61 @@ import PostCardImage from "@/components/PostCardImage";
 import ScrollReveal from "@/components/ScrollReveal";
 import AdSlot from "@/components/AdSlot";
 import { getVisiblePosts, sortByDate } from "@/lib/posts";
-
-export const metadata: Metadata = {
-    title: "Blog DividAI | Educação Financeira e Finanças Pessoais",
-    description:
-        "Descubra como melhorar suas finanças pessoais, sair das dívidas e fazer os melhores investimentos. Educação financeira prática para a realidade brasileira.",
-    alternates: {
-        canonical: "https://dividai.com",
-    },
-    openGraph: {
-        title: "Blog DividAI | Educação Financeira e Finanças Pessoais",
-        description:
-            "Descubra como melhorar suas finanças pessoais, sair das dívidas e fazer os melhores investimentos. Educação financeira prática para a realidade brasileira.",
-        url: "https://dividai.com",
-        siteName: "Blog DividAI",
-        type: "website",
-        images: [
-            {
-                url: "/favicon-transparent.png",
-                width: 512,
-                height: 512,
-                alt: "Logo DividAI",
-            },
-        ],
-    },
-};
-
-export const revalidate = 60; // Revalida a cada 60 segundos para garantir publicação de novos posts
+import Pagination from "@/components/Pagination";
 
 interface HomeProps {
     searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
+export async function generateMetadata({ searchParams }: HomeProps): Promise<Metadata> {
+    const params = await searchParams;
+    const page = params.page ? Math.max(1, Number(params.page)) : 1;
+    const category = params.category as string | undefined;
+
+    let title = "Blog DividAI | Educação Financeira e Finanças Pessoais";
+    if (category) {
+        title = `${category} | Blog DividAI`;
+    }
+    if (page > 1) {
+        title += ` - Página ${page}`;
+    }
+
+    const canonicalUrl = category
+        ? `https://dividai.com/?category=${encodeURIComponent(category)}${page > 1 ? `&page=${page}` : ""}`
+        : `https://dividai.com${page > 1 ? `/?page=${page}` : ""}`;
+
+    return {
+        title,
+        description: "Descubra como melhorar suas finanças pessoais, sair das dívidas e fazer os melhores investimentos. Educação financeira prática.",
+        alternates: {
+            canonical: canonicalUrl,
+        },
+        openGraph: {
+            title,
+            description: "Descubra como melhorar suas finanças pessoais, sair das dívidas e fazer os melhores investimentos. Educação financeira prática.",
+            url: canonicalUrl,
+            siteName: "Blog DividAI",
+            type: "website",
+            images: [
+                {
+                    url: "/favicon-transparent.png",
+                    width: 512,
+                    height: 512,
+                    alt: "Logo DividAI",
+                },
+            ],
+        },
+    };
+}
+
+
+export const revalidate = 60; // Revalida a cada 60 segundos para garantir publicação de novos posts
+
 export default async function Home({ searchParams }: HomeProps) {
     const params = await searchParams;
     const categoryFilter = params.category as string | undefined;
+    const page = params.page ? Math.max(1, Number(params.page)) : 1;
+
     const visible = getVisiblePosts();
     const filtered = categoryFilter
         ? visible.filter((post) => post.category === categoryFilter)
@@ -54,6 +74,15 @@ export default async function Home({ searchParams }: HomeProps) {
     }
 
     const otherPosts = sortByDate(filtered).filter((post) => post.slug !== featuredPost.slug);
+    
+    // Lógica da Paginação
+    const POSTS_PER_PAGE = 9;
+    const totalPosts = otherPosts.length;
+    const totalPages = Math.ceil(totalPosts / POSTS_PER_PAGE);
+    const startIndex = (page - 1) * POSTS_PER_PAGE;
+    const endIndex = startIndex + POSTS_PER_PAGE;
+    const paginatedPosts = otherPosts.slice(startIndex, endIndex);
+
     const categoryCounts = visible.reduce((acc, post) => {
         acc[post.category] = (acc[post.category] || 0) + 1;
         return acc;
@@ -141,7 +170,7 @@ export default async function Home({ searchParams }: HomeProps) {
                         </div>
 
                         <div className="post-grid">
-                            {otherPosts.map((post, index) => (
+                            {paginatedPosts.map((post, index) => (
                                 <ScrollReveal key={post.slug} delay={index * 55} style={{ height: "100%" }}>
                                     <Link href={`/post/${post.slug}`} className="post-card">
                                         <PostCardImage slug={post.slug} title={post.title} />
@@ -159,6 +188,15 @@ export default async function Home({ searchParams }: HomeProps) {
                                 </ScrollReveal>
                             ))}
                         </div>
+
+                        {/* Paginação */}
+                        {totalPages > 1 && (
+                            <Pagination
+                                currentPage={page}
+                                totalPages={totalPages}
+                                category={categoryFilter}
+                            />
+                        )}
                     </section>
                 </main>
 

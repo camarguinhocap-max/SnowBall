@@ -5,7 +5,7 @@ export const post: Post = {
         title: 'Review 2026 e planejamento para 2027: ano de consolidação',
         excerpt: 'O ano foi bom? Ruim? Descubra o que funcionou e planeje 2027 com dados, não emoção.',
         tags: [],
-        category: 'Planejamento',
+        category: 'Finanças Pessoais',
         date: '31 Mar 2026',
         readTime: '11 min de leitura',
         content: `
