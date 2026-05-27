@@ -229,14 +229,11 @@ export default async function Home({ searchParams }: HomeProps) {
 
                     <ScrollReveal delay={160}>
                         <div className="widget">
-                            <h3 className="widget-title">Newsletter</h3>
-                            <p className="widget-text" style={{ marginBottom: "0" }}>
-                                Receba artigos novos, guias rápidos e insights direto no e-mail.
-                            </p>
+                            <h3 className="widget-title">🎯 Guia Grátis</h3>
                             <NewsletterForm
                                 source="sidebar_home"
-                                title="Fique por dentro"
-                                description="Novos artigos e ideias para investir melhor."
+                                title="Comece a Investir do Zero"
+                                description="Receba um roteiro prático para sair da poupança, montar sua reserva e investir com segurança — direto no seu e-mail, sem enrolação."
                                 compact
                             />
                         </div>
