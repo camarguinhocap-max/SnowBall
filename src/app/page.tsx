@@ -54,7 +54,7 @@ export async function generateMetadata({ searchParams }: HomeProps): Promise<Met
 }
 
 
-export const revalidate = 60; // Revalida a cada 60 segundos para garantir publicação de novos posts
+export const dynamic = "force-dynamic"; // Sempre renderiza com a data atual — garante posts agendados
 
 export default async function Home({ searchParams }: HomeProps) {
     const params = await searchParams;

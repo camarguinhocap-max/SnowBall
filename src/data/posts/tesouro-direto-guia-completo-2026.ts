@@ -16,6 +16,8 @@ O Tesouro Direto é um programa do governo federal brasileiro que permite a qual
 
 Antes do Tesouro Direto, apenas grandes bancos e fundos podiam comprar títulos do governo. Hoje, com apenas **R$ 30**, qualquer brasileiro pode investir com a segurança do Tesouro Nacional.
 
+> 💡 Nunca investiu antes? Veja nosso [guia rápido de investimentos para iniciantes](/post/guia-rapido-investimentos-iniciantes-2026) antes de continuar.
+
 ## Por Que o Tesouro Direto É Seguro?
 
 A segurança do Tesouro Direto vem de uma garantia simples: o governo federal é o emissor dos títulos. Para não pagar, o governo precisaria dar calote — algo que seria catastrófico para a economia brasileira e praticamente impossível em circunstâncias normais.
@@ -28,7 +30,7 @@ Além disso, o Tesouro Direto tem cobertura do FGC? Não precisa — a garantia 
 - **Rentabilidade:** Acompanha a taxa Selic (atualmente em 14,75% ao ano)
 - **Melhor para:** Reserva de emergência e liquidez
 - **Risco de marcação a mercado:** Quase zero
-- **Ideal para:** Quem pode precisar do dinheiro a qualquer momento
+- **Ideal para:** Quem pode precisar do dinheiro a qualquer momento — inclusive para montar sua [reserva de emergência](/post/como-construir-uma-reserva-de-emergencia-em-1-ano)
 
 **Por que escolher em 2026:** Com a Selic alta, o Tesouro Selic rende bem sem nenhum risco de perda se você resgatar antes do vencimento.
 
@@ -36,7 +38,7 @@ Além disso, o Tesouro Direto tem cobertura do FGC? Não precisa — a garantia 
 - **Rentabilidade:** IPCA + taxa prefixada (geralmente 6% a 7% ao ano acima da inflação)
 - **Melhor para:** Aposentadoria e objetivos de longo prazo
 - **Risco de marcação a mercado:** Alto se resgatado antes do vencimento
-- **Ideal para:** Quem pode manter o investimento até o vencimento
+- **Ideal para:** Quem pode manter o investimento até o vencimento. Veja como usar no [planejamento da aposentadoria](/post/roteiro-aposentadoria-simplificada-2026)
 
 **Por que escolher em 2026:** Protege o poder de compra do seu dinheiro. Se a inflação disparar, seu rendimento acompanha.
 
@@ -87,6 +89,8 @@ O Tesouro Direto segue a tabela regressiva de IR:
 
 **IOF:** Há cobrança de IOF nos primeiros 30 dias, o que torna resgates muito rápidos menos vantajosos.
 
+> 📋 Saiba mais sobre [imposto de renda sobre investimentos](/post/imposto-de-renda-sobre-investimentos) para não cair em pegadinhas.
+
 **Dica:** Para maximizar o rendimento líquido, mantenha o investimento por pelo menos 2 anos (alíquota mínima de 15%).
 
 ## Tesouro Direto vs Poupança em 2026
@@ -97,9 +101,9 @@ Com a Selic em 14,75% ao ano:
 |---|---|---|
 | Poupança | 8,44% ao ano | 8,44% (isento) |
 | Tesouro Selic (2 anos+) | 14,75% ao ano | ~12,5% |
-| CDB 100% CDI (2 anos+) | ~14,6% ao ano | ~12,4% |
+| [CDB 100% CDI](/post/cdb-ou-lci-lca-qual-escolher-2026) (2 anos+) | ~14,6% ao ano | ~12,4% |
 
-O Tesouro Direto rende quase **50% a mais** do que a poupança.
+O Tesouro Direto rende quase **50% a mais** do que a poupança. Entenda melhor essa diferença no artigo [Poupança x Investimentos: a verdade que os bancos não te contam](/post/poupanca-versus-investimentos-2026).
 
 ## Estratégia Prática para 2026
 
@@ -147,5 +151,7 @@ O Tesouro Direto é o melhor ponto de partida para quem quer sair da poupança e
 4. Programe aportes mensais automáticos
 
 Comece pequeno, mas comece. O tempo é o seu maior aliado nos investimentos.
+
+> 📌 Quer dar mais passos? Veja também [como fazer seu dinheiro trabalhar por você](/post/como-fazer-seu-dinheiro-trabalhar-por-voce-2026) e [como montar uma carteira de dividendos do zero](/post/como-montar-carteira-dividendos-2026).
   `
 };
