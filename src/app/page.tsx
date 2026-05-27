@@ -5,7 +5,7 @@ import NewsletterForm from "@/components/NewsletterForm";
 import PostCardImage from "@/components/PostCardImage";
 import ScrollReveal from "@/components/ScrollReveal";
 import AdSlot from "@/components/AdSlot";
-import { getVisiblePosts, sortByDate, sortByViews } from "@/lib/posts";
+import { getVisiblePosts, sortByDate } from "@/lib/posts";
 
 export const metadata: Metadata = {
     title: "Blog DividAI | Educação Financeira e Finanças Pessoais",
@@ -46,8 +46,8 @@ export default async function Home({ searchParams }: HomeProps) {
         ? visible.filter((post) => post.category === categoryFilter)
         : visible;
 
-    const sortedByViews = sortByViews(filtered);
-    const featuredPost = sortedByViews[0] || visible[0];
+    const sortedByDate = sortByDate(filtered);
+    const featuredPost = sortedByDate[0] || visible[0];
 
     if (!featuredPost) {
         return null;
