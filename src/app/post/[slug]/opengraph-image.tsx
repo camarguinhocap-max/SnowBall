@@ -1,5 +1,4 @@
 import { ImageResponse } from "next/og";
-import { getAllPosts } from "@/lib/posts";
 
 export const runtime = "edge";
 export const alt = "Capa do artigo";
@@ -26,12 +25,23 @@ const palette = [
 ];
 
 export default async function OgImage(props: { params: Promise<{ slug: string }> }) {
-    const params = await props.params;
-    const post = getAllPosts().find((p) => p.slug === params.slug);
-    const title = post?.title ?? "DividAI";
-    const category = post?.category ?? "Financas";
+    const { slug } = await props.params;
+    // Fetch minimal metadata from API to avoid heavy imports
+    const apiUrl = `https://dividai.com/api/og-meta/${slug}`;
+    let title = "DividAI";
+    let category = "Financas";
+    try {
+        const res = await fetch(apiUrl, { next: { revalidate: 3600 } });
+        if (res.ok) {
+            const data = await res.json();
+            title = data.title || title;
+            category = data.category || category;
+        }
+    } catch (e) {
+        // Keep defaults on failure
+    }
 
-    const hash = hashSlug(params.slug);
+    const hash = hashSlug(slug);
     const colors = palette[hash % palette.length];
 
     return new ImageResponse(
@@ -63,7 +73,6 @@ export default async function OgImage(props: { params: Promise<{ slug: string }>
                 >
                     {category}
                 </div>
-
                 <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
                     <h1
                         style={{
@@ -87,10 +96,9 @@ export default async function OgImage(props: { params: Promise<{ slug: string }>
                             textShadow: "0 6px 18px rgba(0,0,0,0.2)",
                         }}
                     >
-                        {post?.excerpt ?? "Educacao financeira clara, pratica e feita para a realidade brasileira."}
+                        {/* Excerpt could be added here if desired */}
                     </p>
                 </div>
-
                 <div style={{ display: "flex", alignItems: "center", gap: 12, color: "rgba(255,255,255,0.9)" }}>
                     <div
                         style={{
@@ -100,13 +108,12 @@ export default async function OgImage(props: { params: Promise<{ slug: string }>
                             background: "rgba(255,255,255,0.9)",
                         }}
                     />
-                    <span style={{ fontSize: 22, fontWeight: 600 }}>dividai.com/post/{params.slug}</span>
+                    <span style={{ fontSize: 22, fontWeight: 600 }}>
+                        dividai.com/post/{slug}
+                    </span>
                 </div>
             </div>
         ),
         size
     );
 }
-
-
-
