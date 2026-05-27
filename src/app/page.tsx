@@ -43,10 +43,10 @@ export async function generateMetadata({ searchParams }: HomeProps): Promise<Met
             type: "website",
             images: [
                 {
-                    url: "/favicon-transparent.png",
-                    width: 512,
-                    height: 512,
-                    alt: "Logo DividAI",
+                    url: "/opengraph-image",
+                    width: 1200,
+                    height: 630,
+                    alt: "Blog DividAI | Educação Financeira e Finanças Pessoais",
                 },
             ],
         },
