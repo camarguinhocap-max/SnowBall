@@ -14,8 +14,8 @@ interface NewsletterFormProps {
 
 export default function NewsletterForm({
     source = "form",
-    title = "Baixe seu Kit do Investidor Iniciante",
-    description = "Cadastre-se para receber nosso guia de finanças, planilhas práticas e conteúdo exclusivo toda semana.",
+    title = "Comece a Investir do Zero",
+    description = "Receba um roteiro prático para sair da poupança, montar sua reserva e investir com segurança — direto no seu e-mail, sem enrolação.",
     compact = false,
 }: NewsletterFormProps) {
     const [email, setEmail] = useState("");
@@ -36,7 +36,7 @@ export default function NewsletterForm({
 
         if (result.success) {
             trackNewsletterSubscribe(source);
-            setMessage({ type: "success", text: "E-mail confirmado. Bem-vindo à comunidade DividAI." });
+            setMessage({ type: "success", text: "🎉 Bem-vindo! Seu roteiro chegará em breve no e-mail." });
             setEmail("");
         } else {
             setMessage({ type: "error", text: result.error || "Ocorreu um erro. Tente novamente." });
@@ -105,13 +105,16 @@ export default function NewsletterForm({
                 }}
             >
                 <li style={{ fontSize: "0.9rem", color: "var(--muted)", display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                    <span style={{ color: "var(--primary)" }}>+</span> Conteúdo exclusivo toda semana
+                    <span style={{ color: "var(--primary)" }}>✓</span> Roteiro passo a passo para começar a investir
                 </li>
                 <li style={{ fontSize: "0.9rem", color: "var(--muted)", display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                    <span style={{ color: "var(--primary)" }}>+</span> Planilhas e ferramentas gratuitas
+                    <span style={{ color: "var(--primary)" }}>✓</span> Dicas semanais para fazer seu dinheiro render mais
                 </li>
                 <li style={{ fontSize: "0.9rem", color: "var(--muted)", display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                    <span style={{ color: "var(--primary)" }}>+</span> Sem spam, apenas valor
+                    <span style={{ color: "var(--primary)" }}>✓</span> Alertas de oportunidades no mercado brasileiro
+                </li>
+                <li style={{ fontSize: "0.9rem", color: "var(--muted)", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                    <span style={{ color: "var(--primary)" }}>✓</span> Cancele quando quiser, sem complicação
                 </li>
             </ul>
 
@@ -162,7 +165,7 @@ export default function NewsletterForm({
                         }
                     }}
                 >
-                    {loading ? "Cadastrando..." : "Inscrever-se gratuitamente"}
+                    {loading ? "Cadastrando..." : "Quero receber gratuitamente →"}
                 </button>
 
                 {message && (
@@ -194,7 +197,7 @@ export default function NewsletterForm({
                     margin: "1rem 0 0 0",
                 }}
             >
-                Respeitamos sua privacidade. Desinscreva-se a qualquer momento.
+                🔒 Seus dados estão seguros. Cancele quando quiser.
             </p>
         </div>
     );
