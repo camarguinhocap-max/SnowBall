@@ -14,7 +14,9 @@ import { post as post_analise_fundamentalista_para_iniciantes } from './posts/an
 import { post as post_analise_tecnica_graficos_funcionam } from './posts/analise-tecnica-graficos-funcionam';
 import { post as post_aposentadoria_2026_23_mai } from './posts/aposentadoria-2026-23-mai';
 import { post as post_aposentadoria_2026_guia_nao_depender_inss } from './posts/aposentadoria-2026-guia-nao-depender-inss';
+import { post as post_aposentadoria_acelerar } from './posts/aposentadoria-acelerar';
 import { post as post_aposentadoria_inss_ou_privada } from './posts/aposentadoria-inss-ou-privada';
+import { post as post_aposentadoria_planejamento } from './posts/aposentadoria-planejamento';
 import { post as post_armadilha_estilo_vida_2026 } from './posts/armadilha-estilo-vida-2026';
 import { post as post_backtesting_testando_suas_estrategias } from './posts/backtesting-testando-suas-estrategias';
 import { post as post_bdrs_vale_a_pena_2026 } from './posts/bdrs-vale-a-pena-2026';
@@ -23,6 +25,7 @@ import { post as post_bitcoin_o_que_e_como_funciona_e_por_que_investir } from '.
 import { post as post_blindagem_patrimonial_estrategica_2026 } from './posts/blindagem-patrimonial-estrategica-2026';
 import { post as post_boom_dos_micro_saas_2026 } from './posts/boom-dos-micro-saas-2026';
 import { post as post_carreira_2026_17_mai } from './posts/carreira-2026-17-mai';
+import { post as post_carreira_aumentar_renda } from './posts/carreira-aumentar-renda';
 import { post as post_cartao_de_credito_sem_virar_divida_2026 } from './posts/cartao-de-credito-sem-virar-divida-2026';
 import { post as post_carteira_2026_conservador_moderado_arrojado } from './posts/carteira-2026-conservador-moderado-arrojado';
 import { post as post_carteira_60_40_morta_estrategias_alocacao_2026 } from './posts/carteira-60-40-morta-estrategias-alocacao-2026';
@@ -61,8 +64,11 @@ import { post as post_controle_financeiro_apps_e_ferramentas_2026 } from './post
 import { post as post_cortar_gastos_que_nao_trazem_retorno_real } from './posts/cortar-gastos-que-nao-trazem-retorno-real';
 import { post as post_credito_privado_oportunidades_2026 } from './posts/credito-privado-oportunidades-2026';
 import { post as post_cripto_com_seguranca_2026 } from './posts/cripto-com-seguranca-2026';
+import { post as post_cripto_estrategia } from './posts/cripto-estrategia';
+import { post as post_cripto_vale_a_pena } from './posts/cripto-vale-a-pena';
 import { post as post_criptomoedas_2026_11_mai } from './posts/criptomoedas-2026-11-mai';
 import { post as post_debenturas_titulos_corporativos } from './posts/debenturas-titulos-corporativos';
+import { post as post_disciplina_financeira } from './posts/disciplina-financeira';
 import { post as post_dividas_2026_15_mai } from './posts/dividas-2026-15-mai';
 import { post as post_dividas_x_investimentos_o_que_priorizar_2026 } from './posts/dividas-x-investimentos-o-que-priorizar-2026';
 import { post as post_duracao_e_marcacao_a_mercado_na_pratica_2026 } from './posts/duracao-e-marcacao-a-mercado-na-pratica-2026';
@@ -91,6 +97,8 @@ import { post as post_habitos_milionarios_que_qualquer_pessoa_pode_adotar_2026 }
 import { post as post_holding_familiar_protecao_fiscal_2026 } from './posts/holding-familiar-protecao-fiscal-2026';
 import { post as post_imposto_de_renda_guia_simples_para_brasileiros } from './posts/imposto-de-renda-guia-simples-para-brasileiros';
 import { post as post_imposto_de_renda_sobre_investimentos } from './posts/imposto-de-renda-sobre-investimentos';
+import { post as post_imposto_renda_2026_erros } from './posts/imposto-renda-2026-erros';
+import { post as post_impostos_investimentos } from './posts/impostos-investimentos';
 import { post as post_independencia_financeira_aos_40_anos_2026 } from './posts/independencia-financeira-aos-40-anos-2026';
 import { post as post_independencia_financeira_por_onde_comecar_2026 } from './posts/independencia-financeira-por-onde-comecar-2026';
 import { post as post_investimento_imoveis_2026_fiis_tokenizacao } from './posts/investimento-imoveis-2026-fiis-tokenizacao';
@@ -110,6 +118,7 @@ import { post as post_planejamento_aposentadoria_2026_09_mai } from './posts/pla
 import { post as post_planejamento_financeiro_casais_separacao_2026 } from './posts/planejamento-financeiro-casais-separacao-2026';
 import { post as post_planejamento_financeiro_para_casais_2026 } from './posts/planejamento-financeiro-para-casais-2026';
 import { post as post_planejamento_financeiro_segundo_semestre_2026 } from './posts/planejamento-financeiro-segundo-semestre-2026';
+import { post as post_planejamento_tributario } from './posts/planejamento-tributario';
 import { post as post_planeje_sua_viagem_sem_estourar_orcamento } from './posts/planeje-sua-viagem-sem-estourar-orcamento';
 import { post as post_planilha_automatica_2026 } from './posts/planilha-automatica-2026';
 import { post as post_poupanca_versus_investimentos_2026 } from './posts/poupanca-versus-investimentos-2026';
@@ -159,7 +168,9 @@ export const posts: Post[] = [
     post_analise_tecnica_graficos_funcionam,
     post_aposentadoria_2026_23_mai,
     post_aposentadoria_2026_guia_nao_depender_inss,
+    post_aposentadoria_acelerar,
     post_aposentadoria_inss_ou_privada,
+    post_aposentadoria_planejamento,
     post_armadilha_estilo_vida_2026,
     post_backtesting_testando_suas_estrategias,
     post_bdrs_vale_a_pena_2026,
@@ -168,6 +179,7 @@ export const posts: Post[] = [
     post_blindagem_patrimonial_estrategica_2026,
     post_boom_dos_micro_saas_2026,
     post_carreira_2026_17_mai,
+    post_carreira_aumentar_renda,
     post_cartao_de_credito_sem_virar_divida_2026,
     post_carteira_2026_conservador_moderado_arrojado,
     post_carteira_60_40_morta_estrategias_alocacao_2026,
@@ -206,8 +218,11 @@ export const posts: Post[] = [
     post_cortar_gastos_que_nao_trazem_retorno_real,
     post_credito_privado_oportunidades_2026,
     post_cripto_com_seguranca_2026,
+    post_cripto_estrategia,
+    post_cripto_vale_a_pena,
     post_criptomoedas_2026_11_mai,
     post_debenturas_titulos_corporativos,
+    post_disciplina_financeira,
     post_dividas_2026_15_mai,
     post_dividas_x_investimentos_o_que_priorizar_2026,
     post_duracao_e_marcacao_a_mercado_na_pratica_2026,
@@ -236,6 +251,8 @@ export const posts: Post[] = [
     post_holding_familiar_protecao_fiscal_2026,
     post_imposto_de_renda_guia_simples_para_brasileiros,
     post_imposto_de_renda_sobre_investimentos,
+    post_imposto_renda_2026_erros,
+    post_impostos_investimentos,
     post_independencia_financeira_aos_40_anos_2026,
     post_independencia_financeira_por_onde_comecar_2026,
     post_investimento_imoveis_2026_fiis_tokenizacao,
@@ -255,6 +272,7 @@ export const posts: Post[] = [
     post_planejamento_financeiro_casais_separacao_2026,
     post_planejamento_financeiro_para_casais_2026,
     post_planejamento_financeiro_segundo_semestre_2026,
+    post_planejamento_tributario,
     post_planeje_sua_viagem_sem_estourar_orcamento,
     post_planilha_automatica_2026,
     post_poupanca_versus_investimentos_2026,
