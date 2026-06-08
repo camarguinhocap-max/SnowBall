@@ -55,6 +55,15 @@ const projects = [
         imageMobile: "/portfolio/proj5-m.png",
         tags: ["Corretora", "Geração de Leads", "SEO Otimizado"]
     },
+    {
+        name: "Fio e Aroma",
+        url: "https://fioearoma.com.br",
+        description: "Loja de sabonetes artesanais feitos à mão com ingredientes naturais selecionados.",
+        domain: "fioearoma.com.br",
+        imageDesktop: "/portfolio/proj6-d.png",
+        imageMobile: "/portfolio/proj6-m.png",
+        tags: ["E-commerce", "Artesanal", "Design Premium"]
+    },
 ];
 
 export default function PortfolioPage() {
