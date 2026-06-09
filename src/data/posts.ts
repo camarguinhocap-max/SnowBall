@@ -118,6 +118,7 @@ import { post as post_planejamento_aposentadoria_2026_09_mai } from './posts/pla
 import { post as post_planejamento_financeiro_casais_separacao_2026 } from './posts/planejamento-financeiro-casais-separacao-2026';
 import { post as post_planejamento_financeiro_para_casais_2026 } from './posts/planejamento-financeiro-para-casais-2026';
 import { post as post_planejamento_financeiro_segundo_semestre_2026 } from './posts/planejamento-financeiro-segundo-semestre-2026';
+import { post as post_planejamento_sucessorio_previdencia_privada } from './posts/planejamento-sucessorio-previdencia-privada';
 import { post as post_planejamento_tributario } from './posts/planejamento-tributario';
 import { post as post_planeje_sua_viagem_sem_estourar_orcamento } from './posts/planeje-sua-viagem-sem-estourar-orcamento';
 import { post as post_planilha_automatica_2026 } from './posts/planilha-automatica-2026';
@@ -272,6 +273,7 @@ export const posts: Post[] = [
     post_planejamento_financeiro_casais_separacao_2026,
     post_planejamento_financeiro_para_casais_2026,
     post_planejamento_financeiro_segundo_semestre_2026,
+    post_planejamento_sucessorio_previdencia_privada,
     post_planejamento_tributario,
     post_planeje_sua_viagem_sem_estourar_orcamento,
     post_planilha_automatica_2026,
