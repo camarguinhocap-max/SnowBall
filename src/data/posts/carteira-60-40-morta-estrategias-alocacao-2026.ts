@@ -71,5 +71,5 @@ A morte da carteira 60/40 não significa o fim da diversificação, mas sim a ne
 💡 **Dica de Investidor:** Comece com o que você tem hoje. Veja [Como sair do zero e fazer seus primeiros R$ 1.000](/post/como-sair-do-zero-e-fazer-seus-primeiros-1000-em-30-dias).
 
 👉 **Acessórios de Monitoramento:** Para acompanhar sua carteira global em tempo real, recomendamos [suportes para múltiplos monitores e setups de trading na Amazon](https://www.amazon.com.br/s?k=suporte+monitor+duplo&tag=ofertaspri0ee), fundamentais para o investidor sério de 2026.
-\`
+`
     };

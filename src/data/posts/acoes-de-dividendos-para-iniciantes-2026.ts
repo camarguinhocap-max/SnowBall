@@ -69,5 +69,5 @@ Um erro comum de iniciantes em 2026 é comprar ações apenas porque o DY está 
 ## Conclusão
 
 Construir uma carteira de dividendos é plantar uma árvore: exige paciência no início, mas depois de crescer, oferece frutos abundantes e sombra. Em 2026, com o acesso à informação democratizado, qualquer investidor disciplinado pode criar uma fonte de renda alternativa que um dia será suficiente para pagar todas as suas contas. Comece pelo básico, foque nos setores perenes e deixe os juros compostos fazerem o trabalho pesado.
-\`
+`
 };

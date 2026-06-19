@@ -72,5 +72,5 @@ Estruture sua carteira com foco em proteção inflacionária, internacionalizaç
 💡 **Dica de Planejamento:** Para ver como a organização do dia a dia impacta sua aposentadoria, leia [Organização Financeira 2026: Do Caos à Liberdade](/post/organizacao-financeira-2026-ia-liberdade).
 
 👉 **Ferramenta de Estudo:** Para aprofundar seus conhecimentos em alocação de longo prazo, recomendamos estes [livros clássicos de investimento e planejamento financeiro na Amazon](https://www.amazon.com.br/s?k=livros+investimento+longo+prazo&tag=ofertaspri0ee) que continuam sendo a base para o sucesso mesmo em 2026.
-\`
+`
     };
