@@ -1,0 +1,29 @@
+import { Post } from '../types';
+
+export const post: Post = {
+  slug: 'como-declarar-imposto-de-renda-2026',
+  title: 'Como se preparar para o Imposto de Renda',
+  excerpt: 'Antecipe-se e evite dores de cabeça com a Receita Federal.',
+  date: '10 Jun 2026',
+  readTime: '5 min de leitura',
+  category: 'Impostos',
+  tags: ['IR', 'receita'],
+  image: '/assets/images/como-declarar-imposto-de-renda-2026.jpg',
+  content: `
+## Introdução
+
+Este artigo foi criado para detalhar o tema: **Como se preparar para o Imposto de Renda**.
+A educação financeira e o planejamento são fundamentais para garantir a sua tranquilidade no futuro. 
+
+## Dicas Práticas
+
+- Entenda seu perfil de investidor e seus objetivos antes de tomar decisões financeiras.
+- Mantenha a disciplina de poupar e investir uma parte da sua renda mensalmente.
+- Diversifique seus investimentos para reduzir os riscos.
+- Estude sempre sobre finanças para tomar decisões mais bem informadas.
+
+## Conclusão
+
+Planejar o seu futuro financeiro começa hoje. Adote os bons hábitos que abordamos e siga acompanhando o DividAI para mais conteúdos práticos para a realidade brasileira em 2026.
+`
+};

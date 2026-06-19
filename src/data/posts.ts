@@ -83,6 +83,7 @@ import { post as post_etfs_diversificacao_com_1_clique } from './posts/etfs-dive
 import { post as post_etfs_internacionais_pelo_brasil_2026 } from './posts/etfs-internacionais-pelo-brasil-2026';
 import { post as post_financas_para_mei_e_autonomos_2026 } from './posts/financas-para-mei-e-autonomos-2026';
 import { post as post_financas_para_quem_recebe_comissao_2026 } from './posts/financas-para-quem-recebe-comissao-2026';
+import { post as post_financas_profissionais_autonomos_2026 } from './posts/financas-profissionais-autonomos-2026';
 import { post as post_fundo_de_emergencia_duplo_2026 } from './posts/fundo-de-emergencia-duplo-2026';
 import { post as post_fundos_de_acoes_vale_a_pena_2026 } from './posts/fundos-de-acoes-vale-a-pena-2026';
 import { post as post_fundos_imobiliarios_2026_12_mai } from './posts/fundos-imobiliarios-2026-12-mai';
@@ -156,6 +157,19 @@ import { post as post_tokenizacao_ativos_reais_2026 } from './posts/tokenizacao-
 import { post as post_troca_de_emprego_checklist_financeiro_2026 } from './posts/troca-de-emprego-checklist-financeiro-2026';
 import { post as post_viagem_sem_dividas_2026 } from './posts/viagem-sem-dividas-2026';
 import { post as post_vicios_de_consumo_2026 } from './posts/vicios-de-consumo-2026';
+import { post as post_fundos_multimercado_valem_a_pena_2026 } from './posts/fundos-multimercado-valem-a-pena-2026';
+import { post as post_como_investir_com_selic_alta_2026 } from './posts/como-investir-com-selic-alta-2026';
+import { post as post_cartao_de_credito_viagem_2026 } from './posts/cartao-de-credito-viagem-2026';
+import { post as post_financas_para_casais_dinheiro_sem_briga_2026 } from './posts/financas-para-casais-dinheiro-sem-briga-2026';
+import { post as post_renda_passiva_dividendos_fii_2026 } from './posts/renda-passiva-dividendos-fii-2026';
+import { post as post_como_montar_orcamento_familiar_2026 } from './posts/como-montar-orcamento-familiar-2026';
+import { post as post_investir_em_dolar_ou_real_2026 } from './posts/investir-em-dolar-ou-real-2026';
+import { post as post_segunda_fonte_de_renda_com_conhecimento_2026 } from './posts/segunda-fonte-de-renda-com-conhecimento-2026';
+import { post as post_como_sair_do_aluguel_em_2026 } from './posts/como-sair-do-aluguel-em-2026';
+import { post as post_tesouro_direto_tipos_qual_escolher_2026 } from './posts/tesouro-direto-tipos-qual-escolher-2026';
+import { post as post_como_proteger_patrimonio_em_crise_economica_2026 } from './posts/como-proteger-patrimonio-em-crise-economica-2026';
+import { post as post_financas_para_autonomos_como_pagar_menos_imposto_2026 } from './posts/financas-para-autonomos-como-pagar-menos-imposto-2026';
+import { post as post_revisao_financeira_segundo_semestre_2026 } from './posts/revisao-financeira-segundo-semestre-2026';
 
 export const posts: Post[] = [
     post_10_ideias_simples_para_ganhar_dinheiro_no_fim_de_semana,
@@ -238,6 +252,7 @@ export const posts: Post[] = [
     post_etfs_internacionais_pelo_brasil_2026,
     post_financas_para_mei_e_autonomos_2026,
     post_financas_para_quem_recebe_comissao_2026,
+    post_financas_profissionais_autonomos_2026,
     post_fundo_de_emergencia_duplo_2026,
     post_fundos_de_acoes_vale_a_pena_2026,
     post_fundos_imobiliarios_2026_12_mai,
@@ -311,6 +326,19 @@ export const posts: Post[] = [
     post_troca_de_emprego_checklist_financeiro_2026,
     post_viagem_sem_dividas_2026,
     post_vicios_de_consumo_2026,
+    post_fundos_multimercado_valem_a_pena_2026,
+    post_como_investir_com_selic_alta_2026,
+    post_cartao_de_credito_viagem_2026,
+    post_financas_para_casais_dinheiro_sem_briga_2026,
+    post_renda_passiva_dividendos_fii_2026,
+    post_como_montar_orcamento_familiar_2026,
+    post_investir_em_dolar_ou_real_2026,
+    post_segunda_fonte_de_renda_com_conhecimento_2026,
+    post_como_sair_do_aluguel_em_2026,
+    post_tesouro_direto_tipos_qual_escolher_2026,
+    post_como_proteger_patrimonio_em_crise_economica_2026,
+    post_financas_para_autonomos_como_pagar_menos_imposto_2026,
+    post_revisao_financeira_segundo_semestre_2026,
 ].map((post) => ({
     ...post,
     category: normalizeCategory(post.category),
