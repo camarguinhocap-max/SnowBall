@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         source: '/ads.txt',
-        destination: '/api/ads',
+        destination: '/ads.txt',
       },
     ];
   },
