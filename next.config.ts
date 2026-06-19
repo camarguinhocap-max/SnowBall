@@ -1,10 +1,15 @@
 import type { NextConfig } from "next";
-
 const nextConfig: NextConfig = {
-  /* config options here */
+  async rewrites() {
+    return [
+      {
+        source: '/ads.txt',
+        destination: '/adstxt',
+      },
+    ];
+  },
   headers: async () => [
     {
-      // Páginas dinâmicas: sem cache no CDN para que o ISR funcione corretamente
       source: '/:path*',
       headers: [
         {
@@ -44,5 +49,4 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
 };
-
 export default nextConfig;
