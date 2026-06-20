@@ -1,6 +1,6 @@
 // Auto-generated — do not edit manually. Edit the source post file instead.
 export const content = `
-A estratégia de investir em ações pagadoras de dividendos continua sendo uma das abordagens mais sólidas e resilientes do mercado em 2026. Mesmo em cenários de alta volatilidade e incertezas econômicas globais, empresas que distribuem parte de seus lucros regularmente oferecem aos investidores um fluxo de caixa constante. 
+A estratégia de investir em ações pagadoras de dividendos continua sendo uma das abordagens mais sólidas e resilientes do mercado em 2026. Mesmo em cenários de alta volatilidade e incertezas econômicas globais, empresas que distribuem parte de seus lucros regularmente oferecem aos investidores um fluxo de caixa constante.
 
 Para quem está começando agora, a ideia de receber "aluguéis" de ações pode parecer complexa, mas com as diretrizes certas, construir essa máquina de renda passiva é totalmente acessível. Neste guia, mostraremos por onde começar e quais indicadores priorizar na hora de escolher as melhores empresas pagadoras de dividendos.
 
@@ -23,7 +23,7 @@ No Brasil, historicamente, a legislação obriga as empresas a distribuírem um 
 
 ## Setores à Prova de Balas (Setores Perenes)
 
-Para o investidor iniciante em 2026, o segredo é focar em "setores perenes". São áreas da economia das quais a sociedade não pode abrir mão, independentemente de crises, governos ou taxas de juros. 
+Para o investidor iniciante em 2026, o segredo é focar em "setores perenes". São áreas da economia das quais a sociedade não pode abrir mão, independentemente de crises, governos ou taxas de juros.
 
 Conhecido no Brasil pelo acrônimo **BEST** (Bancos, Energia, Saneamento/Seguros e Telecomunicações), esses setores formam a fundação de qualquer carteira de dividendos:
 
@@ -39,7 +39,8 @@ Conhecido no Brasil pelo acrônimo **BEST** (Bancos, Energia, Saneamento/Seguros
 O indicador mais básico para o iniciante é o **Dividend Yield (DY)**. Ele representa a rentabilidade dos dividendos de uma ação em relação ao seu preço atual.
 
 A fórmula é:
-\\`DY = (Dividendos pagos por ação nos últimos 12 meses / Preço atual da ação) x 100\\`
+
+DY = (Dividendos pagos por ação nos últimos 12 meses / Preço atual da ação) x 100
 
 **Exemplo Prático:**
 Se a ação de uma empresa de energia custa R$ 50,00 e ela pagou R$ 5,00 em dividendos no último ano, o DY é de 10%.
