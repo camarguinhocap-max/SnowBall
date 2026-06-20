@@ -101,17 +101,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <meta name="apple-mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
                 <link rel="alternate" type="application/rss+xml" href="https://dividai.com/api/feed" />
+                {/* Preconnect para domínios externos críticos — reduz latência de conexão */}
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                <link rel="preconnect" href="https://www.googletagmanager.com" />
+                <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+                {/* AdSense account verification */}
                 <meta name="google-adsense-account" content="ca-pub-1543510171277537" />
-                <script
-                    async
-                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543510171277537"
-                    crossOrigin="anonymous"
-                />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(siteStructuredData) }}
                 />
-        <script
+                <script
                     dangerouslySetInnerHTML={{
                         __html: `(function(){var t=localStorage.getItem('theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}})();`,
                     }}
@@ -130,6 +131,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         gtag('config', 'AW-18107418379');
                     `}
                 </Script>
+                {/* AdSense — afterInteractive garante que não bloqueia o render inicial */}
+                <Script
+                    id="google-adsense"
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543510171277537"
+                    strategy="afterInteractive"
+                    crossOrigin="anonymous"
+                />
             </head>
             <body className={`${inter.variable} ${outfit.variable}`}>
                 <ConversionTracker />
