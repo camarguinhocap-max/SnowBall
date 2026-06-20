@@ -1,4 +1,5 @@
-export interface Post {
+/** Metadados do post — sem o campo content. Usado em listagens, sitemap, RSS, busca. */
+export interface PostMeta {
     slug: string;
     title: string;
     excerpt: string;
@@ -9,7 +10,11 @@ export interface Post {
     updatedAt?: string;
     readTime?: string;
     image?: string;
-    content: string;
     views?: number;
     draft?: boolean;
+}
+
+/** Post completo com conteúdo markdown — carregado apenas na página do post. */
+export interface Post extends PostMeta {
+    content: string;
 }

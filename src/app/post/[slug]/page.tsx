@@ -2,7 +2,7 @@ import ReactMarkdown from "react-markdown";
 import type { Components } from "react-markdown";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getVisiblePosts, parsePostDate, getAllPosts, isPublished } from "@/lib/posts";
+import { getVisiblePosts, parsePostDate, getAllPosts, isPublished, getFullPost } from "@/lib/posts";
 import AuthorBio from "@/components/AuthorBio";
 import ImageWithModal from "@/components/ImageWithModal";
 import InvestmentDisclaimer from "@/components/InvestmentDisclaimer";
@@ -40,14 +40,10 @@ function splitPostContent(content: string) {
     const sections = trimmed.split(/(?=^#{1,6}\s)/gm).filter(Boolean);
 
     if (sections.length < 4) {
-        return {
-            primaryContent: trimmed,
-            secondaryContent: "",
-        };
+        return { primaryContent: trimmed, secondaryContent: "" };
     }
 
     const splitIndex = Math.ceil(sections.length / 2);
-
     return {
         primaryContent: sections.slice(0, splitIndex).join("\n\n"),
         secondaryContent: sections.slice(splitIndex).join("\n\n"),
@@ -57,19 +53,16 @@ function splitPostContent(content: string) {
 export const dynamicParams = true;
 
 export function generateStaticParams() {
-    return getVisiblePosts().map((post) => ({
-        slug: post.slug,
-    }));
+    return getVisiblePosts().map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
     const params = await props.params;
+    // generateMetadata só precisa dos metadados — sem carregar content
     const post = getAllPosts().find((item) => item.slug === params.slug);
 
     if (!post) {
-        return {
-            title: "Artigo não encontrado | DividAI",
-        };
+        return { title: "Artigo não encontrado | DividAI" };
     }
 
     const url = `https://dividai.com/post/${post.slug}`;
@@ -84,9 +77,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
         description: post.excerpt,
         keywords: [post.category, "DividAI", "blog", "finanças", ...post.tags].join(", "),
         authors: [{ name: "DividAI" }],
-        alternates: {
-            canonical: url,
-        },
+        alternates: { canonical: url },
         openGraph: {
             title: post.title,
             description: post.excerpt,
@@ -96,15 +87,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
             publishedTime,
             modifiedTime,
             authors: ["DividAI"],
-            images: [
-                {
-                    url: imageUrl,
-                    width: 1200,
-                    height: 630,
-                    alt: post.title,
-                    type: "image/png",
-                },
-            ],
+            images: [{ url: imageUrl, width: 1200, height: 630, alt: post.title, type: "image/png" }],
             tags: [post.category, ...post.tags],
         },
         twitter: {
@@ -122,9 +105,16 @@ export const revalidate = 60;
 
 export default async function Post(props: { params: Promise<{ slug: string }> }) {
     const params = await props.params;
-    const post = getAllPosts().find((item) => item.slug === params.slug);
 
-    if (!post || !isPublished(post)) {
+    // Verifica se o post existe e está publicado (usando apenas metadados — rápido)
+    const meta = getAllPosts().find((item) => item.slug === params.slug);
+    if (!meta || !isPublished(meta)) {
+        notFound();
+    }
+
+    // Carrega metadados + content sob demanda (import dinâmico)
+    const post = await getFullPost(params.slug);
+    if (!post) {
         notFound();
     }
 
@@ -135,22 +125,13 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
     const articleUrl = `https://dividai.com/post/${post.slug}`;
     const imageUrl = `${articleUrl}/opengraph-image`;
     const { primaryContent, secondaryContent } = splitPostContent(post.content);
+
     const breadcrumbStructuredData = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-            {
-                "@type": "ListItem",
-                position: 1,
-                name: "Início",
-                item: "https://dividai.com",
-            },
-            {
-                "@type": "ListItem",
-                position: 2,
-                name: post.title,
-                item: articleUrl,
-            },
+            { "@type": "ListItem", position: 1, name: "Início", item: "https://dividai.com" },
+            { "@type": "ListItem", position: 2, name: post.title, item: articleUrl },
         ],
     };
 
@@ -159,8 +140,8 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
             <ReadingProgress />
 
             <article data-reading-root style={{ maxWidth: "800px", margin: "3rem auto 0 auto", padding: "0 1.5rem" }}>
-                <nav className="breadcrumb" aria-label="Breadcrumb" style={{ 
-                    marginBottom: "2rem", 
+                <nav className="breadcrumb" aria-label="Breadcrumb" style={{
+                    marginBottom: "2rem",
                     fontSize: "0.85rem",
                     display: "flex",
                     alignItems: "center",
@@ -170,11 +151,11 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                 }}>
                     <Link href="/" style={{ color: "var(--primary)", textDecoration: "none", fontWeight: "600" }}>Início</Link>
                     <span className="breadcrumb__separator" style={{ opacity: 0.5 }}>/</span>
-                    <span className="breadcrumb__current" style={{ 
-                        whiteSpace: "nowrap", 
-                        overflow: "hidden", 
+                    <span className="breadcrumb__current" style={{
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
                         textOverflow: "ellipsis",
-                        maxWidth: "300px" 
+                        maxWidth: "300px"
                     }}>{post.title}</span>
                 </nav>
 
@@ -187,9 +168,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                     {post.tags.length > 0 && (
                         <div className="article-tags">
                             {post.tags.map((tag) => (
-                                <span key={tag} className="article-tag">
-                                    #{tag}
-                                </span>
+                                <span key={tag} className="article-tag">#{tag}</span>
                             ))}
                         </div>
                     )}
@@ -241,10 +220,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                                 "@type": "Article",
                                 headline: post.title,
                                 description: post.excerpt,
-                                mainEntityOfPage: {
-                                    "@type": "WebPage",
-                                    "@id": articleUrl,
-                                },
+                                mainEntityOfPage: { "@type": "WebPage", "@id": articleUrl },
                                 url: articleUrl,
                                 image: [imageUrl],
                                 articleSection: post.category,
@@ -255,15 +231,12 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                                     name: "Lucas Bianchi",
                                     url: "https://dividai.com/sobre",
                                     jobTitle: "Editor-chefe",
-                                    image: "https://dividai.com/lucas-bianchi.png"
+                                    image: "https://dividai.com/lucas-bianchi.png",
                                 },
                                 publisher: {
                                     "@type": "Organization",
                                     name: "DividAI",
-                                    logo: {
-                                        "@type": "ImageObject",
-                                        url: "https://dividai.com/logo.png",
-                                    },
+                                    logo: { "@type": "ImageObject", url: "https://dividai.com/logo.png" },
                                 },
                                 datePublished: publishedTime,
                                 dateModified: modifiedTime,

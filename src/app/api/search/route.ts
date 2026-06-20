@@ -1,5 +1,4 @@
-import { posts } from '@/data/posts';
-import { isPublished, parsePostDate } from '@/lib/posts';
+import { getVisiblePosts, parsePostDate } from '@/lib/posts';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -10,28 +9,24 @@ export async function GET(request: Request) {
   }
 
   const lowerQuery = query.toLowerCase();
-  const today = new Date();
 
-  // Filtrar posts publicados e que correspondem à busca
-  const results = posts
-    .filter(post => isPublished(post))
-    .filter(post => {
-      const matchTitle = post.title.toLowerCase().includes(lowerQuery);
-      const matchExcerpt = post.excerpt.toLowerCase().includes(lowerQuery);
-      const matchContent = post.content.toLowerCase().includes(lowerQuery);
+  // Busca apenas nos metadados (title, excerpt, category, tags)
+  // content não é carregado — mantém a busca O(n) nos campos leves
+  const results = getVisiblePosts()
+    .map((post) => {
+      const matchTitle    = post.title.toLowerCase().includes(lowerQuery);
+      const matchExcerpt  = post.excerpt.toLowerCase().includes(lowerQuery);
       const matchCategory = post.category.toLowerCase().includes(lowerQuery);
-      const matchTags = post.tags && post.tags.some(tag => tag.toLowerCase().includes(lowerQuery));
+      const matchTags     = post.tags.some((tag) => tag.toLowerCase().includes(lowerQuery));
 
-      return matchTitle || matchExcerpt || matchContent || matchCategory || matchTags;
-    })
-    .map(post => {
-      // Calcular relevância simples
+      if (!matchTitle && !matchExcerpt && !matchCategory && !matchTags) return null;
+
+      // Relevância simples por campo
       let score = 0;
-      if (post.title.toLowerCase().includes(lowerQuery)) score += 10;
-      if (post.tags && post.tags.some(tag => tag.toLowerCase().includes(lowerQuery))) score += 8;
-      if (post.category.toLowerCase().includes(lowerQuery)) score += 5;
-      if (post.excerpt.toLowerCase().includes(lowerQuery)) score += 3;
-      if (post.content.toLowerCase().includes(lowerQuery)) score += 1;
+      if (matchTitle)    score += 10;
+      if (matchTags)     score += 8;
+      if (matchCategory) score += 5;
+      if (matchExcerpt)  score += 3;
 
       return {
         slug: post.slug,
@@ -40,11 +35,15 @@ export async function GET(request: Request) {
         date: post.date,
         category: post.category,
         readTime: post.readTime,
-        tags: post.tags || [],
-        score
+        tags: post.tags,
+        score,
       };
     })
-    .sort((a, b) => b.score - a.score || parsePostDate(b.date).getTime() - parsePostDate(a.date).getTime());
+    .filter(Boolean)
+    .sort((a, b) =>
+      b!.score - a!.score ||
+      parsePostDate(b!.date).getTime() - parsePostDate(a!.date).getTime()
+    );
 
   return new Response(JSON.stringify(results), {
     headers: {

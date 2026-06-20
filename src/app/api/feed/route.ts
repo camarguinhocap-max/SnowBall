@@ -1,4 +1,3 @@
-import { posts } from '@/data/posts';
 import RSS from 'rss';
 import { getVisiblePosts, sortByDate, parsePostDate } from '@/lib/posts';
 

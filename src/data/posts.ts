@@ -1,7 +1,7 @@
-import { Post } from './types';
+import { PostMeta } from './types';
 import { normalizeCategory } from './categoryMap';
 
-export type { Post } from './types';
+export type { PostMeta, Post } from './types';
 
 import { post as post_100_porcento_cdi_vale_a_pena } from './posts/100-porcento-cdi-vale-a-pena';
 import { post as post_10_ideias_simples_para_ganhar_dinheiro_no_fim_de_semana } from './posts/10-ideias-simples-para-ganhar-dinheiro-no-fim-de-semana';
@@ -186,7 +186,7 @@ import { post as post_troca_de_emprego_checklist_financeiro_2026 } from './posts
 import { post as post_viagem_sem_dividas_2026 } from './posts/viagem-sem-dividas-2026';
 import { post as post_vicios_de_consumo_2026 } from './posts/vicios-de-consumo-2026';
 
-export const posts: Post[] = [
+export const posts: PostMeta[] = [
     post_100_porcento_cdi_vale_a_pena,
     post_10_ideias_simples_para_ganhar_dinheiro_no_fim_de_semana,
     post_5_habitos_financeiros_que_transformam_sua_vida,
