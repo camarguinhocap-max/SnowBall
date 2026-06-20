@@ -50,6 +50,58 @@ function splitPostContent(content: string) {
     };
 }
 
+/**
+ * Extrai pares pergunta/resposta do markdown para gerar FAQPage schema.
+ * Critério: headings (## ou ###) que terminam com "?" seguidos de parágrafo.
+ * Retorna null se menos de 2 pares forem encontrados.
+ */
+function extractFAQs(content: string): { question: string; answer: string }[] | null {
+    // Prefixos que indicam seções estruturais, não FAQs reais
+    const STRUCTURAL_PREFIXES = /^(conclus|introdução|introduc|sumário|resumo|sobre|contato)/i;
+
+    const lines = content.split("\n");
+    const faqs: { question: string; answer: string }[] = [];
+
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
+        // Detecta headings ## ou ### que terminam com ?
+        const headingMatch = line.match(/^#{2,3}\s+(.+\?)\s*$/);
+        if (!headingMatch) continue;
+
+        const question = headingMatch[1].trim();
+
+        // Ignora headings estruturais (Conclusão, Introdução, etc.)
+        if (STRUCTURAL_PREFIXES.test(question)) continue;
+
+        // Coleta os parágrafos seguintes até encontrar outro heading ou linha vazia após conteúdo
+        const answerLines: string[] = [];
+        let j = i + 1;
+        while (j < lines.length) {
+            const next = lines[j].trim();
+            if (next.startsWith("#")) break;
+            if (next) answerLines.push(next);
+            if (answerLines.length > 0 && next === "") break;
+            j++;
+        }
+
+        const answer = answerLines
+            .join(" ")
+            .replace(/\*\*/g, "")
+            .replace(/\*/g, "")
+            .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // links → só texto
+            .replace(/`[^`]+`/g, "")
+            .replace(/^[-*]\s/gm, "")
+            .replace(/\s+/g, " ")
+            .trim();
+
+        if (question && answer.length > 40) {
+            faqs.push({ question, answer });
+        }
+    }
+
+    return faqs.length >= 2 ? faqs : null;
+}
+
 export const dynamicParams = true;
 
 export function generateStaticParams() {
@@ -125,6 +177,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
     const articleUrl = `https://dividai.com/post/${post.slug}`;
     const imageUrl = `${articleUrl}/opengraph-image`;
     const { primaryContent, secondaryContent } = splitPostContent(post.content);
+    const faqs = extractFAQs(post.content);
 
     const breadcrumbStructuredData = {
         "@context": "https://schema.org",
@@ -247,6 +300,19 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                                 articleBody: post.content.replace(/[#*\-`]/g, '').substring(0, 5000),
                             },
                             breadcrumbStructuredData,
+                            // FAQPage schema — gerado automaticamente a partir de headings com "?"
+                            ...(faqs ? [{
+                                "@context": "https://schema.org",
+                                "@type": "FAQPage",
+                                mainEntity: faqs.map(({ question, answer }) => ({
+                                    "@type": "Question",
+                                    name: question,
+                                    acceptedAnswer: {
+                                        "@type": "Answer",
+                                        text: answer,
+                                    },
+                                })),
+                            }] : []),
                         ]),
                     }}
                 />
