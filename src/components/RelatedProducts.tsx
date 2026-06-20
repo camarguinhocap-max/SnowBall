@@ -122,10 +122,10 @@ export default function RelatedProducts({ slug }: RelatedProductsProps) {
                                 color: "var(--muted)",
                                 lineHeight: 1.5,
                                 flex: 1,
+                                overflow: "hidden",
                                 display: "-webkit-box",
                                 WebkitLineClamp: 2,
                                 WebkitBoxOrient: "vertical",
-                                overflow: "hidden",
                             } as React.CSSProperties}>
                                 {item.description}
                             </p>
