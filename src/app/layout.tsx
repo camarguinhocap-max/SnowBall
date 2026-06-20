@@ -34,10 +34,10 @@ export const metadata: Metadata = {
             "Descubra como melhorar suas finanças pessoais, sair das dívidas e fazer os melhores investimentos. Educação financeira prática para a realidade brasileira.",
         images: [
             {
-                url: "/favicon-transparent.png",
-                width: 512,
-                height: 512,
-                alt: "Logo DividAI",
+                url: "/opengraph-image",
+                width: 1200,
+                height: 630,
+                alt: "Blog DividAI | Educação Financeira e Finanças Pessoais",
             },
         ],
     },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         title: "Blog DividAI | Educação Financeira e Finanças Pessoais",
         description:
             "Descubra como melhorar suas finanças pessoais, sair das dívidas e fazer os melhores investimentos. Educação financeira prática para a realidade brasileira.",
-        images: ["/favicon-transparent.png"],
+        images: ["/opengraph-image"],
     },
     verification: {
         google: process.env.GOOGLE_SITE_VERIFICATION || "",
@@ -73,6 +73,14 @@ const siteStructuredData = [
             "@type": "Organization",
             name: "DividAI",
             url: "https://dividai.com",
+        },
+        potentialAction: {
+            "@type": "SearchAction",
+            target: {
+                "@type": "EntryPoint",
+                urlTemplate: "https://dividai.com/search?q={search_term_string}",
+            },
+            "query-input": "required name=search_term_string",
         },
     },
     {

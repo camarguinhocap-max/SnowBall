@@ -131,7 +131,8 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
         "@type": "BreadcrumbList",
         itemListElement: [
             { "@type": "ListItem", position: 1, name: "Início", item: "https://dividai.com" },
-            { "@type": "ListItem", position: 2, name: post.title, item: articleUrl },
+            { "@type": "ListItem", position: 2, name: post.category, item: `https://dividai.com/?category=${encodeURIComponent(post.category)}` },
+            { "@type": "ListItem", position: 3, name: post.title, item: articleUrl },
         ],
     };
 
@@ -150,6 +151,8 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                     opacity: 0.8
                 }}>
                     <Link href="/" style={{ color: "var(--primary)", textDecoration: "none", fontWeight: "600" }}>Início</Link>
+                    <span className="breadcrumb__separator" style={{ opacity: 0.5 }}>/</span>
+                    <Link href={`/?category=${encodeURIComponent(post.category)}`} style={{ color: "var(--primary)", textDecoration: "none" }}>{post.category}</Link>
                     <span className="breadcrumb__separator" style={{ opacity: 0.5 }}>/</span>
                     <span className="breadcrumb__current" style={{
                         whiteSpace: "nowrap",
@@ -240,6 +243,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                                 },
                                 datePublished: publishedTime,
                                 dateModified: modifiedTime,
+                                wordCount: post.content.split(/\s+/).filter(Boolean).length,
                                 articleBody: post.content.replace(/[#*\-`]/g, '').substring(0, 5000),
                             },
                             breadcrumbStructuredData,
