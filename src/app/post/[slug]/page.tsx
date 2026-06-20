@@ -285,7 +285,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                                 author: {
                                     "@type": "Person",
                                     name: "Lucas Bianchi",
-                                    url: "https://dividai.com/sobre",
+                                    url: "https://dividai.com/autor/lucas-bianchi",
                                     jobTitle: "Editor-chefe",
                                     image: "https://dividai.com/lucas-bianchi.png",
                                 },

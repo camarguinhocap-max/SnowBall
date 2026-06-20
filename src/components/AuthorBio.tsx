@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AuthorBio() {
     return (
@@ -23,30 +24,35 @@ export default function AuthorBio() {
                 height: "100%",
                 backgroundColor: "var(--primary)"
             }} />
-            
-            <Image 
-                src="/lucas-bianchi.png" 
-                alt="Lucas Bianchi - Editor Chefe DividAI"
-                width={100}
-                height={100}
-                style={{
-                    borderRadius: "20px",
-                    objectFit: "cover",
-                    border: "1px solid var(--border)",
-                    boxShadow: "0 10px 20px rgba(0,0,0,0.1)"
-                }}
-            />
-            
+
+            <Link href="/autor/lucas-bianchi" style={{ flexShrink: 0 }}>
+                <Image
+                    src="/lucas-bianchi.png"
+                    alt="Lucas Bianchi - Editor Chefe DividAI"
+                    width={100}
+                    height={100}
+                    style={{
+                        borderRadius: "20px",
+                        objectFit: "cover",
+                        border: "1px solid var(--border)",
+                        boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
+                        display: "block",
+                    }}
+                />
+            </Link>
+
             <div style={{ flex: 1 }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.5rem" }}>
-                    <h3 style={{
-                        margin: 0,
-                        fontSize: "1.25rem",
-                        fontWeight: "700",
-                        color: "var(--foreground)"
-                    }}>
-                        Lucas Bianchi
-                    </h3>
+                    <Link href="/autor/lucas-bianchi" style={{ textDecoration: "none", color: "inherit" }}>
+                        <h3 style={{
+                            margin: 0,
+                            fontSize: "1.25rem",
+                            fontWeight: "700",
+                            color: "var(--foreground)"
+                        }}>
+                            Lucas Bianchi
+                        </h3>
+                    </Link>
                     <span style={{
                         fontSize: "0.75rem",
                         backgroundColor: "rgba(2, 132, 199, 0.1)",
@@ -72,14 +78,19 @@ export default function AuthorBio() {
                     marginTop: "1rem",
                     display: "flex",
                     gap: "1.25rem",
-                    fontSize: "0.9rem"
+                    fontSize: "0.9rem",
+                    flexWrap: "wrap",
                 }}>
-                    <a href="https://twitter.com/dividai" target="_blank" rel="noopener noreferrer" 
-                        style={{ color: "var(--primary)", textDecoration: "none", fontWeight: 600, display: "flex", alignItems: "center", gap: "0.4rem" }}>
+                    <Link href="/autor/lucas-bianchi"
+                        style={{ color: "var(--primary)", textDecoration: "none", fontWeight: 600 }}>
+                        Ver perfil completo →
+                    </Link>
+                    <a href="https://twitter.com/dividai" target="_blank" rel="noopener noreferrer"
+                        style={{ color: "var(--primary)", textDecoration: "none", fontWeight: 600 }}>
                         X (Twitter)
                     </a>
-                    <a href="https://t.me/DividAI_News" target="_blank" rel="noopener noreferrer" 
-                        style={{ color: "var(--primary)", textDecoration: "none", fontWeight: 600, display: "flex", alignItems: "center", gap: "0.4rem" }}>
+                    <a href="https://t.me/DividAI_News" target="_blank" rel="noopener noreferrer"
+                        style={{ color: "var(--primary)", textDecoration: "none", fontWeight: 600 }}>
                         Telegram
                     </a>
                 </div>
