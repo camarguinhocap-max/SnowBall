@@ -1,4 +1,5 @@
 import ReactMarkdown from "react-markdown";
+import type { Components } from "react-markdown";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getVisiblePosts, parsePostDate, getAllPosts, isPublished } from "@/lib/posts";
@@ -22,16 +23,16 @@ function createHeadingId(children: unknown) {
         .replace(/-+/g, "-");
 }
 
-const markdownComponents = {
-    img: ({ src, alt }: any) => (
+const markdownComponents: Components = {
+    img: ({ src, alt }) => (
         <ImageWithModal src={typeof src === "string" ? src : undefined} alt={alt} />
     ),
-    h1: ({ children }: any) => <h1 id={createHeadingId(children)}>{children}</h1>,
-    h2: ({ children }: any) => <h2 id={createHeadingId(children)}>{children}</h2>,
-    h3: ({ children }: any) => <h3 id={createHeadingId(children)}>{children}</h3>,
-    h4: ({ children }: any) => <h4 id={createHeadingId(children)}>{children}</h4>,
-    h5: ({ children }: any) => <h5 id={createHeadingId(children)}>{children}</h5>,
-    h6: ({ children }: any) => <h6 id={createHeadingId(children)}>{children}</h6>,
+    h1: ({ children }) => <h1 id={createHeadingId(children)}>{children}</h1>,
+    h2: ({ children }) => <h2 id={createHeadingId(children)}>{children}</h2>,
+    h3: ({ children }) => <h3 id={createHeadingId(children)}>{children}</h3>,
+    h4: ({ children }) => <h4 id={createHeadingId(children)}>{children}</h4>,
+    h5: ({ children }) => <h5 id={createHeadingId(children)}>{children}</h5>,
+    h6: ({ children }) => <h6 id={createHeadingId(children)}>{children}</h6>,
 };
 
 function splitPostContent(content: string) {
@@ -74,6 +75,9 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     const url = `https://dividai.com/post/${post.slug}`;
     const imageUrl = `${url}/opengraph-image`;
     const publishedTime = parsePostDate(post.date).toISOString();
+    const modifiedTime = post.updatedAt
+        ? parsePostDate(post.updatedAt).toISOString()
+        : publishedTime;
 
     return {
         title: `${post.title} | Blog DividAI`,
@@ -90,7 +94,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
             siteName: "Blog DividAI",
             type: "article",
             publishedTime,
-            modifiedTime: publishedTime,
+            modifiedTime,
             authors: ["DividAI"],
             images: [
                 {
@@ -125,6 +129,9 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
     }
 
     const publishedTime = parsePostDate(post.date).toISOString();
+    const modifiedTime = post.updatedAt
+        ? parsePostDate(post.updatedAt).toISOString()
+        : publishedTime;
     const articleUrl = `https://dividai.com/post/${post.slug}`;
     const imageUrl = `${articleUrl}/opengraph-image`;
     const { primaryContent, secondaryContent } = splitPostContent(post.content);
@@ -259,7 +266,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                                     },
                                 },
                                 datePublished: publishedTime,
-                                dateModified: publishedTime,
+                                dateModified: modifiedTime,
                                 articleBody: post.content.replace(/[#*\-`]/g, '').substring(0, 5000),
                             },
                             breadcrumbStructuredData,

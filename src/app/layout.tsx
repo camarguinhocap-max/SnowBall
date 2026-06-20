@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Inter, Outfit } from "next/font/google";
 import DarkModeToggle from "@/components/DarkModeToggle";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -132,14 +133,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             className="logo"
                             style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
                         >
-                            <img
+                            <Image
                                 src="/favicon-transparent.png"
                                 alt="Logo da DividAI"
-                                style={{
-                                    height: "40px",
-                                    width: "auto",
-                                    filter: "invert(1)",
-                                }}
+                                width={40}
+                                height={40}
+                                priority
+                                style={{ filter: "invert(1)", width: "40px", height: "auto" }}
                             />
                             <span style={{ fontSize: "1.8rem", fontWeight: 800 }}>DividAI</span>
                         </Link>
@@ -178,9 +178,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                 <h3 style={{ marginBottom: '1rem', color: 'var(--primary)' }}>Categorias</h3>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     <li style={{ marginBottom: '0.5rem' }}><Link href="/?category=Investimentos">Investimentos</Link></li>
-                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/?category=Economia">Economia</Link></li>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/?category=Finanças Pessoais">Finanças Pessoais</Link></li>
                                     <li style={{ marginBottom: '0.5rem' }}><Link href="/?category=Educação Financeira">Educação Financeira</Link></li>
-                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/?category=Tecnologia">Tecnologia</Link></li>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/?category=Empreendedorismo">Empreendedorismo</Link></li>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/?category=Renda Extra">Renda Extra</Link></li>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/?category=Aposentadoria">Aposentadoria</Link></li>
                                 </ul>
                             </div>
                             <div className="footer-col">

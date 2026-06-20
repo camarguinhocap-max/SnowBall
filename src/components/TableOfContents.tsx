@@ -16,6 +16,17 @@ interface TableOfContentsProps {
 export default function TableOfContents({ content }: TableOfContentsProps) {
     const [headings, setHeadings] = useState<Heading[]>([]);
     const [isOpen, setIsOpen] = useState(false);
+    // Starts as false (safe for SSR); updated on client after mount
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const mq = window.matchMedia('(max-width: 767px)');
+        setIsMobile(mq.matches);
+
+        const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+        mq.addEventListener('change', handler);
+        return () => mq.removeEventListener('change', handler);
+    }, []);
 
     useEffect(() => {
         // Extrair headings do markdown (linhas que começam com # ## ###)
@@ -32,7 +43,7 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
                 .replace(/[^\w\s-]/g, '')
                 .replace(/\s+/g, '-')
                 .replace(/-+/g, '-');
-            
+
             extractedHeadings.push({ id, text, level });
         }
 
@@ -53,7 +64,7 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
             borderRadius: '8px',
         }}>
             {/* Header com botão mobile */}
-            <div 
+            <div
                 style={{
                     display: 'flex',
                     alignItems: 'center',
@@ -72,65 +83,65 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
                 }}>
                     Índice do artigo
                 </h3>
-                <span style={{
-                    marginLeft: 'auto',
-                    fontSize: '0.8rem',
-                    color: 'var(--muted)',
-                    display: window.innerWidth < 768 ? 'inline' : 'none',
-                }}>
-                    {isOpen ? '−' : '+'}
-                </span>
+                {/* Toggle hint — visível apenas em mobile */}
+                {isMobile && (
+                    <span style={{
+                        marginLeft: 'auto',
+                        fontSize: '0.8rem',
+                        color: 'var(--muted)',
+                    }}>
+                        {isOpen ? '−' : '+'}
+                    </span>
+                )}
             </div>
 
-            {/* Lista de headings (desktop sempre visível) */}
-            <nav 
-                style={{
-                    display: window.innerWidth < 768 && !isOpen ? 'none' : 'block',
-                }}
-            >
-                <ul style={{
-                    listStyle: 'none',
-                    padding: 0,
-                    margin: 0,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '0.5rem',
-                }}>
-                    {headings.map((heading) => (
-                        <li key={heading.id}>
-                            <a
-                                href={`#${heading.id}`}
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    const element = document.getElementById(heading.id);
-                                    if (element) {
-                                        element.scrollIntoView({ behavior: 'smooth' });
-                                    }
-                                }}
-                                style={{
-                                    display: 'block',
-                                    fontSize: heading.level === 2 ? '0.95rem' : '0.85rem',
-                                    color: 'var(--primary)',
-                                    textDecoration: 'none',
-                                    borderLeft: `3px solid ${heading.level === 2 ? 'var(--primary)' : 'rgba(14, 165, 233, 0.3)'}`,
-                                    paddingLeft: `${0.75 + (heading.level - 2) * 0.75}rem`,
-                                    transition: 'all 0.2s ease',
-                                }}
-                                onMouseEnter={(e) => {
-                                    e.currentTarget.style.paddingLeft = `${1 + (heading.level - 2) * 0.75}rem`;
-                                    e.currentTarget.style.color = 'var(--primary-dark)';
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.currentTarget.style.paddingLeft = `${0.75 + (heading.level - 2) * 0.75}rem`;
-                                    e.currentTarget.style.color = 'var(--primary)';
-                                }}
-                            >
-                                {heading.text}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+            {/* Lista de headings — desktop sempre visível; mobile respeita isOpen */}
+            {(!isMobile || isOpen) && (
+                <nav aria-label="Índice do artigo">
+                    <ul style={{
+                        listStyle: 'none',
+                        padding: 0,
+                        margin: 0,
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '0.5rem',
+                    }}>
+                        {headings.map((heading) => (
+                            <li key={heading.id}>
+                                <a
+                                    href={`#${heading.id}`}
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        const element = document.getElementById(heading.id);
+                                        if (element) {
+                                            element.scrollIntoView({ behavior: 'smooth' });
+                                        }
+                                    }}
+                                    style={{
+                                        display: 'block',
+                                        fontSize: heading.level === 2 ? '0.95rem' : '0.85rem',
+                                        color: 'var(--primary)',
+                                        textDecoration: 'none',
+                                        borderLeft: `3px solid ${heading.level === 2 ? 'var(--primary)' : 'rgba(14, 165, 233, 0.3)'}`,
+                                        paddingLeft: `${0.75 + (heading.level - 2) * 0.75}rem`,
+                                        transition: 'all 0.2s ease',
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.paddingLeft = `${1 + (heading.level - 2) * 0.75}rem`;
+                                        e.currentTarget.style.color = 'var(--primary-dark)';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.paddingLeft = `${0.75 + (heading.level - 2) * 0.75}rem`;
+                                        e.currentTarget.style.color = 'var(--primary)';
+                                    }}
+                                >
+                                    {heading.text}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+            )}
         </div>
     );
 }

@@ -1,28 +1,29 @@
 "use server";
 
-import { Client } from 'pg';
+import { Pool } from 'pg';
 import nodemailer from 'nodemailer';
+
+// Pool reutilizável — evita abrir/fechar conexão a cada requisição
+const pool = new Pool({
+    connectionString: process.env.DIRECT_URL,
+    ssl: { rejectUnauthorized: false },
+    max: 5,
+    idleTimeoutMillis: 30000,
+    connectionTimeoutMillis: 5000,
+});
 
 export async function subscribeNewsletter(email: string) {
     if (!email || !email.includes("@")) {
         return { success: false, error: "E-mail inválido." };
     }
 
-    // Use the connection string without sslmode parameter to add the ssl object manually
-    const connectionString = process.env.DIRECT_URL;
-
-    if (!connectionString) {
+    if (!process.env.DIRECT_URL) {
         return { success: false, error: "Erro de configuração no servidor." };
     }
 
-    const client = new Client({
-        connectionString,
-        ssl: { rejectUnauthorized: false }
-    });
+    const client = await pool.connect();
 
     try {
-        await client.connect();
-
         // Check if email already exists in Contact table as newsletter
         const checkRes = await client.query(
             `SELECT id FROM "Contact" WHERE email = $1 AND "formType" = $2`,
@@ -73,6 +74,6 @@ export async function subscribeNewsletter(email: string) {
         console.error("Newsletter DB Error:", err);
         return { success: false, error: "Erro interno. Tente novamente mais tarde." };
     } finally {
-        await client.end();
+        client.release();
     }
 }
