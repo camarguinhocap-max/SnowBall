@@ -3,11 +3,17 @@ import { ShoppingBag } from "lucide-react";
 import ShopCatalog from "@/components/ShopCatalog";
 
 export const metadata = {
-  title: 'Catálogo de Recomendações | Blog DividAI',
-  description: 'Nossas sugestões de livros, equipamentos e ferramentas para alavancar sua educação financeira e produtividade.',
-  robots: {
-    index: false,
-    follow: true,
+  title: 'Recomendações | Blog DividAI',
+  description: 'Livros, equipamentos e ferramentas recomendados pelo Blog DividAI para acelerar sua educação financeira e produtividade. Curadoria testada e aprovada.',
+  alternates: {
+    canonical: 'https://dividai.com/shop',
+  },
+  openGraph: {
+    title: 'Recomendações | Blog DividAI',
+    description: 'Livros, equipamentos e ferramentas recomendados pelo Blog DividAI.',
+    url: 'https://dividai.com/shop',
+    siteName: 'Blog DividAI',
+    type: 'website',
   },
 };
 

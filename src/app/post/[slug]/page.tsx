@@ -14,6 +14,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ShareButtons from "@/components/ShareButtons";
 import TableOfContents from "@/components/TableOfContents";
 import AdSlot from "@/components/AdSlot";
+import RelatedProducts from "@/components/RelatedProducts";
 
 function createHeadingId(children: unknown) {
     return String(children)
@@ -262,6 +263,8 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                 {post.category === "Investimentos" && <InvestmentDisclaimer />}
 
                 <ShareButtons title={post.title} slug={post.slug} />
+
+                <RelatedProducts slug={post.slug} />
 
                 <AuthorBio />
 

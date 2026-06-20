@@ -186,6 +186,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     <li style={{ marginBottom: '0.5rem' }}><Link href="/">Página Inicial</Link></li>
                                     <li style={{ marginBottom: '0.5rem' }}><Link href="/sobre">Sobre a DividAI</Link></li>
+                                    <li style={{ marginBottom: '0.5rem' }}><Link href="/shop">Recomendações</Link></li>
                                     <li style={{ marginBottom: '0.5rem' }}><Link href="/portfolio">Nosso Portfólio</Link></li>
                                     <li style={{ marginBottom: '0.5rem' }}><Link href="/contato">Fale Conosco</Link></li>
                                 </ul>

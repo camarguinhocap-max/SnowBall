@@ -37,6 +37,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.7,
         },
         {
+            url: `${baseUrl}/shop`,
+            changeFrequency: 'weekly' as const,
+            priority: 0.7,
+        },
+        {
             url: `${baseUrl}/autor/lucas-bianchi`,
             changeFrequency: 'monthly' as const,
             priority: 0.7,
