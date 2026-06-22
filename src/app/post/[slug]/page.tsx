@@ -1,4 +1,5 @@
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import type { Components } from "react-markdown";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -242,10 +243,10 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
 
                     <AdSlot slot="post_top" format="horizontal" />
 
-                    <ReactMarkdown components={markdownComponents}>{primaryContent}</ReactMarkdown>
+                    <ReactMarkdown components={markdownComponents} remarkPlugins={[remarkGfm]}>{primaryContent}</ReactMarkdown>
 
                     {secondaryContent && (
-                        <ReactMarkdown components={markdownComponents}>{secondaryContent}</ReactMarkdown>
+                        <ReactMarkdown components={markdownComponents} remarkPlugins={[remarkGfm]}>{secondaryContent}</ReactMarkdown>
                     )}
 
                     <AdSlot slot="post_bottom" format="auto" />
