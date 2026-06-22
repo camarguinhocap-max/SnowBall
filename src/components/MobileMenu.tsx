@@ -10,7 +10,7 @@ export default function MobileMenu() {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <div className="mobile-menu-wrapper">
+        <div className="mobile-menu-wrapper" style={{ flexShrink: 0 }}>
             <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Menu">
                 {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
