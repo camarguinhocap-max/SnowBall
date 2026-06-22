@@ -260,7 +260,40 @@ html[data-theme="dark"] .logo img {
   background: var(--primary-glow);
 }
 
-/* ————— MOBILE MENU ————— */
+/* ————— MOBILE MENU & SEARCH BAR ————— */
+.search-bar-form {
+  flex: 1;
+  max-width: 400px;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.search-bar-input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--foreground);
+  font-size: 0.95rem;
+}
+
+.search-bar-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
 .mobile-menu-wrapper {
   display: none;
 }
@@ -318,6 +351,38 @@ html[data-theme="dark"] .logo img {
   }
   .header-content {
     gap: 0.5rem;
+  }
+  
+  /* Collapsible Search on Mobile */
+  .search-bar-form {
+    flex: 0 0 auto;
+    max-width: none;
+  }
+  .search-bar-input {
+    display: none;
+  }
+  .search-bar-container {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+  }
+  .search-bar-form.is-expanded {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    right: 4rem; /* leave space for the mobile menu button */
+    z-index: 100;
+  }
+  .search-bar-form.is-expanded .search-bar-input {
+    display: block;
+    width: 100%;
+  }
+  .search-bar-form.is-expanded .search-bar-container {
+    background-color: var(--card-bg);
+    border-color: var(--border);
+    padding: 0.5rem 1rem;
+    width: 100%;
   }
 }
 

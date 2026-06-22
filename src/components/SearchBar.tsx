@@ -1,13 +1,15 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { Search } from 'lucide-react';
+import { Search, X } from 'lucide-react';
 import { trackSearch } from '@/lib/analytics';
 
 export default function SearchBar() {
   const [query, setQuery] = useState('');
+  const [isExpanded, setIsExpanded] = useState(false);
   const router = useRouter();
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -15,47 +17,40 @@ export default function SearchBar() {
       trackSearch(query, 0); // 0 = not yet counted, will be tracked on results page
       router.push(`/search?q=${encodeURIComponent(query)}`);
       setQuery('');
+      setIsExpanded(false);
+    } else if (!isExpanded && window.innerWidth <= 900) {
+      setIsExpanded(true);
+      setTimeout(() => inputRef.current?.focus(), 100);
     }
   };
 
   return (
-    <form onSubmit={handleSearch} style={{ flex: 1, maxWidth: '400px' }}>
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        backgroundColor: 'var(--card-bg)',
-        border: '1px solid var(--border)',
-        borderRadius: '8px',
-        padding: '0.5rem 1rem'
-      }}>
+    <form onSubmit={handleSearch} className={`search-bar-form ${isExpanded ? 'is-expanded' : ''}`}>
+      <div className="search-bar-container">
         <input
+          ref={inputRef}
           type="text"
+          className="search-bar-input"
           placeholder="Buscar posts..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          style={{
-            flex: 1,
-            backgroundColor: 'transparent',
-            border: 'none',
-            outline: 'none',
-            color: 'var(--foreground)',
-            fontSize: '0.95rem',
-          }}
         />
-        <button
-          type="submit"
-          style={{
-            background: 'none',
-            border: 'none',
-            color: 'var(--muted)',
-            cursor: 'pointer',
-            display: 'flex',
-            alignItems: 'center',
-            padding: '0.5rem'
-          }}
-        >
-          <Search size={20} />
-        </button>
+        {isExpanded && window.innerWidth <= 900 ? (
+          <button
+            type="button"
+            className="search-bar-btn"
+            onClick={() => {
+              setIsExpanded(false);
+              setQuery('');
+            }}
+          >
+            <X size={20} />
+          </button>
+        ) : (
+          <button type="submit" className="search-bar-btn">
+            <Search size={20} />
+          </button>
+        )}
       </div>
     </form>
   );
