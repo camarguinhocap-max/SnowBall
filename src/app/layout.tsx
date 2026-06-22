@@ -7,6 +7,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import SearchBar from "@/components/SearchBar";
 import ConversionTracker from "@/components/ConversionTracker";
 import CookieConsent from "@/components/CookieConsent";
+import MobileMenu from "@/components/MobileMenu";
 import Script from "next/script";
 import "./globals.css";
 
@@ -168,6 +169,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             <Link href="/portfolio">Portfólio</Link>
                             <Link href="/contato">Contato</Link>
                         </nav>
+                        <MobileMenu />
                     </div>
                 </header>
 
