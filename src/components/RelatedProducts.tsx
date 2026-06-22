@@ -147,10 +147,8 @@ export default function RelatedProducts({ slug }: RelatedProductsProps) {
                                     fontWeight: 700,
                                     textDecoration: "none",
                                     marginTop: "auto",
-                                    transition: "opacity 0.2s",
                                 }}
-                                onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.88")}
-                                onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
+                                className="related-product-btn"
                             >
                                 Ver oferta <ExternalLink size={13} />
                             </a>
@@ -179,6 +177,12 @@ export default function RelatedProducts({ slug }: RelatedProductsProps) {
                     .related-product-card:hover {
                         transform: translateY(-3px);
                         border-color: var(--primary);
+                    }
+                    .related-product-btn {
+                        transition: opacity 0.2s;
+                    }
+                    .related-product-btn:hover {
+                        opacity: 0.88;
                     }
                 `
             }} />
