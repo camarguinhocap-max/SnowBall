@@ -971,6 +971,8 @@ html:not([data-theme="dark"]) .featured-image-overlay {
   transition: opacity 0.2s, transform 0.25s, filter 0.4s ease;
   filter: blur(12px);
   width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 .post-image:hover { opacity: 0.92; transform: scale(1.015); }
 
@@ -1025,6 +1027,7 @@ html:not([data-theme="dark"]) .featured-image-overlay {
 .modal-img {
   max-width: 100%;
   max-height: 90vh;
+  height: auto;
   object-fit: contain;
   border-radius: var(--radius-md);
   box-shadow: 0 20px 60px rgba(0,0,0,0.6);
