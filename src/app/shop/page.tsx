@@ -21,22 +21,56 @@ export default function Shop() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "itemListElement": shopItems.map((item, index) => ({
-      "@type": "ListItem",
-      "position": index + 1,
-      "item": {
-        "@type": "Product",
-        "name": item.title,
-        "description": item.description,
-        "image": item.imageUrl,
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "BRL",
-          "availability": "https://schema.org/InStock",
-          "url": item.affiliateUrl
+    "itemListElement": shopItems.map((item, index) => {
+      // Converte "R$ 2.199,00" para "2199.00"
+      const numericPrice = item.price
+        .replace("R$", "")
+        .replace(/\./g, "")
+        .replace(",", ".")
+        .trim();
+
+      return {
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "Product",
+          "name": item.title,
+          "description": item.description,
+          "image": item.imageUrl,
+                      "url": item.affiliateUrl,
+            "sku": item.id,
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 5.0,
+              "reviewCount": 1
+            },
+          "review": [{
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": 5.0,
+              "bestRating": 5
+            },
+            "author": {
+              "@type": "Organization",
+              "name": "Equipe DividAI"
+            }
+          }],
+          "offers": {
+            "@type": "Offer",
+            "price": numericPrice,
+            "priceCurrency": "BRL",
+            "availability": "https://schema.org/InStock",
+            "url": item.affiliateUrl,
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": numericPrice,
+              "priceCurrency": "BRL"
+            }
+          }
         }
-      }
-    }))
+      };
+    })
   };
 
   return (

@@ -151,12 +151,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
                         >
                             <Image
-                                src="/favicon-transparent.png"
+                                src="/dividai-logo.png"
                                 alt="Logo da DividAI"
                                 width={40}
                                 height={40}
                                 priority
-                                style={{ filter: "invert(1)", width: "40px", height: "auto" }}
+                                style={{ width: "40px", height: "auto" }}
                             />
                             <span style={{ fontSize: "1.8rem", fontWeight: 800 }}>DividAI</span>
                         </Link>
