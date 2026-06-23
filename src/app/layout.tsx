@@ -8,7 +8,6 @@ import SearchBar from "@/components/SearchBar";
 import ConversionTracker from "@/components/ConversionTracker";
 import CookieConsent from "@/components/CookieConsent";
 import MobileMenu from "@/components/MobileMenu";
-import FooterNewsletter from "@/components/FooterNewsletter";
 import Script from "next/script";
 import "./globals.css";
 
@@ -215,7 +214,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                 </ul>
                             </div>
                         </div>
-                        <FooterNewsletter />
                         <div
                             style={{
                                 borderTop: "1px solid rgba(255,255,255,0.1)",
