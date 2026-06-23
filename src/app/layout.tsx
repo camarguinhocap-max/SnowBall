@@ -132,11 +132,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         gtag('config', 'AW-18107418379');
                     `}
                 </Script>
-                {/* AdSense — afterInteractive garante que não bloqueia o render inicial */}
+                {/* AdSense — lazyOnload garante que não bloqueia o render inicial e acelera o LCP */}
                 <Script
                     id="google-adsense"
                     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543510171277537"
-                    strategy="afterInteractive"
+                    strategy="lazyOnload"
                     crossOrigin="anonymous"
                 />
             </head>

@@ -31,7 +31,7 @@ export const shopItems: ShopItem[] = [
         affiliateUrl: 'https://meli.la/1VcCpVs',
         store: 'Mercado Livre',
         category: 'Livros',
-        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
+        articleSlug: 'mentalidade-financeira'
     },
     {
         id: '3',
@@ -53,7 +53,7 @@ export const shopItems: ShopItem[] = [
         affiliateUrl: 'https://meli.la/1qiNgpu',
         store: 'Mercado Livre',
         category: 'Livros',
-        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
+        articleSlug: 'mentalidade-financeira'
     },
     {
         id: '5',
@@ -75,7 +75,7 @@ export const shopItems: ShopItem[] = [
         affiliateUrl: 'https://meli.la/2NEehny',
         store: 'Mercado Livre',
         category: 'Livros',
-        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
+        articleSlug: 'mentalidade-financeira'
     },
     {
         id: '7',
@@ -97,7 +97,7 @@ export const shopItems: ShopItem[] = [
         affiliateUrl: 'https://meli.la/2LjnSXP',
         store: 'Mercado Livre',
         category: 'Livros',
-        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
+        articleSlug: 'mentalidade-financeira'
     },
     {
         id: '9',
@@ -108,7 +108,7 @@ export const shopItems: ShopItem[] = [
         affiliateUrl: 'https://meli.la/2GEzfJe',
         store: 'Mercado Livre',
         category: 'Livros',
-        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
+        articleSlug: 'mentalidade-financeira'
     },
     {
         id: '10',
@@ -240,7 +240,7 @@ export const shopItems: ShopItem[] = [
         affiliateUrl: 'https://s.shopee.com.br/4frEJXB7aT',
         store: 'Shopee',
         category: 'Livros',
-        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
+        articleSlug: 'mentalidade-financeira'
     },
     {
         id: '22',
@@ -295,7 +295,7 @@ export const shopItems: ShopItem[] = [
         affiliateUrl: 'https://s.shopee.com.br/6KzSIgBYX8',
         store: 'Shopee',
         category: 'Livros',
-        articleSlug: 'mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente'
+        articleSlug: 'mentalidade-financeira'
     },
     {
         id: '27',
