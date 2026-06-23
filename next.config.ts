@@ -8,6 +8,16 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      { source: '/contact', destination: '/contato', permanent: true },
+      { source: '/login', destination: '/', permanent: true },
+      { source: '/signup', destination: '/', permanent: true },
+      { source: '/pricing', destination: '/', permanent: true },
+      { source: '/tools', destination: '/', permanent: true },
+      { source: '/tracking', destination: '/', permanent: true },
+    ];
+  },
   headers: async () => [
     {
       source: '/:path*',
