@@ -89,7 +89,7 @@ const siteStructuredData = [
         "@type": "Organization",
         name: "DividAI",
         url: "https://dividai.com",
-        logo: "https://dividai.com/favicon-transparent.png",
+        logo: "https://dividai.com/dividai-logo.png",
     },
 ];
 

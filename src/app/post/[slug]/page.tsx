@@ -296,7 +296,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                                 publisher: {
                                     "@type": "Organization",
                                     name: "DividAI",
-                                    logo: { "@type": "ImageObject", url: "https://dividai.com/logo.png" },
+                                    logo: { "@type": "ImageObject", url: "https://dividai.com/dividai-logo.png" },
                                 },
                                 datePublished: publishedTime,
                                 dateModified: modifiedTime,
