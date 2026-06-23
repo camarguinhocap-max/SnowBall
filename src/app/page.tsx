@@ -5,7 +5,8 @@ import NewsletterForm from "@/components/NewsletterForm";
 import PostCardImage from "@/components/PostCardImage";
 import ScrollReveal from "@/components/ScrollReveal";
 import AdSlot from "@/components/AdSlot";
-import { getVisiblePosts, sortByDate } from "@/lib/posts";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
+import { getVisiblePosts, sortByDate, sortByViews } from "@/lib/posts";
 import Pagination from "@/components/Pagination";
 
 interface HomeProps {
@@ -88,6 +89,13 @@ export default async function Home({ searchParams }: HomeProps) {
         return acc;
     }, {} as Record<string, number>);
 
+    // Trending posts — top 5 por visualizações
+    const trendingPosts = sortByViews(visible).slice(0, 5);
+
+    // Métricas de prova social
+    const totalArticles = visible.length;
+    const totalCategories = Object.keys(categoryCounts).length;
+
     return (
         <>
             {/* Hero */}
@@ -101,7 +109,66 @@ export default async function Home({ searchParams }: HomeProps) {
                 <p className="hero-subtitle">
                     Aprenda a organizar suas finanças pessoais, sair das dívidas e começar a investir. Dicas práticas feitas sob medida para a realidade do brasileiro.
                 </p>
+
+                {/* CTA Buttons */}
+                <div className="hero-ctas">
+                    <a href="#newsletter-band" className="hero-cta-primary">
+                        📩 Receba o Guia Grátis
+                    </a>
+                    <Link href="/#artigos" className="hero-cta-secondary">
+                        📚 Ver Artigos
+                    </Link>
+                </div>
             </section>
+
+            {/* Social Proof Strip */}
+            <section className="social-proof-strip" aria-label="Números do blog">
+                <div className="social-proof-item">
+                    <span className="social-proof-number">{totalArticles}+</span>
+                    <span className="social-proof-label">Artigos</span>
+                </div>
+                <div className="social-proof-item">
+                    <span className="social-proof-number">{totalCategories}</span>
+                    <span className="social-proof-label">Categorias</span>
+                </div>
+                <div className="social-proof-item">
+                    <span className="social-proof-number">100%</span>
+                    <span className="social-proof-label">Gratuito</span>
+                </div>
+                <div className="social-proof-item">
+                    <span className="social-proof-number">🇧🇷</span>
+                    <span className="social-proof-label">Para Brasileiros</span>
+                </div>
+            </section>
+
+            {/* Trending Posts — Horizontal Scroll */}
+            {trendingPosts.length > 0 && (
+                <section className="trending-section container" aria-label="Artigos em alta">
+                    <div className="section-header" style={{ marginBottom: "1.25rem" }}>
+                        <h2 className="section-title">🔥 Em Alta</h2>
+                    </div>
+                    <ScrollReveal delay={30}>
+                        <div className="trending-scroll">
+                            {trendingPosts.map((post, index) => (
+                                <Link
+                                    key={post.slug}
+                                    href={`/post/${post.slug}`}
+                                    className="trending-card"
+                                    aria-label={`Artigo em alta #${index + 1}: ${post.title}`}
+                                >
+                                    <span className="trending-rank">{index + 1}</span>
+                                    <div className="trending-info">
+                                        <h3 className="trending-title">{post.title}</h3>
+                                        <span className="trending-meta">
+                                            {post.category} · {post.readTime}
+                                        </span>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
+                    </ScrollReveal>
+                </section>
+            )}
 
             <div className="main-layout">
                 <main className="content-area">
@@ -224,7 +291,7 @@ export default async function Home({ searchParams }: HomeProps) {
                     </ScrollReveal>
 
                     <ScrollReveal delay={130}>
-                        <AdSlot slot="sidebar_home" format="rectangle" />
+                        <AdSlot slot="sidebar_home" />
                     </ScrollReveal>
 
                     <ScrollReveal delay={160}>
@@ -240,6 +307,29 @@ export default async function Home({ searchParams }: HomeProps) {
                     </ScrollReveal>
                 </aside>
             </div>
+
+            {/* Newsletter Band — Full Width Conversion Section */}
+            <section id="newsletter-band" className="newsletter-band" aria-label="Inscreva-se na newsletter">
+                <div className="newsletter-band-inner">
+                    <div className="newsletter-band-text">
+                        <h2>Seu dinheiro pode render mais</h2>
+                        <p>
+                            Receba toda semana um roteiro prático com dicas de investimento, 
+                            economia e planejamento financeiro — feito para a realidade brasileira.
+                            Gratuito, sem spam, cancele quando quiser.
+                        </p>
+                    </div>
+                    <NewsletterForm
+                        source="homepage_band"
+                        title="Comece a Investir do Zero"
+                        description="Roteiro direto no seu e-mail."
+                        compact
+                    />
+                </div>
+            </section>
+
+            {/* Sticky Mobile CTA */}
+            <StickyMobileCTA />
         </>
     );
 }

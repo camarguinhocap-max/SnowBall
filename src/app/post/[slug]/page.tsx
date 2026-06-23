@@ -241,7 +241,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                 <div className="article-content">
                     <TableOfContents content={post.content} />
 
-                    <AdSlot slot="post_top" format="horizontal" />
+                    <AdSlot slot="post_top" />
 
                     <ReactMarkdown components={markdownComponents} remarkPlugins={[remarkGfm]}>{primaryContent}</ReactMarkdown>
 
@@ -249,7 +249,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                         <ReactMarkdown components={markdownComponents} remarkPlugins={[remarkGfm]}>{secondaryContent}</ReactMarkdown>
                     )}
 
-                    <AdSlot slot="post_bottom" format="auto" />
+                    <AdSlot slot="post_bottom" />
 
                     <ScrollReveal className="article-inline-newsletter" delay={60}>
                         <NewsletterForm

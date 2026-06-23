@@ -8,14 +8,16 @@ import SearchBar from "@/components/SearchBar";
 import ConversionTracker from "@/components/ConversionTracker";
 import CookieConsent from "@/components/CookieConsent";
 import MobileMenu from "@/components/MobileMenu";
+import FooterNewsletter from "@/components/FooterNewsletter";
 import Script from "next/script";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const outfit = Outfit({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700", "800"],
     variable: "--font-outfit",
+    display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -213,6 +215,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                 </ul>
                             </div>
                         </div>
+                        <FooterNewsletter />
                         <div
                             style={{
                                 borderTop: "1px solid rgba(255,255,255,0.1)",

@@ -224,7 +224,7 @@ export default async function Home({ searchParams }: HomeProps) {
                     </ScrollReveal>
 
                     <ScrollReveal delay={130}>
-                        <AdSlot slot="sidebar_home" format="rectangle" />
+                        <AdSlot slot="sidebar_home" />
                     </ScrollReveal>
 
                     <ScrollReveal delay={160}>
