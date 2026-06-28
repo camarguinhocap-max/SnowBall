@@ -11,11 +11,15 @@
 - [x] **Remover redirecionamentos**: Criado `vercel.json` e corrigido `metadataBase` para `https://dividai.com`.
 - [x] **Validar fix no Search Console**: Acionado "VALIDATE FIX" nas 3 paginas com redirect.
 - [x] **Aplicar noindex nas paginas auxiliares**: `/search` e `/shop` com `noindex,follow`; `/shop` saiu do sitemap.
+- [x] **Corrigir Conteúdo de Baixo Valor (Thin Content & Thin Affiliate Pages)**: 27 artigos (< 500 palavras) marcados como `draft: true`. Os 7 posts com links de afiliados e 16 com templates idênticos (Doorways) foram removidos da indexação pública.
+- [x] **Mudar estratégia do Script AdSense**: Alterado para `strategy="afterInteractive"` em `src/app/layout.tsx`.
+- [x] **Servir ads.txt físico**: Criado `public/ads.txt`, removida rota dinâmica `/adstxt` e rewrite do `next.config.ts`.
 - [ ] **Aguardar reprocessamento**: 24-48h para o Google remover o status "Page with redirect" das 3 paginas.
-- [ ] **Aguardar indexacao completa**: 1-2 semanas para as 11+ paginas ficarem indexadas (status: "Discovered - currently not indexed").
-- [ ] **Reaplicar no AdSense**: Quando as 12 paginas estiverem indexadas, remover codigo antigo, inserir novo snippet do AdSense e aguardar revisao (2-7 dias).
-- [ ] **Verificacoes finais**: PageSpeed, mobile-friendly, sem links quebrados.
+- [ ] **Aguardar indexacao completa**: 1-2 semanas para as paginas válidas ficarem indexadas.
+- [ ] **Reaplicar no AdSense**: Quando os posts válidos estiverem indexados, enviar para revisão (2-7 dias).
+- [ ] **Verificacoes finais**: PageSpeed, mobile-friendly (alinhamento dos elementos de navegação e legibilidade de acordo com a política 10015918), sem links quebrados.
 - [ ] **Reativar aba Shop**: Apos aprovacao do AdSense, descomentar o link em `src/app/layout.tsx`.
+
 
 ### Agendamento e acoes proximas
 - [ ] **Revisar indexacao no Search Console**: 07/04/2026 — checar se as 12 paginas estao indexadas; se sim, reaplicar AdSense e liberar Shop.

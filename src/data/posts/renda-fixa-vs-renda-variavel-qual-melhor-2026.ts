@@ -8,4 +8,6 @@ export const post: PostMeta = {
   readTime: '10 min de leitura',
   category: 'Investimentos',
   tags: ["renda fixa","renda variável","diversificação"],
-  views: 0,};
+  views: 0,
+  draft: true,
+};

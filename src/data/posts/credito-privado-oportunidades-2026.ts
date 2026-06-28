@@ -7,4 +7,6 @@ export const post: PostMeta = {
         tags: ['investimentos', 'alternativos', 'credito-privado', 'debentures', 'renda-fixa'],
         category: 'Cripto e Alternativos',
         date: '29 Abr 2026',
-        readTime: '15 min de leitura',};
+        readTime: '15 min de leitura',
+  draft: true,
+};

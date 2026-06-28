@@ -7,4 +7,6 @@ export const post: PostMeta = {
         tags: ['protecao', 'seguros', 'sucessao', 'itcmd', 'patrimonio'],
         category: 'Impostos e Legislação',
         date: '30 Abr 2026',
-        readTime: '15 min de leitura',};
+        readTime: '15 min de leitura',
+  draft: true,
+};

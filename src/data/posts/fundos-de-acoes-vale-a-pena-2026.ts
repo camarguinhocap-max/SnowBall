@@ -8,4 +8,6 @@ export const post: PostMeta = {
   readTime: '10 min de leitura',
   category: 'Investimentos',
   tags: ["fundos","ações","b3","investimentos"],
-  views: 0,};
+  views: 0,
+  draft: true,
+};

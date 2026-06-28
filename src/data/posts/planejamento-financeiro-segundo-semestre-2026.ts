@@ -7,4 +7,6 @@ export const post: PostMeta = {
     tags: ['planejamento', 'segundo-semestre', 'metas', 'revisao-financeira', 'investimentos'],
     category: 'Finanças Pessoais',
     date: '06 Mai 2026',
-    readTime: '7 min de leitura',};
+    readTime: '7 min de leitura',
+  draft: true,
+};

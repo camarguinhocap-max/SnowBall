@@ -8,4 +8,6 @@ export const post: PostMeta = {
   readTime: '10 min de leitura',
   category: 'Finanças Pessoais',
   tags: ["casais","planejamento financeiro","orçamento familiar"],
-  views: 0,};
+  views: 0,
+  draft: true,
+};

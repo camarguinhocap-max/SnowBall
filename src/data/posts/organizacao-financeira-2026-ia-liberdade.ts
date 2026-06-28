@@ -7,4 +7,6 @@ export const post: PostMeta = {
         tags: ['financas', 'organizacao', 'ia', 'planejamento', 'tecnologia'],
         category: 'Finanças Pessoais',
         date: '04 Mai 2026',
-        readTime: '25 min de leitura',};
+        readTime: '25 min de leitura',
+  draft: true,
+};

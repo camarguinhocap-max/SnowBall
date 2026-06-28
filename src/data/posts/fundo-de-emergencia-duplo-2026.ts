@@ -7,4 +7,6 @@ export const post: PostMeta = {
         tags: ['reserva', 'cambio', 'liquidez', 'emergencia'],
         category: 'Finanças Pessoais',
         date: '10 Abr 2026',
-        readTime: '14 min de leitura',};
+        readTime: '14 min de leitura',
+  draft: true,
+};

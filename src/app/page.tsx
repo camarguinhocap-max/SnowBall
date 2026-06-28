@@ -101,74 +101,24 @@ export default async function Home({ searchParams }: HomeProps) {
             {/* Hero */}
             <section className="hero-section">
                 <div className="container hero-container">
-                    <div className="hero-content-left">
-                        <div className="hero-badge">
-                            Educação Financeira Brasileira
-                        </div>
-                        <h1 className="hero-title">
-                            Faça seu dinheiro trabalhar por você. De verdade.
-                        </h1>
-                        <p className="hero-subtitle">
-                            Aprenda a organizar suas finanças pessoais, sair das dívidas e começar a investir com estratégias inteligentes e práticas.
-                        </p>
-
-                        {/* CTA Buttons */}
-                        <div className="hero-ctas">
-                            <a href="#newsletter-band" className="hero-cta-primary">
-                                📩 Receba o Guia Grátis
-                            </a>
-                            <Link href="/#artigos" className="hero-cta-secondary">
-                                📚 Ver Artigos
-                            </Link>
-                        </div>
+                    <div className="hero-badge">
+                        Educação Financeira Brasileira
                     </div>
+                    <h1 className="hero-title">
+                        Faça seu dinheiro trabalhar por você. De verdade.
+                    </h1>
+                    <p className="hero-subtitle">
+                        Aprenda a organizar suas finanças pessoais, sair das dívidas e começar a investir com estratégias inteligentes e práticas.
+                    </p>
 
-                    <div className="hero-content-right">
-                        {/* Interactive Premium Simulator Card */}
-                        <div className="hero-mockup-card">
-                            <div className="mockup-card-header">
-                                <span className="mockup-dot red"></span>
-                                <span className="mockup-dot yellow"></span>
-                                <span className="mockup-dot green"></span>
-                                <span className="mockup-card-title">Simulador de Evolução Rápida</span>
-                            </div>
-                            <div className="mockup-card-body">
-                                <div className="mockup-stat-row">
-                                    <div className="mockup-stat-item">
-                                        <span className="mockup-stat-label">Aporte Inicial</span>
-                                        <span className="mockup-stat-value">R$ 5.000</span>
-                                    </div>
-                                    <div className="mockup-stat-item">
-                                        <span className="mockup-stat-label">Rendimento Estimado</span>
-                                        <span className="mockup-stat-value positive">+R$ 1.840/ano</span>
-                                    </div>
-                                </div>
-
-                                <div className="mockup-progress-box">
-                                    <div className="progress-bar-title">
-                                        <span>Poupança Comum (Lenta)</span>
-                                        <span className="percentage">6.17% a.a.</span>
-                                    </div>
-                                    <div className="progress-track">
-                                        <div className="progress-fill low" style={{ width: "35%" }}></div>
-                                    </div>
-                                </div>
-
-                                <div className="mockup-progress-box">
-                                    <div className="progress-bar-title">
-                                        <span>Estratégia DividAI 🔥</span>
-                                        <span className="percentage highlight">12.5% a.a.</span>
-                                    </div>
-                                    <div className="progress-track">
-                                        <div className="progress-fill high" style={{ width: "85%" }}></div>
-                                    </div>
-                                </div>
-
-                                <div className="mockup-badge-container">
-                                    <span className="mockup-glow-badge">🚀 Rendimento 2x superior</span>
-                                </div>
-                            </div>
-                        </div>
+                    {/* CTA Buttons */}
+                    <div className="hero-ctas">
+                        <a href="#newsletter-band" className="hero-cta-primary">
+                            📩 Receba o Guia Grátis
+                        </a>
+                        <Link href="/#artigos" className="hero-cta-secondary">
+                            📚 Ver Artigos
+                        </Link>
                     </div>
                 </div>
             </section>

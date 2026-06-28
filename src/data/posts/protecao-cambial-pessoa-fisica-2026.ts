@@ -7,4 +7,6 @@ export const post: PostMeta = {
         tags: ['cambio', 'dolar', 'etf', 'treasuries', 'diversificacao'],
         category: 'Investimentos',
         date: '10 Abr 2026',
-        readTime: '15 min de leitura',};
+        readTime: '15 min de leitura',
+  draft: true,
+};

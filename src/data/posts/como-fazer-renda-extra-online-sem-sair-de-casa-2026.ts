@@ -8,4 +8,6 @@ export const post: PostMeta = {
   readTime: '10 min de leitura',
   category: 'Renda Extra e Negócios',
   tags: ["renda extra","internet","trabalho remoto"],
-  views: 0,};
+  views: 0,
+  draft: true,
+};

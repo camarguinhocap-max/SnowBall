@@ -7,4 +7,6 @@ export const post: PostMeta = {
         tags: ['renda-extra', 'ia', 'trabalho-remoto', 'ganhar-dinheiro', 'tecnologia'],
         category: 'Renda Extra e Negócios',
         date: '05 Mai 2026',
-        readTime: '25 min de leitura',};
+        readTime: '25 min de leitura',
+  draft: true,
+};

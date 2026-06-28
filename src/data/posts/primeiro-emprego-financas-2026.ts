@@ -8,4 +8,6 @@ export const post: PostMeta = {
   readTime: '10 min de leitura',
   category: 'Finanças Pessoais',
   tags: ["primeiro emprego","jovens","educação financeira"],
-  views: 0,};
+  views: 0,
+  draft: true,
+};

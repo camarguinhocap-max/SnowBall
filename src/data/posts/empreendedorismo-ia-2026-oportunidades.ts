@@ -7,4 +7,6 @@ export const post: PostMeta = {
         tags: ['empreendedorismo', 'ia', 'oportunidades', 'tecnologia', 'futuro'],
         category: 'Renda Extra e Negócios',
         date: '26 Abr 2026',
-        readTime: '15 min de leitura',};
+        readTime: '15 min de leitura',
+  draft: true,
+};

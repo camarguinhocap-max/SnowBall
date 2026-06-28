@@ -8,4 +8,6 @@ export const post: PostMeta = {
   readTime: '10 min de leitura',
   category: 'Aposentadoria',
   tags: ["aposentadoria","independência financeira","planejamento"],
-  views: 0,};
+  views: 0,
+  draft: true,
+};

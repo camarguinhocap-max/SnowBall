@@ -7,4 +7,6 @@ export const post: PostMeta = {
         tags: ['imoveis', 'investimentos', 'fiis', 'tokenizacao', 'renda-passiva'],
         category: 'Investimentos',
         date: '05 Mai 2026',
-        readTime: '25 min de leitura',};
+        readTime: '25 min de leitura',
+  draft: true,
+};

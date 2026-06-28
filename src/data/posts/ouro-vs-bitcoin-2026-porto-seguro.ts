@@ -7,4 +7,6 @@ export const post: PostMeta = {
         tags: ['investimentos', 'alternativos', 'ouro', 'bitcoin', 'protecao'],
         category: 'Cripto e Alternativos',
         date: '02 Mai 2026',
-        readTime: '24 min de leitura',};
+        readTime: '24 min de leitura',
+  draft: true,
+};

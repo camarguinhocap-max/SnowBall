@@ -7,4 +7,6 @@ export const post: PostMeta = {
         tags: ['credito', 'score', 'open-finance', 'bancos', 'financas'],
         category: 'Finanças Pessoais',
         date: '03 Mai 2026',
-        readTime: '21 min de leitura',};
+        readTime: '21 min de leitura',
+  draft: true,
+};

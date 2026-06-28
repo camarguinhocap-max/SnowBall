@@ -7,4 +7,6 @@ export const post: PostMeta = {
         tags: ['impostos', 'holding', 'sucessao', 'patrimonio', 'planejamento'],
         category: 'Impostos e Legislação',
         date: '28 Abr 2026',
-        readTime: '15 min de leitura',};
+        readTime: '15 min de leitura',
+  draft: true,
+};

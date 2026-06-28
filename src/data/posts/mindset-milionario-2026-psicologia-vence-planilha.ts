@@ -7,4 +7,6 @@ export const post: PostMeta = {
         tags: ['mentalidade', 'psicologia-financeira', 'sucesso', 'habitos', 'riqueza'],
         category: 'Comportamento e Mentalidade',
         date: '01 Mai 2026',
-        readTime: '20 min de leitura',};
+        readTime: '20 min de leitura',
+  draft: true,
+};

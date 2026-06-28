@@ -7,4 +7,6 @@ export const post: PostMeta = {
         tags: ['comportamento', 'psicologia', 'redes-sociais', 'consumo', 'financas'],
         category: 'Comportamento e Mentalidade',
         date: '02 Mai 2026',
-        readTime: '22 min de leitura',};
+        readTime: '22 min de leitura',
+  draft: true,
+};
