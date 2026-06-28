@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async rewrites() {
-    return [];
+    return [
+      {
+        source: '/ads.txt',
+        destination: '/adstxt',
+      },
+    ];
   },
   async redirects() {
     return [
