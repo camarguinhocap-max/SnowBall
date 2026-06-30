@@ -16,6 +16,7 @@ import ShareButtons from "@/components/ShareButtons";
 import TableOfContents from "@/components/TableOfContents";
 import AdSlot from "@/components/AdSlot";
 import RelatedProducts from "@/components/RelatedProducts";
+import Image from "next/image";
 
 function createHeadingId(children: unknown) {
     return String(children)
@@ -120,7 +121,9 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     }
 
     const url = `https://dividai.com/post/${post.slug}`;
-    const imageUrl = `${url}/opengraph-image`;
+    const imageUrl = post.image
+        ? `https://dividai.com${post.image}`
+        : `${url}/opengraph-image`;
     const publishedTime = parsePostDate(post.date).toISOString();
     const modifiedTime = post.updatedAt
         ? parsePostDate(post.updatedAt).toISOString()
@@ -237,6 +240,20 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                         <ReadingTime readTime={post.readTime ?? '5 min de leitura'} />
                     </div>
                 </header>
+
+                {post.image && (
+                    <div style={{ margin: '1.5rem 0 2rem', borderRadius: '12px', overflow: 'hidden' }}>
+                        <Image
+                            src={post.image}
+                            alt={post.title}
+                            width={1200}
+                            height={630}
+                            style={{ width: '100%', height: 'auto', display: 'block' }}
+                            priority
+                            unoptimized
+                        />
+                    </div>
+                )}
 
                 <div className="article-content">
                     <TableOfContents content={post.content} />
