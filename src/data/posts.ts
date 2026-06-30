@@ -12,6 +12,7 @@ import { post as post_acoes_vs_fundos_imobiliarios_qual_escolher } from './posts
 import { post as post_alocacao_de_ativos_diversificacao_inteligente } from './posts/alocacao-de-ativos-diversificacao-inteligente';
 import { post as post_aluguel_ou_compra_de_imovel_2026 } from './posts/aluguel-ou-compra-de-imovel-2026';
 import { post as post_analise_fundamentalista_para_iniciantes } from './posts/analise-fundamentalista-para-iniciantes';
+import { post as post_analise_setorial_acoes_2026 } from './posts/analise-setorial-acoes-2026';
 import { post as post_analise_tecnica_graficos_funcionam } from './posts/analise-tecnica-graficos-funcionam';
 import { post as post_aposentadoria_2026_23_mai } from './posts/aposentadoria-2026-23-mai';
 import { post as post_aposentadoria_2026_guia_nao_depender_inss } from './posts/aposentadoria-2026-guia-nao-depender-inss';
@@ -19,9 +20,11 @@ import { post as post_aposentadoria_acelerar } from './posts/aposentadoria-acele
 import { post as post_aposentadoria_inss_ou_privada } from './posts/aposentadoria-inss-ou-privada';
 import { post as post_aposentadoria_planejamento } from './posts/aposentadoria-planejamento';
 import { post as post_armadilha_estilo_vida_2026 } from './posts/armadilha-estilo-vida-2026';
+import { post as post_armadilhas_financeiras_comuns_2026 } from './posts/armadilhas-financeiras-comuns-2026';
 import { post as post_backtesting_testando_suas_estrategias } from './posts/backtesting-testando-suas-estrategias';
 import { post as post_bdrs_vale_a_pena_2026 } from './posts/bdrs-vale-a-pena-2026';
 import { post as post_bitcoin_e_criptomoedas_vale_investir } from './posts/bitcoin-e-criptomoedas-vale-investir';
+import { post as post_bitcoin_halving_impacto_2026 } from './posts/bitcoin-halving-impacto-2026';
 import { post as post_bitcoin_o_que_e_como_funciona_e_por_que_investir } from './posts/bitcoin-o-que-e-como-funciona-e-por-que-investir';
 import { post as post_blindagem_patrimonial_estrategica_2026 } from './posts/blindagem-patrimonial-estrategica-2026';
 import { post as post_boom_dos_micro_saas_2026 } from './posts/boom-dos-micro-saas-2026';
@@ -33,6 +36,7 @@ import { post as post_carteira_2026_conservador_moderado_arrojado } from './post
 import { post as post_carteira_60_40_morta_estrategias_alocacao_2026 } from './posts/carteira-60-40-morta-estrategias-alocacao-2026';
 import { post as post_cashback_milhas_e_beneficios_2026 } from './posts/cashback-milhas-e-beneficios-2026';
 import { post as post_cdb_ou_lci_lca_qual_escolher_2026 } from './posts/cdb-ou-lci-lca-qual-escolher-2026';
+import { post as post_cenario_macroeconomico_segundo_semestre_2026 } from './posts/cenario-macroeconomico-segundo-semestre-2026';
 import { post as post_como_aumentar_renda_familiar_2026 } from './posts/como-aumentar-renda-familiar-2026';
 import { post as post_como_aumentar_seu_score_2026 } from './posts/como-aumentar-seu-score-2026';
 import { post as post_como_avaliar_se_uma_acao_esta_cara_ou_barata_2026 } from './posts/como-avaliar-se-uma-acao-esta-cara-ou-barata-2026';
@@ -93,12 +97,14 @@ import { post as post_empreendedorismo_ia_2026_oportunidades } from './posts/emp
 import { post as post_empreender_com_pouco_2026 } from './posts/empreender-com-pouco-2026';
 import { post as post_etfs_diversificacao_com_1_clique } from './posts/etfs-diversificacao-com-1-clique';
 import { post as post_etfs_internacionais_pelo_brasil_2026 } from './posts/etfs-internacionais-pelo-brasil-2026';
+import { post as post_ferias_julho_sem_dividas_2026 } from './posts/ferias-julho-sem-dividas-2026';
 import { post as post_fiis_de_papel_ou_tijolo_2026 } from './posts/fiis-de-papel-ou-tijolo-2026';
 import { post as post_financas_para_autonomos_como_pagar_menos_imposto_2026 } from './posts/financas-para-autonomos-como-pagar-menos-imposto-2026';
 import { post as post_financas_para_casais_dinheiro_sem_briga_2026 } from './posts/financas-para-casais-dinheiro-sem-briga-2026';
 import { post as post_financas_para_mei_e_autonomos_2026 } from './posts/financas-para-mei-e-autonomos-2026';
 import { post as post_financas_para_quem_recebe_comissao_2026 } from './posts/financas-para-quem-recebe-comissao-2026';
 import { post as post_financas_profissionais_autonomos_2026 } from './posts/financas-profissionais-autonomos-2026';
+import { post as post_freelance_como_comecar_2026 } from './posts/freelance-como-comecar-2026';
 import { post as post_fundo_de_emergencia_duplo_2026 } from './posts/fundo-de-emergencia-duplo-2026';
 import { post as post_fundos_de_acoes_vale_a_pena_2026 } from './posts/fundos-de-acoes-vale-a-pena-2026';
 import { post as post_fundos_de_investimento_taxas_2026 } from './posts/fundos-de-investimento-taxas-2026';
@@ -130,9 +136,12 @@ import { post as post_melhores_livros_financas_2026 } from './posts/melhores-liv
 import { post as post_mentalidade_financeira } from './posts/mentalidade-financeira';
 import { post as post_mercado_de_commodities_explicado } from './posts/mercado-de-commodities-explicado';
 import { post as post_metas_financeiras_2027 } from './posts/metas-financeiras-2027';
+import { post as post_metas_financeiras_segundo_semestre_2026 } from './posts/metas-financeiras-segundo-semestre-2026';
 import { post as post_mindset_milionario_2026_psicologia_vence_planilha } from './posts/mindset-milionario-2026-psicologia-vence-planilha';
 import { post as post_minimalismo_financeiro_liberdade_2026 } from './posts/minimalismo-financeiro-liberdade-2026';
+import { post as post_monetizar_conhecimento_online_2026 } from './posts/monetizar-conhecimento-online-2026';
 import { post as post_novo_empreendedorismo_digital_2026 } from './posts/novo-empreendedorismo-digital-2026';
+import { post as post_opcoes_financeiras_como_funciona_2026 } from './posts/opcoes-financeiras-como-funciona-2026';
 import { post as post_orcamento_base_zero_2026 } from './posts/orcamento-base-zero-2026';
 import { post as post_organizacao_financeira_2026_ia_liberdade } from './posts/organizacao-financeira-2026-ia-liberdade';
 import { post as post_ouro_vs_bitcoin_2026_porto_seguro } from './posts/ouro-vs-bitcoin-2026-porto-seguro';
@@ -177,6 +186,7 @@ import { post as post_seguro_de_vida_guia_definitivo_2026 } from './posts/seguro
 import { post as post_seguro_de_vida_reserva_de_emergencia_2026 } from './posts/seguro-de-vida-reserva-de-emergencia-2026';
 import { post as post_seguro_sucessorio_blindagem_herdeiros_2026 } from './posts/seguro-sucessorio-blindagem-herdeiros-2026';
 import { post as post_small_caps_2026_quando_fazem_sentido } from './posts/small-caps-2026-quando-fazem-sentido';
+import { post as post_staking_e_defi_2026 } from './posts/staking-e-defi-2026';
 import { post as post_tesouro_direto_guia_completo_2026 } from './posts/tesouro-direto-guia-completo-2026';
 import { post as post_tesouro_direto_tipos_qual_escolher_2026 } from './posts/tesouro-direto-tipos-qual-escolher-2026';
 import { post as post_tesouro_direto_vs_poupanca_2026 } from './posts/tesouro-direto-vs-poupanca-2026';
@@ -196,6 +206,7 @@ export const posts: PostMeta[] = [
     post_alocacao_de_ativos_diversificacao_inteligente,
     post_aluguel_ou_compra_de_imovel_2026,
     post_analise_fundamentalista_para_iniciantes,
+    post_analise_setorial_acoes_2026,
     post_analise_tecnica_graficos_funcionam,
     post_aposentadoria_2026_23_mai,
     post_aposentadoria_2026_guia_nao_depender_inss,
@@ -203,9 +214,11 @@ export const posts: PostMeta[] = [
     post_aposentadoria_inss_ou_privada,
     post_aposentadoria_planejamento,
     post_armadilha_estilo_vida_2026,
+    post_armadilhas_financeiras_comuns_2026,
     post_backtesting_testando_suas_estrategias,
     post_bdrs_vale_a_pena_2026,
     post_bitcoin_e_criptomoedas_vale_investir,
+    post_bitcoin_halving_impacto_2026,
     post_bitcoin_o_que_e_como_funciona_e_por_que_investir,
     post_blindagem_patrimonial_estrategica_2026,
     post_boom_dos_micro_saas_2026,
@@ -217,6 +230,7 @@ export const posts: PostMeta[] = [
     post_carteira_60_40_morta_estrategias_alocacao_2026,
     post_cashback_milhas_e_beneficios_2026,
     post_cdb_ou_lci_lca_qual_escolher_2026,
+    post_cenario_macroeconomico_segundo_semestre_2026,
     post_como_aumentar_renda_familiar_2026,
     post_como_aumentar_seu_score_2026,
     post_como_avaliar_se_uma_acao_esta_cara_ou_barata_2026,
@@ -277,12 +291,14 @@ export const posts: PostMeta[] = [
     post_empreender_com_pouco_2026,
     post_etfs_diversificacao_com_1_clique,
     post_etfs_internacionais_pelo_brasil_2026,
+    post_ferias_julho_sem_dividas_2026,
     post_fiis_de_papel_ou_tijolo_2026,
     post_financas_para_autonomos_como_pagar_menos_imposto_2026,
     post_financas_para_casais_dinheiro_sem_briga_2026,
     post_financas_para_mei_e_autonomos_2026,
     post_financas_para_quem_recebe_comissao_2026,
     post_financas_profissionais_autonomos_2026,
+    post_freelance_como_comecar_2026,
     post_fundo_de_emergencia_duplo_2026,
     post_fundos_de_acoes_vale_a_pena_2026,
     post_fundos_de_investimento_taxas_2026,
@@ -314,9 +330,12 @@ export const posts: PostMeta[] = [
     post_mentalidade_financeira,
     post_mercado_de_commodities_explicado,
     post_metas_financeiras_2027,
+    post_metas_financeiras_segundo_semestre_2026,
     post_mindset_milionario_2026_psicologia_vence_planilha,
     post_minimalismo_financeiro_liberdade_2026,
+    post_monetizar_conhecimento_online_2026,
     post_novo_empreendedorismo_digital_2026,
+    post_opcoes_financeiras_como_funciona_2026,
     post_orcamento_base_zero_2026,
     post_organizacao_financeira_2026_ia_liberdade,
     post_ouro_vs_bitcoin_2026_porto_seguro,
@@ -361,6 +380,7 @@ export const posts: PostMeta[] = [
     post_seguro_de_vida_reserva_de_emergencia_2026,
     post_seguro_sucessorio_blindagem_herdeiros_2026,
     post_small_caps_2026_quando_fazem_sentido,
+    post_staking_e_defi_2026,
     post_tesouro_direto_guia_completo_2026,
     post_tesouro_direto_tipos_qual_escolher_2026,
     post_tesouro_direto_vs_poupanca_2026,

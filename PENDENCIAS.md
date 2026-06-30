@@ -13,7 +13,7 @@
 - [x] **Aplicar noindex nas paginas auxiliares**: `/search` e `/shop` com `noindex,follow`; `/shop` saiu do sitemap.
 - [x] **Corrigir Conteúdo de Baixo Valor (Thin Content & Thin Affiliate Pages)**: 27 artigos (< 500 palavras) marcados como `draft: true`. Os 7 posts com links de afiliados e 16 com templates idênticos (Doorways) foram removidos da indexação pública.
 - [x] **Mudar estratégia do Script AdSense**: Alterado para `strategy="afterInteractive"` em `src/app/layout.tsx`.
-- [x] **Servir ads.txt físico**: Criado `public/ads.txt`, removida rota dinâmica `/adstxt` e rewrite do `next.config.ts`.
+- [x] **Servir ads.txt físico**: Restaurada rota `/adstxt` + rewrite `/ads.txt → /adstxt` no `next.config.ts`. Confirmado funcionando em `dividai.com/ads.txt`.
 - [ ] **Aguardar reprocessamento**: 24-48h para o Google remover o status "Page with redirect" das 3 paginas.
 - [ ] **Aguardar indexacao completa**: 1-2 semanas para as paginas válidas ficarem indexadas.
 - [ ] **Reaplicar no AdSense**: Quando os posts válidos estiverem indexados, enviar para revisão (2-7 dias).
