@@ -313,7 +313,7 @@ export default function AutorLucasBianchiPage() {
                         {posts.map((post, index) => (
                             <ScrollReveal key={post.slug} delay={index * 40} style={{ height: "100%" }}>
                                 <Link href={`/post/${post.slug}`} className="post-card">
-                                    <PostCardImage slug={post.slug} title={post.title} />
+                                    <PostCardImage slug={post.slug} title={post.title} image={post.image} />
                                     <div className="post-card-body">
                                         <span className="post-category">{post.category}</span>
                                         <h3 className="post-title">{post.title}</h3>

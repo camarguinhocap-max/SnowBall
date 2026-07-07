@@ -3,6 +3,7 @@ import Image from "next/image";
 interface PostCardImageProps {
     slug: string;
     title: string;
+    image?: string;
 }
 
 const blurDataURL =
@@ -20,11 +21,11 @@ const blurDataURL =
         </svg>
     `);
 
-export default function PostCardImage({ slug, title }: PostCardImageProps) {
+export default function PostCardImage({ slug, title, image }: PostCardImageProps) {
     return (
         <div className="post-card-image-wrap">
             <Image
-                src={`/post/${slug}/opengraph-image`}
+                src={image ?? `/post/${slug}/opengraph-image`}
                 alt={`Capa do artigo ${title}`}
                 width={1200}
                 height={630}

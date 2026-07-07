@@ -60,7 +60,7 @@ export default function RelatedPosts({ currentSlug, category, tags }: RelatedPos
                 {relatedPosts.map(({ post, sharedTags }, index) => (
                     <ScrollReveal key={post.slug} delay={index * 70} style={{ height: "100%" }}>
                         <Link href={`/post/${post.slug}`} className="post-card related-post-card">
-                            <PostCardImage slug={post.slug} title={post.title} />
+                            <PostCardImage slug={post.slug} title={post.title} image={post.image} />
 
                             <div className="post-card-body">
                                 <div className="related-post-card__meta">
