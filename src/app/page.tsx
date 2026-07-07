@@ -75,6 +75,12 @@ export default async function Home({ searchParams }: HomeProps) {
     }
 
     const otherPosts = sortByDate(filtered).filter((post) => post.slug !== featuredPost.slug);
+
+    // Usa imagem real do post se estiver num diretório válido (/images/ ou /posts/); caso contrário usa opengraph gerado
+    const featuredImageSrc =
+        featuredPost.image?.startsWith('/images/') || featuredPost.image?.startsWith('/posts/')
+            ? featuredPost.image
+            : `/post/${featuredPost.slug}/opengraph-image`;
     
     // Lógica da Paginação
     const POSTS_PER_PAGE = 9;
@@ -189,7 +195,7 @@ export default async function Home({ searchParams }: HomeProps) {
                                 {/* Image strip */}
                                 <div className="featured-image-strip">
                                     <Image
-                                        src={`/post/${featuredPost.slug}/opengraph-image`}
+                                        src={featuredImageSrc}
                                         alt={`Capa do artigo ${featuredPost.title}`}
                                         fill
                                         priority

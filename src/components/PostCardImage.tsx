@@ -1,4 +1,6 @@
+'use client';
 import Image from "next/image";
+import { useState } from "react";
 
 interface PostCardImageProps {
     slug: string;
@@ -22,10 +24,13 @@ const blurDataURL =
     `);
 
 export default function PostCardImage({ slug, title, image }: PostCardImageProps) {
+    const ogSrc = `/post/${slug}/opengraph-image`;
+    const [src, setSrc] = useState(image ?? ogSrc);
+
     return (
         <div className="post-card-image-wrap">
             <Image
-                src={image ?? `/post/${slug}/opengraph-image`}
+                src={src}
                 alt={`Capa do artigo ${title}`}
                 width={1200}
                 height={630}
@@ -34,6 +39,7 @@ export default function PostCardImage({ slug, title, image }: PostCardImageProps
                 blurDataURL={blurDataURL}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 unoptimized
+                onError={() => setSrc(ogSrc)}
             />
         </div>
     );
