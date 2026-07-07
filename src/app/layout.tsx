@@ -229,6 +229,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     </div>
                 </footer>
                 <CookieConsent />
+                {/* AdCash AutoTag */}
+                <Script
+                    src="https://static.ac-cdn.net/aclib.js"
+                    strategy="afterInteractive"
+                />
+                <Script id="adcash-autotag" strategy="afterInteractive">
+                    {`aclib.runAutoTag({ zoneId: 'cuxsnxw7sw' });`}
+                </Script>
             </body>
         </html>
     );
