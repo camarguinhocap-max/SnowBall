@@ -140,6 +140,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     strategy="afterInteractive"
                     crossOrigin="anonymous"
                 />
+                {/* AdCash — Passo 1: biblioteca no head, o mais acima possível */}
+                <Script
+                    id="aclib"
+                    src="//acscdn.com/script/aclib.js"
+                    strategy="afterInteractive"
+                />
             </head>
             <body className={`${inter.variable} ${outfit.variable}`}>
                 <ConversionTracker />
@@ -229,13 +235,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     </div>
                 </footer>
                 <CookieConsent />
-                {/* AdCash AutoTag */}
-                <Script
-                    src="https://static.ac-cdn.net/aclib.js"
-                    strategy="afterInteractive"
-                />
+                {/* AdCash — Passo 2: autotag após a biblioteca */}
                 <Script id="adcash-autotag" strategy="afterInteractive">
-                    {`aclib.runAutoTag({ zoneId: 'cuxsnxw7sw' });`}
+                    {`aclib.runAutoTag({ zoneId: 'zzqa9yg6x4' });`}
                 </Script>
             </body>
         </html>
