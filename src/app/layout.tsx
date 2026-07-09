@@ -134,11 +134,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         gtag('config', 'AW-18107418379');
                     `}
                 </Script>
-                {/* AdSense — afterInteractive garante que o crawler do Google detecta o publisher ID na revisão */}
-                <Script
-                    id="google-adsense"
+                {/* AdSense — tag nativa evita atributo data-nscript não reconhecido pelo validador do Google */}
+                <script
+                    async
                     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543510171277537"
-                    strategy="afterInteractive"
                     crossOrigin="anonymous"
                 />
             </head>
