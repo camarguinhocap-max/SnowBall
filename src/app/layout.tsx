@@ -9,6 +9,7 @@ import ConversionTracker from "@/components/ConversionTracker";
 import CookieConsent from "@/components/CookieConsent";
 import MobileMenu from "@/components/MobileMenu";
 import Script from "next/script";
+import AdCashScript from "@/components/AdCashScript";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -140,12 +141,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     strategy="afterInteractive"
                     crossOrigin="anonymous"
                 />
-                {/* AdCash — Passo 1: biblioteca no head, o mais acima possível */}
-                <Script
-                    id="aclib"
-                    src="//acscdn.com/script/aclib.js"
-                    strategy="afterInteractive"
-                />
             </head>
             <body className={`${inter.variable} ${outfit.variable}`}>
                 <ConversionTracker />
@@ -235,10 +230,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     </div>
                 </footer>
                 <CookieConsent />
-                {/* AdCash — Passo 2: autotag após a biblioteca */}
-                <Script id="adcash-autotag" strategy="afterInteractive">
-                    {`aclib.runAutoTag({ zoneId: 'zzqa9yg6x4' });`}
-                </Script>
+                <AdCashScript />
             </body>
         </html>
     );
