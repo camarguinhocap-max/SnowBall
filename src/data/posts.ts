@@ -1,4 +1,4 @@
-import { PostMeta } from './types';
+﻿import { PostMeta } from './types';
 import { normalizeCategory } from './categoryMap';
 
 export type { PostMeta, Post } from './types';
@@ -46,6 +46,8 @@ import { post as post_como_criar_um_orcamento_mensal_simples_e_eficaz } from './
 import { post as post_como_declarar_imposto_de_renda_2026 } from './posts/como-declarar-imposto-de-renda-2026';
 import { post as post_como_declarar_investimentos_ir_2026 } from './posts/como-declarar-investimentos-ir-2026';
 import { post as post_como_economizar_dinheiro_todo_mes_2026 } from './posts/como-economizar-dinheiro-todo-mes-2026';
+import { post as post_como_escolher_corretora_2026 } from './posts/como-escolher-corretora-2026';
+import { post as post_como_guardar_dinheiro_todo_mes_2026 } from './posts/como-guardar-dinheiro-todo-mes-2026';
 import { post as post_como_escolher_um_bom_broker } from './posts/como-escolher-um-bom-broker';
 import { post as post_como_fazer_renda_extra_online_sem_sair_de_casa_2026 } from './posts/como-fazer-renda-extra-online-sem-sair-de-casa-2026';
 import { post as post_como_fazer_seu_dinheiro_trabalhar_por_voce_2026 } from './posts/como-fazer-seu-dinheiro-trabalhar-por-voce-2026';
@@ -81,6 +83,7 @@ import { post as post_cripto_estrategia } from './posts/cripto-estrategia';
 import { post as post_cripto_vale_a_pena } from './posts/cripto-vale-a-pena';
 import { post as post_criptomoedas_2026_11_mai } from './posts/criptomoedas-2026-11-mai';
 import { post as post_criptomoedas_alem_do_bitcoin_2026 } from './posts/criptomoedas-alem-do-bitcoin-2026';
+import { post as post_dolar_em_alta_impacto_2026 } from './posts/dolar-em-alta-impacto-2026';
 import { post as post_debenturas_titulos_corporativos } from './posts/debenturas-titulos-corporativos';
 import { post as post_disciplina_financeira } from './posts/disciplina-financeira';
 import { post as post_diversificacao_de_carteira_2026 } from './posts/diversificacao-de-carteira-2026';
@@ -96,9 +99,11 @@ import { post as post_educacao_financeira_para_iniciantes_o_guia_simples_que_nin
 import { post as post_empreendedorismo_ia_2026_oportunidades } from './posts/empreendedorismo-ia-2026-oportunidades';
 import { post as post_empreender_com_pouco_2026 } from './posts/empreender-com-pouco-2026';
 import { post as post_etfs_diversificacao_com_1_clique } from './posts/etfs-diversificacao-com-1-clique';
+import { post as post_etfs_na_b3_como_diversificar_2026 } from './posts/etfs-na-b3-como-diversificar-2026';
 import { post as post_etfs_internacionais_pelo_brasil_2026 } from './posts/etfs-internacionais-pelo-brasil-2026';
 import { post as post_ferias_julho_sem_dividas_2026 } from './posts/ferias-julho-sem-dividas-2026';
 import { post as post_fiis_de_papel_ou_tijolo_2026 } from './posts/fiis-de-papel-ou-tijolo-2026';
+import { post as post_financas_comportamentais_2026 } from './posts/financas-comportamentais-2026';
 import { post as post_financas_para_autonomos_como_pagar_menos_imposto_2026 } from './posts/financas-para-autonomos-como-pagar-menos-imposto-2026';
 import { post as post_financas_para_casais_dinheiro_sem_briga_2026 } from './posts/financas-para-casais-dinheiro-sem-briga-2026';
 import { post as post_financas_para_mei_e_autonomos_2026 } from './posts/financas-para-mei-e-autonomos-2026';
@@ -116,10 +121,12 @@ import { post as post_gastos_invisiveis_como_identificar_e_cortar } from './post
 import { post as post_guia_completo_para_sair_das_dividas_em_90_dias } from './posts/guia-completo-para-sair-das-dividas-em-90-dias';
 import { post as post_guia_imposto_de_renda_2026_investidores } from './posts/guia-imposto-de-renda-2026-investidores';
 import { post as post_guia_lci_lca_2026 } from './posts/guia-lci-lca-2026';
+import { post as post_lci_lca_investir_sem_imovel_2026 } from './posts/lci-lca-investir-sem-imovel-2026';
 import { post as post_guia_rapido_investimentos_iniciantes_2026 } from './posts/guia-rapido-investimentos-iniciantes-2026';
 import { post as post_habitos_milionarios_que_qualquer_pessoa_pode_adotar_2026 } from './posts/habitos-milionarios-que-qualquer-pessoa-pode-adotar-2026';
 import { post as post_holding_familiar_protecao_fiscal_2026 } from './posts/holding-familiar-protecao-fiscal-2026';
 import { post as post_imoveis_fisicos_ainda_valem_2026 } from './posts/imoveis-fisicos-ainda-valem-2026';
+import { post as post_imovel_para_alugar_vale_a_pena_2026 } from './posts/imovel-para-alugar-vale-a-pena-2026';
 import { post as post_imposto_de_renda_guia_simples_para_brasileiros } from './posts/imposto-de-renda-guia-simples-para-brasileiros';
 import { post as post_imposto_de_renda_sobre_investimentos } from './posts/imposto-de-renda-sobre-investimentos';
 import { post as post_imposto_renda_2026_erros } from './posts/imposto-renda-2026-erros';
@@ -131,6 +138,7 @@ import { post as post_investimentos_para_autonomos_2026 } from './posts/investim
 import { post as post_investimentos_para_iniciantes_onde_investir_com_pouco_dinheiro } from './posts/investimentos-para-iniciantes-onde-investir-com-pouco-dinheiro';
 import { post as post_investimentos_seguros_em_tempos_de_juros_altos_2026 } from './posts/investimentos-seguros-em-tempos-de-juros-altos-2026';
 import { post as post_investir_em_dolar_ou_real_2026 } from './posts/investir-em-dolar-ou-real-2026';
+import { post as post_investir_100_reais_por_mes_2026 } from './posts/investir-100-reais-por-mes-2026';
 import { post as post_investir_na_bolsa_com_pouco_dinheiro_2026 } from './posts/investir-na-bolsa-com-pouco-dinheiro-2026';
 import { post as post_melhores_livros_financas_2026 } from './posts/melhores-livros-financas-2026';
 import { post as post_mentalidade_financeira } from './posts/mentalidade-financeira';
@@ -186,6 +194,8 @@ import { post as post_seguro_de_vida_guia_definitivo_2026 } from './posts/seguro
 import { post as post_seguro_de_vida_reserva_de_emergencia_2026 } from './posts/seguro-de-vida-reserva-de-emergencia-2026';
 import { post as post_seguro_sucessorio_blindagem_herdeiros_2026 } from './posts/seguro-sucessorio-blindagem-herdeiros-2026';
 import { post as post_small_caps_2026_quando_fazem_sentido } from './posts/small-caps-2026-quando-fazem-sentido';
+import { post as post_small_caps_b3_oportunidades_2026 } from './posts/small-caps-b3-oportunidades-2026';
+import { post as post_selic_em_queda_renda_fixa_2026 } from './posts/selic-em-queda-renda-fixa-2026';
 import { post as post_staking_e_defi_2026 } from './posts/staking-e-defi-2026';
 import { post as post_tesouro_direto_guia_completo_2026 } from './posts/tesouro-direto-guia-completo-2026';
 import { post as post_tesouro_direto_tipos_qual_escolher_2026 } from './posts/tesouro-direto-tipos-qual-escolher-2026';
@@ -380,6 +390,16 @@ export const posts: PostMeta[] = [
     post_seguro_de_vida_reserva_de_emergencia_2026,
     post_seguro_sucessorio_blindagem_herdeiros_2026,
     post_small_caps_2026_quando_fazem_sentido,
+    post_small_caps_b3_oportunidades_2026,
+    post_selic_em_queda_renda_fixa_2026,
+    post_etfs_na_b3_como_diversificar_2026,
+    post_como_guardar_dinheiro_todo_mes_2026,
+    post_financas_comportamentais_2026,
+    post_dolar_em_alta_impacto_2026,
+    post_lci_lca_investir_sem_imovel_2026,
+    post_investir_100_reais_por_mes_2026,
+    post_como_escolher_corretora_2026,
+    post_imovel_para_alugar_vale_a_pena_2026,
     post_staking_e_defi_2026,
     post_tesouro_direto_guia_completo_2026,
     post_tesouro_direto_tipos_qual_escolher_2026,
@@ -393,3 +413,7 @@ export const posts: PostMeta[] = [
     ...post,
     category: normalizeCategory(post.category),
 }));
+
+
+
+
