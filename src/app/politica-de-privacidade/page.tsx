@@ -17,7 +17,7 @@ export default function PoliticaPrivacidade() {
             </header>
 
             <div className="article-content" style={{ lineHeight: "1.8" }}>
-                <p style={{ fontWeight: "500", color: "var(--primary)" }}>Última atualização: Março de 2026</p>
+                <p style={{ fontWeight: "500", color: "var(--primary)" }}>Última atualização: Julho de 2026</p>
 
                 <p>A sua privacidade é importante para nós. É política do <strong>DividAI (dividai.com)</strong> respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site. Esta Política de Privacidade explica como coletamos, usamos, divulgamos e protegemos as suas informações.</p>
 
@@ -53,7 +53,36 @@ export default function PoliticaPrivacidade() {
                 <h3>Telegram</h3>
                 <p>Utilizamos o Telegram Bot para enviar notificações automáticas de novos artigos publicados. Se você se inscrever para receber notificações via Telegram, suas informações serão processadas de acordo com a <a href="https://telegram.org/privacy" target="_blank" rel="noopener noreferrer" style={{ color: "var(--primary)", textDecoration: "underline" }}>Política de Privacidade do Telegram</a>.</p>
 
-                <h2 style={{ marginTop: "2rem" }}>4. Retenção de Dados</h2>
+                <h2 id="ofertas-prime-threads-bot" style={{ marginTop: "2rem" }}>4. Ofertas Prime - Threads Bot</h2>
+                <p>O <strong>Ofertas Prime - Threads Bot</strong> é uma aplicação desenvolvida pela DividAI que se conecta à API oficial do Threads (Meta) para identificar publicações públicas relacionadas a produtos e ofertas, com o objetivo de oferecer recomendações relevantes aos usuários da plataforma.</p>
+
+                <h3>Dados que Coletamos via Threads API</h3>
+                <p>Ao utilizar a API do Threads, coletamos e processamos:</p>
+                <ul>
+                    <li>Conteúdo de posts públicos do Threads que correspondem a palavras-chave específicas relacionadas a produtos</li>
+                    <li>Nome de usuário (username) e identificador público (ID) do autor da publicação</li>
+                    <li>Link permanente (permalink) e data/hora da publicação</li>
+                </ul>
+                <p>Não coletamos dados privados, mensagens diretas, ou qualquer informação que não esteja publicamente disponível na plataforma Threads.</p>
+
+                <h3>Como Usamos Esses Dados</h3>
+                <ul>
+                    <li>Identificar publicações públicas com potencial interesse de compra em determinados produtos</li>
+                    <li>Responder a essas publicações, quando aplicável, com sugestões de produtos e links de afiliados relacionados ao conteúdo da publicação original</li>
+                    <li>Análise interna para melhorar a relevância das recomendações oferecidas</li>
+                </ul>
+
+                <h3>Compartilhamento de Dados</h3>
+                <p>Não vendemos, alugamos ou compartilhamos os dados coletados via Threads API com terceiros para fins de marketing. Os dados são processados internamente e, quando aplicável, por serviços de infraestrutura utilizados para automação (ex: n8n, hospedado em ambiente próprio) e modelos de linguagem (ex: Groq, Anthropic) para geração de respostas, sem retenção permanente por parte desses provedores além do necessário ao processamento da solicitação.</p>
+
+                <h3>Retenção de Dados</h3>
+                <p>Dados de publicações coletadas via Threads API são retidos por até 30 dias para fins de processamento e análise, sendo descartados automaticamente após esse período caso não resultem em interação.</p>
+
+                <h3>Seus Direitos</h3>
+                <p>Caso sua publicação pública tenha sido processada por este app e você deseje solicitar a remoção dos dados associados, entre em contato pelo email <a href="mailto:contato@dividai.com" style={{ color: "var(--primary)", textDecoration: "underline" }}>contato@dividai.com</a>, informando o link (permalink) da publicação em questão.</p>
+                <p>Esta seção está sujeita à Política de Privacidade geral do DividAI descrita acima, incluindo conformidade com LGPD e GDPR.</p>
+
+                <h2 style={{ marginTop: "2rem" }}>5. Retenção de Dados</h2>
                 <p>Retemos suas informações apenas pelo tempo necessário para fornecer os serviços solicitados ou conforme exigido por lei. Especificamente:</p>
                 <ul>
                     <li>Dados de newsletters são retidos até que você cancele sua inscrição</li>
@@ -61,13 +90,13 @@ export default function PoliticaPrivacidade() {
                     <li>Dados de cookies persistem de acordo com suas configurações de navegador (geralmente 2 anos)</li>
                 </ul>
 
-                <h2 style={{ marginTop: "2rem" }}>5. Segurança das Informações</h2>
+                <h2 style={{ marginTop: "2rem" }}>6. Segurança das Informações</h2>
                 <p>Implementamos medidas de segurança comercialmente apropriadas para proteger suas informações contra acesso não autorizado, alteração, divulgação ou destruição não intencional. No entanto, nenhum método de transmissão pela Internet é 100% seguro. Você reconhece que há limitações inerentes à segurança na Internet.</p>
 
-                <h2 style={{ marginTop: "2rem" }}>6. Links para Sites Terceiros</h2>
+                <h2 style={{ marginTop: "2rem" }}>7. Links para Sites Terceiros</h2>
                 <p>Nosso site pode conter links para sites externos que não são operados por nós. Não somos responsáveis pelas práticas de privacidade ou pelo conteúdo de sites terceiros. Recomendamos que você revise as políticas de privacidade desses sites independentemente.</p>
 
-                <h2 style={{ marginTop: "2rem" }}>7. Seus Direitos</h2>
+                <h2 style={{ marginTop: "2rem" }}>8. Seus Direitos</h2>
                 <p>Dependendo de sua localização, você pode ter direitos específicos em relação aos seus dados pessoais, incluindo:</p>
                 <ul>
                     <li><strong>Direito de Acesso:</strong> Solicitar uma cópia dos dados pessoais que temos sobre você</li>
@@ -77,7 +106,7 @@ export default function PoliticaPrivacidade() {
                     <li><strong>Direito de Cancelar Consentimento:</strong> Retirar seu consentimento para inscrições e cookies de marketing a qualquer momento</li>
                 </ul>
 
-                <h2 style={{ marginTop: "2rem" }}>8. Conformidade Legal</h2>
+                <h2 style={{ marginTop: "2rem" }}>9. Conformidade Legal</h2>
                 <p>Esta Política de Privacidade se adequa às seguintes regulamentações:</p>
                 <ul>
                     <li><strong>LGPD (Lei Geral de Proteção de Dados):</strong> Legislação brasileira que governa a coleta e o uso de dados pessoais</li>
@@ -85,7 +114,7 @@ export default function PoliticaPrivacidade() {
                     <li><strong>Políticas do Google AdSense:</strong> Aderimos rigorosamente aos requisitos de privacidade do Google AdSense, incluindo divulgação clara de coleta de dados, uso de cookies, e opções de opt-out</li>
                 </ul>
 
-                <h2 style={{ marginTop: "2rem" }}>9. Isenção de Responsabilidade sobre Conteúdo de Investimento</h2>
+                <h2 style={{ marginTop: "2rem" }}>10. Isenção de Responsabilidade sobre Conteúdo de Investimento</h2>
                 <p>O conteúdo publicado neste blog, incluindo artigos sobre investimentos e dividendos, é fornecido apenas para fins educacionais e informativos. Não constituem recomendação de investimento, conselho financeiro profissional, ou solicitação para compra ou venda de qualquer ativo financeiro.</p>
                 <ul>
                     <li>Não somos consultores financeiros, gestores de carteira, ou corretoras de valores</li>
@@ -94,10 +123,10 @@ export default function PoliticaPrivacidade() {
                     <li>Você deve consultar um consultor financeiro, CPA (Contador) ou especialista em investimentos antes de tomar decisões financeiras</li>
                 </ul>
 
-                <h2 style={{ marginTop: "2rem" }}>10. Alterações a Esta Política</h2>
+                <h2 style={{ marginTop: "2rem" }}>11. Alterações a Esta Política</h2>
                 <p>Podemos atualizar esta Política de Privacidade periodicamente. Qualquer alteração significativa será publicada nesta página, e você será notificado através do site ou email se as mudanças forem substanciais. O seu uso contínuo do site após as alterações constitui aceitação da Política de Privacidade revisada.</p>
 
-                <h2 style={{ marginTop: "2rem" }}>11. Contato</h2>
+                <h2 style={{ marginTop: "2rem" }}>12. Contato</h2>
                 <p>Se você tiver questões, preocupações ou desejar exercer seus direitos de privacidade, entre em contato conosco em:</p>
                 <ul>
                     <li><strong>Email:</strong> <a href="mailto:contato@dividai.com" style={{ color: "var(--primary)", textDecoration: "underline" }}>contato@dividai.com</a></li>
