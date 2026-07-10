@@ -229,7 +229,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     </div>
                 </footer>
                 <CookieConsent />
-                <AdCashScript />
+                {/* AdCash desabilitado temporariamente — para reativar, remover o comentário abaixo */}
+                {/* <AdCashScript /> */}
             </body>
         </html>
     );
