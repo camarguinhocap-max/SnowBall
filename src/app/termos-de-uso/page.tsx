@@ -17,7 +17,7 @@ export default function TermosDeUso() {
             </header>
 
             <div className="article-content" style={{ lineHeight: "1.8" }}>
-                <p style={{ fontWeight: "500", color: "var(--primary)" }}>Última atualização: Março de 2026</p>
+                <p style={{ fontWeight: "500", color: "var(--primary)" }}>Última atualização: Julho de 2026</p>
 
                 <p>Bem-vindo ao <strong>Blog DividAI</strong> (dividai.com). Ao acessar e utilizar este site, você concorda com os presentes Termos de Uso. Leia atentamente antes de continuar navegando.</p>
 
@@ -98,7 +98,38 @@ export default function TermosDeUso() {
                 </ul>
                 <p>Para resolução de eventuais disputas, fica eleito o foro da comarca de domicílio do titular da plataforma.</p>
 
-                <h2 style={{ marginTop: "2rem" }}>10. Contato</h2>
+                <h2 id="ofertas-prime-threads-bot" style={{ marginTop: "2rem" }}>10. Ofertas Prime - Threads Bot</h2>
+                <p>Estes termos adicionais aplicam-se especificamente ao uso do <strong>Ofertas Prime - Threads Bot</strong>, uma aplicação da DividAI integrada à API oficial do Threads (Meta Platforms, Inc.).</p>
+
+                <h3>Descrição do Serviço</h3>
+                <p>O Ofertas Prime - Threads Bot é uma ferramenta de automação que utiliza a API pública do Threads para identificar publicações relacionadas a produtos e, quando aplicável, responder a essas publicações com sugestões de produtos, ofertas e links de afiliados.</p>
+
+                <h3>Uso Aceitável</h3>
+                <p>Ao utilizar este serviço, você concorda que:</p>
+                <ul>
+                    <li>O app opera em conformidade com os Termos de Plataforma da Meta e as Diretrizes de Desenvolvedor do Threads</li>
+                    <li>Interações automatizadas (respostas a publicações públicas) são realizadas com o objetivo de oferecer recomendações relevantes, não de gerar spam ou conteúdo enganoso</li>
+                    <li>Links de afiliados incluídos nas respostas são devidamente identificados como tal, quando exigido por lei ou pelas políticas da plataforma</li>
+                </ul>
+
+                <h3>Links de Afiliados e Monetização</h3>
+                <p>O Ofertas Prime - Threads Bot pode incluir links de afiliados em suas interações. A DividAI pode receber comissão por compras realizadas através desses links, sem custo adicional para o comprador. Isso não influencia a seleção dos produtos recomendados, que se baseia na relevância ao conteúdo da publicação original.</p>
+
+                <h3>Limitação de Responsabilidade</h3>
+                <ul>
+                    <li>Não garantimos a precisão, disponibilidade ou adequação dos produtos e ofertas sugeridas</li>
+                    <li>Não somos responsáveis pela qualidade, entrega ou políticas de devolução dos produtos anunciados por terceiros</li>
+                    <li>A interação automatizada com publicações públicas do Threads está sujeita às políticas e limitações impostas pela própria Meta, podendo ser descontinuada a qualquer momento sem aviso prévio</li>
+                </ul>
+
+                <h3>Direitos de Terceiros</h3>
+                <p>Respeitamos os direitos dos usuários do Threads cujas publicações públicas são processadas por este serviço. Qualquer usuário pode solicitar a interrupção de interações com suas publicações entrando em contato pelo email <a href="mailto:contato@dividai.com" style={{ color: "var(--primary)", textDecoration: "underline" }}>contato@dividai.com</a>.</p>
+
+                <h3>Alterações ao Serviço</h3>
+                <p>Podemos modificar, suspender ou descontinuar o Ofertas Prime - Threads Bot a qualquer momento, incluindo em razão de mudanças nas políticas da plataforma Threads/Meta.</p>
+                <p>Esta seção complementa os Termos de Uso gerais do DividAI descritos acima.</p>
+
+                <h2 style={{ marginTop: "2rem" }}>11. Contato</h2>
                 <p>Para dúvidas, sugestões ou solicitações relacionadas a estes Termos, entre em contato:</p>
                 <ul>
                     <li><strong>Email:</strong> <a href="mailto:contato@dividai.com" style={{ color: "var(--primary)", textDecoration: "underline" }}>contato@dividai.com</a></li>
@@ -106,7 +137,7 @@ export default function TermosDeUso() {
                 </ul>
 
                 <p style={{ marginTop: "3rem", fontSize: "0.9rem", color: "var(--muted)", paddingTop: "2rem", borderTop: "1px solid var(--border)" }}>
-                    Estes Termos de Uso são efetivos a partir de <strong>Março de 2026</strong> e se aplicam a todos os visitantes e usuários do Blog DividAI (dividai.com).
+                    Estes Termos de Uso são efetivos a partir de <strong>Março de 2026</strong>, com última atualização em <strong>Julho de 2026</strong> e se aplicam a todos os visitantes e usuários do Blog DividAI (dividai.com).
                 </p>
             </div>
         </article>
