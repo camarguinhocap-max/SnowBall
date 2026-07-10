@@ -6,6 +6,6 @@ export const post: PostMeta = {
   excerpt: 'Vale a pena investir em Altcoins?',
   date: '15 Jun 2026',
   readTime: '5 min de leitura',
-  category: 'Criptoativos',
+  category: 'Cripto e Alternativos',
   tags: ['altcoins', 'cripto'],
   image: '/assets/images/criptomoedas-alem-do-bitcoin-2026.jpg',};
