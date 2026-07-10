@@ -8,16 +8,16 @@ import ScrollReveal from "@/components/ScrollReveal";
 const AUTHOR_URL = "https://dividai.com/autor/lucas-bianchi";
 
 export const metadata: Metadata = {
-    title: "Lucas Bianchi | Editor-chefe do Blog DividAI",
+    title: "Lucas Bianchi | Fundador do Blog DividAI",
     description:
-        "Conheça Lucas Bianchi, analista financeiro e editor-chefe do Blog DividAI. Especialista em renda passiva, dividendos e Value Investing para o mercado brasileiro.",
+        "Conheça Lucas Bianchi, investidor e fundador do Blog DividAI. Curitibano, entusiasta de tecnologia e dividendos, criou o blog para ajudar brasileiros a construir independência financeira real — sem depender do INSS.",
     alternates: {
         canonical: AUTHOR_URL,
     },
     openGraph: {
-        title: "Lucas Bianchi | Editor-chefe do Blog DividAI",
+        title: "Lucas Bianchi | Fundador do Blog DividAI",
         description:
-            "Analista financeiro especialista em renda passiva e dividendos. Dedicado a democratizar a educação financeira no Brasil.",
+            "Investidor e entusiasta de dividendos. Criou o DividAI para ajudar brasileiros a não dependerem do INSS na aposentadoria.",
         url: AUTHOR_URL,
         siteName: "Blog DividAI",
         type: "profile",
@@ -47,9 +47,9 @@ const authorSchema = {
     name: "Lucas Bianchi",
     url: AUTHOR_URL,
     image: "https://dividai.com/lucas-bianchi.png",
-    jobTitle: "Editor-chefe",
+    jobTitle: "Investidor e Fundador",
     description:
-        "Analista financeiro e especialista em renda passiva, dividendos e Value Investing para o mercado brasileiro. Editor-chefe do Blog DividAI desde 2026.",
+        "Investidor e entusiasta de tecnologia e dividendos, nascido em Curitiba. Fundou o Blog DividAI em 2026 para ajudar brasileiros a construir independência financeira real, sem depender do INSS.",
     worksFor: {
         "@type": "Organization",
         name: "DividAI",
@@ -63,11 +63,13 @@ const authorSchema = {
         "Dividendos",
         "Tesouro Direto",
         "Educação Financeira",
-        "Value Investing",
+        "Independência Financeira",
         "Mercado Financeiro Brasileiro",
     ],
     sameAs: [
-        "https://twitter.com/dividai",
+        "https://x.com/DividAI_App",
+        "https://www.instagram.com/dividai_app/",
+        "https://www.threads.com/@dividai_app",
         "https://t.me/DividAI_News",
     ],
 };
@@ -156,10 +158,9 @@ export default function AutorLucasBianchiPage() {
                             color: "var(--foreground-2)",
                             lineHeight: 1.7,
                         }}>
-                            Analista financeiro e entusiasta de dividendos. Fundou o Blog DividAI em 2026
-                            com a missão de democratizar a educação financeira no Brasil — tornando
-                            conteúdo de qualidade acessível para qualquer pessoa, independente do nível
-                            de conhecimento.
+                            Investidor e entusiasta de tecnologia e dividendos, de Curitiba. Fundou o Blog DividAI em 2026
+                            para ajudar brasileiros comuns a construir independência financeira real —
+                            sem depender do INSS.
                         </p>
 
                         {/* Stats */}
@@ -182,62 +183,34 @@ export default function AutorLucasBianchiPage() {
 
                         {/* Redes sociais */}
                         <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-                            <a
-                                href="https://twitter.com/dividai"
-                                target="_blank"
-                                rel="noopener noreferrer me"
-                                style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    gap: "0.4rem",
-                                    padding: "0.4rem 1rem",
-                                    border: "1px solid var(--border)",
-                                    borderRadius: "8px",
-                                    fontSize: "0.88rem",
-                                    fontWeight: 600,
-                                    color: "var(--foreground)",
-                                    textDecoration: "none",
-                                    transition: "border-color 0.2s",
-                                }}
-                            >
-                                𝕏 Twitter
-                            </a>
-                            <a
-                                href="https://t.me/DividAI_News"
-                                target="_blank"
-                                rel="noopener noreferrer me"
-                                style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    gap: "0.4rem",
-                                    padding: "0.4rem 1rem",
-                                    border: "1px solid var(--border)",
-                                    borderRadius: "8px",
-                                    fontSize: "0.88rem",
-                                    fontWeight: 600,
-                                    color: "var(--foreground)",
-                                    textDecoration: "none",
-                                }}
-                            >
-                                ✈️ Telegram
-                            </a>
-                            <a
-                                href="mailto:contato@dividai.com"
-                                style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    gap: "0.4rem",
-                                    padding: "0.4rem 1rem",
-                                    border: "1px solid var(--border)",
-                                    borderRadius: "8px",
-                                    fontSize: "0.88rem",
-                                    fontWeight: 600,
-                                    color: "var(--foreground)",
-                                    textDecoration: "none",
-                                }}
-                            >
-                                ✉️ E-mail
-                            </a>
+                            {[
+                                { href: "https://x.com/DividAI_App", label: "𝕏 Twitter" },
+                                { href: "https://www.instagram.com/dividai_app/", label: "📷 Instagram" },
+                                { href: "https://www.threads.com/@dividai_app", label: "@ Threads" },
+                                { href: "https://t.me/DividAI_News", label: "✈️ Telegram" },
+                                { href: "mailto:contato@dividai.com", label: "✉️ E-mail" },
+                            ].map(({ href, label }) => (
+                                <a
+                                    key={href}
+                                    href={href}
+                                    target={href.startsWith("mailto") ? undefined : "_blank"}
+                                    rel="noopener noreferrer me"
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "0.4rem",
+                                        padding: "0.4rem 1rem",
+                                        border: "1px solid var(--border)",
+                                        borderRadius: "8px",
+                                        fontSize: "0.88rem",
+                                        fontWeight: 600,
+                                        color: "var(--foreground)",
+                                        textDecoration: "none",
+                                    }}
+                                >
+                                    {label}
+                                </a>
+                            ))}
                         </div>
                     </div>
                 </header>
@@ -252,20 +225,22 @@ export default function AutorLucasBianchiPage() {
                 }}>
                     <h2 style={{ marginTop: 0, fontSize: "1.25rem" }}>Sobre Lucas Bianchi</h2>
                     <p style={{ lineHeight: 1.8, marginBottom: "1rem" }}>
-                        Lucas é analista financeiro com foco em <strong>renda passiva, dividendos e Value Investing</strong>.
-                        Ao longo da carreira, percebeu que a maioria dos brasileiros tem dificuldade de acessar
-                        informação financeira de qualidade — conteúdo que realmente faça sentido para a realidade
-                        local, com CDI, Tesouro Direto, FIIs e B3, e não apenas traduções de mercados internacionais.
+                        Lucas é investidor há 3 anos e entusiasta de tecnologia e dividendos, nascido e criado em Curitiba.
+                        Não tem formação em economia nem é analista certificado — é um brasileiro comum que decidiu
+                        tomar as rédeas da própria aposentadoria depois de perceber que <strong>o INSS não é sustentável</strong>.
+                        Na prática, o sistema funciona como uma pirâmide financeira chancelada pelo governo: as gerações
+                        mais jovens pagam os aposentados de hoje sem nenhuma garantia de receber o mesmo no futuro.
                     </p>
                     <p style={{ lineHeight: 1.8, marginBottom: "1rem" }}>
-                        Em fevereiro de 2026, fundou o <strong>Blog DividAI</strong> para resolver esse problema.
-                        O blog cobre desde os primeiros passos de quem nunca investiu até estratégias mais avançadas
-                        de alocação de ativos, planejamento sucessório e proteção patrimonial.
+                        A partir dessa constatação, começou a estudar finanças pessoais e investimentos por conta própria.
+                        Em fevereiro de 2026, fundou o <strong>Blog DividAI</strong> com um objetivo claro: compartilhar
+                        o que aprendeu e ajudar outros brasileiros a construir uma carteira de dividendos que torne
+                        o INSS irrelevante na aposentadoria.
                     </p>
                     <p style={{ lineHeight: 1.8, margin: 0 }}>
-                        Suas áreas de especialização incluem: <strong>Fundos Imobiliários (FIIs), ações de dividendos,
-                        Tesouro Direto, planejamento financeiro para autônomos e MEIs, e educação financeira para
-                        iniciantes</strong>. Todo conteúdo do blog passa pela curadoria e revisão de Lucas antes da publicação.
+                        O blog cobre os temas que Lucas estudou na prática: <strong>ações de dividendos, Fundos Imobiliários (FIIs),
+                        Tesouro Direto, renda extra e planejamento financeiro para quem está começando do zero</strong>.
+                        A linguagem é direta, sem jargões, porque Lucas escreve para quem estava no mesmo lugar que ele há 3 anos.
                     </p>
                 </section>
 

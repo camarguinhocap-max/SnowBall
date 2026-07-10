@@ -31,12 +31,12 @@ export default function SobrePage() {
                 </div>
 
                 <h2 style={{ marginTop: "2rem" }}>Quem Somos</h2>
-                <p>O <strong>DividAI</strong> é um espaço focado em educação financeira plural e acessível para o mercado brasileiro.</p>
-                <p>Nascemos da mesma frustração que muitos investidores brasileiros compartilham: a dificuldade de encontrar <strong>informação financeira clara, prática e voltada para a realidade do Brasil</strong>. A maioria do conteúdo disponível online é genérica, traduzida de mercados internacionais, ou excessivamente técnica para quem está começando.</p>
-                <p>Decidimos mudar isso.</p>
+                <p>O <strong>DividAI</strong> nasceu de uma constatação incômoda: o INSS não vai sustentar as próximas gerações.</p>
+                <p>O sistema previdenciário brasileiro funciona na prática como uma pirâmide financeira — cada geração paga a aposentadoria da anterior, sem acumulação real de capital. Com o envelhecimento da população e a queda na taxa de natalidade, essa conta simplesmente não fecha. E quem vai pagar o preço são os trabalhadores de hoje.</p>
+                <p>Lucas Bianchi, investidor e entusiasta de tecnologia de Curitiba, percebeu isso há alguns anos e decidiu fazer algo diferente: estudar o mercado financeiro por conta própria e construir sua independência sem depender do governo. O Blog DividAI é o resultado desse aprendizado — um espaço para compartilhar o que funcionou, o que não funcionou, e ajudar outros brasileiros a fazerem o mesmo.</p>
 
                 <h2 style={{ marginTop: "2rem" }}>Nossa Missão</h2>
-                <p>Produzir <strong>conteúdo educacional de alta qualidade</strong> sobre finanças pessoais e investimentos, com foco total na realidade brasileira. Isso significa:</p>
+                <p>Ajudar brasileiros comuns a construir uma carteira de investimentos que gere renda passiva suficiente para tornar o INSS irrelevante — ou pelo menos, opcional. Isso significa:</p>
                 <ul>
                     <li><strong>Falar de CDI, Selic e Tesouro Direto</strong> — não de Treasury Bonds e S&P 500</li>
                     <li><strong>Discutir FIIs, ações da B3 e renda fixa brasileira</strong> com dados reais e atualizados</li>
@@ -59,10 +59,10 @@ export default function SobrePage() {
                 <h2 style={{ marginTop: "2rem" }}>Nosso Compromisso</h2>
                 <p>Todos os artigos publicados no Blog DividAI são:</p>
                 <ul>
-                    <li><strong>Originais</strong> — escritos com pesquisa própria e dados verificados</li>
+                    <li><strong>Baseados em pesquisa</strong> — cada artigo é fundamentado em dados do mercado brasileiro</li>
                     <li><strong>Atualizados</strong> — revisamos e atualizamos conteúdos regularmente</li>
                     <li><strong>Gratuitos</strong> — não cobramos pelo acesso a nenhum artigo</li>
-                    <li><strong>Imparciais</strong> — não recebemos pagamento de corretoras ou gestoras para recomendar produtos</li>
+                    <li><strong>Transparentes</strong> — não recebemos pagamento de corretoras ou gestoras para recomendar produtos</li>
                 </ul>
 
                 <h2 style={{ marginTop: "2rem" }}>Equipe Editorial</h2>
@@ -91,7 +91,7 @@ export default function SobrePage() {
                         <h3 style={{ margin: "0 0 0.25rem 0", fontSize: "1.1rem" }}>Lucas Bianchi</h3>
                         <p style={{ margin: "0 0 0.5rem 0", fontSize: "0.85rem", fontWeight: "600", color: "var(--primary)", textTransform: "uppercase" }}>Editor-chefe</p>
                         <p style={{ margin: 0, fontSize: "0.9rem", lineHeight: "1.5", color: "var(--muted)" }}>
-                            Analista financeiro e entusiasta de dividendos. Com foco em democratizar o acesso à educação financeira de qualidade, Lucas lidera a curadoria e produção de conteúdo do DividAI.
+                            Investidor há 3 anos, entusiasta de tecnologia e dividendos, de Curitiba. Criou o DividAI depois de perceber que o INSS não é um plano de aposentadoria confiável. Escreve para quem quer construir independência financeira do zero, sem precisar ser especialista.
                         </p>
                     </div>
                 </div>
@@ -114,6 +114,9 @@ export default function SobrePage() {
                 <p>Adoramos ouvir nossos leitores! Se você tem dúvidas, sugestões de pauta, identificou algum erro ou simplesmente quer bater um papo sobre investimentos:</p>
                 <ul>
                     <li><strong>Email:</strong> <a href="mailto:contato@dividai.com" style={{ color: "var(--primary)", textDecoration: "underline" }}>contato@dividai.com</a></li>
+                    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/dividai_app/" target="_blank" rel="noopener noreferrer" style={{ color: "var(--primary)", textDecoration: "underline" }}>@dividai_app</a></li>
+                    <li><strong>X (Twitter):</strong> <a href="https://x.com/DividAI_App" target="_blank" rel="noopener noreferrer" style={{ color: "var(--primary)", textDecoration: "underline" }}>@DividAI_App</a></li>
+                    <li><strong>Threads:</strong> <a href="https://www.threads.com/@dividai_app" target="_blank" rel="noopener noreferrer" style={{ color: "var(--primary)", textDecoration: "underline" }}>@dividai_app</a></li>
                     <li><strong>Telegram:</strong> <a href="https://t.me/dividai_news" target="_blank" rel="noopener noreferrer" style={{ color: "var(--primary)", textDecoration: "underline" }}>@dividai_news</a></li>
                     <li><strong>Página de Contato:</strong> <a href="/contato" style={{ color: "var(--primary)", textDecoration: "underline" }}>dividai.com/contato</a></li>
                 </ul>
