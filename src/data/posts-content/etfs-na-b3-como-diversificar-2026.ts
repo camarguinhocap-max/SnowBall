@@ -18,7 +18,7 @@ Com um ETF, você resolve isso com uma única operação:
 
 Isso significa que ao comprar 1 cota de BOVA11, você está indiretamente investindo em Petrobras, Vale, Itaú, Ambev e dezenas de outras empresas ao mesmo tempo.
 
-![Gráfico comparando rentabilidade de ETFs na B3 em 2026](/images/etfs-na-b3-como-diversificar-2026-2.png)
+![Gráfico comparando rentabilidade de ETFs na B3 em 2026](/images/etfs-na-b3-como-diversificar-2026-2.jpeg)
 
 ## Como funcionam as taxas?
 
