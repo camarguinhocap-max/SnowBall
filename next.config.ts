@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: '/contact', destination: '/contato', permanent: true },
+      { source: '/post/mentalidade-milionaria-o-que-as-pessoas-ricas-fazem-diferente', destination: '/post/mindset-milionario-2026-psicologia-vence-planilha', permanent: true },
       { source: '/login', destination: '/', permanent: true },
       { source: '/signup', destination: '/', permanent: true },
       { source: '/pricing', destination: '/', permanent: true },
