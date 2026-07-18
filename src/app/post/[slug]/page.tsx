@@ -238,6 +238,12 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
                         <span>{post.date}</span>
                         <span>&bull;</span>
                         <ReadingTime readTime={post.readTime ?? '5 min de leitura'} />
+                        {post.updatedAt && (
+                            <>
+                                <span>&bull;</span>
+                                <span style={{ fontSize: '0.85em', color: 'var(--muted)' }}>Atualizado em {post.updatedAt}</span>
+                            </>
+                        )}
                     </div>
                 </header>
 
