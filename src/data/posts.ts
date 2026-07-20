@@ -206,6 +206,11 @@ import { post as post_troca_de_emprego_checklist_financeiro_2026 } from './posts
 import { post as post_viagem_sem_dividas_2026 } from './posts/viagem-sem-dividas-2026';
 import { post as post_vicios_de_consumo_2026 } from './posts/vicios-de-consumo-2026';
 
+import { post as post_aposentadoria_antecipada_fire_2026 } from './posts/aposentadoria-antecipada-fire-2026';
+import { post as post_dividendos_carteira_acoes_2026 } from './posts/dividendos-carteira-acoes-2026';
+import { post as post_juros_compostos_na_pratica_2026 } from './posts/juros-compostos-na-pratica-2026';
+import { post as post_orcamento_familiar_planejamento_2026 } from './posts/orcamento-familiar-planejamento-2026';
+import { post as post_renda_extra_internet_2026 } from './posts/renda-extra-internet-2026';
 export const posts: PostMeta[] = [
     post_100_porcento_cdi_vale_a_pena,
     post_10_ideias_simples_para_ganhar_dinheiro_no_fim_de_semana,
@@ -409,6 +414,11 @@ export const posts: PostMeta[] = [
     post_troca_de_emprego_checklist_financeiro_2026,
     post_viagem_sem_dividas_2026,
     post_vicios_de_consumo_2026,
+    post_aposentadoria_antecipada_fire_2026,
+    post_dividendos_carteira_acoes_2026,
+    post_juros_compostos_na_pratica_2026,
+    post_orcamento_familiar_planejamento_2026,
+    post_renda_extra_internet_2026,
 ].map((post) => ({
     ...post,
     category: normalizeCategory(post.category),
