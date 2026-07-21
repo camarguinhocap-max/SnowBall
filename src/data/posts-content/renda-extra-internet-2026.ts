@@ -1,63 +1,63 @@
-﻿export const content = `
-R$ 2.000 extras por mes podem mudar completamente sua vida financeira. Para alguem que ganha R$ 4.000, isso representa um aumento de 50% na renda. Para quem ganha R$ 8.000, significa dobrar a velocidade com que constroi patrimonio. A pergunta nao e "e possivel" — e "qual caminho faz sentido para mim".
+export const content = `
+R$ 2.000 extras por mês podem mudar completamente sua vida financeira. Para alguém que ganha R$ 4.000, isso representa um aumento de 50% na renda. Para quem ganha R$ 8.000, significa dobrar a velocidade com que constrói patrimônio. A pergunta não é "é possível" — é "qual caminho faz sentido para mim".
 
-A internet criou oportunidades de renda extra que simplesmente nao existiam 10 anos atras. E o Brasil tem um ecossistema de plataformas, afiliados e consumidores digitais que torna essas oportunidades muito reais. Mas tambem tem muita promessa irreal, esquema de pirâmide disfarçado e "mentores" que ganham dinheiro ensinando outros a ganhar dinheiro sem nunca ter ganhado de outra forma.
+A internet criou oportunidades de renda extra que simplesmente não existiam 10 anos atrás. E o Brasil tem um ecossistema de plataformas, afiliados e consumidores digitais que torna essas oportunidades muito reais. Mas também tem muita promessa irreal, esquema de pirâmide disfarçado e "mentores" que ganham dinheiro ensinando outros a ganhar dinheiro sem nunca ter ganhado de outra forma.
 
-Este guia e diferente: vamos falar de formas reais, com expectativas reais, e quanto tempo cada uma leva para gerar R$ 2.000 mensais.
+Este guia é diferente: vamos falar de formas reais, com expectativas reais, e quanto tempo cada uma leva para gerar R$ 2.000 mensais.
 
-## Por que Ter Renda Extra e Essencial em 2026
+## Por que Ter Renda Extra é Essencial em 2026
 
-Antes de falar dos caminhos, e importante entender por que a renda extra deixou de ser opcional para muitos brasileiros:
+Antes de falar dos caminhos, é importante entender por que a renda extra deixou de ser opcional para muitos brasileiros:
 
-**1. Inflacao correndo mais rapido que salarios**
-O IPCA acumulado dos ultimos 5 anos superou os reajustes salariais da maior parte dos setores. Quem nao aumentou sua renda esta, na pratica, ganhando menos em termos de poder de compra.
+**1. Inflação correndo mais rápido que salários**
+O IPCA acumulado dos últimos 5 anos superou os reajustes salariais da maior parte dos setores. Quem não aumentou sua renda está, na prática, ganhando menos em termos de poder de compra.
 
 **2. Instabilidade no emprego formal**
-Demissoes em massa em grandes empresas de tecnologia, varejo e servicos mostraram que o emprego "seguro" de carteira assinada nao e tao seguro quanto parecia. Ter outra fonte de renda e uma rede de segurança.
+Demissões em massa em grandes empresas de tecnologia, varejo e serviços mostraram que o emprego "seguro" de carteira assinada não é tão seguro quanto parecia. Ter outra fonte de renda é uma rede de segurança.
 
-**3. INSS cada vez menos confiavel**
-A previdencia publica brasileira esta sob pressao crescente. Quem tem entre 25 e 40 anos hoje nao pode contar com o INSS como planejado pelos seus pais. Construir renda propria e imperativo.
+**3. INSS cada vez menos confiável**
+A previdência pública brasileira está sob pressão crescente. Quem tem entre 25 e 40 anos hoje não pode contar com o INSS como planejado pelos seus pais. Construir renda própria é imperativo.
 
 **4. Custo de vida nas grandes cidades**
-Em Sao Paulo, Rio, Curitiba e Brasilia, o custo de moradia, saude e educacao cresceu mais rapido que a inflacao oficial. A renda extra frequentemente e o que mantém o orcamento no positivo.
+Em São Paulo, Rio, Curitiba e Brasília, o custo de moradia, saúde e educação cresceu mais rápido que a inflação oficial. A renda extra frequentemente é o que mantém o orçamento no positivo.
 
 ## Freelancer: A Renda Extra Mais Direta
 
-Freelancing e vender suas habilidades profissionais por projeto ou hora — sem vinculo empregaticio. E o caminho mais rapido para gerar renda extra para quem ja tem uma habilidade desenvolvida.
+Freelancing é vender suas habilidades profissionais por projeto ou hora — sem vínculo empregatício. É o caminho mais rápido para gerar renda extra para quem já tem uma habilidade desenvolvida.
 
 ### Quais habilidades geram mais demanda?
 
 **Tecnologia (maior demanda e melhor pagamento):**
 - Desenvolvimento web (HTML, CSS, JavaScript, React, Vue)
-- Programacao backend (Python, Node.js, PHP)
+- Programação backend (Python, Node.js, PHP)
 - Aplicativos mobile (Flutter, React Native)
-- Data science e analise de dados
+- Data science e análise de dados
 - DevOps e cloud (AWS, Azure, GCP)
 
-Faixa de remuneracao: R$ 80 a R$ 300 por hora, dependendo do nivel e especialidade.
+Faixa de remuneração: R$ 80 a R$ 300 por hora, dependendo do nível e especialidade.
 
-**Design e criacao:**
-- Design grafico (logotipos, materiais de marketing)
+**Design e criação:**
+- Design gráfico (logotipos, materiais de marketing)
 - UI/UX design (interfaces digitais)
-- Edicao de video e motion graphics
+- Edição de vídeo e motion graphics
 - Fotografia e retoque digital
-- Ilustracao e arte digital
+- Ilustração e arte digital
 
 Faixa: R$ 50 a R$ 200 por hora.
 
-**Texto e conteudo:**
-- Redacao publicitaria (copywriting)
-- Criacao de conteudo para redes sociais
+**Texto e conteúdo:**
+- Redação publicitária (copywriting)
+- Criação de conteúdo para redes sociais
 - Artigos e blogs (SEO)
-- Traducao (especialmente ingles-portugues)
-- Revisao e correcao ortografica
+- Tradução (especialmente inglês-português)
+- Revisão e correção ortográfica
 
 Faixa: R$ 30 a R$ 120 por hora.
 
-**Negocios e gestao:**
-- Gestao de trafego pago (Google Ads, Meta Ads)
-- Gestao de redes sociais (social media)
-- Consultoria financeira ou contabil
+**Negócios e gestão:**
+- Gestão de tráfego pago (Google Ads, Meta Ads)
+- Gestão de redes sociais (social media)
+- Consultoria financeira ou contábil
 - Assistente virtual
 - Recrutamento e RH
 
@@ -67,174 +67,163 @@ Faixa: R$ 50 a R$ 250 por hora.
 
 **Nacionais:**
 - 99Freelas: maior plataforma brasileira de freelancers
-- Workana: muito ativo para design, programacao e texto
-- GetNinjas: servicos em geral, incluindo presenciais
-- Trampos.co: foco em marketing e criacao
+- Workana: muito ativo para design, programação e texto
+- GetNinjas: serviços em geral, incluindo presenciais
 
-**Internacionais (em dolar):**
+**Internacionais (em dólar):**
 - Upwork: maior plataforma global, mais competitiva
 - Fiverr: projetos menores, mais volume
 - Toptal: elite de tech, processo seletivo rigoroso
 
-### Quanto tempo para chegar em R$ 2.000/mes?
+### Quanto tempo para chegar em R$ 2.000/mês?
 
-Depende muito da habilidade e do esforco inicial:
-- **Habilidade ja desenvolvida:** 2 a 4 meses para consistencia
+- **Habilidade já desenvolvida:** 2 a 4 meses para consistência
 - **Habilidade em aprendizado:** 6 a 12 meses
-- **Sem habilidade especifica:** 12 a 18 meses (precisa aprender primeiro)
+- **Sem habilidade específica:** 12 a 18 meses (precisa aprender primeiro)
 
-A curva tipica: primeiros 1-2 meses construindo perfil e portfolio, 3-4 meses conseguindo primeiros clientes menores, 5-6 meses chegando a renda consistente.
+![Infográfico: comparativo das principais formas de renda extra online no Brasil — tempo para R$ 2.000/mês, investimento inicial e nível de esforço](/images/renda-extra-internet-2026-2.png)
 
-![Infografico: comparativo das principais formas de renda extra online no Brasil — tempo para R$ 2000/mes, investimento inicial e nível de esforço](/images/renda-extra-internet-2026-2.png)
+## Marketing de Afiliados: Ganhar Comissão Vendendo o Produto de Outros
 
-## Marketing de Afiliados: Ganhar Comissao Vendendo o Produto de Outros
+No marketing de afiliados, você divulga produtos ou serviços de outras empresas e recebe comissão por cada venda realizada através do seu link único. Você não tem estoque, não atende clientes, não lida com logística — só divulga.
 
-No marketing de afiliados, voce divulga produtos ou servicos de outras empresas e recebe comissao por cada venda realizada atraves do seu link unico. Voce nao tem estoque, nao atende clientes, nao lida com logistica — so divulga.
+### Como funciona na prática
 
-### Como funciona na pratica
-
-1. Voce se cadastra em uma plataforma de afiliados
+1. Você se cadastra em uma plataforma de afiliados
 2. Escolhe um produto para divulgar
 3. Recebe um link exclusivo com seu ID de afiliado
-4. Divulga o link nas suas plataformas (Instagram, YouTube, blog, email)
-5. Cada compra pelo seu link = comissao para voce
+4. Divulga o link nas suas plataformas (Instagram, YouTube, blog, e-mail)
+5. Cada compra pelo seu link = comissão para você
 
 ### Principais plataformas de afiliados no Brasil
 
 **Para produtos digitais:**
-- Hotmart: maior plataforma de cursos online, ebooks, eventos digitais. Comissoes de 20% a 80%
-- Monetizze: similar ao Hotmart, mais forte em produtos fisicos digitalizados
+- Hotmart: maior plataforma de cursos online, ebooks, eventos digitais. Comissões de 20% a 80%
+- Monetizze: similar ao Hotmart, mais forte em produtos físicos digitalizados
 - Eduzz: outra plataforma consolidada de infoprodutos
 
-**Para produtos fisicos:**
-- Amazon Afiliados: comissoes menores (4% a 12%) mas enorme variedade
-- Magalu Parceiro: comissoes de 3% a 10%, marcas conhecidas
+**Para produtos físicos:**
+- Amazon Afiliados: comissões menores (4% a 12%) mas enorme variedade
+- Magalu Parceiro: comissões de 3% a 10%, marcas conhecidas
 
-**Para servicos financeiros:**
-- Corretoras e bancos: comissoes por indicacao de contas, cartoes, investimentos
-- Fintech: programas de indicacao com pagamento por conta aberta ou cliente ativado
+**Para serviços financeiros:**
+- Corretoras e bancos: comissões por indicação de contas, cartões, investimentos
 
-### Quanto da para ganhar com afiliados?
+### Quanto dá para ganhar com afiliados?
 
-A realidade e que a maioria dos iniciantes nao ganha nada nos primeiros 6 meses. Afiliados que chegam a R$ 2.000/mes geralmente:
-- Tem audiencia propria (Instagram, YouTube, blog ou lista de emails)
+A realidade é que a maioria dos iniciantes não ganha nada nos primeiros 6 meses. Afiliados que chegam a R$ 2.000/mês geralmente:
+- Têm audiência própria (Instagram, YouTube, blog ou lista de e-mails)
 - Divulgam produtos que realmente testaram e acreditam
-- Sao consistentes na producao de conteudo por 12 a 18 meses
+- São consistentes na produção de conteúdo por 12 a 18 meses
 
-A principal armadilha: acreditar que e facil e rapido. Nao e. Mas quem constroi audiencia autentica pode gerar renda crescente e passiva com afiliados.
+A principal armadilha: acreditar que é fácil e rápido. Não é. Mas quem constrói audiência autêntica pode gerar renda crescente e passiva com afiliados.
 
-## Criacao de Conteudo Digital: A Renda que Cresce com o Tempo
+## Criação de Conteúdo Digital: A Renda que Cresce com o Tempo
 
-Criar conteudo — no YouTube, Instagram, TikTok, blog ou podcast — pode gerar renda de multiplas formas: ads (monetizacao), afiliados, venda de produtos proprios, live commerce, e contratos com marcas (publi).
+Criar conteúdo — no YouTube, Instagram, TikTok, blog ou podcast — pode gerar renda de múltiplas formas: ads (monetização), afiliados, venda de produtos próprios, live commerce e contratos com marcas (publi).
 
-### O modelo de monetizacao por plataforma
+### O modelo de monetização por plataforma
 
-| Plataforma | Monetizacao principal | Subscribers/seguidores para renda relevante |
-|------------|----------------------|-------------------------------------------|
-| YouTube | AdSense + afiliados + publi | 10.000+ inscritos para monetizacao |
+| Plataforma | Monetização principal | Seguidores para renda relevante |
+|------------|----------------------|--------------------------------|
+| YouTube | AdSense + afiliados + publi | 10.000+ inscritos |
 | Instagram | Publi + afiliados + loja | 5.000+ seguidores engajados |
-| TikTok | Creator Fund + publi + afiliados | 10.000+ seguidores + 100k visualizacoes |
-| Blog | SEO + afiliados + ads (AdSense) | 10.000+ visitantes/mes |
-| Podcast | Patreon + publi + afiliados | 1.000+ ouvintes por episodio |
+| TikTok | Creator Fund + publi + afiliados | 10.000+ seguidores |
+| Blog | SEO + afiliados + ads | 10.000+ visitantes/mês |
+| Podcast | Patreon + publi + afiliados | 1.000+ ouvintes por episódio |
 
 ### Qual plataforma escolher?
 
-**YouTube:** maior potencial de renda de longo prazo, mas exige mais producao (video, edicao) e demora mais para crescer. Videos bons ficam no ar por anos gerando visualizacoes e renda.
+**YouTube:** maior potencial de renda de longo prazo, mas exige mais produção (vídeo, edição). Vídeos bons ficam no ar por anos gerando visualizações e renda.
 
-**Instagram/TikTok:** crescimento mais rapido possivel, mas audiencia mais fragil (dependente do algoritmo). Conteudo tem vida util mais curta.
+**Instagram/TikTok:** crescimento mais rápido possível, mas audiência mais frágil (dependente do algoritmo). Conteúdo tem vida útil mais curta.
 
-**Blog:** crescimento mais lento (SEO leva 6-12 meses para funcionar), mas renda mais estavel e passiva no longo prazo. Artigos bem posicionados no Google geram visitas por anos.
+**Blog:** crescimento mais lento (SEO leva 6-12 meses para funcionar), mas renda mais estável e passiva no longo prazo. Artigos bem posicionados no Google geram visitas por anos.
 
-**Podcast:** nichos especificos, crescimento organico. Monetizacao mais difícil, mas audiencia muito fiel.
-
-### Quanto tempo para gerar R$ 2.000/mes com conteudo?
-
-Essa e a forma de renda extra com maior variancia: pode levar 1 ano ou 3 anos, dependendo do nicho, frequencia de publicacao e qualidade. Mas tambem e a que cria renda mais passiva no longo prazo.
+**Podcast:** nichos específicos, crescimento orgânico. Monetização mais difícil, mas audiência muito fiel.
 
 ## Venda de Cursos e Infoprodutos: a Renda que Escala
 
-Infoprodutos sao produtos de informacao vendidos digitalmente: cursos online, ebooks, templates, planilhas, mentorias. Voce cria uma vez e vende multiplas vezes.
+Infoprodutos são produtos de informação vendidos digitalmente: cursos online, ebooks, templates, planilhas, mentorias. Você cria uma vez e vende múltiplas vezes.
 
 ### Quais temas vendem bem?
 
-- Financas e investimentos (alta procura)
-- Saude, emagrecimento e fitness
-- Habilidades profissionais (Excel, programacao, design)
-- Criacao de conteudo e redes sociais
-- Culinaria e alimentacao saudavel
+- Finanças e investimentos (alta procura)
+- Saúde, emagrecimento e fitness
+- Habilidades profissionais (Excel, programação, design)
+- Criação de conteúdo e redes sociais
+- Culinária e alimentação saudável
 - Relacionamentos e autodesenvolvimento
-- Idiomas (especialmente ingles)
-- Artesanato, croche, bordado (nichos com mercado ativo)
+- Idiomas (especialmente inglês)
+- Artesanato, crochê, bordado (nichos com mercado ativo)
 
 ### Como criar e vender seu primeiro infoproduto
 
-1. **Identifique sua expertise:** o que voce sabe fazer bem que outros gostariam de aprender?
+1. **Identifique sua expertise:** o que você sabe fazer bem que outros gostariam de aprender?
 2. **Valide a demanda:** pesquise no Google Trends, Ubersuggest, ou pergunte na sua rede
-3. **Crie um produto enxuto:** nao precisa ser perfeito na primeira versao — 5 a 10 aulas curtas ja e suficiente para comecar
-4. **Use Hotmart ou Kiwify:** plataformas que cuidam do pagamento, entrega e afiliados por voce
-5. **Venda para sua audiencia primeiro:** mesmo pequena, sua rede de contatos e o primeiro mercado
+3. **Crie um produto enxuto:** não precisa ser perfeito na primeira versão — 5 a 10 aulas curtas já é suficiente para começar
+4. **Use Hotmart ou Kiwify:** plataformas que cuidam do pagamento, entrega e afiliados por você
+5. **Venda para sua audiência primeiro:** mesmo pequena, sua rede de contatos é o primeiro mercado
 
-Potencial de renda: muito variavel. Cursos de nicho bem posicionados podem gerar de R$ 1.000 a R$ 30.000 por mes, mas a media de iniciantes com curso de qualidade media e R$ 500 a R$ 2.000 mensais nos primeiros 6 meses.
+## Serviços Locais e Semi-Online
 
-## Servicos Locais e Semi-Online
+Nem tudo é digital puro. Alguns serviços combinam atendimento presencial com captação online:
 
-Nao e tudo digital puro. Alguns servicos combinam atendimento presencial com captacao online:
-
-- **Aulas particulares:** matematica, ingles, reforco escolar. Plataformas como Superprof e Edukatu conectam professores e alunos. R$ 60 a R$ 150 por hora
+- **Aulas particulares:** matemática, inglês, reforço escolar. Plataformas como Superprof conectam professores e alunos. R$ 60 a R$ 150 por hora
 - **Personal trainer e nutricionista:** atendimentos presenciais captados por redes sociais
-- **Consultoria financeira:** para pequenas empresas ou pessoas fisicas que precisam organizar financas
-- **Manutencao residencial:** eletricista, encanador, marceneiro — muita demanda, pouca concorrencia digital
+- **Consultoria financeira:** para pequenas empresas ou pessoas físicas que precisam organizar finanças
+- **Manutenção residencial:** eletricista, encanador, marceneiro — muita demanda, pouca concorrência digital
 
-Vantagem: demanda imediata e pagamento rapido. Desvantagem: nao escalavel (voce troca tempo por dinheiro).
+Vantagem: demanda imediata e pagamento rápido. Desvantagem: não escalável (você troca tempo por dinheiro).
 
-## Quanto Tempo Leva Para Chegar em R$ 2.000 por Mes?
+## Quanto Tempo Leva Para Chegar em R$ 2.000 por Mês?
 
 Sendo honesto sobre cada caminho:
 
-| Modalidade | Tempo realista para R$ 2.000/mes | Investimento inicial |
+| Modalidade | Tempo realista para R$ 2.000/mês | Investimento inicial |
 |------------|----------------------------------|---------------------|
-| Freelancing (habilidade ja tem) | 2 a 4 meses | Zero (so tempo) |
+| Freelancing (habilidade já tem) | 2 a 4 meses | Zero (só tempo) |
 | Freelancing (habilidade em aprendizado) | 8 a 14 meses | Curso R$ 300-1.500 |
-| Afiliados com audiencia propria | 4 a 8 meses | Zero a baixo |
-| Afiliados sem audiencia | 12 a 24 meses | Zero a baixo |
-| Criacao de conteudo | 12 a 30 meses | Camera/micro R$ 500-2.000 |
-| Infoproduto proprio | 6 a 18 meses | Plataforma R$ 0-100/mes |
-| Servicos locais | 1 a 3 meses | Equipamentos variaveis |
+| Afiliados com audiência própria | 4 a 8 meses | Zero a baixo |
+| Afiliados sem audiência | 12 a 24 meses | Zero a baixo |
+| Criação de conteúdo | 12 a 30 meses | Câmera/micro R$ 500-2.000 |
+| Infoproduto próprio | 6 a 18 meses | Plataforma R$ 0-100/mês |
+| Serviços locais | 1 a 3 meses | Equipamentos variáveis |
 
 ## Como Organizar Duas Fontes de Renda Sem Enlouquecer
 
-Muitos desistem da renda extra nao porque falhou financeiramente, mas porque a vida ficou insustentavel. Veja como equilibrar:
+Muitos desistem da renda extra não porque falhou financeiramente, mas porque a vida ficou insustentável. Veja como equilibrar:
 
-**Regra das 2 horas diarias:** nos primeiros 6 meses, limite o tempo da renda extra a 2 horas por dia. Mais do que isso, a exaustao sabota a qualidade e o emprego principal.
+**Regra das 2 horas diárias:** nos primeiros 6 meses, limite o tempo da renda extra a 2 horas por dia. Mais do que isso, a exaustão sabota a qualidade e o emprego principal.
 
-**Separe as financas:** tenha conta bancaria ou controle separado para a renda extra. Isso facilita declarar no IR, acompanhar o crescimento e nao misturar com a renda principal.
+**Separe as finanças:** tenha conta bancária ou controle separado para a renda extra. Isso facilita declarar no IR, acompanhar o crescimento e não misturar com a renda principal.
 
-**Declare corretamente:** toda renda extra precisa ser declarada no Imposto de Renda. Freelancers geralmente emitem nota como autonomo (declarando no carnê-leão mensalmente).
+**Declare corretamente:** toda renda extra precisa ser declarada no Imposto de Renda. Freelancers geralmente emitem nota como autônomo (declarando no carnê-leão mensalmente).
 
-**Defina um objetivo claro:** a renda extra e para quitar divida? Para investir? Para trocar de carro? Ter um objetivo claro da energia e foco nos meses dificeis.
+**Defina um objetivo claro:** a renda extra é para quitar dívida? Para investir? Para trocar de carro? Ter um objetivo claro dá energia e foco nos meses difíceis.
 
-## A Armadilha dos "Gurus" e Como Nao Cair Nela
+## A Armadilha dos "Gurus" e Como Não Cair Nela
 
-O mercado de educacao financeira e de empreendedorismo digital tem muita gente ganhando dinheiro vendendo o sonho de ganhar dinheiro. Algumas bandeiras vermelhas:
+O mercado de educação financeira e de empreendedorismo digital tem muita gente ganhando dinheiro vendendo o sonho de ganhar dinheiro. Algumas bandeiras vermelhas:
 
-- "Ganhe R$ 10.000 por mes sem fazer nada"
-- "Metodo exclusivo que so eu ensino"
-- Resultados irreplicaveis apresentados como normais
-- Pressao para comprar agora (urgencia artificial)
-- Curso caro de quem nao tem resultado documentado alem de vender cursos
+- "Ganhe R$ 10.000 por mês sem fazer nada"
+- "Método exclusivo que só eu ensino"
+- Resultados irreplicáveis apresentados como normais
+- Pressão para comprar agora (urgência artificial)
+- Curso caro de quem não tem resultado documentado além de vender cursos
 
-**A regra simples:** desconfie de quem ganhou dinheiro apenas ensinando outros a ganhar dinheiro. Prefira aprender com quem tem resultado comprovado no proprio nicho que ensina.
+**A regra simples:** desconfie de quem ganhou dinheiro apenas ensinando outros a ganhar dinheiro. Prefira aprender com quem tem resultado comprovado no próprio nicho que ensina.
 
-## Conclusao: Comece Pelo que Voce Ja Sabe
+## Conclusão: Comece Pelo que Você Já Sabe
 
-A renda extra mais rapida vem do que voce ja sabe fazer bem. Antes de aprender algo novo do zero, pergunte: "Existe alguem que pagaria pelo que eu ja sei fazer?"
+A renda extra mais rápida vem do que você já sabe fazer bem. Antes de aprender algo novo do zero, pergunte: "Existe alguém que pagaria pelo que eu já sei fazer?"
 
-A resposta quase sempre e sim. O mercado digital e vasto o suficiente para qualquer habilidade genuina ter mercado. Desde confeccao de doces para eventos ate analise de dados complexos.
+A resposta quase sempre é sim. O mercado digital é vasto o suficiente para qualquer habilidade genuína ter mercado. Desde confecção de doces para eventos até análise de dados complexos.
 
-Comece pequeno, seja consistente e nao tente ganhar dinheiro rapido demais. A renda extra sustentavel e construida ao longo de meses — mas quando ela chega, transforma o orcamento e abre portas que pareciam fechadas.
+Comece pequeno, seja consistente e não tente ganhar dinheiro rápido demais. A renda extra sustentável é construída ao longo de meses — mas quando ela chega, transforma o orçamento e abre portas que pareciam fechadas.
 
-**Proximo passo imediato:**
-- Liste 3 habilidades que voce tem e que outras pessoas pagariam para aprender ou contratar
+**Próximo passo imediato:**
+- Liste 3 habilidades que você tem e que outras pessoas pagariam para aprender ou contratar
 - Pesquise quanto cobram freelancers com essas habilidades nas plataformas
 - Cadastre-se em uma plataforma e crie seu primeiro perfil ainda essa semana
 `;

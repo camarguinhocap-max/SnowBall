@@ -1,263 +1,257 @@
-﻿export const content = `
-Voce ja tentou criar um orcamento, seguiu por duas semanas e depois abandonou tudo? Se sim, voce esta em boa companhia: pesquisas mostram que mais de 70% dos brasileiros que tentam criar um orcamento desistem antes do terceiro mes. O problema quase nunca e falta de disciplina — e que o metodo estava errado desde o comeco.
+export const content = `
+Você já tentou criar um orçamento, seguiu por duas semanas e depois abandonou tudo? Se sim, você está em boa companhia: pesquisas mostram que mais de 70% dos brasileiros que tentam criar um orçamento desistem antes do terceiro mês. O problema quase nunca é falta de disciplina — é que o método estava errado desde o começo.
 
-Um orcamento que funciona nao e uma planilha rigida que te faz sentir culpado por cada real gasto fora do planejado. E um sistema que se encaixa na vida real, que a familia inteira consegue seguir, e que mostra claramente o caminho do desperdicio ao investimento.
+Um orçamento que funciona não é uma planilha rígida que te faz sentir culpado por cada real gasto fora do planejado. É um sistema que se encaixa na vida real, que a família inteira consegue seguir, e que mostra claramente o caminho do desperdício ao investimento.
 
-Neste guia, voce vai aprender a construir esse sistema — do zero, de forma pratica.
+Neste guia, você vai aprender a construir esse sistema — do zero, de forma prática.
 
-## Por que a Maioria dos Orcamentos Falha?
+## Por que a Maioria dos Orçamentos Falha?
 
-Antes de criar o orcamento certo, e importante entender por que os outros falharam. Os erros mais comuns sao:
+Antes de criar o orçamento certo, é importante entender por que os outros falharam. Os erros mais comuns são:
 
-### Erro 1: Orcamento baseado na renda ideal, nao na real
+### Erro 1: Orçamento baseado na renda ideal, não na real
 
-Muitas pessoas orcam baseadas no salario bruto ou no que "deveriam" ganhar, sem considerar descontos, variabilidade de comissoes, meses com menos horas extras. O ponto de partida deve ser sempre a renda liquida real dos ultimos 3 meses.
+Muitas pessoas orçam baseadas no salário bruto ou no que "deveriam" ganhar, sem considerar descontos, variabilidade de comissões, meses com menos horas extras. O ponto de partida deve ser sempre a renda líquida real dos últimos 3 meses.
 
 ### Erro 2: Categorias de gastos muito amplas
 
-"Alimentacao" e "lazer" sao categorias tao amplas que nao dizem nada. Quando voce coloca tudo em buckets grandes demais, nao consegue identificar onde o dinheiro esta vazando de verdade.
+"Alimentação" e "lazer" são categorias tão amplas que não dizem nada. Quando você coloca tudo em buckets grandes demais, não consegue identificar onde o dinheiro está vazando de verdade.
 
-### Erro 3: Orcamento individual em uma casa com mais de uma pessoa
+### Erro 3: Orçamento individual em uma casa com mais de uma pessoa
 
-Se voce mora com conjuge, parceiro ou filhos, um orcamento que so voce controla ja nasceu morto. Sem alinhamento familiar, o orcamento de um nao sobrevive aos gastos do outro.
+Se você mora com cônjuge, parceiro ou filhos, um orçamento que só você controla já nasceu morto. Sem alinhamento familiar, o orçamento de um não sobrevive aos gastos do outro.
 
 ### Erro 4: Zero flexibilidade para imprevistos
 
-Um orcamento sem margem para o inesperado quebra na primeira vez que o carro precisa de manutencao ou a crianca fica doente. A vida real e imprevisivel — o orcamento precisa aceitar isso.
+Um orçamento sem margem para o inesperado quebra na primeira vez que o carro precisa de manutenção ou a criança fica doente. A vida real é imprevisível — o orçamento precisa aceitar isso.
 
-### Erro 5: Focar so no corte de gastos, esquecer o crescimento da renda
+### Erro 5: Focar só no corte de gastos, esquecer o crescimento da renda
 
-Orcamento bom equilibra dos dois lados: reduz desperdicio E cria espaço para aumentar a renda. Quem so corta gastos chega a um limite — quem aumenta renda nao tem teto.
+Orçamento bom equilibra dos dois lados: reduz desperdício E cria espaço para aumentar a renda. Quem só corta gastos chega a um limite — quem aumenta renda não tem teto.
 
 ## Mapeando seus Gastos Reais: O Primeiro Passo
 
-Antes de criar qualquer categoria ou meta, voce precisa saber exatamente para onde vai seu dinheiro agora. Sem isso, o orcamento sera baseado em suposicoes — e suposicoes nunca sao boas conselheiras financeiras.
+Antes de criar qualquer categoria ou meta, você precisa saber exatamente para onde vai seu dinheiro agora. Sem isso, o orçamento será baseado em suposições — e suposições nunca são boas conselheiras financeiras.
 
-### Como fazer o mapeamento (metodologia pratica)
+### Como fazer o mapeamento (metodologia prática)
 
-**Opcao 1 — Extrato bancario e cartao de credito (mais facil)**
-Pegue os extratos dos ultimos 3 meses do banco e do cartao de credito. Categorize cada lancamento em uma planilha. Calcule a media por categoria.
+**Opção 1 — Extrato bancário e cartão de crédito (mais fácil)**
+Pegue os extratos dos últimos 3 meses do banco e do cartão de crédito. Categorize cada lançamento em uma planilha. Calcule a média por categoria.
 
-**Opcao 2 — Aplicativo de controle financeiro**
-Apps como Mobills, Organizze, Minhas Economias ou o proprio aplicativo do banco ja categorizam automaticamente os gastos. Configure por 30 dias e o app mostra o retrato completo.
+**Opção 2 — Aplicativo de controle financeiro**
+Apps como Mobills, Organizze, Minhas Economias ou o próprio aplicativo do banco já categorizam automaticamente os gastos. Configure por 30 dias e o app mostra o retrato completo.
 
-**Opcao 3 — Metodo do envelope digital**
-Separe contas bancarias diferentes para gastos fixos, variaveis e poupanca. Mais trabalhoso, mas traz clareza visual imediata.
+**Opção 3 — Método do envelope digital**
+Separe contas bancárias diferentes para gastos fixos, variáveis e poupança. Mais trabalhoso, mas traz clareza visual imediata.
 
-### O que voce vai descobrir (e pode te surpreender)
+### O que você vai descobrir (e pode te surpreender)
 
-Na primeira vez que a maioria das pessoas faz esse exercicio, encontra:
-- Assinaturas que esqueceram que existem (media de 4-6 assinaturas nao usadas por brasileiro)
-- Gastos com alimentacao fora de casa muito maiores do que imaginavam
-- Parcelas de credito que somadas comprometem 30-40% da renda
-- Gastos pontuais que parecem pequenos mas sao frequentes (cafe, Uber, gorjetas)
+Na primeira vez que a maioria das pessoas faz esse exercício, encontra:
+- Assinaturas que esqueceram que existem (média de 4-6 assinaturas não usadas por brasileiro)
+- Gastos com alimentação fora de casa muito maiores do que imaginavam
+- Parcelas de crédito que somadas comprometem 30-40% da renda
+- Gastos pontuais que parecem pequenos mas são frequentes (café, Uber, gorjetas)
 
-Nao se julgue ao ver esses numeros. O objetivo e clareza, nao culpa.
+Não se julgue ao ver esses números. O objetivo é clareza, não culpa.
 
-## O Metodo 50-30-20: A Base do Orcamento Equilibrado
+## O Método 50-30-20: A Base do Orçamento Equilibrado
 
-O metodo 50-30-20 e uma das estruturas mais populares e eficazes para orcamento pessoal. Foi popularizado pela senadora americana Elizabeth Warren e funciona assim:
+O método 50-30-20 é uma das estruturas mais populares e eficazes para orçamento pessoal. Foi popularizado pela senadora americana Elizabeth Warren e funciona assim:
 
-- **50% para Necessidades** (o que voce nao pode evitar)
+- **50% para Necessidades** (o que você não pode evitar)
 - **30% para Desejos** (o que melhora sua qualidade de vida)
-- **20% para Poupanca e Investimento** (o que constroi seu futuro)
+- **20% para Poupança e Investimento** (o que constrói seu futuro)
 
 ### O que entra em cada categoria?
 
 **Necessidades (50%):**
-- Moradia (aluguel ou prestacao do imovel proprio)
-- Alimentacao basica (supermercado)
-- Transporte (combustivel, transporte publico, prestacao do carro)
-- Contas de servicos (agua, luz, internet, telefone)
-- Plano de saude
-- Educacao dos filhos (escola, materiais)
+- Moradia (aluguel ou prestação do imóvel próprio)
+- Alimentação básica (supermercado)
+- Transporte (combustível, transporte público, prestação do carro)
+- Contas de serviços (água, luz, internet, telefone)
+- Plano de saúde
+- Educação dos filhos (escola, materiais)
 - Seguros essenciais
 
 **Desejos (30%):**
 - Restaurantes e delivery
 - Streaming, cinemas, shows
-- Roupas alem do essencial
+- Roupas além do essencial
 - Academia, hobbies
 - Viagens e passeios
-- Eletronicos e gadgets
+- Eletrônicos e gadgets
 
-**Poupanca e Investimento (20%):**
-- Fundo de emergencia (ate ter 6 meses de gastos)
-- Investimentos mensais (acoes, renda fixa, FIIs)
-- Previdencia privada
-- Poupanca para objetivos especificos (viagem, entrada da casa)
+**Poupança e Investimento (20%):**
+- Fundo de emergência (até ter 6 meses de gastos)
+- Investimentos mensais (ações, renda fixa, FIIs)
+- Previdência privada
+- Poupança para objetivos específicos (viagem, entrada da casa)
 
-### O metodo 50-30-20 adaptado para a realidade brasileira
+### O método 50-30-20 adaptado para a realidade brasileira
 
-Na pratica, muitos brasileiros tem dificuldade de manter as necessidades em 50% — especialmente nas grandes cidades. Se o seu aluguel em Sao Paulo ja consome 35% da renda, e matematicamente impossivel ter 50% para necessidades totais sem comprimir outras categorias.
+Na prática, muitos brasileiros têm dificuldade de manter as necessidades em 50% — especialmente nas grandes cidades. Se o seu aluguel em São Paulo já consome 35% da renda, é matematicamente impossível ter 50% para necessidades totais sem comprimir outras categorias.
 
-Adaptacao recomendada: ajuste os percentuais para a sua realidade, mas mantenha a logica de prioridade:
-
-1. Necessidades: o que for preciso (nao tem como cortar)
-2. Poupanca: pelo menos 10-15% da renda (negociavel, mas nao elimine)
+Adaptação recomendada: ajuste os percentuais para a sua realidade, mas mantenha a lógica de prioridade:
+1. Necessidades: o que for preciso (não tem como cortar)
+2. Poupança: pelo menos 10-15% da renda (negociável, mas não elimine)
 3. Desejos: o que sobrar
 
-Nunca inverta essa ordem — poupanca SEMPRE vem antes dos desejos.
+Nunca inverta essa ordem — poupança SEMPRE vem antes dos desejos.
 
-![Infografico: metodo 50-30-20, categorias de gastos e estrategia para atingir metas financeiras em 2026](/images/orcamento-familiar-planejamento-2026-2.png)
+![Infográfico: método 50-30-20, categorias de gastos e estratégia para atingir metas financeiras em 2026](/images/orcamento-familiar-planejamento-2026-2.png)
 
-## Categorias de Gastos: Como Organizar na Pratica
-
-A estrutura abaixo e um modelo detalhado que voce pode adaptar:
+## Categorias de Gastos: Como Organizar na Prática
 
 | Categoria | Subcategoria | Tipo |
 |-----------|-------------|------|
-| Moradia | Aluguel/prestacao, IPTU, condominio, reparos | Necessidade |
-| Alimentacao | Supermercado, feira, acougue | Necessidade |
-| Alimentacao Extra | Delivery, restaurantes, lanchonetes | Desejo |
-| Transporte | Combustivel, Uber, transporte publico | Necessidade/Desejo |
-| Saude | Plano, remedios, consultas | Necessidade |
-| Educacao | Escola, cursos, materiais | Necessidade |
-| Vestuario | Roupas e calcados | Desejo |
+| Moradia | Aluguel/prestação, IPTU, condomínio, reparos | Necessidade |
+| Alimentação | Supermercado, feira, açougue | Necessidade |
+| Alimentação Extra | Delivery, restaurantes, lanchonetes | Desejo |
+| Transporte | Combustível, Uber, transporte público | Necessidade/Desejo |
+| Saúde | Plano, remédios, consultas | Necessidade |
+| Educação | Escola, cursos, materiais | Necessidade |
+| Vestuário | Roupas e calçados | Desejo |
 | Lazer | Streaming, cinema, viagens, hobbies | Desejo |
-| Financeiro | Poupanca, investimentos, dividas | Poupanca/Necessidade |
-| Assinaturas | Todos os servicos recorrentes | Desejo |
-| Imprevistos | Buffer mensal para gastos nao planejados | Necessidade |
+| Financeiro | Poupança, investimentos, dívidas | Poupança/Necessidade |
+| Assinaturas | Todos os serviços recorrentes | Desejo |
+| Imprevistos | Buffer mensal para gastos não planejados | Necessidade |
 
-## Como Envolver a Familia no Orcamento
+## Como Envolver a Família no Orçamento
 
-Este e o ponto que mais sabota orcamentos familiares. Se so uma pessoa cuida do orcamento enquanto a outra gasta sem restricoes, o sistema nao funciona — e a tensao financeira vira tensao conjugal.
+Este é o ponto que mais sabota orçamentos familiares. Se só uma pessoa cuida do orçamento enquanto a outra gasta sem restrições, o sistema não funciona — e a tensão financeira vira tensão conjugal.
 
-### Principio da transparencia total
+### Princípio da transparência total
 
-Ambos os adultos precisam saber exatamente qual e a renda familiar, quais sao as dividas, e quanto esta sendo investido. Sem isso, um dos dois sempre vai gastar mais do que deveria sem perceber.
+Ambos os adultos precisam saber exatamente qual é a renda familiar, quais são as dívidas, e quanto está sendo investido. Sem isso, um dos dois sempre vai gastar mais do que deveria sem perceber.
 
-Reserve uma reuniao mensal de 20-30 minutos para revisar os numeros juntos. Chame de "reuniao financeira do mes" — tire a carga emocional. Voce nao esta culpando ninguem, esta gerenciando o negocio da familia.
+Reserve uma reunião mensal de 20-30 minutos para revisar os números juntos. Chame de "reunião financeira do mês" — tire a carga emocional. Você não está culpando ninguém, está gerenciando o negócio da família.
 
 ### Dinheiro de bolso individual
 
-Uma das melhores praticas: cada adulto tem um valor fixo mensal de "dinheiro de bolso" — para gastar como quiser, sem precisar justificar. Isso elimina a microgestao e o sentimento de restricao excessiva.
+Uma das melhores práticas: cada adulto tem um valor fixo mensal de "dinheiro de bolso" — para gastar como quiser, sem precisar justificar. Isso elimina a microgestão e o sentimento de restrição excessiva.
 
-O valor de bolso pode ser de R$ 200 a R$ 500, dependendo da renda total. O importante e que e para uso livre, sem julgamento.
+O valor de bolso pode ser de R$ 200 a R$ 500, dependendo da renda total. O importante é que é para uso livre, sem julgamento.
 
-### Como incluir os filhos na educacao financeira
+### Como incluir os filhos na educação financeira
 
-Criancas acima de 7-8 anos podem entender conceitos basicos de orcamento. Praticas simples:
+Crianças acima de 7-8 anos podem entender conceitos básicos de orçamento. Práticas simples:
 - Mesada com valores definidos e uso livre (dentro de limites)
-- Separaracao da mesada em "gastar, poupar e dar" (tres cofretos)
-- Incluir nas decisoes de compras relevantes: "esse produto custa R$ 300, cabe no nosso plano?"
+- Separação da mesada em "gastar, poupar e dar" (três cofrinhos)
+- Incluir nas decisões de compras relevantes: "esse produto custa R$ 300, cabe no nosso plano?"
 
-## Fundo de Emergencia: A Base de Tudo
+## Fundo de Emergência: A Base de Tudo
 
-Antes de comecar a investir para o futuro, voce precisa ter uma reserva de seguranca. Sem ela, qualquer imprevisto — demissao, problema de saude, carro quebrado — vai destruir o orcamento e possivelmente gerar divida.
+Antes de começar a investir para o futuro, você precisa ter uma reserva de segurança. Sem ela, qualquer imprevisto — demissão, problema de saúde, carro quebrado — vai destruir o orçamento e possivelmente gerar dívida.
 
-### Quanto guardar no fundo de emergencia?
+### Quanto guardar no fundo de emergência?
 
 | Perfil | Reserva recomendada |
 |--------|---------------------|
-| Emprego estavel, sem dependentes | 3 a 4 meses de gastos |
-| Emprego estavel, com dependentes | 6 meses de gastos |
-| Autonomo ou freelancer | 6 a 12 meses de gastos |
-| Empresario ou renda variavel | 12 meses ou mais |
+| Emprego estável, sem dependentes | 3 a 4 meses de gastos |
+| Emprego estável, com dependentes | 6 meses de gastos |
+| Autônomo ou freelancer | 6 a 12 meses de gastos |
+| Empresário ou renda variável | 12 meses ou mais |
 
-### Onde guardar a reserva de emergencia?
+### Onde guardar a reserva de emergência?
 
-A reserva precisa ter tres caracteristicas: seguranca, liquidez imediata e rendimento minimo para nao perder para a inflacao.
+A reserva precisa ter três características: segurança, liquidez imediata e rendimento mínimo para não perder para a inflação.
 
-Melhores opcoes:
-- Tesouro Selic (resgate no dia seguinte, rendimento diario)
-- CDB com liquidez diaria de banco grande (alguns oferecem 100% do CDI)
+Melhores opções:
+- Tesouro Selic (resgate no dia seguinte, rendimento diário)
+- CDB com liquidez diária de banco grande (alguns oferecem 100% do CDI)
 - Conta remunerada de fintechs como Nubank ou Inter
 
-O que EVITAR: deixar na poupanca (rendimento baixo), em acoes (volatilidade) ou em CDB com carencia (voce pode precisar antes do prazo).
+O que EVITAR: deixar na poupança (rendimento baixo), em ações (volatilidade) ou em CDB com carência (você pode precisar antes do prazo).
 
-## Do Orcamento Enxuto ao Orcamento de Investidor
+## Do Orçamento Enxuto ao Orçamento de Investidor
 
-Depois de controlar gastos e constituir reserva de emergencia, o proximo passo e alocar o excedente para construir patrimonio.
+Depois de controlar gastos e constituir reserva de emergência, o próximo passo é alocar o excedente para construir patrimônio.
 
 ### Ordem de prioridade sugerida
 
-1. **Quite dividas caras** (cartao de credito, cheque especial — qualquer coisa acima de 1% ao mes)
-2. **Constitua reserva de emergencia** (3 a 6 meses de gastos)
-3. **Comece a investir** (mesmo com pouco — o habito e mais importante que o valor)
+1. **Quite dívidas caras** (cartão de crédito, cheque especial — qualquer coisa acima de 1% ao mês)
+2. **Constitua reserva de emergência** (3 a 6 meses de gastos)
+3. **Comece a investir** (mesmo com pouco — o hábito é mais importante que o valor)
 4. **Aumente o investimento** conforme a renda crescer
 
 ### Como aumentar gradualmente o percentual investido
 
-Uma tecnica eficaz: toda vez que sua renda aumentar (aumento de salario, bônus, renda extra), destine pelo menos 50% do aumento para investimentos. Voce nem sente falta do dinheiro, porque ja investia 50% a mais do que antes.
+Uma técnica eficaz: toda vez que sua renda aumentar (aumento de salário, bônus, renda extra), destine pelo menos 50% do aumento para investimentos. Você nem sente falta do dinheiro, porque já investia 50% a mais do que antes.
 
-Exemplo pratico:
-- Voce ganha R$ 5.000 e investe R$ 500 (10%)
+Exemplo prático:
+- Você ganha R$ 5.000 e investe R$ 500 (10%)
 - Tem aumento para R$ 6.000 (mais R$ 1.000 de renda)
 - Destina R$ 500 desse aumento para investimentos
 - Novo investimento mensal: R$ 1.000 (agora 16,7% da renda)
 
 ## Ferramentas e Apps para Controle Financeiro
 
-Voce nao precisa de planilha complicada para comecar. Escolha uma ferramenta e use por pelo menos 3 meses antes de trocar.
-
 | Ferramenta | Melhor para | Custo |
 |------------|-------------|-------|
-| Mobills | Controle completo, multiplos usuarios | Gratis / Premium |
-| Organizze | Simples e visual, facil de usar | Gratis / Premium |
-| Minhas Economias | Brasileiro, foco em objetivos | Gratis |
-| Google Sheets | Quem quer personalizar ao maximo | Gratis |
-| App do banco | Quem tem tudo no mesmo banco | Gratis |
-| Planilha do Excel | Controle total, mais trabalho manual | Gratis |
+| Mobills | Controle completo, múltiplos usuários | Grátis / Premium |
+| Organizze | Simples e visual, fácil de usar | Grátis / Premium |
+| Minhas Economias | Brasileiro, foco em objetivos | Grátis |
+| Google Sheets | Quem quer personalizar ao máximo | Grátis |
+| App do banco | Quem tem tudo no mesmo banco | Grátis |
 
-A melhor ferramenta e a que voce vai usar de verdade — nao a mais sofisticada.
+A melhor ferramenta é a que você vai usar de verdade — não a mais sofisticada.
 
 ## Metas Financeiras: Como Definir e Atingir
 
-O orcamento sem metas e um exercicio sem proposito. As metas dao significado aos sacrificios mensais.
+O orçamento sem metas é um exercício sem propósito. As metas dão significado aos sacrifícios mensais.
 
-### Metodo SMART para metas financeiras
+### Método SMART para metas financeiras
 
-Metas bem definidas sao:
-- **S**especificas: "guardar R$ 15.000 para entrada do carro" (nao "guardar dinheiro")
-- **M**ensuravelis: voce sabe exatamente quanto falta
-- **A**lcancaveis: dentro da sua capacidade real de poupanca
-- **R**elevantes: alinhadas com seus valores e prioridades
-- **T**emporais: com prazo definido
+Metas bem definidas são:
+- **Específicas:** "guardar R$ 15.000 para entrada do carro" (não "guardar dinheiro")
+- **Mensuráveis:** você sabe exatamente quanto falta
+- **Alcançáveis:** dentro da sua capacidade real de poupança
+- **Relevantes:** alinhadas com seus valores e prioridades
+- **Temporais:** com prazo definido
 
 ### Tipos de metas por prazo
 
-**Curto prazo (ate 1 ano):**
-- Reserva de emergencia
-- Quitar divida especifica
+**Curto prazo (até 1 ano):**
+- Reserva de emergência
+- Quitar dívida específica
 - Viagem ou item de desejo
 - Fundo para despesas sazonais (IPVA, IPTU, material escolar)
 
-**Medio prazo (1 a 5 anos):**
-- Entrada para imovel
+**Médio prazo (1 a 5 anos):**
+- Entrada para imóvel
 - Troca de carro
 - Abrir empresa
-- Curso ou pos-graduacao
+- Curso ou pós-graduação
 
 **Longo prazo (5 anos ou mais):**
-- Aposentadoria / independencia financeira
-- Imovel proprio quitado
-- Educacao superior dos filhos
+- Aposentadoria / independência financeira
+- Imóvel próprio quitado
+- Educação superior dos filhos
 
-## O Orcamento nos Meses Dificeis: Como Nao Desistir
+## O Orçamento nos Meses Difíceis: Como Não Desistir
 
-Todo mundo tem meses ruins. O objetivo nao e manter o orcamento perfeito — e manter o habito de gerenciar, mesmo quando as contas nao fecham.
+Todo mundo tem meses ruins. O objetivo não é manter o orçamento perfeito — é manter o hábito de gerenciar, mesmo quando as contas não fecham.
 
-Quando o orcamento estourar:
-- Identifique o que causou o estouro (imprevisto legitimo ou falta de controle?)
-- Se foi imprevisto: use o buffer de imprevistos ou a reserva de emergencia (e a funcao dela)
-- Se foi falta de controle: reveja as categorias que mais estouraram e entenda o padrao
-- Nao desista do mes inteiro. Um dia ruim nao precisa estragar todo o mes
+Quando o orçamento estourar:
+- Identifique o que causou o estouro (imprevisto legítimo ou falta de controle?)
+- Se foi imprevisto: use o buffer de imprevistos ou a reserva de emergência (é a função dela)
+- Se foi falta de controle: reveja as categorias que mais estouraram e entenda o padrão
+- Não desista do mês inteiro. Um dia ruim não precisa estragar todo o mês
 
-## Conclusao: O Orcamento e um Sistema, Nao um Castigo
+## Conclusão: O Orçamento é um Sistema, Não um Castigo
 
-O orcamento que funciona e aquele que te da clareza e controle — nao culpa e restricao. Quando voce sabe exatamente para onde vai cada real, toma decisoes conscientes em vez de tomar decisoes por impulso ou ansiedade.
+O orçamento que funciona é aquele que te dá clareza e controle — não culpa e restrição. Quando você sabe exatamente para onde vai cada real, toma decisões conscientes em vez de tomar decisões por impulso ou ansiedade.
 
-Comece simples. Mapeie seus gastos reais por um mes. Escolha uma ferramenta. Defina uma meta pequena e concreta. E mais importante: envolva sua familia — especialmente o conjuge ou parceiro.
+Comece simples. Mapeie seus gastos reais por um mês. Escolha uma ferramenta. Defina uma meta pequena e concreta. E mais importante: envolva sua família — especialmente o cônjuge ou parceiro.
 
-O resultado nao vai aparecer no primeiro mes. Mas em seis meses, voce vai olhar para seus numeros e ver uma diferenca real. Em um ano, voce pode ter quitado dividas, constituido reserva e ja estar investindo. Em tres anos, o orcamento pode ter mudado completamente sua relacao com o dinheiro.
+O resultado não vai aparecer no primeiro mês. Mas em seis meses, você vai olhar para seus números e ver uma diferença real. Em um ano, você pode ter quitado dívidas, constituído reserva e já estar investindo. Em três anos, o orçamento pode ter mudado completamente sua relação com o dinheiro.
 
-**Checklist para comecar hoje:**
-- Calcule sua renda liquida real dos ultimos 3 meses
-- Acesse o extrato bancario e do cartao dos ultimos 90 dias
-- Categorize todos os gastos em uma planilha ou app
-- Identifique os 3 maiores vazamentos financeiros
-- Defina percentuais de necessidades, desejos e poupanca
-- Crie o fundo de emergencia como prioridade numero 1
-- Marque uma reuniao financeira mensal com sua familia
+**Checklist para começar hoje:**
+- Calcular sua renda líquida real dos últimos 3 meses
+- Acessar o extrato bancário e do cartão dos últimos 90 dias
+- Categorizar todos os gastos em uma planilha ou app
+- Identificar os 3 maiores vazamentos financeiros
+- Definir percentuais de necessidades, desejos e poupança
+- Criar o fundo de emergência como prioridade número 1
+- Marcar uma reunião financeira mensal com sua família
 `;
