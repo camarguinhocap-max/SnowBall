@@ -74,7 +74,7 @@ const projects = [
         tags: ["Assessoria de Energia", "Geração de Leads", "Landing Page"]
     },
     {
-        name: "Piraquara On-line",
+        name: "Lúcio Renato - Piraquara",
         url: "https://piraquaraonline.lovable.app/",
         description: "Portal local de notícias, utilidade pública e cobertura comunitária de Piraquara-PR, com o ex-vereador e comunicador Lúcio Renato.",
         domain: "luciorenatopiraquara.com.br",
