@@ -64,6 +64,24 @@ const projects = [
         imageMobile: "/portfolio/proj6-m.png",
         tags: ["E-commerce", "Artesanal", "Design Premium"]
     },
+    {
+        name: "Sunne Sul",
+        url: "https://sunnesul.com.br",
+        description: "Assessoria de energia por assinatura no Paraná e região Sul, com até 20% de desconto na conta de luz e adesão 100% digital.",
+        domain: "sunnesul.com.br",
+        imageDesktop: "/portfolio/proj7-d.png",
+        imageMobile: "/portfolio/proj7-m.png",
+        tags: ["Assessoria de Energia", "Geração de Leads", "Landing Page"]
+    },
+    {
+        name: "Piraquara On-line",
+        url: "https://piraquaraonline.lovable.app/",
+        description: "Portal local de notícias, utilidade pública e cobertura comunitária de Piraquara-PR, com o ex-vereador e comunicador Lúcio Renato.",
+        domain: "luciorenatopiraquara.com.br",
+        imageDesktop: "/portfolio/proj8-d.png",
+        imageMobile: "/portfolio/proj8-m.png",
+        tags: ["Portal de Notícias", "Institucional", "Utilidade Pública"]
+    },
 ];
 
 export default function PortfolioPage() {

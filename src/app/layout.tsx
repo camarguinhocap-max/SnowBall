@@ -159,7 +159,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                 priority
                                 style={{ width: "40px", height: "auto" }}
                             />
-                            <span style={{ fontSize: "1.8rem", fontWeight: 800 }}>DividAI</span>
+                            <span style={{ fontSize: "1.8rem", fontWeight: 800 }}>DividAI | Web</span>
                         </Link>
                         <SearchBar />
                         <nav className="nav-links" aria-label="Navegação principal">
