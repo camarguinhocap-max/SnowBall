@@ -82,6 +82,15 @@ const projects = [
         imageMobile: "/portfolio/proj8-m.png",
         tags: ["Portal de Notícias", "Institucional", "Utilidade Pública"]
     },
+    {
+        name: "Element Home Remodeling",
+        url: "https://ehrremodeling.com",
+        description: "Reformas residenciais e escadas de carvalho maciço sob medida, atendendo Ocala, Orlando, Gainesville e Tampa, na Flórida (EUA).",
+        domain: "ehrremodeling.com",
+        imageDesktop: "/portfolio/proj9-d.png",
+        imageMobile: "/portfolio/proj9-m.png",
+        tags: ["Home Remodeling", "Site Internacional", "Geração de Leads"]
+    },
 ];
 
 export default function PortfolioPage() {
